@@ -1,0 +1,2678 @@
+/********** reset.css **********/
+/*
+html5doctor.comResetStylesheet
+v1.6.1
+LastUpdated:2010-09-17
+Author:RichardClark-http://richclarkdesign.com
+Twitter:@rich_clark
+*/
+
+html,body,main,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body{
+	line-height: 1;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display: block;
+}
+ol,ul{
+	list-style: none;
+}
+blockquote,q{
+	quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content:none;
+}
+/*change colours to suit your needs*/
+ins{
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+/*change colours to suit your needs*/
+mark{
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+del{
+	text-decoration:line-through;
+}
+abbr[title],dfn[title] {
+	border-bottom:1pxdotted;
+	cursor:help;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+// Noto Serif CJK
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/NotoSerifCJKjp/NotoSerifCJKjp-ExtraLight.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/NotoSerifCJKjp/NotoSerifCJKjp-SemiBold.otf') format('opentype');
+}
+@font-face {
+   font-family: 'Noto Serif Japanese';
+   font-style: normal;
+   font-weight: 700;
+  src: url('../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Black.otf') format('opentype');
+}
+
+// 変数
+$img_path: "../images";
+$set-prefix:'', -webkit-, -moz-, -ms-, -o-;
+$commonWhite: rgb(255,255,255);
+$commonBlack: rgb(0,0,0);
+$commonGreen: rgb(17,147,87);
+$commonGray: rgb(102,102,102);
+$linkColor: rgb(51,51,51);
+$commonWidthPc: 1080px;
+$commonWidthSp: 92%;
+$width-100: 100%;
+$commonWidthSp02: 93.75%;
+$mincho: 'Noto Serif Japanese';
+$meiryo: "メイリオ", "Meiryo";
+$middleGreen: rgb(1,134,67);
+$rightGreen: rgb(0,153,51);
+$darkGray: rgb(32,32,32);
+$middleGray: rgb(102,102,102);
+$gray: rgb(153,153,153);
+$rightGray: rgb(204,204,204);
+$archiveBackground: rgb(236,241,247);
+$archiveSubBackground: rgb(185,197,208);
+// ブレークポイント
+@mixin sp {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+@mixin pc {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+// プロパティにベンダープレフィックスを付与
+@mixin PropertyPrefix ($name, $value) {
+	@each $prefix in $set-prefix {
+		#{$prefix}#{$name}: $value;
+	}
+}
+// 値にベンダープレフィックスを付与
+@mixin ValuePrefix($name, $value) {
+	@each $prefix in $set-prefix {
+		#{$name}: #{$prefix}$value;
+	}
+}
+/********** 共通パーツ **********/
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	min-width: 1280px;
+	margin: 0 auto;
+	color: $commonBlack;
+	-webkit-text-size-adjust: 100%;
+	-webkit-overflow-scrolling: touch;
+	-webkit-font-smoothing: antialiased;
+	font-family:  "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+	@include sp {
+		min-width: 100%;
+	}
+}
+a {
+	text-decoration: none;
+	color: $commonBlack;
+}
+a:hover {
+	opacity: 0.7;
+}
+input,textarea {
+	vertical-align: middle;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-webkit-overflow-scrolling: touch;
+}
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+}
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.pcDisp {
+	display: block;
+	@include sp {
+		display: none;
+	}
+}
+.spDisp {
+	display: none;
+	@include sp {
+		display: block;
+	}
+}
+.textImage {
+	display: block;
+	height: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.textTriangle {
+	&--green {
+		&:before {
+			content:"";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 4.5px 0 4.5px 7.8px;
+			border-color: transparent transparent transparent $commonGreen;
+			display: inline-block;
+			margin-right: 5px;
+		}
+	}
+}
+/********** パーツリスト *******/
+.middleText {
+	font-size: 18px;
+	@include sp {
+		font-size: 12px;
+		width: $commonWidthSp02;
+		margin: 0 auto;
+	}
+	&--center {
+		text-align: center;
+		line-height: 2;
+		@include sp {
+			line-height: 1.7;
+		}
+	}
+	&--left {
+		line-height: 1.7;
+		& + .middleText--left {
+			margin-top: 18px;
+			
+		}
+	}
+}
+.smallText {
+	font-size: 14px;
+	line-height: 1.75;
+	@include sp {
+		font-size: 12px;
+		line-height: 1.6;
+		width: $commonWidthSp02;
+		margin: 0 auto;
+	}
+}
+.hugeHeadline {
+	color: $rightGreen;
+	font-size: 38px;
+	text-align: center;
+	font-family: $mincho;
+	line-height: 0.9;
+	@include sp {
+		font-size: 23px;
+		line-height: 0.7;
+	}
+	&__english {
+		color: $commonBlack;
+		font-size: 16px;
+		font-family: $meiryo;
+		font-weight: normal;
+		letter-spacing: .35em;
+		@include sp {
+			font-size: 10px;
+			letter-spacing: .2em;
+		}
+	}
+}
+.largeHeadline {
+	color: $middleGray;
+	font-size: 36px;
+	font-weight: normal;
+	text-align: center;
+	@include sp {
+		font-size: 20px;
+		line-height: 1.4;
+	}
+}
+.middleHeadline {
+	font-size: 30px;
+	padding: 5px 0 0 15px;
+	font-weight: normal;
+	letter-spacing: .02em;
+	@include sp {
+		font-size: 20px;
+		padding: 0;
+		letter-spacing: 0;
+		text-align: center;
+	}
+}
+.middleHeadline--gray {
+	@extend .middleHeadline;
+	color: $middleGray;
+	border-left: 5px solid $middleGray;
+	@include sp {
+		border: none;
+	}
+}
+.middleHeadline--green {
+	@extend .middleHeadline;
+	color: $middleGreen;
+	border-left: 5px solid $middleGreen;
+	@include sp {
+		border: none;
+	}
+}
+.smallHeadline {
+	color: $middleGray;
+	font-size: 24px;
+	font-weight: normal;
+	@include sp {
+		font-size: 15px;
+		line-height: 1.4;
+		text-align: center;
+	}
+}
+.commonTable {
+	border: 1px solid #595959;
+	border-collapse: collapse;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: left;
+	@include sp {
+		font-size: 12px;
+		line-height: 1.7;
+		width: 93.75%;
+		margin: 0 auto;
+		border: none;
+	}
+	&__tr {
+		&:last-of-type {
+			@include sp {
+				border-bottom: 1px solid #595959;
+			}
+		}
+	}
+	&__th {
+		background: $gray;
+		font-weight: normal;
+		border: 1px solid #595959;
+		border-collapse: collapse;
+		padding: 10px 0 4px 20px;
+		width: 142px;
+		@include sp {
+			display: block;
+			width: 100%;
+			padding: 6px 10px 1px 10px;
+			border-bottom: none;
+		}
+	}
+	&__td {
+		border: 1px solid #595959;
+		border-collapse: collapse;
+		padding: 0 0 4px 20px;
+		width: 726px;
+		@include sp {
+			display: block;
+			width: 100%;
+			padding: 6px 10px 1px 10px;
+			border-bottom: none;
+		}
+		&--multiLine {
+			padding-bottom: 17px;
+			@include sp {
+				padding-bottom: 6px;
+			}
+		}
+	}
+}
+/* 幅100%表示のリンクリスト */
+.aboutList {
+	@extend .clearfix;
+	margin: 0 auto;
+	&__item {
+		width: 50%;
+		float: left;
+		@include sp {
+			width: 100%;
+			float: none;
+		}
+	}
+	&__link {
+		@extend .TopNavigationLink;
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-top: 50.34965%; /* (360/715) * 100% */
+		@include sp {
+			padding-top: 50.3125%; /* (322/640) * 100% */
+		}
+		&--01 {
+			background: url(#{$img_path}/about_navi01.jpg) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/about_navi01_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/about_navi02.jpg) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/about_navi02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/about_navi03.jpg) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/about_navi03_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/about_navi04.jpg) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/about_navi04_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+	&__text {
+		@extend .TopNavigationText;
+	}
+}
+.borderTop {
+	&--green {
+		border-top: 1px solid $middleGreen;
+	}
+	&--gray {
+		border-top: 1px solid $rightGray;
+	}
+	&--dot {
+		border-top: 1px dotted $commonBlack;
+	}
+}
+.borderBottom {
+	&--green {
+		border-bottom: 1px solid $middleGreen;
+	}
+	&--gray {
+		border-bottom: 1px solid $rightGray;
+	}
+	&--dot {
+		border-bottom: 1px dotted $commonBlack;
+	}
+}
+.photoCol2 {
+	@extend .clearfix;
+	&__item {
+		@extend .textImage;
+		display: inline-block;
+		width: 520px;
+		height: 308px;
+		@include sp {
+			display: block;
+			margin: 0 auto;
+			width: 93.75%;
+			padding-top: 55.532446%
+		}
+		&:nth-of-type(even) {
+			float: right;
+			@include sp {
+				float: none;
+				margin: 20px auto 0;
+			}
+		}
+		&--01 {
+			background: url(#{$img_path}/kasou/photo06.jpg) left top no-repeat;
+			@include sp {
+				background: url(../images/kasou/photo06_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/photo07.jpg) left top no-repeat;
+			@include sp {
+				background: url(../images/kasou/photo07_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}
+.photoCol3 {
+	@extend .clearfix;
+	&__item {
+		@extend .textImage;
+		float: left;
+		display: inline-block;
+		width: 338px;
+		height: 226px;
+		@include sp {
+			float: none;
+			display: block;
+			margin: 0 auto;
+			width: 93.75%;
+			height: 0;
+			padding-top: 62.5%; /* (400/600) * 93.75% */
+		}
+		&:nth-of-type(2) {
+			@include pc {
+				margin: 0 33px;
+			}
+			@include sp {
+				margin: 20px auto;
+			}
+		}
+		&--01 {
+			background: url(#{$img_path}/kasou/sample02.jpg) left top no-repeat;
+			@include sp {
+				background: url(../images/kasou/sample02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/sample02.jpg) left top no-repeat;
+			@include sp {
+				background: url(../images/kasou/sample02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/sample02.jpg) left top no-repeat;
+			@include sp {
+				background: url(../images/kasou/sample02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}
+.photoCol4 {
+	@extend .clearfix;
+	&__item {
+		@extend .textImage;
+		display: inline-block;
+		float: left;
+		vertical-align: top;
+		width: 256px;
+		height: 170px;
+		@include pc {
+			& + & {
+				margin-left: 18px;
+			}
+		}
+		@include sp {
+			display: block;
+			float: none;
+			width: 73.75%;
+			height: 0;
+			padding-top: 52.5%; /* (336/472) * 73.75% */
+			margin: 0 auto;
+			& + & {
+				margin-top: 38px;
+			}
+		}
+		&--01 {
+			background: url(#{$img_path}/kasou/photo02.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/photo03.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo03_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/photo04.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo04_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/kasou/photo05.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo05_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}
+.bannerCol2 {
+	margin: 0 auto;
+	font-size: 0;
+	text-align: center;
+	@include sp {
+		margin: 20px auto 0;
+	}
+	&__item {
+		width: 520px;
+		display: inline-block;
+		@include sp {
+			display: block;
+			width: 100%;
+		}
+		&:nth-of-type(2) {
+			margin-left: 40px;
+			@include sp {
+				margin: 20px 0 0;
+			}
+		}
+	} 
+	&__link {
+		@extend .TopNavigationLink;
+		display: block;
+		width: 520px;
+		height: 177px;
+		@include sp {
+			width: 90.3125%;
+			height: 0;
+			padding-top: 30.78125%;
+			margin: 0 auto;
+		}
+		&--01 {
+			background: url(#{$img_path}/information_navi01.jpg) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/information_navi01_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/information_navi02.jpg) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/information_navi02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+	&__text {
+		@extend .TopNavigationText;
+	}
+}
+
+/* 円形のバナー */
+.bannerCircle {
+	margin: 0 auto;
+	font-size: 0;
+	text-align: center;
+	&__item {
+		width: 245px;
+		display: inline-block;
+		@include pc {
+			&:nth-of-type(n+2) {
+				margin-left: 33.3333px;
+			}
+		}
+		@include sp {
+			width :40.46875%;
+			&:nth-of-type(even) {
+				margin-left: 7%;
+			}
+			&:nth-of-type(n+3) {
+				margin-top: 20px;
+			}
+		}
+	}
+	&__link {
+		@extend .TopNavigationLink;
+		display: block;
+		width: 245px;
+		height: 245px;
+		@include pc {
+			&:before {
+				content:"";
+				border-radius: 50%;
+			}
+		}
+		@include sp {
+			width: 100%;
+			height: 0;
+			padding-top: 100%;
+			margin: 0 auto;
+		}
+		&--01 {
+			background: url(#{$img_path}/approach_navi01.png) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/approach_navi01_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/approach_navi02.png) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/approach_navi02_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/approach_navi03.png) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/approach_navi03_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/approach_navi04.png) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/approach_navi04_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+	&__text {
+		@extend .TopNavigationText;
+		&.bannerCircle__text--line02 {
+			height: 56px;
+			line-height: 1.2;
+			@include sp {
+				heigth: 48px;
+				line-height: 1.5;
+			}
+		}
+	}
+}
+/* マウスオン時に緑色に変化するボタン */
+.greenButton {
+	display: block;
+	width: 268px;
+	border: 1px solid;
+	line-height: 52px;
+	font-size: 14px;
+	text-align: center;
+	margin: 0 auto;
+	&--pdf {
+		&::before {
+			content:"";
+			background: url(#{$img_path}/kasou/icon-pdf02.png) left top no-repeat;
+			width: 24px;
+			height: 27px;
+			display: inline-block;
+			margin: 0 5px 0 0;
+			vertical-align: middle;
+		}
+	}
+	&--small {
+		width: 210px;
+	}
+	@include pc {
+		transition: .3s;
+		&:hover {
+			background: $commonGreen;
+			color: $commonWhite;
+			opacity: 1;
+		}
+	}
+	@include sp {
+		display: block;
+		margin: 0 auto;
+	}
+}
+/* 技術紹介バナー */
+.techNav {
+	@extend .clearfix;
+	margin: 24px auto 0;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 20px auto 0;
+	}
+	&__item {
+		width: 339px;
+		display: inline-block;
+		float: left;
+		margin: 0 0 0 31.5px;
+		@include pc {
+			&:nth-of-type(3n+1) {
+				margin-left: 0;
+			}
+			&:nth-of-type(n+4) {
+				margin-top: 27px;
+			}
+		}
+		@include sp {
+			display: block;
+			width: 100%;
+			float: none;
+			margin: 0 auto;
+			& + & {
+				margin-top: 17px;
+			}
+		}
+	}
+	&__link {
+		@extend .textImage;
+		width: 339px;
+		height: 54px;
+		@include sp {
+			width: 100%;
+			height: 0;
+			padding-top: 16%;
+		}
+		&--01 {
+			background: url(#{$img_path}/kasou/tech_button01.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button01_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/tech_button02.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button02_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/tech_button03.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button03_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/kasou/tech_button04.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button04_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--05 {
+			background: url(#{$img_path}/kasou/tech_button05.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button05_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--06 {
+			background: url(#{$img_path}/kasou/tech_button06.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button06_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--07 {
+			background: url(#{$img_path}/kasou/tech_button07.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button07_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--08 {
+			background: url(#{$img_path}/kasou/tech_button08.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button08_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--09 {
+			background: url(#{$img_path}/kasou/tech_button09.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button09_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}
+/* 関連リンクバナー */
+.linkList {
+	margin: 44px auto 0;
+	font-size: 0;
+	text-align: center;
+	width: $commonWidthPc;
+	@include sp {
+		margin: 20px auto 0;
+		width: 100%;
+	}
+	&__item {
+		width: 346px;
+		display: inline-block;
+		@include pc {
+			margin-left: 20px;
+			&:nth-of-type(3n+1) {
+				margin-left: 0px;
+			}
+			&:nth-of-type(n+4) {
+				margin-top: 20px;
+			}
+		}
+		@include sp {
+			width: 43.90625%; /* (281 / 640) */
+			&:nth-of-type(even) {
+				margin-left: 3.4%;
+			}
+			&:nth-of-type(n+3) {
+				margin-top: 2%;
+			}
+		}
+	} 
+	&__link {
+		@extend .textImage;
+		width: 346px;
+		height: 108px;
+		@include sp {
+			width: 100%;
+			height: 0;
+			padding-top: 30.960854%; /* (87/281) * 100% */
+		}
+		&--01 {
+			background: url(#{$img_path}/link_banner01.png) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/link_banner01_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/link_banner02.png) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/link_banner02_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/link_banner03.png) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/link_banner03_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/link_banner04.png) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/link_banner04_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--05 {
+			background: url(#{$img_path}/link_banner05.png) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/link_banner05_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--06 {
+			background: url(#{$img_path}/link_banner06.png) left top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/link_banner06_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}	
+	}
+}
+.archive {
+	background: $archiveBackground;
+	padding: 20px;
+	position: relative;
+	@include sp {
+		padding: 10px 3.125% 20px;
+	}
+	&::before {
+		content:"";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 15px 15px 0 0;
+		border-color: $archiveSubBackground transparent transparent transparent;
+		@include sp {
+			border-width: 7px 7px 0 0;
+		}
+	}
+	&::after {
+		content:"";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 15px 15px;
+		border-color: transparent transparent $commonWhite transparent;
+		@include sp {
+			border-width: 0 0 7px 7px;
+		}
+	}
+	&__list {
+		@extend .clearfix;
+		font-size: 0;
+	}
+	&__item {
+		@extend .textImage;
+		width: 510px;
+		height: 340px;
+		display: inline-block;
+		@include sp {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			height: 0;
+			padding-top: 66.666667%; /* (400/600) */
+		}
+		&:nth-of-type(even) {
+			@include pc {
+				margin-left: 20px;
+			}
+		}
+		&:nth-of-type(n+3) {
+			@include pc {
+				margin-top: 20px;
+			}
+		}
+		&:nth-of-type(n+2) {
+			@include sp {
+				margin-top: 10px;
+			}
+		}
+		&--01 {
+			background: url(#{$img_path}/kasou/sample01.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/sample02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/sample01.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/sample02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/sample01.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/sample02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/kasou/sample01.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/sample02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+	&__gooddesign {
+		@extend .textImage;
+		display: inline-block;
+		margin-top: 15px;
+		width: 116px;
+		height: 50px;
+		background: url(#{$img_path}/kasou/logo_gooddesign.png) left top no-repeat;
+		float: right;
+		@include sp {
+			width: 58px;
+			height: 25px;
+			background: url(#{$img_path}/kasou/logo_gooddesign_sp.png) left top no-repeat;
+			background-size: 100%;
+		}
+	}
+	&__text {
+		@extend .smallText;
+		padding: 20px 0 0 5px;
+		line-height: 1.8;
+		@include sp {
+			padding: 15px 0 0 0;
+		}
+	}
+}
+.illust {
+	@extend .textImage;
+	&--01 {
+		width: 1080px;
+		height: 632px;
+		background: url(#{$img_path}/kasou/illust01.png) left top no-repeat;
+		@include sp {
+			background: url(#{$img_path}/kasou/illust01_sp.png) left top no-repeat;
+			background-size: 100%;
+			width: 100%;
+			height: 0;
+			padding-top: 188.4375%;
+		}
+	}
+}
+.movieFrame {
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 0 auto;
+	}
+}
+.movieWrapper {
+	width: 540px;
+	height: 290px;
+	position: relative;
+	margin: 0 auto;
+	@include sp {
+		width: $commonWidthSp02;
+		height: 0;
+		padding-top: 49.921875%;
+	}
+	&__iframe {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+/********** エクステンド、変数活用 ************/
+.tableSample {
+	font-size: 0;
+	&__title {
+		@extend .middleHeadline--green;
+		display: inline-block;
+		vertical-align: top;
+		margin: 5px 68px 0 0;
+		@include sp {
+			display: block;
+			margin: 0 auto 20px;
+		}
+	}
+	&__table {
+		@extend .commonTable;
+		display: inline-block;
+		vertical-align: top;
+		border: none;
+		@include sp {
+			display: block;
+		}
+	}
+}
+.pcmt25 {
+	@include pc {
+		margin-top: 25px;
+	}
+}
+.pcmt40 {
+	@include pc {
+		margin-top: 40px;
+	}
+}
+.pcmt45 {
+	@include pc {
+		margin-top: 45px;
+	}
+}
+.pcmt50 {
+	@include pc {
+		margin-top: 50px;
+	}
+}
+.pcmt55 {
+	@include pc {
+		margin-top: 55px;
+	}
+}
+.pcmt65 {
+	@include pc {
+		margin-top: 65px;
+	}
+}
+.pcmt75 {
+	@include pc {
+		margin-top: 75px;
+	}
+}
+.pcmt80 {
+	@include pc {
+		margin-top: 80px;
+	}
+}
+.pcmt90 {
+	@include pc {
+		margin-top: 90px;
+	}
+}
+.pcmt95 {
+	@include pc {
+		margin-top: 95px;
+	}
+}
+.pcmt100 {
+	@include pc {
+		margin-top: 100px;
+	}
+}
+.pcmt120 {
+	@include pc {
+		margin-top: 120px;
+	}
+}
+.pcmt130 {
+	@include pc {
+		margin-top: 130px !important;
+	}
+}
+.pcmt180 {
+	@include pc {
+		margin-top: 180px;
+	}
+}
+.pcmt190 {
+	@include pc {
+		margin-top: 190px;
+	}
+}
+.pcmb160 {
+	@include pc {
+		margin-bottom: 160px;
+	}
+}
+.spmt0 {
+	@include sp {
+		margin-top: 0 !important;
+	}
+}
+.spmt20 {
+	@include sp {
+		margin-top: 20px;
+	}
+}
+.spmt30 {
+	@include sp {
+		margin-top: 30px;
+	}
+}
+.spmt40 {
+	@include sp {
+		margin-top: 40px;
+	}
+}
+.spmt50 {
+	@include sp {
+		margin-top: 50px;
+	}
+}
+.spmt95 {
+	@include sp {
+		margin-top: 95px !important;
+	}
+}
+.spmt100 {
+	@include sp {
+		margin-top: 100px;
+	}
+}
+.spmb100 {
+	@include sp {
+		margin-bottom: 100px;
+	}
+}
+/********** ヘッダー **********/
+.header {
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	top:0;
+	z-index: 2;
+	background: rgba(255,255,255, 0.7);
+	@include sp {
+		position: fixed;
+	}
+	&.header--active {
+		@include pc {
+			background: rgba(255,255,255,0.7);
+		}
+	}
+	&--top {
+		background: transparent;
+	}
+	&__buttons {
+		@include sp {
+			background: rgba(255,255,255,0.7);
+		}
+	}
+	&__wrapper {
+		width: $commonWidthPc;
+		margin: 19px auto 0;
+		@include sp {
+			width: $width-100;
+			margin: 0 auto;
+			position: relative;
+		}
+	}
+	&__icon {
+		@extend .textImage;
+		float: left;
+		background: url(#{$img_path}/main-logo.png) left top no-repeat;
+		width: 218px;
+		height: 36px;
+		@include sp {
+			float: none;
+			background: url(#{$img_path}/main-logo_sp.png) left top no-repeat;
+			background-size: 100%;
+			width: 167px;
+			height: 28px;
+			display: inline-block;
+			margin: 10px 0 0 10px;
+		}
+	}
+	&__button {
+		display: none;
+		@include sp {
+			display: block;
+			background: url(#{$img_path}/button-menu_sp.png) left top no-repeat;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 44px;
+			height: 44px;
+			background-size: 100%;
+			&.header__button--open {
+				background: url(#{$img_path}/button-close_sp.png) left top no-repeat;
+				background-size: 100%;
+				width: 41px;
+				height: 41px;
+			}
+		}
+	}
+}
+.nav {
+	float: right;
+	margin-top: 8px;
+	@include sp {
+		float: none;
+		background: rgba(0,0,0,0.7);
+		display: none;
+		margin-top:0;
+	}
+	&__list {
+		font-size: 0;
+	}
+	&__item {
+		display: inline-block;
+		font-size: 14px;
+		line-height: 1.4;
+		text-align: center;
+		padding-bottom: 28px;
+		&:hover {
+			@include pc {
+				& .megaDrop {
+					visibility: visible;
+					height: 440px;
+					border-top: 1px solid $commonGreen;
+					border-bottom: 10px solid $commonGreen;
+				} .megaDrop__inner {
+					display: block;
+				}
+			}
+		}
+		@include sp {
+			display: block;
+			width: 100%;
+			padding-bottom: 0;
+			text-align: left;
+			line-height: 45px;
+			max-height: 46px;
+			font-size: 15px;
+			border-bottom: 1px solid $commonWhite;
+			position: relative;
+			overflow: hidden;
+			transition: max-height .3s ease;
+			&:after {
+				content: "＋";
+				color: rgb(255,255,255);
+				position: absolute;
+				margin: auto;
+				top: 0;
+				bottom:0;
+				right: 20px;
+			}
+			&.nav__item--open {
+				max-height: 450px;
+				&:after {
+					content: "－";
+				}
+			}
+		}
+	}
+	&__link {
+		padding: 0px 12px;
+		display: block;
+		position: relative;
+		border-right: 1px solid;
+		font-family: $mincho;
+		@include pc {
+			cursor: pointer;
+			&--first {
+				border-left: 1px solid;
+			}
+		}
+		&--isCurrent{
+			&:after {
+				position: absolute;
+				content: "";
+				border-top: 1px solid $commonGreen;
+				border-bottom: 8px solid $commonGreen;
+				display: block;
+				width: 100%;
+				top: 38px;
+				left: 0;
+
+			}
+		}
+		@include sp {
+			padding: 0 0 0 20px;
+			border-right: none;
+			color: rgb(255,255,255);
+		}
+	}
+	&__contactBlock {
+		@include pc {
+			display: none;
+		}
+		@include sp {
+			padding: 20px 0 75px;
+		}
+	}
+	&__contactLink {
+		@include sp {
+			background: $middleGreen;
+			text-align: center;
+			display: block;
+			width: 290px;
+			font-size: 18px;
+			margin: 0 auto;
+			line-height: 48px;
+			color: $commonWhite;
+		}
+	}
+}
+.megaDrop {
+	position: absolute;
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	left: 0;
+	top: 73px;
+	height: 0;
+	text-align: left;
+	background: rgba(255,255,255,0.7);
+	visibility: hidden;
+	z-index: -1;
+	transition: all .3s;
+	@include sp {
+		position: static;
+		z-index: 1;
+		visibility: visible;
+		height: auto;
+		background: transparent;
+	}
+	&__inner {
+		width: 1080px;
+		margin: 28px auto 0;
+		@include pc {
+			display: none;
+		}
+		@include sp {
+			width: $width-100;
+			margin: 0 auto;
+		}
+	}
+	&__title {
+		font-size: 28px;
+		color: $commonGreen;
+		@include sp {
+			display: none;
+		}
+	}
+	&__menu {
+		@extend .clearfix;
+		margin-top: 25px;
+		font-size: 16px;
+		width: 362px;
+		height: 195px;
+		display: inline-block;
+		@include PropertyPrefix(column-count, 2);
+		@include PropertyPrefix(column-fill, auto);
+		@include sp {
+			width: 100%;
+			display: block;
+			margin-top: 0;
+			font-size: 11px;
+			@include PropertyPrefix(column-fill, balance);
+			margin-bottom: 10px;
+			height: 180px;
+			&--company {
+				height: 108px;
+				& .megaDrop__item:nth-of-type(-n+3) {
+					padding-left: 20px;
+				}
+			}
+			&--technology {
+				height: 145px;
+				& .megaDrop__item:nth-of-type(-n+4) {
+					padding-left: 20px;
+				}
+			}
+			&--performance {
+				height: 145px;
+				& .megaDrop__item:nth-of-type(-n+4) {
+					padding-left: 20px;
+				}
+			}
+			&--management {
+				height: 73px;
+				& .megaDrop__item:nth-of-type(-n+2) {
+					padding-left: 20px;
+				}
+			}
+			&--effort {
+				height: 73px;
+				& .megaDrop__item:nth-of-type(-n+2) {
+					padding-left: 20px;
+				}
+			}
+			&--recruit {
+				height: 73px;
+				& .megaDrop__item:nth-of-type(-n+2) {
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+	&__item {
+		@include pc {
+			&:nth-of-type(n+2) {
+				margin-top: 20px;
+			}
+			&.megaDrop__item--right {
+				margin-top: 0;
+			}
+		}
+		@include sp {
+			line-height: 36px;
+		}
+	}
+	&__link {
+		@extend .textTriangle--green;
+		@include sp {
+			color: rgb(255,255,255);
+			font-size: 11px;
+			display: block;
+		}
+	}
+	&__right {
+		float: right;
+		margin-top: -35px;
+		text-align: right;
+		@include sp {
+			display: none;
+		}
+	}
+	&__button {
+		border: 1px solid #000;
+		margin-top: 46px;
+		display: inline-block;
+		line-height: 52px;
+		text-align: center;
+		padding: 0 45px;
+	}
+}
+/********** フッター **********/
+.commonFooterText {
+	@include pc {
+		font-size: 12px;
+		color: rgb(134,134,134);
+	}
+}
+.footer {
+	background: rgb(33,33,33);
+	padding-top: 48px;
+	@include sp {
+		padding-top: 15px;
+	}
+	&__wrapper {
+		width: $commonWidthPc;
+		margin: 0 auto;
+		position: relative;
+		@include sp {
+			width: $width-100;
+		}
+	}
+	&__button {
+		@extend .textImage;
+		position: fixed;
+		background: url(#{$img_path}/button_toTop.png) left top no-repeat;
+		width: 53px;
+		height: 31px;
+		bottom: 100px;
+		right: 5%;
+		z-index: 9999;
+		@include sp {
+			left: 87%;
+			margin-left: 0;
+			width: 27px;
+			height: 15px;
+			background-size: 100%;
+		}
+	}
+	&__titleBlock {
+		display: inline-block;
+		color: $commonWhite;
+		text-align: center;
+		@include sp {
+			display: block;
+		}
+	}
+	&__title {
+		font-family: $mincho;
+		font-size: 31px;
+		font-weight: normal;
+		line-height: 1.1;
+		@include sp {
+			font-size: 18px;
+		}
+	}
+	&__subTitle {
+		font-size: 18px;
+		@include sp {
+			font-size: 10px;
+		}
+	}
+	&__contactButton {
+		color: #FFF;
+		text-align: center;
+		border: 1px solid #FFF;
+		font-size: 14px;
+		line-height: 52px;
+		display: block;
+		margin: 36px auto 0;
+		@include pc {
+			transition: .3s;
+			&:hover {
+				background: $commonGreen;
+				color: $commonWhite;
+				opacity: 1;
+			}
+		}
+		@include sp {
+			margin: 23px auto 0;
+			width: 218px;
+		}
+	}
+}
+.footerNav {
+	@include pc {
+		display: inline-block;
+		width: 820px;
+		padding: 0 0 28px 42px;
+		border-left: 1px solid #FFF;
+		margin: 8px 0 0 32px;
+		vertical-align: top;
+		position: relative;
+	}
+	&__list {
+		@extend .clearfix;
+		font-size: 0;
+		@include sp {
+			margin-top: 36px;
+		}
+	}
+	&__item {
+		display: inline-block;
+		width: 137px;
+		vertical-align: top;
+		@include pc {
+			&:nth-of-type(n+2) {
+				margin-left: 25px;
+			}
+		}
+		@include sp {
+			width: 50%;
+			float: left;
+			height: 50px;
+			line-height: 50px;
+			border-top: 1px solid $commonWhite;
+			&:nth-of-type(even) {
+				border-left: 1px solid $commonWhite;
+			}
+			&:nth-of-type(n+7) {
+				border-bottom: 1px solid $commonWhite;
+			}
+		}
+		&.footerNav__item--trial {
+			@include pc {
+				position: absolute;
+				margin-left: 0;
+				top: 143px;
+				right: 157px;
+			}
+		}
+		&.footerNav__item--recruit {
+			@include pc {
+				position: absolute;
+				margin-left: 0;
+				right: -8px;
+			}
+		}
+		&.footerNav__item--partner {
+			@include pc {
+				position: absolute;
+				margin-left: 0;
+				right: -8px;
+				top: 50px;
+				line-height: 1.4;
+			}
+			@include sp {
+				line-height: 20px;
+				padding-top: 5px;
+			}
+		}
+		&.footerNav__item--notice {
+			@include pc {
+				position: absolute;
+				margin-left: 0;
+				right: -8px;
+				top: 112px;
+			}
+		}
+	}
+	&__mainLink {
+		color: $commonWhite;
+		font-size: 13px;
+		@include sp {
+			display: block;
+			text-align: center;
+		}
+	}
+	&__subList {
+		border-top: 1px dotted $commonWhite;
+		margin-top: 10px;
+		padding-top: 20px;
+		@include sp {
+			display: none;
+		}
+	}
+	&__subItem {
+		&:nth-of-type(n+2) {
+			margin-top: 14px;
+		}
+	}
+	&__subLink {
+		@extend .commonFooterText;
+	}
+	&__sns {
+		@include pc {
+		position: absolute;
+		right: 10px;
+		top: 228px;
+		}
+		@include sp {
+			text-align: center;
+			margin-top: 28px;
+		}
+	}
+	&__facebook {
+		vertical-align: top;
+		/* プラグインから生成されるクラスよりも優先度を上げるためにimportantを使用する。 */
+		display: inline-block;
+		@include sp {
+			display: inline-block !important;
+		}
+	}
+	&__twitter {
+		margin: 10px 0 0 0;
+		@include sp {
+			display: inline-block;
+			margin: 0 0 0 25px;
+			vertical-align: top;
+		}
+	}
+}
+.copyRight {
+	margin-top: 56px;
+	padding: 24px 0 18px;
+	background: rgb(1,1,1);
+	&__wrapper {
+		@extend .clearfix;
+		width: $commonWidthPc;
+		margin: 0 auto;
+		@include sp {
+			width: $width-100;
+		}
+	}
+	@include sp {
+		margin-top: 30px;
+	}
+	&__linkList {
+		font-size: 0;
+		display: inline-block;
+		margin-left: 4px;
+		@include sp {
+			display: none;
+		}
+	}
+	&__linkItem {
+		display: inline-block;
+		&:nth-of-type(n+2) {
+			margin-left: 30px;
+		}
+	}
+	&__linkText {
+		@extend .commonFooterText;
+		color: rgb(134,134,134);
+		font-size: 12px;
+	}
+	&__text {
+		@extend .commonFooterText;
+		display: inline-block;
+		float: right;
+		@include sp {
+			display: block;
+			float: none;
+			text-align: center;
+			color: $commonWhite;
+			font-size: 10px;
+			line-height: 30px;
+		}
+	}
+}
+/********** トップページ **********/
+.commonGreenTitle {
+	font-family: $mincho;
+	color: $commonGreen;
+	font-size: 34px;
+	letter-spacing: .12em;
+	text-align: center;
+	line-height: 0.95;
+	@include sp {
+		font-size: 20px;
+		letter-spacing: .13em;
+		line-height: 1;
+	}
+}
+/********** トップページ **********/
+.carousel {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	display: none;
+	&__image {
+		width: 100%;
+	}
+	&.slick-initialized {
+		display: block;
+		margin-bottom: 0;
+	}
+	&__dots {
+		position: absolute;
+		bottom: 7%;
+		right: 0;
+		left: 0;
+		text-align: center;
+		font-size: 0;
+		@include sp {
+			display: block;
+			position: static;
+			margin-top: 15px;
+		}
+		& > li {
+			display: inline-block;
+			width: 17px;
+			height: 17px;
+			background: rgb(247,255,255);
+			border-radius: 50%;
+			@include sp {
+				width: 8px;
+				height: 8px;
+			}
+			&:nth-of-type(n+2) {
+				margin-left: 13px;
+				@include sp {
+					margin-left: 8px;
+				}
+			}
+			&.slick-active {
+				background: rgb(185,191,203);
+			}
+			& > button {
+				font-size: 0;
+			}
+		}
+	}
+}
+.topMain,
+.topVisual,
+.background01{
+	background: url(#{$img_path}/background-B.png) left top repeat;
+	background-size: contain;
+}
+.background02 {
+	background: url(#{$img_path}/background-A.png) left top repeat;
+	background-size: contain;
+}
+.section {
+	margin: 0 auto;
+	&--news {
+		width: $commonWidthPc;
+		padding: 70px 0 0;
+		font-size: 0;
+		@include sp {
+			width: $commonWidthSp;
+			padding: 60px 0 0;
+		}
+	}
+	&--about {
+		width: $width-100;
+		max-width: 1430px;
+		margin: 160px auto 0;
+		@include sp {
+			margin: 50px auto 0;
+			border-top: 1px solid $commonBlack;
+			padding-top: 36px;
+		}
+	}
+	&--approach {
+		width: $width-100;
+		margin: 76px auto 0;
+		@include sp {
+			margin: 42px auto 0;
+		}
+	}
+	&--information {
+		margin: 100px auto 0;
+		padding: 48px 0 0;
+		@include sp {
+			margin: 40px auto 0;
+			padding: 32px 0 0;
+		}
+	}
+	&--link {
+		margin: 104px auto 0;
+		padding-bottom: 156px;
+		@include sp {
+			margin: 42px auto 0;
+			padding-bottom: 72px;
+		}
+	}
+	&__title {
+		@extend .commonGreenTitle;
+		&.section__title--news {
+			@include pc {
+				writing-mode: vertical-rl;
+				position: relative;
+				display: inline-block;
+				text-align: left;
+				vertical-align: top;
+				padding-left: 98px;
+				font-size: 28px;
+				letter-spacing: .4em;
+				line-height: 1.1;
+				&:before {
+					content: "";
+					border-right: 1px dotted black;
+					height: 145px;
+					display: inline-block;
+					position: absolute;
+					right: -44px;
+				}
+			}
+		}
+		&.section__title--information {
+			
+		}
+	}
+	&__subTitle {
+		font-size: 15px;
+		letter-spacing: 1px;
+		color: $commonBlack;
+		@include sp {
+			font-size: 12px;
+			letter-spacing: 0;
+		}
+	}
+}
+.TopNavigationText {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 24px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 1;
+	color: $commonWhite;
+	@include sp {
+		font-size: 16px;
+		height: 16px;
+	}
+}
+.TopNavigationLink{
+	position: relative;
+	@include pc {
+		&:before {
+			content:"";
+			position: absolute;
+			top:0;
+			bottom:0;
+			left: 0;
+			right: 0;
+			background: rgba(0,0,0,0.3);
+		}
+		&:hover {
+			opacity: 1;
+			&:before {
+				background: rgba(0,0,0,0);
+			}
+		}
+	}
+}
+.newsList {
+	display: inline-block;
+	vertical-align: top;
+	margin: 21px 0 0 106px;
+	font-size: 15px;
+	width: 800px;
+	@include sp {
+		width: 100%;
+		margin: 17px auto 0;
+		display: block;
+		font-size: 12px;
+	}
+	&__item {
+		@include sp {
+			border-bottom: 1px dotted $commonBlack;
+			padding-bottom: 5px;
+		}
+		&:nth-of-type(n+2) {
+			margin-top: 12px;
+			@include sp {
+				margin-top: 10px;
+			}
+		}
+	}
+	&__text {
+		display: table;
+		line-height: 1.8;
+		@include sp {
+			line-height: 1.5;
+		}
+	}
+	&__date {
+		display: table-cell;
+		width: 177px;
+		@include sp {
+			display: table-row;
+		}
+	}
+	&__link {
+		display: table-cell;
+		@include sp {
+			display: table-row;
+		}
+		&--blank:after {
+			content: "";
+			background: url(#{$img_path}/icon-blank.png) left top no-repeat;
+			display: inline-block;
+			width: 16px;
+			height: 17px;
+		}
+		&--pdf:after {
+			content: "";
+			background: url(#{$img_path}/icon-pdf.png) left top no-repeat;
+			display: inline-block;
+			width: 16px;
+			height: 17px;
+		}
+	}
+}
+.newsDetail {
+	display: none;
+	@include sp {
+		display: block;
+		font-size: 14px;
+		text-align: center;
+		line-height: 52px;
+		width: 210px;
+		margin: 50px auto 0;
+		border: 1px solid $commonBlack;
+	}
+}
+.aboutList.aboutList--top {
+	margin: 60px auto 0;
+}
+.bannerCircle.bannerCircle--top {
+	margin: 47px auto 0;
+	@include sp {
+		margin: 23px auto 0;	
+	}
+}
+.bannerCol2.bannerCol2--top {
+	margin: 54px auto 0;
+	@include sp {
+		margin: 20px auto 0;
+	}
+}
+/* 下層ページ */
+.underTop {
+	background: url(#{$img_path}/kasou/main01.png) center top no-repeat;
+	width: 100%;
+	height: 475px;
+	background-size: cover;
+	@include sp {
+		position: relative;
+		background: url(#{$img_path}/kasou/main01_sp.png) center top no-repeat;
+		background-size: cover;
+		height: 0;
+		padding-top: 29.53125%;
+		margin-top: 44px;
+	}
+	&--small {
+		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
+		height: 325px;
+		background-size: cover;
+	}
+	&__wrapper {
+		padding: 220px 0 0;
+		@include sp {
+			width: 320px;
+			height: 50px;
+			padding: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto auto;
+		}
+		&--small {
+			@include pc {
+				padding: 150px 0 0;
+			}
+		}
+	}
+	&__title {
+		font-family: $mincho;
+		text-align: center;
+		font-size: 48px;
+		font-weight: normal;
+		color: $commonWhite;
+		@include sp {
+			font-size: 22px;
+		}
+	}
+	&__subTitle {
+		font-family: $mincho;
+		text-align: center;
+		font-size: 18px;
+		color: #FFF;
+		color: white;
+		margin-top: 32px;
+		letter-spacing: .2em;
+		@include sp {
+			font-size: 10px;
+			margin-top: 15px;
+		}
+	}
+}
+.backgroundLead {
+	@extend .background02;
+}
+.breadcrumb {
+	width: $commonWidthPc;
+	padding-top: 12px;
+	margin: 0 auto;
+	font-size: 0;
+	@include sp {
+		display: none;
+	}
+	&__item {
+		display: inline-block;
+		font-size: 13px;
+	}
+	&__arrow {
+		margin: 0 5px;
+	}
+	&__link {
+		color: $linkColor;
+	}
+
+}
+.subtitleSection {
+	margin: 70px auto 0;
+	padding: 0 0 90px;
+	@include sp {
+		margin: 0 auto;
+		padding: 0 0 36px;
+	}
+	&__title {
+		@extend .commonGreenTitle;
+		line-height: 1.4;
+		@include sp {
+			font-size: 18px;
+			line-height: 1.6;
+			letter-spacing: .1em;
+			padding: 10px 0 0;
+		}
+	}
+	&__lead {
+		text-align: center;
+		font-size: 18px;
+		line-height: 2;
+		margin: 28px auto 0;
+		@include sp {
+			font-size: 12px;
+			margin: 10px auto 0;
+			line-height: 1.7;
+		}
+	}
+}
+.contentSection {
+	@extend .clearfix;
+	padding: 98px 0 0;
+	width: $commonWidthPc;
+	margin: 0 auto;
+	@include sp {
+		width: $width-100;
+		padding: 30px 0 0;
+	}
+	&__subtitle {
+		@extend .largeHeadline;
+		letter-spacing: .01em;
+		@include sp {
+			font-size: 20px;
+			letter-spacing: .02em;
+			line-height: 1.4;
+		}
+	}
+	&__largeText {
+		@extend .smallHeadline;
+		margin: 260px 0 22px;
+		@include sp {
+			width: $commonWidthSp02;
+			margin: 20px auto;
+			border-top: 1px dotted;
+			padding: 22px 0 0;
+		}
+	}
+	&__mediumText {
+		font-size: 18px;
+		line-height: 1.7;
+		& + &{
+			margin: 30px 0 0;
+			@include sp {
+				margin: 20px auto 0;
+			}
+		}
+		@include sp {
+			font-size: 12px;
+			width: 93.75%;
+			margin: 0 auto;
+		}
+	}
+}
+.topDl {
+	font-size: 0;
+	margin: 80px 0 0;
+	@include sp {
+		margin: 30px 0 0;
+	}
+	&__photo {
+		@extend .textImage;
+		float: right;
+		background: url(#{$img_path}/kasou/photo01.jpg) left top no-repeat;
+		width: 520px;
+		height: 308px;
+		margin: 78px 0 0;
+		@include sp {
+			background: url(#{$img_path}/kasou/photo01_sp.jpg) left top no-repeat;
+			background-size: 100%;
+			float: none;
+			margin: 17px auto 0;
+			width: $commonWidthSp02;
+			height: 0;
+			padding-top: 50%;
+		}
+	}
+	&__dt {
+		@extend .middleHeadline--green;
+		display: inline-block;
+		vertical-align: top;
+		@include sp {
+			display: block;
+			letter-spacing: .06em;
+		}
+	}
+	&__dd {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 1.7;
+		vertical-align: top;
+		margin: 0 0 0 55px;
+		@include sp {
+			display: block;
+			font-size: 12px;
+			width: 155px;
+			margin: -5px auto 0;
+		}
+	}
+	&__list {
+		display: inline-block;
+		vertical-align: top;
+		margin: 8px 0 0;
+	}
+}
+.processList {
+	@extend .clearfix;
+	border-top: 1px dotted;
+	margin: 90px 0 0;
+	padding: 100px 0 0;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 30px auto 0;
+		padding: 38px 0 0;		
+	}
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		@include pc {
+			& + & {
+				margin-left: 18px;
+			}
+		}
+		@include sp {
+			float: none;
+			display: block;
+			width: 78.666667%;
+			margin: 0 auto;
+			& + & {
+				margin-top: 38px;
+			}
+		}
+	}
+	&__photo {
+		@extend .textImage;
+		width: 256px;
+		height: 170px;
+		@include sp {
+			width: 100%;
+			height: 0;
+			padding-top: 71.186441%;
+		}
+		&--01 {
+			background: url(#{$img_path}/kasou/photo02.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo02_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/photo03.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo03_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/photo04.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo04_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/kasou/photo05.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo05_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+	&__text {
+		margin: 7px 0 0;
+		font-size: 14px;
+		text-indent: -1em;
+		padding-left: 1em;
+		line-height: 1.8;
+		@include sp {
+			font-size: 12px;
+			line-height: 1.4;
+		}
+	}
+}
+.movieBlock {
+	border-top: 1px dotted;
+	border-bottom: 1px dotted;
+	margin: 85px 0 90px;
+	padding: 100px 0;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 36px auto 25px;
+		padding: 40px 0;
+	}
+}
+.movieWrapper {
+	width: 540px;
+	height: 290px;
+	position: relative;
+	margin: 0 auto;
+	@include sp {
+		width: $width-100;
+		height: 0;
+		padding-top: 53.25%;
+	}
+	&__iframe {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.exampleList {
+	@extend .clearfix;
+	margin: 42px 0 0;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 30px auto 0;
+	}
+	&__item {
+		display: inline-block;
+		@include pc {
+			&:nth-of-type(even)  {
+				float: right;
+			}
+			&:nth-of-type(n+3) {
+				margin-top: 38px;
+			}
+		}
+		@include sp {
+			display: block;
+			width: $width-100;
+			& + & {
+				margin-top: 18px;
+			}
+		}
+	}
+	&__photo {
+		@extend .textImage;
+		width: 520px;
+		height: 308px;
+		@include sp {
+			width: 100%;
+			height: 0;
+			padding-top: 59.234609%;
+		}
+		&--01 {
+			background: url(#{$img_path}/kasou/photo06.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo06_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/photo07.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo07_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/photo08.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo08_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/kasou/photo09.jpg) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/photo09_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+	&__text {
+		margin: 7px 0 0;
+		font-size: 14px;
+		text-indent: -1em;
+		padding-left: 1em;
+		line-height: 1.8;
+		@include sp {
+			font-size: 12px;
+			margin: 8px 0 0 5px;
+		}
+	}
+}
+.catalogButtons {
+	text-align: center;
+	margin: 130px 0 0;
+	font-size: 0;
+	@include sp {
+		margin: 55px auto 0;
+	}
+	&__link {
+		display: inline-block;
+		width: 268px;
+		border: 1px solid;
+		line-height: 52px;
+		font-size: 14px;
+		&--pdf {
+			&::before {
+				content:"";
+				background: url(#{$img_path}/kasou/icon-pdf02.png) left top no-repeat;
+				width: 24px;
+				height: 27px;
+				display: inline-block;
+				margin: 0 5px 0 0;
+				vertical-align: middle;
+			}
+		}
+		&:nth-of-type(2) {
+			margin: 0 0 0 24px;
+			@include sp {
+				margin: 20px 0 0;
+			}
+		}
+		@include pc {
+			transition: .3s;
+			&:hover {
+				background: $commonGreen;
+				color: $commonWhite;
+				opacity: 1;
+			}
+		}
+		
+	}
+}
+.techList {
+	@extend .clearfix;
+	margin: 90px 0 130px;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 56px auto 50px;
+		text-align: center;
+	}
+	&__title {
+		display: inline-block;
+		border-bottom: 3px solid $commonGreen;
+		font-weight: normal;
+		font-size: 22px;
+		padding-bottom: 8px;
+		@include sp {
+			font-size: 20px;
+			padding-bottom: 5px;
+		}
+	}
+	&__list {
+		margin-top: 24px;
+	}
+	&__item {
+		width: 339px;
+		display: inline-block;
+		float: left;
+		margin: 0 0 0 31.5px;
+		@include pc {
+			&:nth-of-type(3n+1) {
+				margin-left: 0;
+			}
+			&:nth-of-type(n+4) {
+				margin-top: 27px;
+			}
+		}
+		@include sp {
+			display: block;
+			width: 100%;
+			float: none;
+			margin: 0 auto;
+			& + & {
+				margin-top: 17px;
+			}
+		}
+	}
+	&__link {
+		@extend .textImage;
+		width: 339px;
+		height: 54px;
+		@include sp {
+			width: 100%;
+			height: 0;
+			padding-top: 16%;
+		}
+		&--01 {
+			background: url(#{$img_path}/kasou/tech_button01.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button01_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/tech_button02.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button02_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/tech_button03.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button03_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/kasou/tech_button04.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button04_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--05 {
+			background: url(#{$img_path}/kasou/tech_button05.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button05_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--06 {
+			background: url(#{$img_path}/kasou/tech_button06.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button06_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--07 {
+			background: url(#{$img_path}/kasou/tech_button07.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button07_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--08 {
+			background: url(#{$img_path}/kasou/tech_button08.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button08_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--09 {
+			background: url(#{$img_path}/kasou/tech_button09.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/tech_button09_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}
+.backgroundLink {
+	@extend .background02;
+	padding: 100px 0 160px;
+	@include sp {
+		padding: 34px 0 84px;
+	}
+}
