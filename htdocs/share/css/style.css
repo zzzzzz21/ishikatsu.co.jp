@@ -794,6 +794,24 @@ button {
 }
 
 /* マウスオン時に緑色に変化するボタン */
+@media (min-width: 768px) {
+  .greenButtons {
+    font-size: 0;
+    margin-top: 130px;
+  }
+}
+@media (min-width: 768px) {
+  .greenButtons .greenButton {
+    display: inline-block;
+  }
+  .greenButtons .greenButton:nth-of-type(1) {
+    margin-left: 75px;
+  }
+  .greenButtons .greenButton:nth-of-type(2) {
+    margin: 0 23px 0 92px;
+  }
+}
+
 .greenButton {
   display: block;
   width: 268px;
