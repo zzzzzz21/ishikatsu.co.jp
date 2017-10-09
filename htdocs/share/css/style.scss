@@ -326,11 +326,12 @@ button {
 	}
 }
 .commonTable {
-	border: 1px solid #595959;
+	border: 1px solid #8e8e8e;
 	border-collapse: collapse;
 	font-size: 18px;
 	line-height: 1.5;
 	text-align: left;
+	width: 100%;
 	@include sp {
 		font-size: 12px;
 		line-height: 1.7;
@@ -341,14 +342,14 @@ button {
 	&__tr {
 		&:last-of-type {
 			@include sp {
-				border-bottom: 1px solid #595959;
+				border-bottom: 1px solid #8e8e8e;
 			}
 		}
 	}
 	&__th {
-		background: $gray;
+		background: $rightGray;
 		font-weight: normal;
-		border: 1px solid #595959;
+		border: 1px solid #8e8e8e;
 		border-collapse: collapse;
 		padding: 10px 0 4px 20px;
 		width: 142px;
@@ -360,7 +361,7 @@ button {
 		}
 	}
 	&__td {
-		border: 1px solid #595959;
+		border: 1px solid #8e8e8e;
 		border-collapse: collapse;
 		padding: 0 0 4px 20px;
 		width: 726px;
@@ -754,14 +755,17 @@ button {
 	}
 }
 .greenButton {
-	display: block;
-	width: 268px;
+	box-sizing: border-box;
+	display: inline-block;
+	min-height: 27px;
 	border: 1px solid;
-	line-height: 52px;
+	padding: 1.28em 2em;
 	font-size: 14px;
 	text-align: center;
+	vertical-align: middle;
 	margin: 0 auto;
 	&--pdf {
+		padding: .8em 2em;
 		&::before {
 			content:"";
 			background: url(#{$img_path}/kasou/icon-pdf02.png) left top no-repeat;
@@ -773,7 +777,7 @@ button {
 		}
 	}
 	&--small {
-		width: 210px;
+		padding: 1.28em 1em;
 	}
 	@include pc {
 		transition: .3s;
@@ -1663,7 +1667,7 @@ button {
 		text-align: center;
 		border: 1px solid #FFF;
 		font-size: 14px;
-		line-height: 52px;
+		padding: .6em 2em;
 		display: block;
 		margin: 36px auto 0;
 		@include pc {
