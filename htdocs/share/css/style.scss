@@ -223,6 +223,16 @@ button {
 	}
 }
 /********** パーツリスト *******/
+/* 和紙背景 */
+.background01{
+	background: url(#{$img_path}/background-B.png) left top repeat;
+	background-size: contain;
+}
+.background02 {
+	background: url(#{$img_path}/background-A.png) left top repeat;
+	background-size: contain;
+}
+/* 各フォント */
 .middleText {
 	font-size: 18px;
 	@include sp {
@@ -323,6 +333,287 @@ button {
 		font-size: 15px;
 		line-height: 1.4;
 		text-align: center;
+	}
+}
+/* パン屑リスト */
+.breadcrumb {
+	width: $commonWidthPc;
+	padding-top: 12px;
+	margin: 0 auto;
+	font-size: 0;
+	@include sp {
+		display: none;
+	}
+	&__item {
+		display: inline-block;
+		font-size: 13px;
+	}
+	&__arrow {
+		margin: 0 5px;
+	}
+	&__link {
+		color: $linkColor;
+	}
+
+}
+.breadcrumb + .underNav {
+	margin-top: 48px;
+}
+/* 第2階層ナビゲーション */
+.doorNav {
+	@extend .clearfix;
+	width: $commonWidthPc;
+	margin: 0 auto;
+	@include sp {
+		width: $commonWidthSp02;
+	}
+	&__item {
+		@extend .borderBottom--dot;
+		display: inline-block;
+		padding: 0 0 68px;
+		@include sp {
+			padding: 0 0 45px;
+		}
+		&:nth-of-type(even) {
+			@include pc {
+				float: right;
+			}
+		}
+		&:nth-of-type(n+3) {
+			@include pc {
+				margin-top: 50px;
+			}
+		}
+		&:nth-of-type(n+2) {
+			@include sp {
+				margin-top: 26px;
+			}
+		}
+	}
+	&__title {
+		@extend .smallHeadline;
+		color: $middleGreen;
+		text-align: center;
+		@include sp {
+			font-size: 20px;
+		}
+		&::before {
+			color: $rightGray;
+			content: "［";
+			display: inline-block;
+			font-size: 30px;
+			vertical-align: middle;
+			margin-right: 14px;
+			@include sp {
+				font-size: 28px;
+				margin-right: 26px;
+			}
+		}
+		&::after {
+			color: $rightGray;
+			content: "］";
+			display: inline-block;
+			font-size: 30px;
+			vertical-align: middle;
+			margin-left: 14px;
+			@include sp {
+				font-size: 28px;
+				margin-left: 26px;
+			}
+		}
+	}
+	&__subTitle {
+		@extend .smallText;
+		text-align: center;
+		margin-top: 2px;
+		@include sp {
+			margin-top: -5px;
+			line-height: 1;
+		}
+	}
+	&__image {
+		margin-top: 12px;
+		& > img {
+			@include sp {
+				width: 100%;
+			}
+		}
+	}
+	&__text {
+		@extend .smallText;
+		margin-top: 4px;
+		@include sp {
+			width: $width-100;
+		}
+	}
+	&__right {
+		text-align: right;
+		margin-top: 30px;
+	}
+	&__link {
+		@extend .greenButton;
+		position: relative;
+		@include sp {
+			width: 56%;
+		}
+		&::after {
+			content:"＞";
+			display: inline-block;
+			position: absolute;
+			right: 5px;
+		}
+	}
+}
+/* 第3階層ナビゲーション */
+.underNav {
+	&__list {
+		width: $commonWidthPc;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 0;
+		@include sp {
+			width: $commonWidthSp02;
+			text-align: left;
+		}
+	}
+	&__item {
+		@extend .middleText;
+		display: inline-block;
+		width: 145px;
+		line-height: 54px;
+		background: $commonWhite;
+		@include sp {
+			width: 32%;
+			line-height: 34px;
+			margin-left: 2%;
+			text-align: center;
+			&:nth-of-type(3n+1) {
+				margin-left: 0;
+			}
+			&:nth-of-type(n+4) {
+				margin-top: 8px;
+			}
+		}
+		&:nth-of-type(n+2) {
+			@include pc {
+				margin-left: 10px;
+			}
+		}
+		
+	}
+	&__link {
+		width: 100%;
+		display: block;
+		border-radius: 10px;
+		@include sp {
+			border-radius: 5px;
+		}
+		&.underNav__link--current {
+			color: $commonWhite;
+			background: $middleGreen;
+		}
+	}
+}
+/* 第3.5階層ナビゲーション */
+.subBreadcrumb {
+	width: $commonWidthPc;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 0;
+	@include sp {
+		width: 80.9375%;
+	}
+	&__item {
+		@extend .middleText;
+		display: inline-block;
+		position: relative;
+		width: 238px;
+		line-height: 54px;
+		vertical-align: top;
+		@include sp {
+			display: block;
+			width: 100%;
+			font-size: 17px;
+		}
+		&:nth-of-type(n+2) {
+			@include pc {
+				margin-left: 10px;
+			}
+			@include sp {
+				margin-top: 20px;
+			}
+		}
+		&:first-child .subBreadcrumb__link{
+			@include pc {
+				border-radius: 10px 0 0 10px;
+			}
+		}
+		&:last-child .subBreadcrumb__link {
+			&::after {
+				border: none;
+			}
+			@include pc {
+				border-radius: 0 10px 10px 0;
+			}
+		}
+		&--multiLine {
+			@include pc {
+				width: 275px;
+			}
+			@include sp {
+				line-height: 20px;
+			}
+		}
+	}
+	&__link {
+		width: 100%;
+		display: block;
+		border-radius: 10px;
+		background: $commonWhite;
+		&::after {
+			position: absolute;
+			content:"";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			margin: auto;
+			@include pc {
+				border-style: solid;
+				border-width: 5px 0 5px 10px;
+				border-color: transparent transparent transparent $commonWhite;
+				top:0;
+				bottom: 0;
+				right: -9px;
+			}
+			@include sp {
+				border-style: solid;
+				border-width: 15px 13px 0 13px;
+				border-color: $commonWhite transparent transparent transparent ;
+				right:0;
+				left: 0;
+				bottom: -9px;
+			}
+		}
+		&--multiLine {
+			@include pc {
+				line-height: 24px;
+				padding: 6px 0 0;
+			}
+			@include sp {
+				padding: 10px 0 5px;
+			}
+		}
+		&.subBreadcrumb__link--current {
+			color: $commonWhite;
+			background: $rightGreen;
+			&::after {
+				content:"";
+				border-color: transparent transparent transparent $rightGreen;
+				@include sp {
+				border-color: $rightGreen transparent transparent transparent;
+				}
+			}
+		}
 	}
 }
 .commonTable {
@@ -459,18 +750,20 @@ button {
 		border-bottom: 1px dotted $commonBlack;
 	}
 }
+.commonPhoto {
+	@include sp {
+		width: $commonWidthSp02;
+		display: block;
+		margin: 0 auto;
+	}
+}
 .photoCol2 {
 	@extend .clearfix;
 	&__item {
-		@extend .textImage;
 		display: inline-block;
-		width: 520px;
-		height: 308px;
 		@include sp {
+			width: $width-100;
 			display: block;
-			margin: 0 auto;
-			width: 93.75%;
-			padding-top: 55.532446%
 		}
 		&:nth-of-type(even) {
 			float: right;
@@ -479,37 +772,19 @@ button {
 				margin: 20px auto 0;
 			}
 		}
-		&--01 {
-			background: url(#{$img_path}/kasou/photo06.jpg) left top no-repeat;
-			@include sp {
-				background: url(../images/kasou/photo06_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--02 {
-			background: url(#{$img_path}/kasou/photo07.jpg) left top no-repeat;
-			@include sp {
-				background: url(../images/kasou/photo07_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
+	}
+	&__image {
+		@extend .commonPhoto;
 	}
 }
 .photoCol3 {
 	@extend .clearfix;
 	&__item {
-		@extend .textImage;
 		float: left;
 		display: inline-block;
-		width: 338px;
-		height: 226px;
 		@include sp {
-			float: none;
+			width: $width-100;
 			display: block;
-			margin: 0 auto;
-			width: 93.75%;
-			height: 0;
-			padding-top: 62.5%; /* (400/600) * 93.75% */
 		}
 		&:nth-of-type(2) {
 			@include pc {
@@ -519,38 +794,17 @@ button {
 				margin: 20px auto;
 			}
 		}
-		&--01 {
-			background: url(#{$img_path}/kasou/sample02.jpg) left top no-repeat;
-			@include sp {
-				background: url(../images/kasou/sample02_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--02 {
-			background: url(#{$img_path}/kasou/sample02.jpg) left top no-repeat;
-			@include sp {
-				background: url(../images/kasou/sample02_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--03 {
-			background: url(#{$img_path}/kasou/sample02.jpg) left top no-repeat;
-			@include sp {
-				background: url(../images/kasou/sample02_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
+	}
+	&__image {
+		@extend .commonPhoto;
 	}
 }
 .photoCol4 {
 	@extend .clearfix;
 	&__item {
-		@extend .textImage;
 		display: inline-block;
 		float: left;
 		vertical-align: top;
-		width: 256px;
-		height: 170px;
 		@include pc {
 			& + & {
 				margin-left: 18px;
@@ -559,41 +813,102 @@ button {
 		@include sp {
 			display: block;
 			float: none;
-			width: 73.75%;
-			height: 0;
-			padding-top: 52.5%; /* (336/472) * 73.75% */
 			margin: 0 auto;
 			& + & {
 				margin-top: 38px;
 			}
 		}
-		&--01 {
-			background: url(#{$img_path}/kasou/photo02.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo02_sp.jpg) left top no-repeat;
-				background-size: 100%;
+	}
+	&__image {
+		@extend .commonPhoto;
+	}
+}
+.archive {
+	background: $archiveBackground;
+	padding: 20px;
+	position: relative;
+	@include sp {
+		padding: 10px 3.125% 20px;
+	}
+	&::before {
+		content:"";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 15px 15px 0 0;
+		border-color: $archiveSubBackground transparent transparent transparent;
+		@include sp {
+			border-width: 7px 7px 0 0;
+		}
+	}
+	&::after {
+		content:"";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 15px 15px;
+		border-color: transparent transparent $commonWhite transparent;
+		@include sp {
+			border-width: 0 0 7px 7px;
+		}
+	}
+	&__list {
+		@extend .clearfix;
+		font-size: 0;
+	}
+	&__item {
+		display: inline-block;
+		@include sp {
+			display: block;
+			margin: 0 auto;
+			width: $width-100;
+		}
+		&:nth-of-type(even) {
+			@include pc {
+				margin-left: 20px;
 			}
 		}
-		&--02 {
-			background: url(#{$img_path}/kasou/photo03.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo03_sp.jpg) left top no-repeat;
-				background-size: 100%;
+		&:nth-of-type(n+3) {
+			@include pc {
+				margin-top: 20px;
 			}
 		}
-		&--03 {
-			background: url(#{$img_path}/kasou/photo04.jpg) left top no-repeat;
+		&:nth-of-type(n+2) {
 			@include sp {
-				background: url(#{$img_path}/kasou/photo04_sp.jpg) left top no-repeat;
-				background-size: 100%;
+				margin-top: 10px;
 			}
 		}
-		&--04 {
-			background: url(#{$img_path}/kasou/photo05.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo05_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
+	}
+	&__image {
+		width: $width-100;
+	}
+	&__gooddesign {
+		@extend .textImage;
+		display: inline-block;
+		margin-top: 15px;
+		width: 116px;
+		height: 50px;
+		background: url(#{$img_path}/kasou/logo_gooddesign.png) left top no-repeat;
+		float: right;
+		@include sp {
+			width: 58px;
+			height: 25px;
+			background: url(#{$img_path}/kasou/logo_gooddesign_sp.png) left top no-repeat;
+			background-size: 100%;
+		}
+	}
+	&__text {
+		@extend .smallText;
+		padding: 20px 0 0 5px;
+		line-height: 1.8;
+		@include sp {
+			padding: 15px 0 0 0;
 		}
 	}
 }
@@ -986,125 +1301,6 @@ button {
 				background-size: 100%;
 			}
 		}	
-	}
-}
-.archive {
-	background: $archiveBackground;
-	padding: 20px;
-	position: relative;
-	@include sp {
-		padding: 10px 3.125% 20px;
-	}
-	&::before {
-		content:"";
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 15px 15px 0 0;
-		border-color: $archiveSubBackground transparent transparent transparent;
-		@include sp {
-			border-width: 7px 7px 0 0;
-		}
-	}
-	&::after {
-		content:"";
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 0 0 15px 15px;
-		border-color: transparent transparent $commonWhite transparent;
-		@include sp {
-			border-width: 0 0 7px 7px;
-		}
-	}
-	&__list {
-		@extend .clearfix;
-		font-size: 0;
-	}
-	&__item {
-		@extend .textImage;
-		width: 510px;
-		height: 340px;
-		display: inline-block;
-		@include sp {
-			display: block;
-			margin: 0 auto;
-			width: 100%;
-			height: 0;
-			padding-top: 66.666667%; /* (400/600) */
-		}
-		&:nth-of-type(even) {
-			@include pc {
-				margin-left: 20px;
-			}
-		}
-		&:nth-of-type(n+3) {
-			@include pc {
-				margin-top: 20px;
-			}
-		}
-		&:nth-of-type(n+2) {
-			@include sp {
-				margin-top: 10px;
-			}
-		}
-		&--01 {
-			background: url(#{$img_path}/kasou/sample01.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/sample02_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--02 {
-			background: url(#{$img_path}/kasou/sample01.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/sample02_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--03 {
-			background: url(#{$img_path}/kasou/sample01.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/sample02_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--04 {
-			background: url(#{$img_path}/kasou/sample01.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/sample02_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-	}
-	&__gooddesign {
-		@extend .textImage;
-		display: inline-block;
-		margin-top: 15px;
-		width: 116px;
-		height: 50px;
-		background: url(#{$img_path}/kasou/logo_gooddesign.png) left top no-repeat;
-		float: right;
-		@include sp {
-			width: 58px;
-			height: 25px;
-			background: url(#{$img_path}/kasou/logo_gooddesign_sp.png) left top no-repeat;
-			background-size: 100%;
-		}
-	}
-	&__text {
-		@extend .smallText;
-		padding: 20px 0 0 5px;
-		line-height: 1.8;
-		@include sp {
-			padding: 15px 0 0 0;
-		}
 	}
 }
 .illust {
@@ -1925,14 +2121,8 @@ button {
 	}
 }
 .topMain,
-.topVisual,
-.background01{
-	background: url(#{$img_path}/background-B.png) left top repeat;
-	background-size: contain;
-}
-.background02 {
-	background: url(#{$img_path}/background-A.png) left top repeat;
-	background-size: contain;
+.topVisual {
+	@extend .background01
 }
 .section {
 	margin: 0 auto;
@@ -2156,6 +2346,14 @@ button {
 		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
 		height: 325px;
 		background-size: cover;
+		@include sp {
+			position: relative;
+			background: url(#{$img_path}/kasou/main01_small_sp.png) center top no-repeat;
+			background-size: cover;
+			height: 0;
+			padding-top: 29.53125%;
+			margin-top: 44px;
+		}
 	}
 	&__wrapper {
 		padding: 220px 0 0;
@@ -2171,8 +2369,17 @@ button {
 			margin: auto auto;
 		}
 		&--small {
-			@include pc {
-				padding: 150px 0 0;
+			padding: 150px 0 0;
+			@include sp {
+				width: 320px;
+				height: 50px;
+				padding: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto auto;
 			}
 		}
 	}
@@ -2202,26 +2409,6 @@ button {
 }
 .backgroundLead {
 	@extend .background02;
-}
-.breadcrumb {
-	width: $commonWidthPc;
-	padding-top: 12px;
-	margin: 0 auto;
-	font-size: 0;
-	@include sp {
-		display: none;
-	}
-	&__item {
-		display: inline-block;
-		font-size: 13px;
-	}
-	&__arrow {
-		margin: 0 5px;
-	}
-	&__link {
-		color: $linkColor;
-	}
-
 }
 .subtitleSection {
 	margin: 70px auto 0;
