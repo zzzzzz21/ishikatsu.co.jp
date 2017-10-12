@@ -2255,6 +2255,7 @@ button {
 		}
 	}
 }
+/* ニュース関連 */
 .newsList {
 	display: inline-block;
 	vertical-align: top;
@@ -2268,36 +2269,60 @@ button {
 		font-size: 12px;
 	}
 	&__item {
-		@include sp {
-			border-bottom: 1px dotted $commonBlack;
-			padding-bottom: 5px;
-		}
+		display: table;
+		width: 100%;
 		&:nth-of-type(n+2) {
 			margin-top: 12px;
 			@include sp {
-				margin-top: 10px;
+				margin-top: 11px;
+			}
+		}
+		@include sp {
+			border-bottom: 1px dotted $commonBlack;
+			padding-bottom: 8px;
+		}
+		&.newsList__item--detail {
+			border-bottom: 1px solid $rightGray;
+			@include pc {
+				height: 100px;
+				&:nth-of-type(n+2) {
+					margin-top: 0;
+				}
+			}
+			@include sp {
+				border-bottom: 1px dotted $rightGray;
+				padding-bottom: 30px;
 			}
 		}
 	}
-	&__text {
-		display: table;
-		line-height: 1.8;
+	&__Timetext {
+		display: table-cell;
+		width: 182px;
+		vertical-align: middle;
 		@include sp {
-			line-height: 1.5;
+			display: block;
+		}
+	}
+	&__Linktext {
+		display: table-cell;
+		line-height: 1.8;
+		vertical-align: middle;
+		position: relative;
+		@include sp {
+			line-height: 1.1;
+			display: block;
+			margin-top: 7px;
+		}
+		&.newsList__Linktext--detail {
+			@include sp {
+				line-height: 1.5;
+				margin-top: 4px;
+			}
 		}
 	}
 	&__date {
-		display: table-cell;
-		width: 177px;
-		@include sp {
-			display: table-row;
-		}
 	}
 	&__link {
-		display: table-cell;
-		@include sp {
-			display: table-row;
-		}
 		&--blank:after {
 			content: "";
 			background: url(#{$img_path}/icon-blank.png) left top no-repeat;
@@ -2312,7 +2337,53 @@ button {
 			width: 16px;
 			height: 17px;
 		}
+		&.newsList__link--detail {
+			max-width: 753px;
+			display: inline-block;
+			&::before {
+			content: '';
+			width: 18px;
+			height: 18px;
+			border: 0px;
+			border-top: solid 2px $middleGreen;
+			border-right: solid 2px $middleGreen;
+			-ms-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 20px;
+			margin: auto;
+			}
+			@include sp {
+				width: 90%;
+				&::before {
+					width: 10px;
+					height: 10px;
+					right: -5px;
+				}
+			}
+		}
 	}
+	&.newsList--detail {
+		margin: 100px auto 0;
+		width: 1080px;
+		display: block;
+		@include pc {
+			border-top: 1px solid $rightGray;
+			font-size: 16px;
+			letter-spacing: .05em;
+		}
+		@include sp {
+			width: 92%;
+			margin: 14px auto 0;
+		}
+	}
+}
+.sectionNewsList {
+	width: $commonWidthPc;
+	margin: 0 auto;
 }
 .newsDetail {
 	display: none;
@@ -2324,6 +2395,100 @@ button {
 		width: 210px;
 		margin: 50px auto 0;
 		border: 1px solid $commonBlack;
+	}
+}
+.pagerButton {
+	@extend .clearfix;
+	width: $commonWidthPc;
+	margin: 170px auto 0;
+	&__item {
+		display: inline-block;
+		font-weight: bold;
+		width: 80px;
+		color: $middleGreen;
+		&.pagerButton__item--prev {
+			float: left;
+			text-align: right;
+			margin-left: 20px;
+		}
+		&.pagerButton__item--next {
+			float: right;
+			margin-right: 20px;
+		}
+		@include sp {
+			width: 35px;
+		}
+	}
+	&__link {
+		position: relative;
+		display: block;
+		font-weight: bold;
+		color: $middleGreen;
+		&::after {
+			content: '';
+			width: 10px;
+			height: 10px;
+			border: 0px;
+			border-top: solid 2px $middleGreen;
+			border-right: solid 2px $middleGreen;
+			-ms-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+			@include sp {
+				right: -20px;
+			}
+		}
+		&--prev::after {
+			border-top: solid 2px $middleGreen;
+			border-right: solid 2px $middleGreen;
+			-ms-transform: rotate(230deg);
+			-webkit-transform: rotate(230deg);
+			transform: rotate(230deg);
+			left: -60px;
+			right: 0;
+			@include sp {
+				left: -55px;
+			}
+		}
+		@include sp {
+			font-size: 10px;
+		}
+	}
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 52px auto 0;
+	}
+}
+.pagerNumber {
+	text-align: center;
+	width: $commonWidthPc;
+	margin: -13px auto 228px;
+	@include sp {
+		margin: -13px auto 110px;
+		width: 100%;
+	}
+	&__item {
+		display: inline-block;
+		&:nth-of-type(n+2) {
+			margin-left: 13px;
+			@include sp {
+				margin-left: 9px;
+			}
+		}
+	}
+	&__link {
+		font-size: 18px;
+		@include sp {
+			font-size: 12px;
+		}
+		&.pagerNumber__link--current {
+			color: $middleGreen;
+		}
 	}
 }
 .aboutList.aboutList--top {
@@ -2341,6 +2506,7 @@ button {
 		margin: 20px auto 0;
 	}
 }
+
 /* 下層ページ */
 .underTop {
 	background: url(#{$img_path}/kasou/main01.png) center top no-repeat;
