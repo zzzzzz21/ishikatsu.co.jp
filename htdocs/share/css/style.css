@@ -378,13 +378,18 @@ button {
     width: 93.75%;
   }
 }
+.doorNav__link {
+  display: block;
+}
 .doorNav__item {
   display: inline-block;
   padding: 0 0 68px;
+  width: 520px;
 }
 @media (max-width: 767px) {
   .doorNav__item {
     padding: 0 0 45px;
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -460,6 +465,11 @@ button {
 .doorNav__text {
   margin-top: 4px;
 }
+@media (min-width: 768px) {
+  .doorNav__text {
+    min-height: 54px;
+  }
+}
 @media (max-width: 767px) {
   .doorNav__text {
     width: 100%;
@@ -467,17 +477,21 @@ button {
 }
 .doorNav__right {
   text-align: right;
-  margin-top: 30px;
 }
-.doorNav__link {
+@media (max-width: 767px) {
+  .doorNav__right {
+    margin-top: 30px;
+  }
+}
+.doorNav__button {
   position: relative;
 }
 @media (max-width: 767px) {
-  .doorNav__link {
+  .doorNav__button {
     width: 56%;
   }
 }
-.doorNav__link::after {
+.doorNav__button::after {
   content: "＞";
   display: inline-block;
   position: absolute;
@@ -486,8 +500,7 @@ button {
 
 /* 第3階層ナビゲーション */
 .underNav__list {
-  width: 1080px;
-  text-align: center;
+  width: 925px;
   margin: 0 auto;
   font-size: 0;
 }
@@ -499,9 +512,20 @@ button {
 }
 .underNav__item {
   display: inline-block;
-  width: 145px;
-  line-height: 54px;
-  background: white;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .underNav__item {
+    margin: 5px;
+    /*
+    &:nth-of-type(6n+1) {
+    	margin-left: 0;
+    }
+    &:nth-of-type(n+7) {
+    	margin-top: 10px;
+    }
+    */
+  }
 }
 @media (max-width: 767px) {
   .underNav__item {
@@ -509,6 +533,7 @@ button {
     line-height: 34px;
     margin-left: 2%;
     text-align: center;
+    font-size: 11px;
   }
   .underNav__item:nth-of-type(3n+1) {
     margin-left: 0;
@@ -517,24 +542,19 @@ button {
     margin-top: 8px;
   }
 }
-@media (min-width: 768px) {
-  .underNav__item:nth-of-type(n+2) {
-    margin-left: 10px;
-  }
-}
 .underNav__link {
-  width: 100%;
-  display: block;
+  display: inline-block;
   border-radius: 10px;
+  background: white;
+  padding: 0 2em;
+  line-height: 54px;
 }
 @media (max-width: 767px) {
   .underNav__link {
+    padding: 0;
     border-radius: 5px;
+    width: 100%;
   }
-}
-.underNav__link.underNav__link--current {
-  color: white;
-  background: #018643;
 }
 
 /* 第3.5階層ナビゲーション */
@@ -1138,18 +1158,18 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .greenButtons .greenButton, .greenButtons .doorNav__link {
+  .greenButtons .greenButton, .greenButtons .doorNav__button {
     display: inline-block;
   }
-  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__link:nth-of-type(1) {
+  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1) {
     margin-left: 75px;
   }
-  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__link:nth-of-type(2) {
+  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2) {
     margin: 0 23px 0 92px;
   }
 }
 
-.greenButton, .doorNav__link {
+.greenButton, .doorNav__button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -1177,18 +1197,18 @@ button {
   padding: 1.28em 1em;
 }
 @media (min-width: 768px) {
-  .greenButton, .doorNav__link {
+  .greenButton, .doorNav__button {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  .greenButton:hover, .doorNav__link:hover {
+  .greenButton:hover, .doorNav__button:hover {
     background: #119357;
     color: white;
     opacity: 1;
   }
 }
 @media (max-width: 767px) {
-  .greenButton, .doorNav__link {
+  .greenButton, .doorNav__button {
     display: block;
     margin: 0 auto;
   }
