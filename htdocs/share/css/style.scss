@@ -690,6 +690,7 @@ button {
 	&__item {
 		width: 50%;
 		float: left;
+		overflow: hidden;
 		@include sp {
 			width: 100%;
 			float: none;
@@ -701,6 +702,15 @@ button {
 		width: 100%;
 		height: 0;
 		padding-top: 50.34965%; /* (360/715) * 100% */
+		transition: transform .3s;
+		&:hover {
+			@include pc {
+				transform: scale(1.2);
+				& > .aboutList__text {
+					transform: scale(0.8333333333333);
+				}
+			}
+		}
 		@include sp {
 			padding-top: 50.3125%; /* (322/640) * 100% */
 		}
@@ -739,6 +749,7 @@ button {
 	}
 	&__text {
 		@extend .TopNavigationText;
+		transition: transform .3s;
 	}
 }
 .borderTop {
@@ -1060,6 +1071,12 @@ button {
 			@include sp {
 				heigth: 48px;
 				line-height: 1.5;
+			}
+		}
+		&.bannerCircle__text--01 {
+			height: 48px;
+			@include sp {
+				height: 32px;
 			}
 		}
 	}
@@ -1506,13 +1523,13 @@ button {
 	left: 0;
 	top:0;
 	z-index: 2;
-	background: rgba(255,255,255, 0.7);
+	background: rgba(255,255,255, 0.9);
 	@include sp {
 		position: fixed;
 	}
 	&.header--active {
 		@include pc {
-			background: rgba(255,255,255,0.7);
+			background: rgba(255,255,255,0.9);
 		}
 	}
 	&--top {
@@ -1520,7 +1537,7 @@ button {
 	}
 	&__buttons {
 		@include sp {
-			background: rgba(255,255,255,0.7);
+			background: rgba(255,255,255,0.9);
 		}
 	}
 	&__wrapper {
@@ -1545,7 +1562,7 @@ button {
 			width: 167px;
 			height: 28px;
 			display: inline-block;
-			margin: 10px 0 0 10px;
+			margin: 10px 0 4px 10px;
 		}
 	}
 	&__button {
@@ -2089,6 +2106,9 @@ button {
 	z-index: 1;
 	overflow: hidden;
 	display: none;
+	@include sp {
+		margin-top: 44px;
+	}
 	&__image {
 		width: 100%;
 	}
@@ -2110,8 +2130,8 @@ button {
 		}
 		& > li {
 			display: inline-block;
-			width: 17px;
-			height: 17px;
+			width: 12px;
+			height: 12px;
 			background: rgb(247,255,255);
 			border-radius: 50%;
 			@include sp {
@@ -2145,7 +2165,7 @@ button {
 		font-size: 0;
 		@include sp {
 			width: $commonWidthSp;
-			padding: 60px 0 0;
+			padding: 15px 0 0;
 		}
 	}
 	&--about {
@@ -2301,6 +2321,8 @@ button {
 		vertical-align: middle;
 		@include sp {
 			display: block;
+			font-size: 13px;
+			letter-spacing: .05em;
 		}
 	}
 	&__Linktext {
@@ -2376,8 +2398,36 @@ button {
 			letter-spacing: .05em;
 		}
 		@include sp {
-			width: 92%;
+			width: $commonWidthSp02;
 			margin: 14px auto 0;
+		}
+	}
+}
+.YearsNews {
+	width: $commonWidthPc;
+	margin: 0 auto;
+	@include sp {
+		width: $commonWidthSp02;
+	}
+	&__title {
+		@extend .middleHeadline--green;
+		color: $middleGray;
+		margin-top: 100px;
+		@include sp {
+			text-align: left;
+			font-size: 18px;
+			padding-left: 5px;
+			border-left: 3px solid $middleGreen;
+			margin-top: 26px;
+		}
+		& + .newsList.newsList--detail {
+			margin-top: 70px;
+			@include sp {
+				width: $width-100;
+				border-top: 1px dotted $rightGray;
+				margin-top: 20px;
+				padding-top: 8px;
+			}
 		}
 	}
 }
@@ -2469,7 +2519,7 @@ button {
 	width: $commonWidthPc;
 	margin: -13px auto 228px;
 	@include sp {
-		margin: -13px auto 110px;
+		margin: -13px auto 90px;
 		width: 100%;
 	}
 	&__item {
@@ -2488,6 +2538,82 @@ button {
 		}
 		&.pagerNumber__link--current {
 			color: $middleGreen;
+		}
+	}
+	&--detail {
+		@include pc {
+			display: none;
+		}
+	}
+}
+/* ニュース詳細 */
+.newsArticle {
+	width: $commonWidthPc;
+	margin: 60px auto 0;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 15px auto 0;
+	}
+	&__title {
+		@extend .middleHeadline;
+		color: $middleGreen;
+		padding: 0;
+		margin-top: 10px;
+		line-height: 1.5;
+		text-align: left;
+		@include sp {
+			margin-top: 5px;
+		}
+	}
+	&__content {
+		border-top: 1px solid $middleGray;
+		border-bottom: 1px solid $middleGray;
+		padding: 28px 0 50px;
+		margin-top: 28px;
+		font-size: 17px;
+		line-height: 1.8;
+		@include sp {
+			border-top: 1px solid #666666;
+			border-bottom: 1px solid #666666;
+			padding: 14px 0 20px;
+			margin-top: 8px;
+			font-size: 12px;
+			line-height: 1.8;
+		}
+	}
+	&__dl {
+		display: table;
+	}
+	&__dt {
+		display: table-cell;
+		@include sp {
+			width: 4em;
+		}
+	}
+	&__dd {
+		display: table-cell;
+	}
+	&__time {
+		@include sp {
+			font-size: 13px;
+			letter-spacing: .05em;
+		}
+	}
+}
+.articleButton {
+	text-align: center;
+	margin: -30px auto 85px;
+	&__link {
+		@extend .greenButton;
+		position: relative;
+		&::after {
+			content:"＜";
+			display: inline-block;
+			position: absolute;
+			left: 5px;
+		}
+		@include sp {
+			width: 46%;
 		}
 	}
 }

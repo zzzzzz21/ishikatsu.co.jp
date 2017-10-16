@@ -293,14 +293,14 @@ button {
   }
 }
 
-.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .tableSample__title, .topDl__dt {
+.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .tableSample__title, .YearsNews__title, .topDl__dt, .newsArticle__title {
   font-size: 30px;
   padding: 5px 0 0 15px;
   font-weight: normal;
   letter-spacing: .02em;
 }
 @media (max-width: 767px) {
-  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .tableSample__title, .topDl__dt {
+  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .tableSample__title, .YearsNews__title, .topDl__dt, .newsArticle__title {
     font-size: 20px;
     padding: 0;
     letter-spacing: 0;
@@ -318,12 +318,12 @@ button {
   }
 }
 
-.middleHeadline--green, .tableSample__title, .topDl__dt {
+.middleHeadline--green, .tableSample__title, .YearsNews__title, .topDl__dt {
   color: #018643;
   border-left: 5px solid #018643;
 }
 @media (max-width: 767px) {
-  .middleHeadline--green, .tableSample__title, .topDl__dt {
+  .middleHeadline--green, .tableSample__title, .YearsNews__title, .topDl__dt {
     border: none;
   }
 }
@@ -743,6 +743,7 @@ button {
 .aboutList__item {
   width: 50%;
   float: left;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .aboutList__item {
@@ -756,6 +757,20 @@ button {
   height: 0;
   padding-top: 50.34965%;
   /* (360/715) * 100% */
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+@media (min-width: 768px) {
+  .aboutList__link:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .aboutList__link:hover > .aboutList__text {
+    -webkit-transform: scale(0.83333);
+            transform: scale(0.83333);
+  }
 }
 @media (max-width: 767px) {
   .aboutList__link {
@@ -802,6 +817,12 @@ button {
     background: url(../images/about_navi04_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
+}
+.aboutList__text {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .borderTop--green {
@@ -1149,6 +1170,14 @@ button {
     line-height: 1.5;
   }
 }
+.bannerCircle__text.bannerCircle__text--01 {
+  height: 48px;
+}
+@media (max-width: 767px) {
+  .bannerCircle__text.bannerCircle__text--01 {
+    height: 32px;
+  }
+}
 
 /* マウスオン時に緑色に変化するボタン */
 @media (min-width: 768px) {
@@ -1158,18 +1187,18 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .greenButtons .greenButton, .greenButtons .doorNav__button {
+  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link {
     display: inline-block;
   }
-  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1) {
+  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1) {
     margin-left: 75px;
   }
-  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2) {
+  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2) {
     margin: 0 23px 0 92px;
   }
 }
 
-.greenButton, .doorNav__button {
+.greenButton, .doorNav__button, .articleButton__link {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -1197,18 +1226,18 @@ button {
   padding: 1.28em 1em;
 }
 @media (min-width: 768px) {
-  .greenButton, .doorNav__button {
+  .greenButton, .doorNav__button, .articleButton__link {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  .greenButton:hover, .doorNav__button:hover {
+  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover {
     background: #119357;
     color: white;
     opacity: 1;
   }
 }
 @media (max-width: 767px) {
-  .greenButton, .doorNav__button {
+  .greenButton, .doorNav__button, .articleButton__link {
     display: block;
     margin: 0 auto;
   }
@@ -1676,7 +1705,7 @@ button {
   left: 0;
   top: 0;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
 }
 @media (max-width: 767px) {
   .header {
@@ -1685,7 +1714,7 @@ button {
 }
 @media (min-width: 768px) {
   .header.header--active {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9);
   }
 }
 .header--top {
@@ -1693,7 +1722,7 @@ button {
 }
 @media (max-width: 767px) {
   .header__buttons {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9);
   }
 }
 .header__wrapper {
@@ -1721,7 +1750,7 @@ button {
     width: 167px;
     height: 28px;
     display: inline-block;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 4px 10px;
   }
 }
 .header__button {
@@ -2338,6 +2367,11 @@ button {
   overflow: hidden;
   display: none;
 }
+@media (max-width: 767px) {
+  .carousel {
+    margin-top: 44px;
+  }
+}
 .carousel__image {
   width: 100%;
 }
@@ -2362,8 +2396,8 @@ button {
 }
 .carousel__dots > li {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 12px;
+  height: 12px;
   background: #f7ffff;
   border-radius: 50%;
 }
@@ -2399,7 +2433,7 @@ button {
 @media (max-width: 767px) {
   .section--news {
     width: 92%;
-    padding: 60px 0 0;
+    padding: 15px 0 0;
   }
 }
 .section--about {
@@ -2578,6 +2612,8 @@ button {
 @media (max-width: 767px) {
   .newsList__Timetext {
     display: block;
+    font-size: 13px;
+    letter-spacing: .05em;
   }
 }
 .newsList__Linktext {
@@ -2656,8 +2692,42 @@ button {
 }
 @media (max-width: 767px) {
   .newsList.newsList--detail {
-    width: 92%;
+    width: 93.75%;
     margin: 14px auto 0;
+  }
+}
+
+.YearsNews {
+  width: 1080px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .YearsNews {
+    width: 93.75%;
+  }
+}
+.YearsNews__title {
+  color: #666666;
+  margin-top: 100px;
+}
+@media (max-width: 767px) {
+  .YearsNews__title {
+    text-align: left;
+    font-size: 18px;
+    padding-left: 5px;
+    border-left: 3px solid #018643;
+    margin-top: 26px;
+  }
+}
+.YearsNews__title + .newsList.newsList--detail {
+  margin-top: 70px;
+}
+@media (max-width: 767px) {
+  .YearsNews__title + .newsList.newsList--detail {
+    width: 100%;
+    border-top: 1px dotted #cccccc;
+    margin-top: 20px;
+    padding-top: 8px;
   }
 }
 
@@ -2763,7 +2833,7 @@ button {
 }
 @media (max-width: 767px) {
   .pagerNumber {
-    margin: -13px auto 110px;
+    margin: -13px auto 90px;
     width: 100%;
   }
 }
@@ -2788,6 +2858,92 @@ button {
 }
 .pagerNumber__link.pagerNumber__link--current {
   color: #018643;
+}
+@media (min-width: 768px) {
+  .pagerNumber--detail {
+    display: none;
+  }
+}
+
+/* ニュース詳細 */
+.newsArticle {
+  width: 1080px;
+  margin: 60px auto 0;
+}
+@media (max-width: 767px) {
+  .newsArticle {
+    width: 93.75%;
+    margin: 15px auto 0;
+  }
+}
+.newsArticle__title {
+  color: #018643;
+  padding: 0;
+  margin-top: 10px;
+  line-height: 1.5;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .newsArticle__title {
+    margin-top: 5px;
+  }
+}
+.newsArticle__content {
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+  padding: 28px 0 50px;
+  margin-top: 28px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+@media (max-width: 767px) {
+  .newsArticle__content {
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    padding: 14px 0 20px;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+}
+.newsArticle__dl {
+  display: table;
+}
+.newsArticle__dt {
+  display: table-cell;
+}
+@media (max-width: 767px) {
+  .newsArticle__dt {
+    width: 4em;
+  }
+}
+.newsArticle__dd {
+  display: table-cell;
+}
+@media (max-width: 767px) {
+  .newsArticle__time {
+    font-size: 13px;
+    letter-spacing: .05em;
+  }
+}
+
+.articleButton {
+  text-align: center;
+  margin: -30px auto 85px;
+}
+.articleButton__link {
+  position: relative;
+}
+.articleButton__link::after {
+  content: "＜";
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+}
+@media (max-width: 767px) {
+  .articleButton__link {
+    width: 46%;
+  }
 }
 
 .aboutList.aboutList--top {
