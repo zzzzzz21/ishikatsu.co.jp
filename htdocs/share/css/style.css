@@ -157,7 +157,7 @@ button {
           appearance: none;
 }
 
-.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .photoCol3:after, .photoCol4:after, .archive__list:after, .techNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .contentSection:after, .processList:after, .exampleList:after, .techList:after {
+.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .photoCol3:after, .photoCol4:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .contentSection:after, .processList:after, .exampleList:after {
   content: "";
   clear: both;
   display: block;
@@ -181,7 +181,7 @@ button {
   }
 }
 
-.textImage, .archive__gooddesign, .techNav__link, .linkList__link, .illust, .header__icon, .footer__button, .topDl__photo, .processList__photo, .exampleList__photo, .techList__link {
+.textImage, .archive__gooddesign, .techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link, .linkList__link, .illust, .header__icon, .footer__button, .topDl__photo, .processList__photo, .exampleList__photo, .techList__link, .philosophySection__banner {
   display: block;
   height: 0;
   text-indent: 100%;
@@ -214,11 +214,11 @@ button {
 }
 
 /* 各フォント */
-.middleText, .underNav__item, .subBreadcrumb__item {
+.middleText, .underNav__item, .subBreadcrumb__item, .serviceList__text, .philosophySection__lead {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .middleText, .underNav__item, .subBreadcrumb__item {
+  .middleText, .underNav__item, .subBreadcrumb__item, .serviceList__text, .philosophySection__lead {
     font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
@@ -233,19 +233,19 @@ button {
     line-height: 1.7;
   }
 }
-.middleText--left {
+.middleText--left, .serviceList__text, .philosophySection__lead {
   line-height: 1.7;
 }
-.middleText--left + .middleText--left {
+.middleText--left + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .middleText--left + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead {
   margin-top: 18px;
 }
 
-.smallText, .doorNav__subTitle, .doorNav__text, .archive__text {
+.smallText, .doorNav__subTitle, .doorNav__text, .archive__text, .serviceList__smallText {
   font-size: 14px;
   line-height: 1.75;
 }
 @media (max-width: 767px) {
-  .smallText, .doorNav__subTitle, .doorNav__text, .archive__text {
+  .smallText, .doorNav__subTitle, .doorNav__text, .archive__text, .serviceList__smallText {
     font-size: 12px;
     line-height: 1.6;
     width: 93.75%;
@@ -253,7 +253,7 @@ button {
   }
 }
 
-.hugeHeadline {
+.hugeHeadline, .philosophySection__title, .philosophySection__head {
   color: #009933;
   font-size: 38px;
   text-align: center;
@@ -261,7 +261,7 @@ button {
   line-height: 0.9;
 }
 @media (max-width: 767px) {
-  .hugeHeadline {
+  .hugeHeadline, .philosophySection__title, .philosophySection__head {
     font-size: 23px;
     line-height: 0.7;
   }
@@ -293,14 +293,14 @@ button {
   }
 }
 
-.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .tableSample__title, .YearsNews__title, .topDl__dt, .newsArticle__title {
+.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
   font-size: 30px;
   padding: 5px 0 0 15px;
   font-weight: normal;
   letter-spacing: .02em;
 }
 @media (max-width: 767px) {
-  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .tableSample__title, .YearsNews__title, .topDl__dt, .newsArticle__title {
+  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
     font-size: 20px;
     padding: 0;
     letter-spacing: 0;
@@ -318,23 +318,32 @@ button {
   }
 }
 
-.middleHeadline--green, .tableSample__title, .YearsNews__title, .topDl__dt {
+.middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt {
   color: #018643;
   border-left: 5px solid #018643;
 }
 @media (max-width: 767px) {
-  .middleHeadline--green, .tableSample__title, .YearsNews__title, .topDl__dt {
+  .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt {
     border: none;
   }
 }
 
-.smallHeadline, .doorNav__title, .contentSection__largeText {
+.middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title {
+  color: #666666;
+}
+@media (max-width: 767px) {
+  .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title {
+    margin-top: 26px;
+  }
+}
+
+.smallHeadline, .doorNav__title, .contentSection__largeText, .serviceList__subTitle {
   color: #666666;
   font-size: 24px;
   font-weight: normal;
 }
 @media (max-width: 767px) {
-  .smallHeadline, .doorNav__title, .contentSection__largeText {
+  .smallHeadline, .doorNav__title, .contentSection__largeText, .serviceList__subTitle {
     font-size: 15px;
     line-height: 1.4;
     text-align: center;
@@ -364,8 +373,14 @@ button {
   color: #333333;
 }
 
-.breadcrumb + .underNav {
+.breadcrumb + .underNav__list {
   margin-top: 48px;
+}
+@media (max-width: 767px) {
+  .breadcrumb + .underNav__list {
+    margin-top: 0;
+    padding-top: 10px;
+  }
 }
 
 /* 第2階層ナビゲーション */
@@ -549,12 +564,22 @@ button {
   padding: 0 2em;
   line-height: 54px;
 }
+@media (min-width: 768px) {
+  .underNav__link {
+    min-width: 144px;
+  }
+}
 @media (max-width: 767px) {
   .underNav__link {
     padding: 0;
     border-radius: 5px;
     width: 100%;
+    line-height: 36px;
   }
+}
+.underNav__link.underNav__link--current {
+  background: #018643;
+  color: white;
 }
 
 /* 第3.5階層ナビゲーション */
@@ -675,7 +700,7 @@ button {
   }
 }
 
-.commonTable, .tableSample__table {
+.commonTable, .tableSample__table, .companyTable01 {
   border: 1px solid #8e8e8e;
   border-collapse: collapse;
   font-size: 18px;
@@ -684,7 +709,7 @@ button {
   width: 100%;
 }
 @media (max-width: 767px) {
-  .commonTable, .tableSample__table {
+  .commonTable, .tableSample__table, .companyTable01 {
     font-size: 12px;
     line-height: 1.7;
     width: 93.75%;
@@ -693,45 +718,45 @@ button {
   }
 }
 @media (max-width: 767px) {
-  .commonTable__tr:last-of-type {
+  .commonTable__tr:last-of-type, .companyTable01__tr:last-of-type {
     border-bottom: 1px solid #8e8e8e;
   }
 }
-.commonTable__th {
+.commonTable__th, .companyTable01__th {
   background: #cccccc;
   font-weight: normal;
   border: 1px solid #8e8e8e;
   border-collapse: collapse;
   padding: 10px 0 4px 20px;
-  width: 142px;
+  width: 112px;
 }
 @media (max-width: 767px) {
-  .commonTable__th {
+  .commonTable__th, .companyTable01__th {
     display: block;
     width: 100%;
     padding: 6px 10px 1px 10px;
     border-bottom: none;
   }
 }
-.commonTable__td {
+.commonTable__td, .companyTable01__td {
   border: 1px solid #8e8e8e;
   border-collapse: collapse;
   padding: 0 0 4px 20px;
   width: 726px;
 }
 @media (max-width: 767px) {
-  .commonTable__td {
+  .commonTable__td, .companyTable01__td {
     display: block;
     width: 100%;
     padding: 6px 10px 1px 10px;
     border-bottom: none;
   }
 }
-.commonTable__td--multiLine {
+.commonTable__td--multiLine, .companyTable01__td.companyTable01__td--multiLine {
   padding-bottom: 17px;
 }
 @media (max-width: 767px) {
-  .commonTable__td--multiLine {
+  .commonTable__td--multiLine, .companyTable01__td.companyTable01__td--multiLine {
     padding-bottom: 6px;
   }
 }
@@ -855,6 +880,7 @@ button {
 
 .photoCol2__item {
   display: inline-block;
+  width: 520px;
 }
 @media (max-width: 767px) {
   .photoCol2__item {
@@ -868,6 +894,15 @@ button {
 @media (max-width: 767px) {
   .photoCol2__item:nth-of-type(even) {
     float: none;
+  }
+}
+@media (min-width: 768px) {
+  .photoCol2__item:nth-of-type(n+3) {
+    margin-top: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .photoCol2__item:nth-of-type(n+2) {
     margin: 20px auto 0;
   }
 }
@@ -875,6 +910,7 @@ button {
 .photoCol3__item {
   float: left;
   display: inline-block;
+  width: 338px;
 }
 @media (max-width: 767px) {
   .photoCol3__item {
@@ -1187,18 +1223,18 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link {
+  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link, .greenButtons .companyContent__button01 {
     display: inline-block;
   }
-  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1) {
+  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1), .greenButtons .companyContent__button01:nth-of-type(1) {
     margin-left: 75px;
   }
-  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2) {
+  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2), .greenButtons .companyContent__button01:nth-of-type(2) {
     margin: 0 23px 0 92px;
   }
 }
 
-.greenButton, .doorNav__button, .articleButton__link {
+.greenButton, .doorNav__button, .articleButton__link, .companyContent__button01 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -1210,10 +1246,10 @@ button {
   vertical-align: middle;
   margin: 0 auto;
 }
-.greenButton--pdf {
+.greenButton--pdf, .companyContent__button01 {
   padding: .8em 2em;
 }
-.greenButton--pdf::before {
+.greenButton--pdf::before, .companyContent__button01::before {
   content: "";
   background: url(../images/kasou/icon-pdf02.png) left top no-repeat;
   width: 24px;
@@ -1226,64 +1262,88 @@ button {
   padding: 1.28em 1em;
 }
 @media (min-width: 768px) {
-  .greenButton, .doorNav__button, .articleButton__link {
+  .greenButton, .doorNav__button, .articleButton__link, .companyContent__button01 {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover {
+  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover, .companyContent__button01:hover {
     background: #119357;
     color: white;
     opacity: 1;
   }
 }
 @media (max-width: 767px) {
-  .greenButton, .doorNav__button, .articleButton__link {
+  .greenButton, .doorNav__button, .articleButton__link, .companyContent__button01 {
     display: block;
     margin: 0 auto;
   }
 }
 
-/* 技術紹介バナー */
-.techNav {
+/* 技術紹介ナビ */
+.techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
+  margin: 90px 0 130px;
+}
+@media (max-width: 767px) {
+  .techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
+    width: 93.75%;
+    margin: 56px auto 50px;
+    text-align: center;
+  }
+}
+.techList__title, .companyList__title, .worksList__title, .managementList__title, .attemptList__title, .recruitList__title {
+  display: inline-block;
+  border-bottom: 3px solid #119357;
+  font-weight: normal;
+  font-size: 22px;
+  padding-bottom: 8px;
+}
+@media (max-width: 767px) {
+  .techList__title, .companyList__title, .worksList__title, .managementList__title, .attemptList__title, .recruitList__title {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+}
+
+.techNav, .companyNav, .worksNav, .managementNav, .attemptNav, .recruitNav {
   margin: 24px auto 0;
 }
 @media (max-width: 767px) {
-  .techNav {
+  .techNav, .companyNav, .worksNav, .managementNav, .attemptNav, .recruitNav {
     width: 93.75%;
     margin: 20px auto 0;
   }
 }
-.techNav__item {
+.techNav__item, .companyNav__item, .worksNav__item, .managementNav__item, .attemptNav__item, .recruitNav__item {
   width: 339px;
   display: inline-block;
   float: left;
   margin: 0 0 0 31.5px;
 }
 @media (min-width: 768px) {
-  .techNav__item:nth-of-type(3n+1) {
+  .techNav__item:nth-of-type(3n+1), .companyNav__item:nth-of-type(3n+1), .worksNav__item:nth-of-type(3n+1), .managementNav__item:nth-of-type(3n+1), .attemptNav__item:nth-of-type(3n+1), .recruitNav__item:nth-of-type(3n+1) {
     margin-left: 0;
   }
-  .techNav__item:nth-of-type(n+4) {
+  .techNav__item:nth-of-type(n+4), .companyNav__item:nth-of-type(n+4), .worksNav__item:nth-of-type(n+4), .managementNav__item:nth-of-type(n+4), .attemptNav__item:nth-of-type(n+4), .recruitNav__item:nth-of-type(n+4) {
     margin-top: 27px;
   }
 }
 @media (max-width: 767px) {
-  .techNav__item {
+  .techNav__item, .companyNav__item, .worksNav__item, .managementNav__item, .attemptNav__item, .recruitNav__item {
     display: block;
     width: 100%;
     float: none;
     margin: 0 auto;
   }
-  .techNav__item + .techNav__item {
+  .techNav__item + .techNav__item, .companyNav__item + .techNav__item, .worksNav__item + .techNav__item, .managementNav__item + .techNav__item, .attemptNav__item + .techNav__item, .recruitNav__item + .techNav__item, .techNav__item + .companyNav__item, .companyNav__item + .companyNav__item, .worksNav__item + .companyNav__item, .managementNav__item + .companyNav__item, .attemptNav__item + .companyNav__item, .recruitNav__item + .companyNav__item, .techNav__item + .worksNav__item, .companyNav__item + .worksNav__item, .worksNav__item + .worksNav__item, .managementNav__item + .worksNav__item, .attemptNav__item + .worksNav__item, .recruitNav__item + .worksNav__item, .techNav__item + .managementNav__item, .companyNav__item + .managementNav__item, .worksNav__item + .managementNav__item, .managementNav__item + .managementNav__item, .attemptNav__item + .managementNav__item, .recruitNav__item + .managementNav__item, .techNav__item + .attemptNav__item, .companyNav__item + .attemptNav__item, .worksNav__item + .attemptNav__item, .managementNav__item + .attemptNav__item, .attemptNav__item + .attemptNav__item, .recruitNav__item + .attemptNav__item, .techNav__item + .recruitNav__item, .companyNav__item + .recruitNav__item, .worksNav__item + .recruitNav__item, .managementNav__item + .recruitNav__item, .attemptNav__item + .recruitNav__item, .recruitNav__item + .recruitNav__item {
     margin-top: 17px;
   }
 }
-.techNav__link {
+.techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link {
   width: 339px;
   height: 54px;
 }
 @media (max-width: 767px) {
-  .techNav__link {
+  .techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link {
     width: 100%;
     height: 0;
     padding-top: 16%;
@@ -1367,6 +1427,205 @@ button {
 @media (max-width: 767px) {
   .techNav__link--09 {
     background: url(../images/kasou/tech_button09_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+
+/* 会社概要ナビ */
+.companyNav__link--01 {
+  background: url(../images/kasou/company_button01.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .companyNav__link--01 {
+    background: url(../images/kasou/company_button01_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.companyNav__link--02 {
+  background: url(../images/kasou/company_button02.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .companyNav__link--02 {
+    background: url(../images/kasou/company_button02_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.companyNav__link--03 {
+  background: url(../images/kasou/company_button03.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .companyNav__link--03 {
+    background: url(../images/kasou/company_button03_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.companyNav__link--04 {
+  background: url(../images/kasou/company_button04.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .companyNav__link--04 {
+    background: url(../images/kasou/company_button04_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.companyNav__link--05 {
+  background: url(../images/kasou/company_button05.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .companyNav__link--05 {
+    background: url(../images/kasou/company_button05_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.companyNav__link--06 {
+  background: url(../images/kasou/company_button06.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .companyNav__link--06 {
+    background: url(../images/kasou/company_button06_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+
+/* 実績紹介ナビ */
+.worksNav__link--01 {
+  background: url(../images/kasou/works_button01.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .worksNav__link--01 {
+    background: url(../images/kasou/works_button01_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.worksNav__link--02 {
+  background: url(../images/kasou/works_button02.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .worksNav__link--02 {
+    background: url(../images/kasou/works_button02_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.worksNav__link--03 {
+  background: url(../images/kasou/works_button03.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .worksNav__link--03 {
+    background: url(../images/kasou/works_button03_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.worksNav__link--04 {
+  background: url(../images/kasou/works_button04.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .worksNav__link--04 {
+    background: url(../images/kasou/works_button04_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.worksNav__link--05 {
+  background: url(../images/kasou/works_button05.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .worksNav__link--05 {
+    background: url(../images/kasou/works_button05_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.worksNav__link--06 {
+  background: url(../images/kasou/works_button06.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .worksNav__link--06 {
+    background: url(../images/kasou/works_button06_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.worksNav__link--07 {
+  background: url(../images/kasou/works_button07.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .worksNav__link--07 {
+    background: url(../images/kasou/works_button07_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+
+/* 実績紹介ナビ2 */
+.managementNav__link--01 {
+  background: url(../images/kasou/management_button01.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .managementNav__link--01 {
+    background: url(../images/kasou/management_button01_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.managementNav__link--02 {
+  background: url(../images/kasou/management_button02.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .managementNav__link--02 {
+    background: url(../images/kasou/management_button02_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.managementNav__link--03 {
+  background: url(../images/kasou/management_button03.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .managementNav__link--03 {
+    background: url(../images/kasou/management_button03_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+
+/* 石勝の取り組みリスト */
+.attemptNav__link--01 {
+  background: url(../images/kasou/attempt_button01.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .attemptNav__link--01 {
+    background: url(../images/kasou/attempt_button01_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.attemptNav__link--02 {
+  background: url(../images/kasou/attempt_button02.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .attemptNav__link--02 {
+    background: url(../images/kasou/attempt_button02_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.attemptNav__link--03 {
+  background: url(../images/kasou/attempt_button03.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .attemptNav__link--03 {
+    background: url(../images/kasou/attempt_button03_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.attemptNav__link--04 {
+  background: url(../images/kasou/attempt_button04.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .attemptNav__link--04 {
+    background: url(../images/kasou/attempt_button04_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+
+/* 採用情報リスト */
+.recruitNav__link--01 {
+  background: url(../images/kasou/recruit_button01.png) left top no-repeat;
+}
+@media (max-width: 767px) {
+  .recruitNav__link--01 {
+    background: url(../images/kasou/attempt_button01_sp.png) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -1525,6 +1784,138 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* 下層ページタイトルブロック */
+.underTop {
+  background: url(../images/kasou/main01.png) center top no-repeat;
+  width: 100%;
+  height: 475px;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop {
+    position: relative;
+    background: url(../images/kasou/main01_sp.png) center top no-repeat;
+    background-size: cover;
+    height: 0;
+    padding-top: 29.53125%;
+    margin-top: 44px;
+  }
+}
+.underTop--small {
+  background: url(../images/kasou/main01_small.png) center top no-repeat;
+  height: 325px;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--small {
+    position: relative;
+    background: url(../images/kasou/main01_small_sp.png) center top no-repeat;
+    background-size: cover;
+    height: 0;
+    padding-top: 29.53125%;
+    margin-top: 44px;
+  }
+}
+.underTop--small.underTop--small02 {
+  background: url(../images/kasou/main02_small.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--small.underTop--small02 {
+    background: url(../images/kasou/main02_small_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--small.underTop--small03 {
+  background: url(../images/kasou/main03_small.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--small.underTop--small03 {
+    background: url(../images/kasou/main03_small_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--small.underTop--small04 {
+  background: url(../images/kasou/main04_small.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--small.underTop--small04 {
+    background: url(../images/kasou/main04_small_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--small.underTop--small05 {
+  background: url(../images/kasou/main05_small.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--small.underTop--small05 {
+    background: url(../images/kasou/main05_small_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop__wrapper {
+  padding: 220px 0 0;
+}
+@media (max-width: 767px) {
+  .underTop__wrapper {
+    width: 320px;
+    height: 50px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
+  }
+}
+.underTop__wrapper--small {
+  padding: 150px 0 0;
+}
+@media (max-width: 767px) {
+  .underTop__wrapper--small {
+    width: 320px;
+    height: 50px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
+  }
+}
+.underTop__title {
+  font-family: "Noto Serif Japanese";
+  text-align: center;
+  font-size: 48px;
+  font-weight: normal;
+  color: white;
+}
+@media (max-width: 767px) {
+  .underTop__title {
+    font-size: 22px;
+  }
+}
+.underTop__subTitle {
+  font-family: "Noto Serif Japanese";
+  text-align: center;
+  font-size: 18px;
+  color: #FFF;
+  color: white;
+  margin-top: 32px;
+  letter-spacing: .2em;
+}
+@media (max-width: 767px) {
+  .underTop__subTitle {
+    font-size: 10px;
+    margin-top: 15px;
+  }
 }
 
 /********** エクステンド、変数活用 ************/
@@ -2592,7 +2983,8 @@ button {
 }
 @media (min-width: 768px) {
   .newsList__item.newsList__item--detail {
-    height: 100px;
+    min-height: 100px;
+    padding: 1em 0;
   }
   .newsList__item.newsList__item--detail:nth-of-type(n+2) {
     margin-top: 0;
@@ -2707,15 +3099,10 @@ button {
   }
 }
 .YearsNews__title {
-  color: #666666;
   margin-top: 100px;
 }
 @media (max-width: 767px) {
   .YearsNews__title {
-    text-align: left;
-    font-size: 18px;
-    padding-left: 5px;
-    border-left: 3px solid #018643;
     margin-top: 26px;
   }
 }
@@ -2969,97 +3356,6 @@ button {
 }
 
 /* 下層ページ */
-.underTop {
-  background: url(../images/kasou/main01.png) center top no-repeat;
-  width: 100%;
-  height: 475px;
-  background-size: cover;
-}
-@media (max-width: 767px) {
-  .underTop {
-    position: relative;
-    background: url(../images/kasou/main01_sp.png) center top no-repeat;
-    background-size: cover;
-    height: 0;
-    padding-top: 29.53125%;
-    margin-top: 44px;
-  }
-}
-.underTop--small {
-  background: url(../images/kasou/main01_small.png) center top no-repeat;
-  height: 325px;
-  background-size: cover;
-}
-@media (max-width: 767px) {
-  .underTop--small {
-    position: relative;
-    background: url(../images/kasou/main01_small_sp.png) center top no-repeat;
-    background-size: cover;
-    height: 0;
-    padding-top: 29.53125%;
-    margin-top: 44px;
-  }
-}
-.underTop__wrapper {
-  padding: 220px 0 0;
-}
-@media (max-width: 767px) {
-  .underTop__wrapper {
-    width: 320px;
-    height: 50px;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto auto;
-  }
-}
-.underTop__wrapper--small {
-  padding: 150px 0 0;
-}
-@media (max-width: 767px) {
-  .underTop__wrapper--small {
-    width: 320px;
-    height: 50px;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto auto;
-  }
-}
-.underTop__title {
-  font-family: "Noto Serif Japanese";
-  text-align: center;
-  font-size: 48px;
-  font-weight: normal;
-  color: white;
-}
-@media (max-width: 767px) {
-  .underTop__title {
-    font-size: 22px;
-  }
-}
-.underTop__subTitle {
-  font-family: "Noto Serif Japanese";
-  text-align: center;
-  font-size: 18px;
-  color: #FFF;
-  color: white;
-  margin-top: 32px;
-  letter-spacing: .2em;
-}
-@media (max-width: 767px) {
-  .underTop__subTitle {
-    font-size: 10px;
-    margin-top: 15px;
-  }
-}
-
 .subtitleSection {
   margin: 70px auto 0;
   padding: 0 0 90px;
@@ -3470,17 +3766,17 @@ button {
   }
 }
 
-.techList {
+.techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
   margin: 90px 0 130px;
 }
 @media (max-width: 767px) {
-  .techList {
+  .techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
     width: 93.75%;
     margin: 56px auto 50px;
     text-align: center;
   }
 }
-.techList__title {
+.techList__title, .companyList__title, .worksList__title, .managementList__title, .attemptList__title, .recruitList__title {
   display: inline-block;
   border-bottom: 3px solid #119357;
   font-weight: normal;
@@ -3488,7 +3784,7 @@ button {
   padding-bottom: 8px;
 }
 @media (max-width: 767px) {
-  .techList__title {
+  .techList__title, .companyList__title, .worksList__title, .managementList__title, .attemptList__title, .recruitList__title {
     font-size: 20px;
     padding-bottom: 5px;
   }
@@ -3620,6 +3916,244 @@ button {
 @media (max-width: 767px) {
   .backgroundLink {
     padding: 34px 0 84px;
+  }
+}
+
+/*********** 
+会社案内ページ
+************/
+/* 会社概要 */
+.companyContent {
+  width: 1080px;
+  margin: 60px auto 0;
+}
+@media (max-width: 767px) {
+  .companyContent {
+    width: 93.75%;
+  }
+}
+.companyContent__subTitle {
+  margin-bottom: 40px;
+}
+.companyContent__buttonWrapper {
+  text-align: center;
+}
+.companyContent__button01 {
+  margin-top: 58px;
+}
+
+@media (min-width: 768px) {
+  .companyTable01 {
+    line-height: 1.7;
+    margin: 40px auto 80px;
+  }
+}
+@media (min-width: 768px) {
+  .companyTable01__th {
+    padding: 1em 0 0.7em 20px;
+  }
+}
+
+/* 事業紹介 */
+.serviceList__item:nth-of-type(n+2) {
+  margin-top: 70px;
+}
+.serviceList__subTitle {
+  margin-top: 35px;
+}
+.serviceList__text {
+  margin: 15px auto 20px;
+}
+.serviceList__smallText {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* 企業理念 */
+.philosophySection {
+  width: 1080px;
+  margin: 120px auto 0;
+  padding-bottom: 245px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .philosophySection {
+    width: 100%;
+    margin: 47px auto 0;
+    padding-bottom: 110px;
+  }
+}
+@media (min-width: 768px) {
+  .philosophySection--wide {
+    width: 1090px;
+  }
+}
+@media (max-width: 767px) {
+  .philosophySection--wide {
+    width: 100%;
+  }
+}
+.philosophySection__title {
+  display: inline-block;
+  border-bottom: 5px solid #009933;
+  padding-bottom: 18px;
+  margin-bottom: 40px;
+  color: black;
+}
+@media (max-width: 767px) {
+  .philosophySection__title {
+    font-size: 18px;
+    letter-spacing: .1em;
+    border-bottom: 2px solid #009933;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    line-height: 1.3;
+  }
+}
+.philosophySection__lead {
+  text-align: left;
+  line-height: 2.2;
+}
+@media (max-width: 767px) {
+  .philosophySection__lead {
+    line-height: 1.9;
+  }
+}
+.philosophySection__lead + .philosophySection__lead {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .philosophySection__lead + .philosophySection__lead {
+    margin-top: 8px;
+  }
+}
+.philosophySection__lead--zoen + .philosophySection__lead--zoen {
+  margin-top: 20px;
+}
+.philosophySection__lead--top {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .philosophySection__lead--top {
+    width: 93.75%;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+.philosophySection__lead--top + .philosophySection__lead--top {
+  margin-top: 20px;
+}
+.philosophySection__enginieeringTitle {
+  font-size: 34px;
+  color: #018643;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 130px;
+}
+@media (max-width: 767px) {
+  .philosophySection__enginieeringTitle {
+    font-size: 17px;
+    margin-top: 45px;
+  }
+}
+.philosophySection__enginieeringText {
+  font-size: 20px;
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .philosophySection__enginieeringText {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+.philosophySection__illust.philosophySection__illust--01 {
+  margin: 35px auto 140px;
+}
+@media (max-width: 767px) {
+  .philosophySection__illust.philosophySection__illust--01 {
+    margin: 20px auto 45px;
+  }
+}
+@media (max-width: 767px) {
+  .philosophySection__illust.philosophySection__illust--01 > img {
+    width: 97.03125%;
+  }
+}
+.philosophySection__illust.philosophySection__illust--02 {
+  text-align: left;
+  margin: 40px auto 160px;
+}
+@media (max-width: 767px) {
+  .philosophySection__illust.philosophySection__illust--02 {
+    margin: 32px auto 50px;
+  }
+}
+.philosophySection__illust.philosophySection__illust--03 {
+  margin: 55px 35px 70px 0;
+}
+@media (max-width: 767px) {
+  .philosophySection__illust.philosophySection__illust--03 {
+    margin: 30px auto;
+  }
+}
+@media (max-width: 767px) {
+  .philosophySection__illust.philosophySection__illust--03 > img {
+    width: 93.28125%;
+  }
+}
+.philosophySection__illust.philosophySection__illust--04 {
+  margin: 135px auto 100px;
+}
+@media (max-width: 767px) {
+  .philosophySection__illust.philosophySection__illust--04 {
+    margin: 30px auto 50px;
+  }
+}
+@media (max-width: 767px) {
+  .philosophySection__illust.philosophySection__illust--04 > img {
+    width: 94.53125%;
+  }
+}
+.philosophySection__head {
+  font-size: 66px;
+  margin-top: 100px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .philosophySection__head {
+    font-size: 32px;
+    margin-top: 75px;
+  }
+}
+.philosophySection__headText {
+  font-family: "Noto Serif Japanese";
+  font-size: 22px;
+  line-height: 2;
+  margin-top: 43px;
+}
+@media (max-width: 767px) {
+  .philosophySection__headText {
+    width: 93.75%;
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 20px auto 0;
+    text-align: left;
+  }
+}
+.philosophySection__banner {
+  background: url(../images/kasou/philosophy_illust04.png) left top no-repeat;
+  width: 1090px;
+  height: 508px;
+  margin: 85px 0 160px;
+}
+@media (max-width: 767px) {
+  .philosophySection__banner {
+    background: url(../images/kasou/philosophy_illust04_sp.png) left top no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 0;
+    padding-top: 101.5625%;
+    margin: 15px auto 55px;
   }
 }
 

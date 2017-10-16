@@ -325,6 +325,13 @@ button {
 		border: none;
 	}
 }
+.middleHeadline--type02 {
+	@extend .middleHeadline--green;
+	color: $middleGray;
+	@include sp {
+		margin-top: 26px;
+	}
+}
 .smallHeadline {
 	color: $middleGray;
 	font-size: 24px;
@@ -354,10 +361,14 @@ button {
 	&__link {
 		color: $linkColor;
 	}
-
+	
 }
-.breadcrumb + .underNav {
+.breadcrumb + .underNav__list {
 	margin-top: 48px;
+	@include sp {
+		margin-top: 0;
+		padding-top: 10px;
+	}
 }
 /* 第2階層ナビゲーション */
 .doorNav {
@@ -520,10 +531,18 @@ button {
 		background: $commonWhite;
 		padding: 0 2em;
 		line-height: 54px;
+		@include pc {
+			min-width: 144px;
+		}
 		@include sp {
 			padding: 0;
 			border-radius: 5px;
 			width: 100%;
+			line-height: 36px;
+		}
+		&.underNav__link--current {
+			background: $middleGreen;
+			color: $commonWhite;
 		}
 	}
 }
@@ -656,7 +675,7 @@ button {
 		border: 1px solid #8e8e8e;
 		border-collapse: collapse;
 		padding: 10px 0 4px 20px;
-		width: 142px;
+		width: 112px;
 		@include sp {
 			display: block;
 			width: 100%;
@@ -785,6 +804,7 @@ button {
 	@extend .clearfix;
 	&__item {
 		display: inline-block;
+		width: 520px;
 		@include sp {
 			width: $width-100;
 			display: block;
@@ -793,6 +813,15 @@ button {
 			float: right;
 			@include sp {
 				float: none;
+			}
+		}
+		&:nth-of-type(n+3) {
+			@include pc {
+				margin-top: 38px;
+			}
+		}
+		&:nth-of-type(n+2) {
+			@include sp {
 				margin: 20px auto 0;
 			}
 		}
@@ -806,6 +835,7 @@ button {
 	&__item {
 		float: left;
 		display: inline-block;
+		width: 338px;
 		@include sp {
 			width: $width-100;
 			display: block;
@@ -1137,7 +1167,27 @@ button {
 		margin: 0 auto;
 	}
 }
-/* 技術紹介バナー */
+/* 技術紹介ナビ */
+.techList {
+	@extend .clearfix;
+	margin: 90px 0 130px;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 56px auto 50px;
+		text-align: center;
+	}
+	&__title {
+		display: inline-block;
+		border-bottom: 3px solid $commonGreen;
+		font-weight: normal;
+		font-size: 22px;
+		padding-bottom: 8px;
+		@include sp {
+			font-size: 20px;
+			padding-bottom: 5px;
+		}
+	}
+}
 .techNav {
 	@extend .clearfix;
 	margin: 24px auto 0;
@@ -1237,6 +1287,233 @@ button {
 			background: url(#{$img_path}/kasou/tech_button09.png) left top no-repeat;
 			@include sp {
 				background: url(#{$img_path}/kasou/tech_button09_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}
+/* 会社概要ナビ */
+.companyList {
+	@extend .techList;
+	&__title {
+		@extend .techList__title;
+	}
+}
+.companyNav {
+	@extend .techNav;
+	&__item {
+		@extend .techNav__item;
+	}
+	&__link {
+		@extend .techNav__link;
+		&--01 {
+			background: url(#{$img_path}/kasou/company_button01.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/company_button01_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/company_button02.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/company_button02_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/company_button03.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/company_button03_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/kasou/company_button04.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/company_button04_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--05 {
+			background: url(#{$img_path}/kasou/company_button05.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/company_button05_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--06 {
+			background: url(#{$img_path}/kasou/company_button06.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/company_button06_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}
+/* 実績紹介ナビ */
+.worksList {
+	@extend .techList;
+	&__title {
+		@extend .techList__title;
+	}
+}
+.worksNav {
+	@extend .techNav;
+	&__item {
+		@extend .techNav__item;
+	}
+	&__link {
+		@extend .techNav__link;
+		&--01 {
+			background: url(#{$img_path}/kasou/works_button01.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/works_button01_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/works_button02.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/works_button02_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/works_button03.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/works_button03_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/kasou/works_button04.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/works_button04_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--05 {
+			background: url(#{$img_path}/kasou/works_button05.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/works_button05_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--06 {
+			background: url(#{$img_path}/kasou/works_button06.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/works_button06_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--07 {
+			background: url(#{$img_path}/kasou/works_button07.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/works_button07_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}
+/* 実績紹介ナビ2 */
+.managementList {
+	@extend .techList;
+	&__title {
+		@extend .techList__title;
+	}
+}
+.managementNav {
+	@extend .techNav;
+	&__item {
+		@extend .techNav__item;
+	}
+	&__link {
+		@extend .techNav__link;
+		&--01 {
+			background: url(#{$img_path}/kasou/management_button01.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/management_button01_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/management_button02.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/management_button02_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/management_button03.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/management_button03_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}
+/* 石勝の取り組みリスト */
+.attemptList {
+	@extend .techList;
+	&__title {
+		@extend .techList__title;
+	}
+}
+.attemptNav {
+	@extend .techNav;
+	&__item {
+		@extend .techNav__item;
+	}
+	&__link {
+		@extend .techNav__link;
+		&--01 {
+			background: url(#{$img_path}/kasou/attempt_button01.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/attempt_button01_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--02 {
+			background: url(#{$img_path}/kasou/attempt_button02.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/attempt_button02_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--03 {
+			background: url(#{$img_path}/kasou/attempt_button03.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/attempt_button03_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--04 {
+			background: url(#{$img_path}/kasou/attempt_button04.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/attempt_button04_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}
+/* 採用情報リスト */
+.recruitList {
+	@extend .techList;
+	&__title {
+		@extend .techList__title;
+	}
+}
+.recruitNav {
+	@extend .techNav;
+	&__item {
+		@extend .techNav__item;
+	}
+	&__link {
+		@extend .techNav__link;
+		&--01 {
+			background: url(#{$img_path}/kasou/recruit_button01.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/attempt_button01_sp.png) left top no-repeat;
 				background-size: 100%;
 			}
 		}
@@ -1370,6 +1647,117 @@ button {
 		position: absolute;
 		top: 0;
 		left: 0;
+	}
+}
+/* 下層ページタイトルブロック */
+.underTop {
+	background: url(#{$img_path}/kasou/main01.png) center top no-repeat;
+	width: 100%;
+	height: 475px;
+	background-size: cover;
+	@include sp {
+		position: relative;
+		background: url(#{$img_path}/kasou/main01_sp.png) center top no-repeat;
+		background-size: cover;
+		height: 0;
+		padding-top: 29.53125%;
+		margin-top: 44px;
+	}
+	&--small {
+		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
+		height: 325px;
+		background-size: cover;
+		@include sp {
+			position: relative;
+			background: url(#{$img_path}/kasou/main01_small_sp.png) center top no-repeat;
+			background-size: cover;
+			height: 0;
+			padding-top: 29.53125%;
+			margin-top: 44px;
+		}
+		&.underTop--small02 {
+			background: url(#{$img_path}/kasou/main02_small.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main02_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
+		&.underTop--small03 {
+			background: url(#{$img_path}/kasou/main03_small.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main03_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
+		&.underTop--small04 {
+			background: url(#{$img_path}/kasou/main04_small.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main04_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
+		&.underTop--small05 {
+			background: url(#{$img_path}/kasou/main05_small.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main05_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+	&__wrapper {
+		padding: 220px 0 0;
+		@include sp {
+			width: 320px;
+			height: 50px;
+			padding: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto auto;
+		}
+		&--small {
+			padding: 150px 0 0;
+			@include sp {
+				width: 320px;
+				height: 50px;
+				padding: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto auto;
+			}
+		}
+	}
+	&__title {
+		font-family: $mincho;
+		text-align: center;
+		font-size: 48px;
+		font-weight: normal;
+		color: $commonWhite;
+		@include sp {
+			font-size: 22px;
+		}
+	}
+	&__subTitle {
+		font-family: $mincho;
+		text-align: center;
+		font-size: 18px;
+		color: #FFF;
+		color: white;
+		margin-top: 32px;
+		letter-spacing: .2em;
+		@include sp {
+			font-size: 10px;
+			margin-top: 15px;
+		}
 	}
 }
 /********** エクステンド、変数活用 ************/
@@ -2304,7 +2692,8 @@ button {
 		&.newsList__item--detail {
 			border-bottom: 1px solid $rightGray;
 			@include pc {
-				height: 100px;
+				min-height: 100px;
+				padding: 1em 0;
 				&:nth-of-type(n+2) {
 					margin-top: 0;
 				}
@@ -2410,14 +2799,9 @@ button {
 		width: $commonWidthSp02;
 	}
 	&__title {
-		@extend .middleHeadline--green;
-		color: $middleGray;
+		@extend .middleHeadline--type02;
 		margin-top: 100px;
 		@include sp {
-			text-align: left;
-			font-size: 18px;
-			padding-left: 5px;
-			border-left: 3px solid $middleGreen;
 			margin-top: 26px;
 		}
 		& + .newsList.newsList--detail {
@@ -2634,84 +3018,6 @@ button {
 }
 
 /* 下層ページ */
-.underTop {
-	background: url(#{$img_path}/kasou/main01.png) center top no-repeat;
-	width: 100%;
-	height: 475px;
-	background-size: cover;
-	@include sp {
-		position: relative;
-		background: url(#{$img_path}/kasou/main01_sp.png) center top no-repeat;
-		background-size: cover;
-		height: 0;
-		padding-top: 29.53125%;
-		margin-top: 44px;
-	}
-	&--small {
-		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
-		height: 325px;
-		background-size: cover;
-		@include sp {
-			position: relative;
-			background: url(#{$img_path}/kasou/main01_small_sp.png) center top no-repeat;
-			background-size: cover;
-			height: 0;
-			padding-top: 29.53125%;
-			margin-top: 44px;
-		}
-	}
-	&__wrapper {
-		padding: 220px 0 0;
-		@include sp {
-			width: 320px;
-			height: 50px;
-			padding: 0;
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto auto;
-		}
-		&--small {
-			padding: 150px 0 0;
-			@include sp {
-				width: 320px;
-				height: 50px;
-				padding: 0;
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				margin: auto auto;
-			}
-		}
-	}
-	&__title {
-		font-family: $mincho;
-		text-align: center;
-		font-size: 48px;
-		font-weight: normal;
-		color: $commonWhite;
-		@include sp {
-			font-size: 22px;
-		}
-	}
-	&__subTitle {
-		font-family: $mincho;
-		text-align: center;
-		font-size: 18px;
-		color: #FFF;
-		color: white;
-		margin-top: 32px;
-		letter-spacing: .2em;
-		@include sp {
-			font-size: 10px;
-			margin-top: 15px;
-		}
-	}
-}
 .backgroundLead {
 	@extend .background02;
 }
@@ -3187,5 +3493,243 @@ button {
 	padding: 100px 0 160px;
 	@include sp {
 		padding: 34px 0 84px;
+	}
+}
+
+/*********** 
+会社案内ページ
+************/
+
+/* 会社概要 */
+.companyContent {
+	width: $commonWidthPc;
+	margin: 60px auto 0;
+	@include sp {
+		width: $commonWidthSp02;
+	}
+	&__subTitle {
+		@extend .middleHeadline--type02;
+		margin-bottom: 40px;
+	}
+	&__buttonWrapper {
+		text-align: center;
+	}
+	&__button01 {
+		@extend .greenButton;
+		@extend .greenButton--pdf;
+		margin-top: 58px;
+	}
+}
+.companyTable01 {
+	@extend .commonTable;
+	@include pc {
+		line-height: 1.7;
+		margin: 40px auto 80px;
+	}
+	&__tr {
+		@extend .commonTable__tr;
+	}
+	&__th {
+		@extend .commonTable__th;
+		@include pc {
+			padding: 1em 0 0.7em 20px;
+		}
+	}
+	&__td {
+		@extend .commonTable__td;
+		&.companyTable01__td--multiLine {
+			@extend .commonTable__td--multiLine;
+		}
+	}
+}
+/* 事業紹介 */
+.serviceList {
+	&__item {
+		&:nth-of-type(n+2) {
+			margin-top: 70px;
+		}
+	}
+	&__title {
+		@extend .middleHeadline--type02;
+	}
+	&__subTitle {
+		@extend .smallHeadline;
+		margin-top: 35px;
+	}
+	&__text {
+		@extend .middleText;
+		@extend .middleText--left;
+		margin: 15px auto 20px;
+	}
+	&__smallText {
+		@extend .smallText;
+		text-align: center;
+		margin-top: 8px;
+	}
+}
+/* 企業理念 */
+.philosophySection {
+	width: $commonWidthPc;
+	margin: 120px auto 0;
+	padding-bottom: 245px;
+	text-align: center;
+	@include sp {
+		width: $width-100;
+		margin: 47px auto 0;
+		padding-bottom: 110px;
+	}
+	&--wide {
+		@include pc {
+			width: 1090px;
+		}
+		@include sp {
+			width: $width-100;
+		}
+	}
+	&__title {
+		@extend .hugeHeadline;
+		display: inline-block;
+		border-bottom: 5px solid $rightGreen;
+		padding-bottom: 18px;
+		margin-bottom: 40px;
+		color: $commonBlack;
+		@include sp {
+			font-size: 18px;
+			letter-spacing: .1em;
+			border-bottom: 2px solid $rightGreen;
+			padding-bottom: 5px;
+			margin-bottom: 25px;
+			line-height: 1.3;
+		}
+	}
+	&__lead {
+		@extend .middleText;
+		@extend .middleText--left;
+		text-align: left;
+		line-height: 2.2;
+		@include sp {
+			line-height: 1.9;
+		}
+		& + .philosophySection__lead {
+			margin-top: 40px;
+			@include sp {
+				margin-top: 8px;
+			}
+		}
+		&--zoen {
+			& + .philosophySection__lead--zoen {
+				margin-top: 20px;
+			}
+		}
+		&--top {
+			text-align: center;
+			@include sp {
+				width: $commonWidthSp02;
+				margin: 0 auto;
+				text-align: left;
+			}
+			& + .philosophySection__lead--top {
+				margin-top: 20px;
+			}
+		}
+	}
+	&__enginieeringTitle {
+		font-size: 34px;
+		color: $middleGreen;
+		text-align: center;
+		font-weight: normal;
+		margin-top: 130px;
+		@include sp {
+			font-size: 17px;
+			margin-top: 45px;
+		}
+	}
+	&__enginieeringText {
+		font-size: 20px;
+		margin-top: 15px;
+		@include sp {
+			font-size: 10px;
+			margin-top: 10px;
+		}
+	}
+	&__illust {
+		&.philosophySection__illust--01 {
+			margin: 35px auto 140px;
+			@include sp {
+				margin: 20px auto 45px;
+			}
+			& > img {
+				@include sp {
+					width: 97.03125%;
+				}
+			}
+		}
+		&.philosophySection__illust--02 {
+			text-align: left;
+			margin: 40px auto 160px;
+			@include sp {
+				margin: 32px auto 50px;
+			}
+		}
+		&.philosophySection__illust--03 {
+			margin: 55px 35px 70px 0;
+			@include sp {
+				margin: 30px auto;
+			}
+			& > img {
+				@include sp {
+					width: 93.28125%;
+				}
+			}
+		}
+		&.philosophySection__illust--04 {
+			margin: 135px auto 100px;
+			@include sp {
+				margin: 30px auto 50px;
+			}
+			& > img {
+				@include sp {
+					width: 94.53125%;
+				}
+			}
+		}
+	}
+	&__head {
+		@extend .hugeHeadline;
+		font-size: 66px;
+		margin-top: 100px;
+		font-weight: bold;
+		@include sp {
+			font-size: 32px;
+			margin-top: 75px;
+		}
+	}
+	&__headText {
+		font-family: $mincho;
+		font-size: 22px;
+		line-height: 2;
+		margin-top: 43px;
+		@include sp {
+			width: $commonWidthSp02;
+			font-size: 12px;
+			line-height: 1.7;
+			margin: 20px auto 0;
+			text-align: left;
+		}
+	}
+	&__banner {
+		@extend .textImage;
+		background: url(#{$img_path}/kasou/philosophy_illust04.png) left top no-repeat;
+		width: 1090px;
+		height: 508px;
+		margin: 85px 0 160px;
+		@include sp {
+			background: url(#{$img_path}/kasou/philosophy_illust04_sp.png) left top no-repeat;
+			background-size: 100%;
+			width: 100%;
+			height: 0;
+			padding-top: 101.5625%;
+			margin: 15px auto 55px;
+		}
 	}
 }
