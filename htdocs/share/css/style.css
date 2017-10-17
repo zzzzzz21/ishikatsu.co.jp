@@ -181,7 +181,7 @@ button {
   }
 }
 
-.textImage, .archive__gooddesign, .techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link, .linkList__link, .illust, .header__icon, .footer__button, .topDl__photo, .processList__photo, .exampleList__photo, .techList__link, .philosophySection__banner {
+.textImage, .archive__gooddesign, .techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link, .linkList__link, .illust, .header__icon, .footer__button, .topDl__photo, .processList__photo, .exampleList__photo, .techList__link, .companyContent__portrait, .companyContent__messageSign, .companyContent__groupTitle, .philosophySection__banner {
   display: block;
   height: 0;
   text-indent: 100%;
@@ -200,6 +200,10 @@ button {
   margin-right: 5px;
 }
 
+.linkBlue {
+  color: #0066ff;
+}
+
 /********** パーツリスト *******/
 /* 和紙背景 */
 .background01, .topMain,
@@ -214,11 +218,11 @@ button {
 }
 
 /* 各フォント */
-.middleText, .underNav__item, .subBreadcrumb__item, .serviceList__text, .philosophySection__lead {
+.middleText, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .middleText, .underNav__item, .subBreadcrumb__item, .serviceList__text, .philosophySection__lead {
+  .middleText, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead {
     font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
@@ -233,10 +237,10 @@ button {
     line-height: 1.7;
   }
 }
-.middleText--left, .serviceList__text, .philosophySection__lead {
+.middleText--left, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead {
   line-height: 1.7;
 }
-.middleText--left + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .middleText--left + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead {
+.middleText--left + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .middleText--left + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead {
   margin-top: 18px;
 }
 
@@ -253,7 +257,7 @@ button {
   }
 }
 
-.hugeHeadline, .philosophySection__title, .philosophySection__head {
+.hugeHeadline, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
   color: #009933;
   font-size: 38px;
   text-align: center;
@@ -261,7 +265,7 @@ button {
   line-height: 0.9;
 }
 @media (max-width: 767px) {
-  .hugeHeadline, .philosophySection__title, .philosophySection__head {
+  .hugeHeadline, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
     font-size: 23px;
     line-height: 0.7;
   }
@@ -337,13 +341,13 @@ button {
   }
 }
 
-.smallHeadline, .doorNav__title, .contentSection__largeText, .serviceList__subTitle {
+.smallHeadline, .doorNav__title, .contentSection__largeText, .companyContent__groupSubTitle, .serviceList__subTitle {
   color: #666666;
   font-size: 24px;
   font-weight: normal;
 }
 @media (max-width: 767px) {
-  .smallHeadline, .doorNav__title, .contentSection__largeText, .serviceList__subTitle {
+  .smallHeadline, .doorNav__title, .contentSection__largeText, .companyContent__groupSubTitle, .serviceList__subTitle {
     font-size: 15px;
     line-height: 1.4;
     text-align: center;
@@ -525,6 +529,12 @@ button {
     text-align: left;
   }
 }
+@media (max-width: 767px) {
+  .underNav__list + .subtitleSection {
+    margin-top: 45px;
+    padding-bottom: 45px;
+  }
+}
 .underNav__item {
   display: inline-block;
   text-align: center;
@@ -700,7 +710,7 @@ button {
   }
 }
 
-.commonTable, .tableSample__table, .companyTable01 {
+.commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable {
   border: 1px solid #8e8e8e;
   border-collapse: collapse;
   font-size: 18px;
@@ -709,7 +719,7 @@ button {
   width: 100%;
 }
 @media (max-width: 767px) {
-  .commonTable, .tableSample__table, .companyTable01 {
+  .commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable {
     font-size: 12px;
     line-height: 1.7;
     width: 93.75%;
@@ -718,11 +728,11 @@ button {
   }
 }
 @media (max-width: 767px) {
-  .commonTable__tr:last-of-type, .companyTable01__tr:last-of-type {
+  .commonTable__tr:last-of-type, .companyTable01__tr:last-of-type, .companyTable02__tr:last-of-type, .groupCompanyTable__tr:last-of-type {
     border-bottom: 1px solid #8e8e8e;
   }
 }
-.commonTable__th, .companyTable01__th {
+.commonTable__th, .companyTable01__th, .companyTable02__th, .groupCompanyTable__th {
   background: #cccccc;
   font-weight: normal;
   border: 1px solid #8e8e8e;
@@ -731,32 +741,32 @@ button {
   width: 112px;
 }
 @media (max-width: 767px) {
-  .commonTable__th, .companyTable01__th {
+  .commonTable__th, .companyTable01__th, .companyTable02__th, .groupCompanyTable__th {
     display: block;
     width: 100%;
     padding: 6px 10px 1px 10px;
     border-bottom: none;
   }
 }
-.commonTable__td, .companyTable01__td {
+.commonTable__td, .companyTable01__td, .companyTable02__td, .groupCompanyTable__td {
   border: 1px solid #8e8e8e;
   border-collapse: collapse;
   padding: 0 0 4px 20px;
   width: 726px;
 }
 @media (max-width: 767px) {
-  .commonTable__td, .companyTable01__td {
+  .commonTable__td, .companyTable01__td, .companyTable02__td, .groupCompanyTable__td {
     display: block;
     width: 100%;
     padding: 6px 10px 1px 10px;
     border-bottom: none;
   }
 }
-.commonTable__td--multiLine, .companyTable01__td.companyTable01__td--multiLine {
+.commonTable__td--multiLine, .companyTable01__td.companyTable01__td--multiLine, .companyTable02__td.companyTable01__td--multiLine {
   padding-bottom: 17px;
 }
 @media (max-width: 767px) {
-  .commonTable__td--multiLine, .companyTable01__td.companyTable01__td--multiLine {
+  .commonTable__td--multiLine, .companyTable01__td.companyTable01__td--multiLine, .companyTable02__td.companyTable01__td--multiLine {
     padding-bottom: 6px;
   }
 }
@@ -866,7 +876,7 @@ button {
 .borderBottom--gray {
   border-bottom: 1px solid #cccccc;
 }
-.borderBottom--dot, .doorNav__item {
+.borderBottom--dot, .doorNav__item, .companyLinkText, .serviceList {
   border-bottom: 1px dotted black;
 }
 
@@ -1223,18 +1233,18 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link, .greenButtons .companyContent__button01 {
+  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link, .greenButtons .companyLinkText__link, .greenButtons .companyContent__button01 {
     display: inline-block;
   }
-  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1), .greenButtons .companyContent__button01:nth-of-type(1) {
+  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1), .greenButtons .companyLinkText__link:nth-of-type(1), .greenButtons .companyContent__button01:nth-of-type(1) {
     margin-left: 75px;
   }
-  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2), .greenButtons .companyContent__button01:nth-of-type(2) {
+  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2), .greenButtons .companyLinkText__link:nth-of-type(2), .greenButtons .companyContent__button01:nth-of-type(2) {
     margin: 0 23px 0 92px;
   }
 }
 
-.greenButton, .doorNav__button, .articleButton__link, .companyContent__button01 {
+.greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -1246,10 +1256,10 @@ button {
   vertical-align: middle;
   margin: 0 auto;
 }
-.greenButton--pdf, .companyContent__button01 {
+.greenButton--pdf, .companyLinkText__link, .companyContent__button01 {
   padding: .8em 2em;
 }
-.greenButton--pdf::before, .companyContent__button01::before {
+.greenButton--pdf::before, .companyLinkText__link::before, .companyContent__button01::before {
   content: "";
   background: url(../images/kasou/icon-pdf02.png) left top no-repeat;
   width: 24px;
@@ -1262,18 +1272,18 @@ button {
   padding: 1.28em 1em;
 }
 @media (min-width: 768px) {
-  .greenButton, .doorNav__button, .articleButton__link, .companyContent__button01 {
+  .greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01 {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover, .companyContent__button01:hover {
+  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover, .companyLinkText__link:hover, .companyContent__button01:hover {
     background: #119357;
     color: white;
     opacity: 1;
   }
 }
 @media (max-width: 767px) {
-  .greenButton, .doorNav__button, .articleButton__link, .companyContent__button01 {
+  .greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01 {
     display: block;
     margin: 0 auto;
   }
@@ -3923,17 +3933,55 @@ button {
 会社案内ページ
 ************/
 /* 会社概要 */
+.companyBlock + .companyBlock {
+  margin-top: 80px;
+}
+@media (max-width: 767px) {
+  .companyBlock + .companyBlock {
+    margin-top: 40px;
+  }
+}
+
+.companyLinkText {
+  text-align: center;
+  margin: 60px auto 0;
+  padding-bottom: 100px;
+}
+@media (max-width: 767px) {
+  .companyLinkText {
+    width: 93.75%;
+    margin: 30px auto 0;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .companyLinkText__link {
+    width: 62%;
+  }
+}
+
 .companyContent {
   width: 1080px;
   margin: 60px auto 0;
+  /* 社長あいさつ */
+  /* 関連会社 */
 }
 @media (max-width: 767px) {
   .companyContent {
-    width: 93.75%;
+    width: 100%;
+    margin: 40px auto 0;
   }
 }
 .companyContent__subTitle {
   margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .companyContent__subTitle {
+    border-left: 3px solid #018643;
+    text-align: left;
+    padding-left: 8px;
+    margin: 0 0 0 3.125%;
+  }
 }
 .companyContent__buttonWrapper {
   text-align: center;
@@ -3941,25 +3989,248 @@ button {
 .companyContent__button01 {
   margin-top: 58px;
 }
+.companyContent__messageImage {
+  margin-bottom: 40px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .companyContent__messageImage {
+    margin-bottom: 5px;
+  }
+}
+.companyContent__portrait {
+  background: url(../images/kasou/message_photo01.jpg) left top no-repeat;
+  width: 1080px;
+  height: 408px;
+}
+@media (max-width: 767px) {
+  .companyContent__portrait {
+    background: url(../images/kasou/message_photo01_sp.jpg) left top no-repeat;
+    background-size: 100%;
+    width: 93.75%;
+    height: 0;
+    padding-top: 71.09375%;
+    margin: 35px auto 0;
+  }
+}
+.companyContent__portraitText {
+  position: absolute;
+  text-align: right;
+  right: 35px;
+  top: 20px;
+  line-height: 1.8;
+  letter-spacing: .05em;
+}
+@media (max-width: 767px) {
+  .companyContent__portraitText {
+    position: static;
+    text-align: left;
+    width: 93.75%;
+    margin: 3px auto 0;
+    font-size: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .companyContent__messageText {
+    line-height: 1.5;
+  }
+}
+.companyContent__messageText + .companyContent__messageText {
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .companyContent__messageText + .companyContent__messageText {
+    margin-top: 18px;
+  }
+}
+.companyContent__messagePosition {
+  text-align: right;
+  padding: 38px 215px 0 0;
+}
+@media (max-width: 767px) {
+  .companyContent__messagePosition {
+    padding: 20px 31% 0 0;
+    font-size: 10px;
+  }
+}
+.companyContent__messageSign {
+  background: url(../images/kasou/message_text01.png) left top no-repeat;
+  background-size: 100%;
+  width: 361px;
+  height: 101px;
+  margin: 0 0  260px 725px;
+}
+@media (max-width: 767px) {
+  .companyContent__messageSign {
+    width: 56.40625%;
+    height: 0;
+    padding-top: 15.78125%;
+    margin: 0 0 100px 41%;
+  }
+}
+.companyContent__groupTitle {
+  background: url(../images/kasou/group_title01.png) left top no-repeat;
+  width: 705px;
+  height: 96px;
+  margin: 75px auto 85px;
+}
+.companyContent__groupSubTitle {
+  margin: -10px auto 0;
+}
+@media (max-width: 767px) {
+  .companyContent__groupSubTitle {
+    width: 93.75%;
+    margin: -10px auto 0;
+  }
+}
+.companyContent__groupText {
+  margin: 15px auto 0;
+}
+.companyContent__groupText.companyContent__groupText--recruit {
+  margin-top: -10px;
+}
+
+.groupBlock + .groupBlock {
+  margin-top: 100px;
+}
+.groupBlock.groupBlock--last {
+  margin-bottom: 230px;
+}
+
+/* googleMap設定 */
+#map_canvas_01 {
+  width: 520px;
+  height: 308px;
+}
+@media (max-width: 767px) {
+  #map_canvas_01 {
+    width: 93.75%;
+    margin: 20px auto 0;
+    height: 0;
+    padding-top: 62.5%;
+  }
+}
+
+#map_canvas_02 {
+  width: 1080px;
+  height: 578px;
+  margin-bottom: 258px;
+}
+@media (max-width: 767px) {
+  #map_canvas_02 {
+    width: 93.75%;
+    margin: 20px auto 100px;
+    height: 0;
+    padding-top: 62.5%;
+  }
+}
+
+#map_canvas_03 {
+  width: 1080px;
+  height: 578px;
+}
+@media (max-width: 767px) {
+  #map_canvas_03 {
+    width: 93.75%;
+    margin: 0 auto;
+    height: 0;
+    padding-top: 62.5%;
+  }
+}
 
 @media (min-width: 768px) {
   .companyTable01 {
     line-height: 1.7;
-    margin: 40px auto 80px;
+    margin: 40px auto 0;
+  }
+}
+@media (max-width: 767px) {
+  .companyTable01 {
+    margin: 20px auto 0;
   }
 }
 @media (min-width: 768px) {
   .companyTable01__th {
-    padding: 1em 0 0.7em 20px;
+    padding: 1em 0 0.65em 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .companyTable02 {
+    line-height: 1.7;
+    margin: 40px auto 255px;
+  }
+}
+@media (max-width: 767px) {
+  .companyTable02 {
+    margin: 20px auto 100px;
+  }
+}
+@media (min-width: 768px) {
+  .companyTable02__th {
+    padding: 1em 0 0.65em 20px;
+  }
+}
+
+/* 関連会社 */
+.groupBlock__ol {
+  display: inline-block;
+  margin: -10px 0 0 45px;
+  list-style-type: decimal;
+}
+.groupBlock__olItem {
+  position: relative;
+  padding: 0 0 0 5px;
+}
+.groupBlock__olItem:nth-of-type(n+2) {
+  margin-top: 15px;
+}
+.groupBlock__olNumber {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .groupCompanyTable {
+    line-height: 1.7;
+    margin: 0 auto;
+  }
+}
+.groupCompanyTable__th {
+  width: 255px;
+}
+@media (min-width: 768px) {
+  .groupCompanyTable__th {
+    padding: 1em 0 0.65em 20px;
+  }
+}
+.groupCompanyTable__td {
+  width: 415px;
+  padding: 0 0 11px 26px;
+}
+@media (min-width: 768px) {
+  .groupCompanyTable__td {
+    border-left: none;
+    border-right: none;
   }
 }
 
 /* 事業紹介 */
+.serviceList {
+  padding: 0 0 95px;
+  margin: 0 auto 150px;
+}
 .serviceList__item:nth-of-type(n+2) {
   margin-top: 70px;
 }
 .serviceList__subTitle {
-  margin-top: 35px;
+  margin: 35px auto 0;
+}
+@media (max-width: 767px) {
+  .serviceList__subTitle {
+    width: 93.75%;
+  }
 }
 .serviceList__text {
   margin: 15px auto 20px;
