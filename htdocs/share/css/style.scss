@@ -3149,7 +3149,8 @@ button {
 		}
 	}
 }
-.contentSection {
+/********** 技術紹介ページ *******************/
+.technologyContent {
 	@extend .clearfix;
 	padding: 98px 0 0;
 	width: $commonWidthPc;
@@ -3200,20 +3201,16 @@ button {
 		margin: 30px 0 0;
 	}
 	&__photo {
-		@extend .textImage;
 		float: right;
-		background: url(#{$img_path}/kasou/photo01.jpg) left top no-repeat;
-		width: 520px;
-		height: 308px;
 		margin: 78px 0 0;
 		@include sp {
-			background: url(#{$img_path}/kasou/photo01_sp.jpg) left top no-repeat;
-			background-size: 100%;
 			float: none;
 			margin: 17px auto 0;
-			width: $commonWidthSp02;
-			height: 0;
-			padding-top: 50%;
+			& > img {
+				width: $commonWidthSp02;
+				display: block;
+				margin: 0 auto;
+			}
 		}
 	}
 	&__dt {
@@ -3245,7 +3242,7 @@ button {
 	}
 }
 .processList {
-	@extend .clearfix;
+	@extend .photoCol4;
 	border-top: 1px dotted;
 	margin: 90px 0 0;
 	padding: 100px 0 0;
@@ -3255,60 +3252,12 @@ button {
 		padding: 38px 0 0;		
 	}
 	&__item {
-		display: inline-block;
-		vertical-align: top;
-		float: left;
-		@include pc {
-			& + & {
-				margin-left: 18px;
-			}
-		}
-		@include sp {
-			float: none;
-			display: block;
-			width: 78.666667%;
-			margin: 0 auto;
-			& + & {
-				margin-top: 38px;
-			}
-		}
+		@extend .photoCol4__item;
 	}
-	&__photo {
-		@extend .textImage;
-		width: 256px;
-		height: 170px;
+	&__image {
+		@extend .photoCol4__image;
 		@include sp {
 			width: 100%;
-			height: 0;
-			padding-top: 71.186441%;
-		}
-		&--01 {
-			background: url(#{$img_path}/kasou/photo02.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo02_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--02 {
-			background: url(#{$img_path}/kasou/photo03.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo03_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--03 {
-			background: url(#{$img_path}/kasou/photo04.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo04_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--04 {
-			background: url(#{$img_path}/kasou/photo05.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo05_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
 		}
 	}
 	&__text {
@@ -3353,66 +3302,19 @@ button {
 	}
 }
 .exampleList {
-	@extend .clearfix;
+	@extend .photoCol2;
 	margin: 42px 0 0;
 	@include sp {
 		width: $commonWidthSp02;
 		margin: 30px auto 0;
 	}
 	&__item {
-		display: inline-block;
-		@include pc {
-			&:nth-of-type(even)  {
-				float: right;
-			}
-			&:nth-of-type(n+3) {
-				margin-top: 38px;
-			}
-		}
-		@include sp {
-			display: block;
-			width: $width-100;
-			& + & {
-				margin-top: 18px;
-			}
-		}
+		@extend .photoCol2__item;
 	}
-	&__photo {
-		@extend .textImage;
-		width: 520px;
-		height: 308px;
+	&__image {
+		@extend .photoCol2__image;
 		@include sp {
 			width: 100%;
-			height: 0;
-			padding-top: 59.234609%;
-		}
-		&--01 {
-			background: url(#{$img_path}/kasou/photo06.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo06_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--02 {
-			background: url(#{$img_path}/kasou/photo07.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo07_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--03 {
-			background: url(#{$img_path}/kasou/photo08.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo08_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--04 {
-			background: url(#{$img_path}/kasou/photo09.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo09_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
 		}
 	}
 	&__text {
@@ -3466,125 +3368,6 @@ button {
 			}
 		}
 		
-	}
-}
-.techList {
-	@extend .clearfix;
-	margin: 90px 0 130px;
-	@include sp {
-		width: $commonWidthSp02;
-		margin: 56px auto 50px;
-		text-align: center;
-	}
-	&__title {
-		display: inline-block;
-		border-bottom: 3px solid $commonGreen;
-		font-weight: normal;
-		font-size: 22px;
-		padding-bottom: 8px;
-		@include sp {
-			font-size: 20px;
-			padding-bottom: 5px;
-		}
-	}
-	&__list {
-		margin-top: 24px;
-	}
-	&__item {
-		width: 339px;
-		display: inline-block;
-		float: left;
-		margin: 0 0 0 31.5px;
-		@include pc {
-			&:nth-of-type(3n+1) {
-				margin-left: 0;
-			}
-			&:nth-of-type(n+4) {
-				margin-top: 27px;
-			}
-		}
-		@include sp {
-			display: block;
-			width: 100%;
-			float: none;
-			margin: 0 auto;
-			& + & {
-				margin-top: 17px;
-			}
-		}
-	}
-	&__link {
-		@extend .textImage;
-		width: 339px;
-		height: 54px;
-		@include sp {
-			width: 100%;
-			height: 0;
-			padding-top: 16%;
-		}
-		&--01 {
-			background: url(#{$img_path}/kasou/tech_button01.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button01_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--02 {
-			background: url(#{$img_path}/kasou/tech_button02.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button02_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--03 {
-			background: url(#{$img_path}/kasou/tech_button03.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button03_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--04 {
-			background: url(#{$img_path}/kasou/tech_button04.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button04_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--05 {
-			background: url(#{$img_path}/kasou/tech_button05.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button05_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--06 {
-			background: url(#{$img_path}/kasou/tech_button06.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button06_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--07 {
-			background: url(#{$img_path}/kasou/tech_button07.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button07_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--08 {
-			background: url(#{$img_path}/kasou/tech_button08.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button08_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--09 {
-			background: url(#{$img_path}/kasou/tech_button09.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button09_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
 	}
 }
 .backgroundLink {

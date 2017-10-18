@@ -157,7 +157,7 @@ button {
           appearance: none;
 }
 
-.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .photoCol3:after, .photoCol4:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .contentSection:after, .processList:after, .exampleList:after {
+.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after {
   content: "";
   clear: both;
   display: block;
@@ -181,7 +181,7 @@ button {
   }
 }
 
-.textImage, .archive__gooddesign, .techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link, .linkList__link, .illust, .header__icon, .footer__button, .topDl__photo, .processList__photo, .exampleList__photo, .techList__link, .companyContent__portrait, .companyContent__messageSign, .companyContent__groupTitle, .philosophySection__banner {
+.textImage, .archive__gooddesign, .techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link, .linkList__link, .illust, .header__icon, .footer__button, .companyContent__portrait, .companyContent__messageSign, .companyContent__groupTitle, .philosophySection__banner {
   display: block;
   height: 0;
   text-indent: 100%;
@@ -284,14 +284,14 @@ button {
   }
 }
 
-.largeHeadline, .contentSection__subtitle, .worksBlock__title {
+.largeHeadline, .technologyContent__subtitle, .worksBlock__title {
   color: #666666;
   font-size: 36px;
   font-weight: normal;
   text-align: center;
 }
 @media (max-width: 767px) {
-  .largeHeadline, .contentSection__subtitle, .worksBlock__title {
+  .largeHeadline, .technologyContent__subtitle, .worksBlock__title {
     font-size: 20px;
     line-height: 1.4;
   }
@@ -341,13 +341,13 @@ button {
   }
 }
 
-.smallHeadline, .doorNav__title, .contentSection__largeText, .companyContent__groupSubTitle, .serviceList__subTitle {
+.smallHeadline, .doorNav__title, .technologyContent__largeText, .companyContent__groupSubTitle, .serviceList__subTitle {
   color: #666666;
   font-size: 24px;
   font-weight: normal;
 }
 @media (max-width: 767px) {
-  .smallHeadline, .doorNav__title, .contentSection__largeText, .companyContent__groupSubTitle, .serviceList__subTitle {
+  .smallHeadline, .doorNav__title, .technologyContent__largeText, .companyContent__groupSubTitle, .serviceList__subTitle {
     font-size: 15px;
     line-height: 1.4;
     text-align: center;
@@ -871,38 +871,38 @@ button {
 }
 
 @media (max-width: 767px) {
-  .commonPhoto, .photoCol2__image, .photoCol3__image, .photoCol4__image {
+  .commonPhoto, .photoCol2__image, .exampleList__image, .photoCol3__image, .photoCol4__image, .processList__image {
     width: 93.75%;
     display: block;
     margin: 0 auto;
   }
 }
 
-.photoCol2__item {
+.photoCol2__item, .exampleList__item {
   display: inline-block;
   width: 520px;
 }
 @media (max-width: 767px) {
-  .photoCol2__item {
+  .photoCol2__item, .exampleList__item {
     width: 100%;
     display: block;
   }
 }
-.photoCol2__item:nth-of-type(even) {
+.photoCol2__item:nth-of-type(even), .exampleList__item:nth-of-type(even) {
   float: right;
 }
 @media (max-width: 767px) {
-  .photoCol2__item:nth-of-type(even) {
+  .photoCol2__item:nth-of-type(even), .exampleList__item:nth-of-type(even) {
     float: none;
   }
 }
 @media (min-width: 768px) {
-  .photoCol2__item:nth-of-type(n+3) {
+  .photoCol2__item:nth-of-type(n+3), .exampleList__item:nth-of-type(n+3) {
     margin-top: 38px;
   }
 }
 @media (max-width: 767px) {
-  .photoCol2__item:nth-of-type(n+2) {
+  .photoCol2__item:nth-of-type(n+2), .exampleList__item:nth-of-type(n+2) {
     margin: 20px auto 0;
   }
 }
@@ -929,23 +929,23 @@ button {
   }
 }
 
-.photoCol4__item {
+.photoCol4__item, .processList__item {
   display: inline-block;
   float: left;
   vertical-align: top;
 }
 @media (min-width: 768px) {
-  .photoCol4__item + .photoCol4__item {
+  .photoCol4__item + .photoCol4__item, .processList__item + .photoCol4__item, .photoCol4__item + .processList__item, .processList__item + .processList__item {
     margin-left: 18px;
   }
 }
 @media (max-width: 767px) {
-  .photoCol4__item {
+  .photoCol4__item, .processList__item {
     display: block;
     float: none;
     margin: 0 auto;
   }
-  .photoCol4__item + .photoCol4__item {
+  .photoCol4__item + .photoCol4__item, .processList__item + .photoCol4__item, .photoCol4__item + .processList__item, .processList__item + .processList__item {
     margin-top: 38px;
   }
 }
@@ -3516,52 +3516,53 @@ button {
   }
 }
 
-.contentSection {
+/********** 技術紹介ページ *******************/
+.technologyContent {
   padding: 98px 0 0;
   width: 1080px;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
-  .contentSection {
+  .technologyContent {
     width: 100%;
     padding: 30px 0 0;
   }
 }
-.contentSection__subtitle {
+.technologyContent__subtitle {
   letter-spacing: .01em;
 }
 @media (max-width: 767px) {
-  .contentSection__subtitle {
+  .technologyContent__subtitle {
     font-size: 20px;
     letter-spacing: .02em;
     line-height: 1.4;
   }
 }
-.contentSection__largeText {
+.technologyContent__largeText {
   margin: 260px 0 22px;
 }
 @media (max-width: 767px) {
-  .contentSection__largeText {
+  .technologyContent__largeText {
     width: 93.75%;
     margin: 20px auto;
     border-top: 1px dotted;
     padding: 22px 0 0;
   }
 }
-.contentSection__mediumText {
+.technologyContent__mediumText {
   font-size: 18px;
   line-height: 1.7;
 }
-.contentSection__mediumText + .contentSection__mediumText {
+.technologyContent__mediumText + .technologyContent__mediumText {
   margin: 30px 0 0;
 }
 @media (max-width: 767px) {
-  .contentSection__mediumText + .contentSection__mediumText {
+  .technologyContent__mediumText + .technologyContent__mediumText {
     margin: 20px auto 0;
   }
 }
 @media (max-width: 767px) {
-  .contentSection__mediumText {
+  .technologyContent__mediumText {
     font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
@@ -3579,20 +3580,17 @@ button {
 }
 .topDl__photo {
   float: right;
-  background: url(../images/kasou/photo01.jpg) left top no-repeat;
-  width: 520px;
-  height: 308px;
   margin: 78px 0 0;
 }
 @media (max-width: 767px) {
   .topDl__photo {
-    background: url(../images/kasou/photo01_sp.jpg) left top no-repeat;
-    background-size: 100%;
     float: none;
     margin: 17px auto 0;
+  }
+  .topDl__photo > img {
     width: 93.75%;
-    height: 0;
-    padding-top: 50%;
+    display: block;
+    margin: 0 auto;
   }
 }
 .topDl__dt {
@@ -3638,72 +3636,9 @@ button {
     padding: 38px 0 0;
   }
 }
-.processList__item {
-  display: inline-block;
-  vertical-align: top;
-  float: left;
-}
-@media (min-width: 768px) {
-  .processList__item + .processList__item {
-    margin-left: 18px;
-  }
-}
 @media (max-width: 767px) {
-  .processList__item {
-    float: none;
-    display: block;
-    width: 78.666667%;
-    margin: 0 auto;
-  }
-  .processList__item + .processList__item {
-    margin-top: 38px;
-  }
-}
-.processList__photo {
-  width: 256px;
-  height: 170px;
-}
-@media (max-width: 767px) {
-  .processList__photo {
+  .processList__image {
     width: 100%;
-    height: 0;
-    padding-top: 71.186441%;
-  }
-}
-.processList__photo--01 {
-  background: url(../images/kasou/photo02.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .processList__photo--01 {
-    background: url(../images/kasou/photo02_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.processList__photo--02 {
-  background: url(../images/kasou/photo03.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .processList__photo--02 {
-    background: url(../images/kasou/photo03_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.processList__photo--03 {
-  background: url(../images/kasou/photo04.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .processList__photo--03 {
-    background: url(../images/kasou/photo04_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.processList__photo--04 {
-  background: url(../images/kasou/photo05.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .processList__photo--04 {
-    background: url(../images/kasou/photo05_sp.jpg) left top no-repeat;
-    background-size: 100%;
   }
 }
 .processList__text {
@@ -3764,71 +3699,9 @@ button {
     margin: 30px auto 0;
   }
 }
-.exampleList__item {
-  display: inline-block;
-}
-@media (min-width: 768px) {
-  .exampleList__item:nth-of-type(even) {
-    float: right;
-  }
-  .exampleList__item:nth-of-type(n+3) {
-    margin-top: 38px;
-  }
-}
 @media (max-width: 767px) {
-  .exampleList__item {
-    display: block;
+  .exampleList__image {
     width: 100%;
-  }
-  .exampleList__item + .exampleList__item {
-    margin-top: 18px;
-  }
-}
-.exampleList__photo {
-  width: 520px;
-  height: 308px;
-}
-@media (max-width: 767px) {
-  .exampleList__photo {
-    width: 100%;
-    height: 0;
-    padding-top: 59.234609%;
-  }
-}
-.exampleList__photo--01 {
-  background: url(../images/kasou/photo06.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .exampleList__photo--01 {
-    background: url(../images/kasou/photo06_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.exampleList__photo--02 {
-  background: url(../images/kasou/photo07.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .exampleList__photo--02 {
-    background: url(../images/kasou/photo07_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.exampleList__photo--03 {
-  background: url(../images/kasou/photo08.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .exampleList__photo--03 {
-    background: url(../images/kasou/photo08_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.exampleList__photo--04 {
-  background: url(../images/kasou/photo09.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .exampleList__photo--04 {
-    background: url(../images/kasou/photo09_sp.jpg) left top no-repeat;
-    background-size: 100%;
   }
 }
 .exampleList__text {
@@ -3888,150 +3761,6 @@ button {
     background: #119357;
     color: white;
     opacity: 1;
-  }
-}
-
-.techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
-  margin: 90px 0 130px;
-}
-@media (max-width: 767px) {
-  .techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
-    width: 93.75%;
-    margin: 56px auto 50px;
-    text-align: center;
-  }
-}
-.techList__title, .companyList__title, .worksList__title, .managementList__title, .attemptList__title, .recruitList__title {
-  display: inline-block;
-  border-bottom: 3px solid #119357;
-  font-weight: normal;
-  font-size: 22px;
-  padding-bottom: 8px;
-}
-@media (max-width: 767px) {
-  .techList__title, .companyList__title, .worksList__title, .managementList__title, .attemptList__title, .recruitList__title {
-    font-size: 20px;
-    padding-bottom: 5px;
-  }
-}
-.techList__list {
-  margin-top: 24px;
-}
-.techList__item {
-  width: 339px;
-  display: inline-block;
-  float: left;
-  margin: 0 0 0 31.5px;
-}
-@media (min-width: 768px) {
-  .techList__item:nth-of-type(3n+1) {
-    margin-left: 0;
-  }
-  .techList__item:nth-of-type(n+4) {
-    margin-top: 27px;
-  }
-}
-@media (max-width: 767px) {
-  .techList__item {
-    display: block;
-    width: 100%;
-    float: none;
-    margin: 0 auto;
-  }
-  .techList__item + .techList__item {
-    margin-top: 17px;
-  }
-}
-.techList__link {
-  width: 339px;
-  height: 54px;
-}
-@media (max-width: 767px) {
-  .techList__link {
-    width: 100%;
-    height: 0;
-    padding-top: 16%;
-  }
-}
-.techList__link--01 {
-  background: url(../images/kasou/tech_button01.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--01 {
-    background: url(../images/kasou/tech_button01_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--02 {
-  background: url(../images/kasou/tech_button02.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--02 {
-    background: url(../images/kasou/tech_button02_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--03 {
-  background: url(../images/kasou/tech_button03.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--03 {
-    background: url(../images/kasou/tech_button03_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--04 {
-  background: url(../images/kasou/tech_button04.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--04 {
-    background: url(../images/kasou/tech_button04_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--05 {
-  background: url(../images/kasou/tech_button05.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--05 {
-    background: url(../images/kasou/tech_button05_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--06 {
-  background: url(../images/kasou/tech_button06.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--06 {
-    background: url(../images/kasou/tech_button06_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--07 {
-  background: url(../images/kasou/tech_button07.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--07 {
-    background: url(../images/kasou/tech_button07_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--08 {
-  background: url(../images/kasou/tech_button08.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--08 {
-    background: url(../images/kasou/tech_button08_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--09 {
-  background: url(../images/kasou/tech_button09.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--09 {
-    background: url(../images/kasou/tech_button09_sp.png) left top no-repeat;
-    background-size: 100%;
   }
 }
 
