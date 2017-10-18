@@ -1,0 +1,22 @@
+.underTop {
+  background: url(../img/photo_main.JPG) center top no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  ul.sizeFifty {
+    width: 50%;
+    float: left;
+  }
+}
+
+ul.sizeFifty li {
+  list-style-type: disc;
+  margin-left: 50px;
+  line-height: 1.5;
+}
+
+.ulContainer {
+  overflow: hidden;
+  margin-top: 15px;
+}

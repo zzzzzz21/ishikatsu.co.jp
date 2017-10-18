@@ -1,0 +1,16 @@
+.underTop {
+  /* background: url(../img/photo_main.JPG) center top no-repeat; */
+  /* background-size: cover; */
+}
+
+.topDl__photo {
+  background: url(../img/img_logo.png) center no-repeat;
+}
+
+.topDl__dd {
+  max-width: 485px;
+}
+
+.topDl__list li {
+  list-style-type: decimal;
+}
