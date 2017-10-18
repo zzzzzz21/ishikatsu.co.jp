@@ -218,11 +218,11 @@ button {
 }
 
 /* 各フォント */
-.middleText, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead {
+.middleText, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .middleText, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead {
+  .middleText, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead {
     font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
@@ -284,14 +284,14 @@ button {
   }
 }
 
-.largeHeadline, .contentSection__subtitle {
+.largeHeadline, .contentSection__subtitle, .worksBlock__title {
   color: #666666;
   font-size: 36px;
   font-weight: normal;
   text-align: center;
 }
 @media (max-width: 767px) {
-  .largeHeadline, .contentSection__subtitle {
+  .largeHeadline, .contentSection__subtitle, .worksBlock__title {
     font-size: 20px;
     line-height: 1.4;
   }
@@ -790,7 +790,7 @@ button {
   display: block;
   width: 100%;
   height: 0;
-  padding-top: 50.34965%;
+  padding-top: 50.06993%;
   /* (360/715) * 100% */
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -807,49 +807,39 @@ button {
             transform: scale(0.83333);
   }
 }
-@media (max-width: 767px) {
-  .aboutList__link {
-    padding-top: 50.3125%;
-    /* (322/640) * 100% */
-  }
-}
 .aboutList__link--01 {
-  background: url(../images/about_navi01.jpg) left top no-repeat;
+  background: url(../images/about_navi01.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .aboutList__link--01 {
-    background: url(../images/about_navi01_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
 }
 .aboutList__link--02 {
-  background: url(../images/about_navi02.jpg) left top no-repeat;
+  background: url(../images/about_navi02.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .aboutList__link--02 {
-    background: url(../images/about_navi02_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
 }
 .aboutList__link--03 {
-  background: url(../images/about_navi03.jpg) left top no-repeat;
+  background: url(../images/about_navi03.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .aboutList__link--03 {
-    background: url(../images/about_navi03_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
 }
 .aboutList__link--04 {
-  background: url(../images/about_navi04.jpg) left top no-repeat;
+  background: url(../images/about_navi04.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .aboutList__link--04 {
-    background: url(../images/about_navi04_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -1002,6 +992,14 @@ button {
     border-width: 0 0 7px 7px;
   }
 }
+.archive__mainVisual + .archive__list {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .archive__mainVisual + .archive__list {
+    margin-top: 10px;
+  }
+}
 .archive__list {
   font-size: 0;
 }
@@ -1016,17 +1014,48 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .archive__item:nth-of-type(even) {
+  .archive__item--col2:nth-of-type(even) {
     margin-left: 20px;
   }
 }
 @media (min-width: 768px) {
-  .archive__item:nth-of-type(n+3) {
+  .archive__item--col2:nth-of-type(n+3) {
     margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
-  .archive__item:nth-of-type(n+2) {
+  .archive__item--col2:nth-of-type(n+2) {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col4 {
+    margin-left: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .archive__item--col4 {
+    display: inline-block;
+    width: 48%;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col4:nth-of-type(4n+1) {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col4:nth-of-type(n+5) {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .archive__item--col4:nth-of-type(even) {
+    margin-left: 4%;
+  }
+}
+@media (max-width: 767px) {
+  .archive__item--col4:nth-of-type(n+3) {
     margin-top: 10px;
   }
 }
@@ -1072,6 +1101,7 @@ button {
 .bannerCol2__item {
   width: 520px;
   display: inline-block;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .bannerCol2__item {
@@ -1091,6 +1121,10 @@ button {
   display: block;
   width: 520px;
   height: 177px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 @media (max-width: 767px) {
   .bannerCol2__link {
@@ -1100,25 +1134,39 @@ button {
     margin: 0 auto;
   }
 }
+@media (min-width: 768px) {
+  .bannerCol2__link:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .bannerCol2__link:hover > .bannerCol2__text {
+    -webkit-transform: scale(0.83333);
+            transform: scale(0.83333);
+  }
+}
 .bannerCol2__link--01 {
-  background: url(../images/information_navi01.jpg) left top no-repeat;
+  background: url(../images/information_navi01.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .bannerCol2__link--01 {
-    background: url(../images/information_navi01_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
 }
 .bannerCol2__link--02 {
-  background: url(../images/information_navi02.jpg) left top no-repeat;
+  background: url(../images/information_navi02.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .bannerCol2__link--02 {
-    background: url(../images/information_navi02_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
+}
+.bannerCol2__text {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 /* 円形のバナー */
@@ -1130,6 +1178,8 @@ button {
 .bannerCircle__item {
   width: 245px;
   display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
 }
 @media (min-width: 768px) {
   .bannerCircle__item:nth-of-type(n+2) {
@@ -1151,11 +1201,25 @@ button {
   display: block;
   width: 245px;
   height: 245px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 @media (min-width: 768px) {
   .bannerCircle__link:before {
     content: "";
     border-radius: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .bannerCircle__link:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .bannerCircle__link:hover > .bannerCircle__text {
+    -webkit-transform: scale(0.83333);
+            transform: scale(0.83333);
   }
 }
 @media (max-width: 767px) {
@@ -1172,7 +1236,6 @@ button {
 }
 @media (max-width: 767px) {
   .bannerCircle__link--01 {
-    background: url(../images/approach_navi01_sp.png) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -1182,7 +1245,6 @@ button {
 }
 @media (max-width: 767px) {
   .bannerCircle__link--02 {
-    background: url(../images/approach_navi02_sp.png) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -1192,7 +1254,6 @@ button {
 }
 @media (max-width: 767px) {
   .bannerCircle__link--03 {
-    background: url(../images/approach_navi03_sp.png) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -1202,9 +1263,14 @@ button {
 }
 @media (max-width: 767px) {
   .bannerCircle__link--04 {
-    background: url(../images/approach_navi04_sp.png) left top no-repeat;
     background-size: 100%;
   }
+}
+.bannerCircle__text {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 .bannerCircle__text.bannerCircle__text--line02 {
   height: 56px;
@@ -1292,6 +1358,11 @@ button {
 /* 技術紹介ナビ */
 .techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
   margin: 90px 0 130px;
+}
+@media (min-width: 768px) {
+  .techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
+    text-align: left;
+  }
 }
 @media (max-width: 767px) {
   .techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
@@ -1813,6 +1884,16 @@ button {
     margin-top: 44px;
   }
 }
+.underTop--02 {
+  background: url(../images/kasou/main02.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--02 {
+    background: url(../images/kasou/main02_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
 .underTop--small {
   background: url(../images/kasou/main01_small.png) center top no-repeat;
   height: 325px;
@@ -1907,6 +1988,15 @@ button {
   font-weight: normal;
   color: white;
 }
+@media (min-width: 768px) {
+  .underTop__title::after {
+    content: "";
+    border-top: 1px dotted white;
+    width: 130px;
+    display: block;
+    margin: 15px auto 0;
+  }
+}
 @media (max-width: 767px) {
   .underTop__title {
     font-size: 22px;
@@ -1918,7 +2008,7 @@ button {
   font-size: 18px;
   color: #FFF;
   color: white;
-  margin-top: 32px;
+  margin-top: 15px;
   letter-spacing: .2em;
 }
 @media (max-width: 767px) {
@@ -2183,7 +2273,7 @@ button {
 @media (max-width: 767px) {
   .nav {
     float: none;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     display: none;
     margin-top: 0;
   }
@@ -2198,10 +2288,13 @@ button {
   text-align: center;
   padding-bottom: 28px;
 }
+.nav__item:hover .nav__link:before {
+  width: 100%;
+}
 @media (min-width: 768px) {
   .nav__item:hover .megaDrop {
     visibility: visible;
-    height: 440px;
+    opacity: 1;
     border-top: 1px solid #119357;
     border-bottom: 10px solid #119357;
   }
@@ -2250,6 +2343,18 @@ button {
 @media (min-width: 768px) {
   .nav__link {
     cursor: pointer;
+  }
+  .nav__link:before {
+    content: "";
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+    display: inline-block;
+    width: 0;
+    height: 5px;
+    background: #018643;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .nav__link--first {
     border-left: 1px solid;
@@ -2302,13 +2407,17 @@ button {
   width: 100%;
   left: 0;
   top: 73px;
-  height: 0;
+  height: 440px;
   text-align: left;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   visibility: hidden;
-  z-index: -1;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+@media (min-width: 768px) {
+  .megaDrop {
+    opacity: 0;
+  }
 }
 @media (max-width: 767px) {
   .megaDrop {
@@ -2937,20 +3046,26 @@ button {
   position: relative;
 }
 @media (min-width: 768px) {
-  .TopNavigationLink:before, .aboutList__link:before, .bannerCol2__link:before, .bannerCircle__link:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
+  .TopNavigationLink, .aboutList__link, .bannerCol2__link, .bannerCircle__link {
+    /*
+    &:before {
+    	content:"";
+    	position: absolute;
+    	top:0;
+    	bottom:0;
+    	left: 0;
+    	right: 0;
+    	background: rgba(0,0,0,0.3);
+    }
+    */
   }
   .TopNavigationLink:hover, .aboutList__link:hover, .bannerCol2__link:hover, .bannerCircle__link:hover {
     opacity: 1;
-  }
-  .TopNavigationLink:hover:before, .aboutList__link:hover:before, .bannerCol2__link:hover:before, .bannerCircle__link:hover:before {
-    background: transparent;
+    /*
+    &:before {
+    	background: rgba(0,0,0,0);
+    }
+    */
   }
 }
 
@@ -4250,8 +4365,8 @@ button {
 @media (max-width: 767px) {
   .philosophySection {
     width: 100%;
-    margin: 47px auto 0;
-    padding-bottom: 110px;
+    margin: 0 auto;
+    padding: 45px 0 110px;
   }
 }
 @media (min-width: 768px) {
@@ -4425,6 +4540,57 @@ button {
     height: 0;
     padding-top: 101.5625%;
     margin: 15px auto 55px;
+  }
+}
+
+/********* 実績紹介 **************/
+.worksContent {
+  width: 1080px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .worksContent {
+    width: 100%;
+  }
+}
+
+.worksBlock {
+  margin-top: 100px;
+}
+@media (max-width: 767px) {
+  .worksBlock {
+    margin-top: 30px;
+  }
+}
+.worksBlock + .worksBlock {
+  margin-top: 50px;
+}
+.worksBlock__title {
+  margin: 0 0 50px;
+}
+@media (max-width: 767px) {
+  .worksBlock__title {
+    margin: 0 0 15px;
+  }
+}
+.worksBlock__title + .worksBlock__lead {
+  margin: -15px 0 50px;
+}
+@media (max-width: 767px) {
+  .worksBlock__title + .worksBlock__lead {
+    margin: -10px auto 10px;
+  }
+}
+.worksBlock__lead {
+  text-align: center;
+  color: #b56f41;
+  margin: 0 0 50px;
+}
+@media (max-width: 767px) {
+  .worksBlock__lead {
+    text-align: left;
+    line-height: 1.8;
+    margin: 0 auto 10px;
   }
 }
 
