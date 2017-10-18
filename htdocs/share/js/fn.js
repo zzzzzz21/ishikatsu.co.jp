@@ -12,6 +12,7 @@ $(document).ready(function(){
 			$(this).attr("src", $(this).attr("src").replace('.png', '_sp.png'));
 		});
 	}
+    
     $('.nav__item').hover(function(){
         $(this).parent().parent().parent().parent().toggleClass('header--active');
     });
@@ -48,3 +49,39 @@ $(document).ready(function(){
 		$('.nav__item').removeClass('nav__item--open');
 	});
 });
+/* 会社概要トップページのgoogleMap設定 */
+function inlitialize01() {
+    var latlng = new google.maps.LatLng(-34.397, 150.644);
+    var myOptions = {
+        zoom: 2
+      , center: latlng
+      , mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map_01 = new google.maps.Map(
+        document.getElementById("map_canvas_01")
+      , myOptions
+    );
+
+    latlng = new google.maps.LatLng(34.6416538, 134.3369159);
+    var myOptions = {
+        zoom: 5
+      , center: latlng
+      , mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map_02 = new google.maps.Map(
+        document.getElementById("map_canvas_02")
+      , myOptions
+    );
+}
+function inlitialize02() {
+    latlng = new google.maps.LatLng(34.6416538, 134.3369159);
+    var myOptions = {
+        zoom: 5
+      , center: latlng
+      , mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map_03 = new google.maps.Map(
+        document.getElementById("map_canvas_03")
+      , myOptions
+    );
+}

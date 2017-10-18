@@ -222,6 +222,9 @@ button {
 		}
 	}
 }
+.linkBlue {
+	color: rgb(0,102,255);
+}
 /********** パーツリスト *******/
 /* 和紙背景 */
 .background01{
@@ -494,6 +497,12 @@ button {
 		@include sp {
 			width: $commonWidthSp02;
 			text-align: left;
+		}
+		& + .subtitleSection {
+			@include sp {
+				margin-top: 45px;
+				padding-bottom: 45px;
+			}
 		}
 	}
 	&__item {
@@ -3501,15 +3510,48 @@ button {
 ************/
 
 /* 会社概要 */
+.companyBlock {
+	& + .companyBlock {
+		margin-top: 80px;
+		@include sp {
+			margin-top: 40px;
+		}
+	}
+}
+.companyLinkText {
+	@extend .borderBottom--dot;
+	text-align: center;
+	margin: 60px auto 0;
+	padding-bottom: 100px;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 30px auto 0;
+		padding-bottom: 50px;
+	}
+	&__link {
+		@extend .greenButton;
+		@extend .greenButton--pdf;
+		@include sp {
+			width: 62%;
+		}
+	}
+}
 .companyContent {
 	width: $commonWidthPc;
 	margin: 60px auto 0;
 	@include sp {
-		width: $commonWidthSp02;
+		width: $width-100;
+		margin: 40px auto 0;
 	}
 	&__subTitle {
 		@extend .middleHeadline--type02;
 		margin-bottom: 40px;
+		@include sp {
+			border-left: 3px solid #018643;
+			text-align: left;
+			padding-left: 8px;
+			margin: 0 0 0 3.125%;
+		}
 	}
 	&__buttonWrapper {
 		text-align: center;
@@ -3519,12 +3561,154 @@ button {
 		@extend .greenButton--pdf;
 		margin-top: 58px;
 	}
+	/* 社長あいさつ */
+	&__messageImage {
+		margin-bottom: 40px;
+		position: relative;
+		@include sp {
+			margin-bottom: 5px;
+		}
+	}
+	&__portrait {
+		@extend .textImage;
+		background: url(#{$img_path}/kasou/message_photo01.jpg) left top no-repeat;
+		width: 1080px;
+		height: 408px;
+		@include sp {
+			background: url(#{$img_path}/kasou/message_photo01_sp.jpg) left top no-repeat;
+			background-size: 100%;
+			width: 93.75%;
+			height: 0;
+			padding-top: 71.09375%;
+			margin: 35px auto 0;
+		}
+		
+	}
+	&__portraitText {
+		@extend .hugeHeadline;
+		position: absolute;
+		text-align: right;
+		right: 35px;
+		top: 20px;
+		line-height: 1.8;
+		letter-spacing: .05em;
+		@include sp {
+			position: static;
+			text-align: left;
+			width: 93.75%;
+			margin: 3px auto 0;
+			font-size: 17px;
+		}
+	}
+	&__messageText {
+		@extend .middleText;
+		@extend .middleText--left;
+		@include sp {
+			line-height: 1.5;
+		}
+		& + .companyContent__messageText {
+			margin-top: 15px;
+			@include sp {
+				margin-top: 18px;
+			}
+		}
+	}
+	&__messagePosition {
+		@extend .middleText;
+		text-align: right;
+		padding: 38px 215px 0 0;
+		@include sp {
+			padding: 20px 31% 0 0;
+			font-size: 10px;
+		}
+	}
+	&__messageSign {
+		@extend .textImage;
+		background: url(#{$img_path}/kasou/message_text01.png) left top no-repeat;
+		background-size: 100%;
+		width: 361px;
+		height: 101px;
+		margin: 0 0  260px 725px;
+		@include sp {
+			width: 56.40625%;
+			height: 0;
+			padding-top: 15.78125%;
+			margin: 0 0 100px 41%;
+		}
+	}
+	/* 関連会社 */
+	&__groupTitle {
+		@extend .textImage;
+		background: url(#{$img_path}/kasou/group_title01.png) left top no-repeat;
+		width: 705px;
+		height: 96px;
+		margin: 75px auto 85px;
+	}
+	&__groupSubTitle {
+		@extend .smallHeadline;
+		margin: -10px auto 0;
+		@include sp {
+			width: $commonWidthSp02;
+			margin: -10px auto 0;
+		}
+	}
+	&__groupText {
+		@extend .middleText;
+		@extend .middleText--left;
+		margin: 15px auto 0;
+		&.companyContent__groupText--recruit {
+			margin-top: -10px;
+		}
+	}
+}
+.groupBlock {
+	& + .groupBlock {
+		margin-top: 100px;
+	}
+	&.groupBlock--last {
+		margin-bottom: 230px;
+	}
+}
+/* googleMap設定 */
+#map_canvas_01 {
+	width: 520px;
+	height: 308px;
+	@include sp {
+		width: 93.75%;
+		margin: 20px auto 0;
+		height: 0;
+		padding-top: 62.5%;
+	}
+}
+#map_canvas_02 {
+	width: 1080px;
+	height: 578px;
+	margin-bottom: 258px;
+	@include sp {
+		width: 93.75%;
+		margin: 20px auto 100px;
+		height: 0;
+		padding-top: 62.5%;
+	}
+}
+#map_canvas_03 {
+	width: 1080px;
+	height: 578px;
+	@include sp {
+		width: 93.75%;
+		margin: 0 auto;
+		height: 0;
+		padding-top: 62.5%;
+	}
 }
 .companyTable01 {
 	@extend .commonTable;
 	@include pc {
 		line-height: 1.7;
-		margin: 40px auto 80px;
+		margin: 40px auto 0;
+	}
+	@include sp {
+		margin: 20px auto 0;
 	}
 	&__tr {
 		@extend .commonTable__tr;
@@ -3532,7 +3716,7 @@ button {
 	&__th {
 		@extend .commonTable__th;
 		@include pc {
-			padding: 1em 0 0.7em 20px;
+			padding: 1em 0 0.65em 20px;
 		}
 	}
 	&__td {
@@ -3542,8 +3726,86 @@ button {
 		}
 	}
 }
+.companyTable02 {
+	@extend .commonTable;
+	@include pc {
+		line-height: 1.7;
+		margin: 40px auto 255px;
+	}
+	@include sp {
+		margin: 20px auto 100px;
+	}
+	&__tr {
+		@extend .commonTable__tr;
+	}
+	&__th {
+		@extend .commonTable__th;
+		@include pc {
+			padding: 1em 0 0.65em 20px;
+		}
+	}
+	&__td {
+		@extend .commonTable__td;
+		&.companyTable01__td--multiLine {
+			@extend .commonTable__td--multiLine;
+		}
+	}
+}
+/* 関連会社 */
+.groupBlock {
+	&__ol {
+		@extend .middleText;
+		@extend .middleText--left;
+		display: inline-block;
+		margin: -10px 0 0 45px;
+		list-style-type: decimal;
+	}
+	&__olItem {
+		position: relative;
+		padding: 0 0 0 5px;
+		&:nth-of-type(n+2) {
+			margin-top: 15px;
+		}
+	}
+	&__olNumber {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+	}
+}
+.groupCompanyTable {
+	@extend .commonTable;
+	@include pc {
+		line-height: 1.7;
+		margin: 0 auto;
+	}
+	&__tr {
+		@extend .commonTable__tr;
+	}
+	&__th {
+		@extend .commonTable__th;
+		width: 255px;
+		@include pc {
+			padding: 1em 0 0.65em 20px;
+		}
+	}
+	&__td {
+		@extend .commonTable__td;
+		width: 415px;
+		padding: 0 0 11px 26px;
+		@include pc {
+			border-left: none;
+			border-right: none;
+		}
+	}
+}
+
 /* 事業紹介 */
 .serviceList {
+	@extend .borderBottom--dot;
+	padding: 0 0 95px;
+	margin: 0 auto 150px;
 	&__item {
 		&:nth-of-type(n+2) {
 			margin-top: 70px;
@@ -3554,7 +3816,10 @@ button {
 	}
 	&__subTitle {
 		@extend .smallHeadline;
-		margin-top: 35px;
+		margin: 35px auto 0;
+		@include sp {
+			width: $commonWidthSp02;
+		}
 	}
 	&__text {
 		@extend .middleText;
