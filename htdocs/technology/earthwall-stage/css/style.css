@@ -1,5 +1,5 @@
 .underTop {
-  background: url(../img/DSCN0906.JPG) center center no-repeat;
+  background: url(../img/bg_main.jpg) center center no-repeat;
 }
 
 @media (min-width: 768px) {
@@ -16,17 +16,17 @@
 }
 
 .topDl__photo.first {
-  background: url(../img/DSC_0075.jpg) left top no-repeat;
+  background: url(../img/photo_earthwall-stage.jpg) left top no-repeat;
 }
 
 .topDl__photo.second {
-  background: url(../img/04_earthwall_stage02.jpg) left top no-repeat;
+  background: url(../img/photo_basic.jpg) left top no-repeat;
 }
 
 .imgContainer {
   height: 500px;
   width: 100%;
-  background: url(../img/04_earthwall_stage_03.jpg) no-repeat center center;
+  background: url(../img/photo_main.jpg) no-repeat center center;
 }
 
 .ownSetting .photoCol4__image {
@@ -41,4 +41,8 @@
 
 .contentSection .subtitleSection {
   padding: 0;
+}
+
+.tableSample {
+  margin-top: 15px;
 }
