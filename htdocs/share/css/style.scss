@@ -225,6 +225,10 @@ button {
 .linkBlue {
 	color: rgb(0,102,255);
 }
+.textIndent {
+	text-indent: -1em;
+	padding-left: 1em;
+}
 /********** パーツリスト *******/
 /* 和紙背景 */
 .background01{
@@ -1732,6 +1736,14 @@ button {
 			background-size: cover;
 		}
 	}
+	&--03 {
+		background: url(#{$img_path}/kasou/main03.png) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main03_sp.png) center top no-repeat;
+			background-size: cover;
+		}
+	}
 	&--small {
 		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
 		height: 325px;
@@ -2598,6 +2610,10 @@ button {
 	&.slick-initialized {
 		display: block;
 		margin-bottom: 0;
+		@include sp {
+		//  slick-theme.cssに既存スタイルがあるため、importantを使用する。
+			margin-bottom: 0 !important;
+		}
 	}
 	&__dots {
 		position: absolute;
@@ -2609,7 +2625,8 @@ button {
 		@include sp {
 			display: block;
 			position: static;
-			margin-top: 15px;
+			padding: 17px 0;
+			background: $commonBlack;
 		}
 		& > li {
 			display: inline-block;
@@ -3055,6 +3072,9 @@ button {
 		margin-top: 28px;
 		font-size: 17px;
 		line-height: 1.8;
+		& img {
+			max-width: 100%;
+		}
 		@include sp {
 			border-top: 1px solid #666666;
 			border-bottom: 1px solid #666666;
@@ -3910,5 +3930,66 @@ button {
 			line-height: 1.8;
 			margin: 0 auto 10px;
 		}
+	}
+}
+/***********採用ページ *****************/
+.recruitContent {
+	width: $commonWidthPc;
+	margin: 72px auto 0;
+	&__title {
+		@extend .middleHeadline--type02;
+	}
+}
+.recruitTable {
+	font-size: 17px;
+	line-height: 1.8;
+	text-align: left;
+	width: $width-100;
+	margin: 60px auto 0;
+	&__tr {
+		border-top: 1px solid $middleGray;
+		border-bottom: 1px solid $middleGray;
+	}
+	&__th {
+		font-weight: normal;
+		padding: 18px 0 11px;
+		width: 185px;
+		&--process {
+			width: 243px;
+		}
+	}
+	&__td {
+		padding: 18px 0 11px;
+	}
+	&__list {
+		@extend .textIndent;
+	}
+	&__smallTable {
+	}
+	&__smallTr {
+		&:nth-of-type(n+2) {
+			border-top: 1px solid $middleGray;
+		}
+		&:nth-of-type(1) {
+			& > .recruitTable__th {
+				padding-top: 0;
+			}
+			& > .recruitTable__td {
+				padding-top: 0;
+			}
+		}
+	}
+	&__smallTh {
+		@extend .recruitTable__th;
+		width: 142px;
+	}
+	&__smallTd {
+		@extend .recruitTable__td;
+	}
+	
+}
+.recruitBlock {
+	& + .recruitBlock {
+		margin-top: 130px;
 	}
 }
