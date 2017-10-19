@@ -339,6 +339,16 @@ button {
 		margin-top: 26px;
 	}
 }
+.middleHeadline--type03 {
+	@extend .middleHeadline--type02;
+	margin-bottom: 40px;
+	@include sp {
+		border-left: 3px solid #018643;
+		text-align: left;
+		padding-left: 8px;
+		margin: 0 0 0 3.125%;
+	}
+}
 .smallHeadline {
 	color: $middleGray;
 	font-size: 24px;
@@ -1715,6 +1725,11 @@ button {
 	}
 }
 /* 下層ページタイトルブロック */
+.underMain {
+	@include sp {
+		padding-top: 44px;
+	}
+}
 .underTop {
 	background: url(#{$img_path}/kasou/main01.png) center top no-repeat;
 	width: 100%;
@@ -1726,7 +1741,6 @@ button {
 		background-size: cover;
 		height: 0;
 		padding-top: 29.53125%;
-		margin-top: 44px;
 	}
 	&--02 {
 		background: url(#{$img_path}/kasou/main02.png) center top no-repeat;
@@ -1744,6 +1758,14 @@ button {
 			background-size: cover;
 		}
 	}
+	&--04 {
+		background: url(#{$img_path}/kasou/main04.png) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main04_sp.png) center top no-repeat;
+			background-size: cover;
+		}
+	}
 	&--small {
 		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
 		height: 325px;
@@ -1754,7 +1776,6 @@ button {
 			background-size: cover;
 			height: 0;
 			padding-top: 29.53125%;
-			margin-top: 44px;
 		}
 		&.underTop--small02 {
 			background: url(#{$img_path}/kasou/main02_small.png) center top no-repeat;
@@ -3157,15 +3178,37 @@ button {
 			padding: 10px 0 0;
 		}
 	}
-	&__lead {
+	&__english {
 		text-align: center;
-		font-size: 18px;
-		line-height: 2;
-		margin: 28px auto 0;
+		color: $commonBlack;
+		font-size: 15px;
+		letter-spacing: .05em;
+		margin: 8px auto 0;
 		@include sp {
 			font-size: 12px;
+			letter-spacing: 0;
+		}
+	}
+	&__smallTitle {
+		@extend .largeHeadline;
+		margin: 40px auto 0;
+		@include sp {
+			margin: 24px auto 0;
+			font-size: 15px;
+		}
+		& + .subtitleSection__lead {
+			margin: 35px auto 0;
+			@include sp {
+				margin: 15px auto 0;
+			}
+		}
+	}
+	&__lead {
+		@extend .middleText;
+		@extend .middleText--center;
+		margin: 28px auto 0;
+		@include sp {
 			margin: 10px auto 0;
-			line-height: 1.7;
 		}
 	}
 }
@@ -3437,14 +3480,7 @@ button {
 		margin: 40px auto 0;
 	}
 	&__subTitle {
-		@extend .middleHeadline--type02;
-		margin-bottom: 40px;
-		@include sp {
-			border-left: 3px solid #018643;
-			text-align: left;
-			padding-left: 8px;
-			margin: 0 0 0 3.125%;
-		}
+		@extend .middleHeadline--type03;
 	}
 	&__buttonWrapper {
 		text-align: center;
@@ -3932,11 +3968,138 @@ button {
 		}
 	}
 }
+/***********管理運営ページ **************/
+.managementContent {
+	width: $commonWidthPc;
+	margin: 80px auto 0;
+	@include sp {
+		width: $width-100;
+		margin: 40px auto 0;
+	}
+	&__subTitle {
+		@extend .middleHeadline--type03;
+		@include sp {
+			font-size: 18px;
+			letter-spacing: .1em;
+			border-bottom: 2px solid $rightGreen;
+			padding-bottom: 5px;
+			margin-bottom: 25px;
+			line-height: 1.3;
+			border-left: none;
+			text-align: center;
+			display: inline-block;
+		}
+	}
+	&__subText {
+		@extend .middleText;
+		margin: -18px 0 0 18px;
+		@include sp {
+			margin: -10px auto 30px;
+		}
+	}	
+}
+.managementBlock {
+	&--golf01 {
+		@include sp {
+			text-align: center;
+		}
+	}
+}
+.golfMap {
+	&__illust {
+		@extend .textImage;
+		background: url(#{$img_path}/kasou/management-golf_illust01.png) left top no-repeat;
+		width: 1028px;
+		height: 920px;
+		margin: -37px 0 0 45px;
+		@include sp {
+			background: url(#{$img_path}/kasou/management-golf_illust01_sp.png) left top no-repeat;
+			background-size: 100%;
+			width: $commonWidthSp02;
+			height: 0;
+			padding-top: 196.436037%;
+			margin: 0 auto;
+		}
+	}
+	&__linkText {
+		text-align: center;
+	}
+	&__link {
+		@extend .greenButton;
+		margin: 80px auto 0;
+		@include sp {
+			margin: 33px auto 0;
+			width: 55%;
+		}
+	}
+}
+.managementCaption {
+	margin: 130px auto 0;
+	@include sp {
+		width: $commonWidthSp02;
+		border-top: 1px dotted $commonBlack;
+		margin: 45px auto 0;
+		padding: 36px 0 0;
+	}
+	&__item {
+		&:nth-of-type(n+2) {
+			margin: 102px 0 0;
+			@include sp {
+				margin: 27px 0 0;
+			}
+		}
+	}
+	&__title {
+		@extend .smallHeadline;
+		color: $middleGreen;
+		&:before {
+			content: "";
+			background: url(#{$img_path}/kasou/management_marker.png) left top no-repeat;
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			vertical-align: middle;
+			margin: 0 8px 0 0;
+		}
+		@include sp {
+			text-align: left;
+			font-size: 18px;
+			&:before {
+			background: url(#{$img_path}/kasou/management_marker_sp.png) left top no-repeat;
+				background-size: 100%;
+				width: 23px;
+				height: 23px;
+			}
+		}
+	}
+	&__image {
+		margin: 20px 0 0;
+		@include sp {
+			width: $width-100;
+			margin: 5px auto 0;
+		}
+	}
+	&__text {
+		@extend .smallText;
+		@extend .borderBottom--dot;
+		margin: 8px 0 0;
+		padding: 0 0 8px;
+		width: 520px;
+		@include sp {
+			width: 100%;
+			margin: 5px 0 0;
+			padding: 0 0 20px;
+		}
+	}
+
+}
+
 /***********採用ページ *****************/
 .recruitContent {
 	width: $commonWidthPc;
 	margin: 72px auto 0;
 	&__title {
+		width: $width-100;
 		@extend .middleHeadline--type02;
 	}
 }
