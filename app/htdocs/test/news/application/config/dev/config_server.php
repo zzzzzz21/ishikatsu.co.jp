@@ -4,3 +4,8 @@
  * development
  */
 $config = array();
+
+// ドキュメントルートまでのパス
+$config['path'] = '/var/www/html/';
+
+define('BASE_PATH', '/test/');

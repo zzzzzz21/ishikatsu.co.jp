@@ -38,12 +38,10 @@
 					{{$detail_ne.body}}
 				</div>
 			</article>
-{{if $prev|default:"" || $next|default:""}}
 			<ul class="pagerButton">
 				<li class="pagerButton__item pagerButton__item--prev">{{if $prev|default:""}}<a href="../{{$prev.info_id}}/" class="pagerButton__link pagerButton__link--prev">PREV</a>{{/if}}</li>
 				<li class="pagerButton__item pagerButton__item--next">{{if $next|default:""}}<a href="../{{$next.info_id}}/" class="pagerButton__link pagerButton__link--next">NEXT</a>{{/if}}</li>
 			</ul>
-{{/if}}
 
 			<p class="articleButton"><a href="../" class="articleButton__link">一覧にもどる</a></p>
 		</div>

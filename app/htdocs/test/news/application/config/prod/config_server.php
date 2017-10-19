@@ -6,6 +6,6 @@
 $config = array();
 
 // ドキュメントルートまでのパス
-$config['path'] = '/home/tokyu-re-design/www/tokyu-re-design/';
+$config['path'] = '/var/www/html/';
 
 define('BASE_PATH', '/');

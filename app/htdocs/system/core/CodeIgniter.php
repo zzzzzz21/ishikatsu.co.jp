@@ -55,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @var	string
  *
  */
-	const CI_VERSION = '3.1.6';
+	define('CI_VERSION', '3.1.6');
 
 /*
  * ------------------------------------------------------
@@ -137,7 +137,7 @@ if ( ! is_php('5.4'))
  */
 	set_error_handler('_error_handler');
 	set_exception_handler('_exception_handler');
-	register_shutdown_function('_shutdown_handler');
+//	register_shutdown_function('_shutdown_handler');
 
 /*
  * ------------------------------------------------------

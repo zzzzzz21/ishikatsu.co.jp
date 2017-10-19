@@ -225,7 +225,8 @@ class CI_DB_mysql_driver extends CI_DB {
 	 */
 	protected function _db_set_charset($charset)
 	{
-		return mysql_set_charset($charset, $this->conn_id);
+//		return mysql_set_charset($charset, $this->conn_id);
+		return mysql_query("set names {$charset}", $this->conn_id);
 	}
 
 	// --------------------------------------------------------------------

@@ -5,7 +5,7 @@
  */
 
 // sitemap.xml
-$config['path'] = '/var/www/html/test/';
+$config['path'] = '/var/www/html/';
 
 define('TABLE_PREFIX', 'test_');
 define('BASE_PATH', '/test/admin/');
