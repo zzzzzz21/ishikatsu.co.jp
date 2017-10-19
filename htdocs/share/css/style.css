@@ -204,6 +204,11 @@ button {
   color: #0066ff;
 }
 
+.textIndent, .recruitTable__list {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
 /********** パーツリスト *******/
 /* 和紙背景 */
 .background01, .topMain,
@@ -297,14 +302,14 @@ button {
   }
 }
 
-.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
+.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .recruitContent__title, .tableSample__title, .topDl__dt, .newsArticle__title {
   font-size: 30px;
   padding: 5px 0 0 15px;
   font-weight: normal;
   letter-spacing: .02em;
 }
 @media (max-width: 767px) {
-  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
+  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .recruitContent__title, .tableSample__title, .topDl__dt, .newsArticle__title {
     font-size: 20px;
     padding: 0;
     letter-spacing: 0;
@@ -322,21 +327,21 @@ button {
   }
 }
 
-.middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt {
+.middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .recruitContent__title, .tableSample__title, .topDl__dt {
   color: #018643;
   border-left: 5px solid #018643;
 }
 @media (max-width: 767px) {
-  .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt {
+  .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .recruitContent__title, .tableSample__title, .topDl__dt {
     border: none;
   }
 }
 
-.middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title {
+.middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .recruitContent__title {
   color: #666666;
 }
 @media (max-width: 767px) {
-  .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title {
+  .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .recruitContent__title {
     margin-top: 26px;
   }
 }
@@ -1894,6 +1899,16 @@ button {
     background-size: cover;
   }
 }
+.underTop--03 {
+  background: url(../images/kasou/main03.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--03 {
+    background: url(../images/kasou/main03_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
 .underTop--small {
   background: url(../images/kasou/main01_small.png) center top no-repeat;
   height: 325px;
@@ -2889,6 +2904,11 @@ button {
   display: block;
   margin-bottom: 0;
 }
+@media (max-width: 767px) {
+  .carousel.slick-initialized {
+    margin-bottom: 0 !important;
+  }
+}
 .carousel__dots {
   position: absolute;
   bottom: 7%;
@@ -2901,7 +2921,8 @@ button {
   .carousel__dots {
     display: block;
     position: static;
-    margin-top: 15px;
+    padding: 17px 0;
+    background: black;
   }
 }
 .carousel__dots > li {
@@ -3407,6 +3428,9 @@ button {
   margin-top: 28px;
   font-size: 17px;
   line-height: 1.8;
+}
+.newsArticle__content img {
+  max-width: 100%;
 }
 @media (max-width: 767px) {
   .newsArticle__content {
@@ -4321,6 +4345,51 @@ button {
     line-height: 1.8;
     margin: 0 auto 10px;
   }
+}
+
+/***********採用ページ *****************/
+.recruitContent {
+  width: 1080px;
+  margin: 72px auto 0;
+}
+
+.recruitTable {
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: left;
+  width: 100%;
+  margin: 60px auto 0;
+}
+.recruitTable__tr {
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+}
+.recruitTable__th, .recruitTable__smallTh {
+  font-weight: normal;
+  padding: 18px 0 11px;
+  width: 185px;
+}
+.recruitTable__th--process {
+  width: 243px;
+}
+.recruitTable__td, .recruitTable__smallTd {
+  padding: 18px 0 11px;
+}
+.recruitTable__smallTr:nth-of-type(n+2) {
+  border-top: 1px solid #666666;
+}
+.recruitTable__smallTr:nth-of-type(1) > .recruitTable__th, .recruitTable__smallTr:nth-of-type(1) > .recruitTable__smallTh {
+  padding-top: 0;
+}
+.recruitTable__smallTr:nth-of-type(1) > .recruitTable__td, .recruitTable__smallTr:nth-of-type(1) > .recruitTable__smallTd {
+  padding-top: 0;
+}
+.recruitTable__smallTh {
+  width: 142px;
+}
+
+.recruitBlock + .recruitBlock {
+  margin-top: 130px;
 }
 
 /*# sourceMappingURL=style.css.map */
