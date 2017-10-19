@@ -1,0 +1,9 @@
+.underTop {
+  background: url(../img/bg_main.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.archive__image {
+  width: 510px;
+  height: 340px;
+}
