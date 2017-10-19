@@ -4,3 +4,5 @@ app/htdocs/test/news/application/views/templates_c/*php
 app/htdocs/test/share/
 app/htdocs/test/news/server.conf.php
 app/htdocs/test/admin/server.conf.php
+app/htdocs/admin/application/views/templates_c/*.php
+app/htdocs/news/application/views/templates_c/*.php

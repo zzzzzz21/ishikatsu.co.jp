@@ -1,0 +1,13 @@
+AuthUserFile /var/www/html/test/.htpw
+AuthGroupFile /dev/null
+AuthName "Basic Auth"
+AuthType Basic
+Require valid-user
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ /admin/index.php?/$1 [L]
+</IfModule>
