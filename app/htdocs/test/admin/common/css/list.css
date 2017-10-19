@@ -1,0 +1,277 @@
+@charset "utf-8";
+div#contents {
+  padding-top: 25px;
+/*  padding-top: 85px;*/
+  padding-left: 200px;
+  background: #ffffff;
+}
+div#contents .list-title {
+/*
+  width: 98%;
+  background-color: #DDD;
+  padding: 7px;
+  font-weight: bold;
+  margin-top: 30px;
+  border: 1px solid #CCC;
+*/
+  width: 99%;
+  padding: 0px 1px 0px 1px;
+  margin-top: 30px;
+}
+#listtbl {
+  width: 98%;
+/*  padding: 7px;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;*/
+  min-width: 960px;
+}
+table.vlne {
+  width:100%;
+  margin-top: 10px;
+}
+.now-site-view {
+  padding: 12px;
+  border: 1px solid #CCC;
+  margin-bottom: 25px;
+}
+.now-site-view .txt {
+}
+.now-site-view .list {
+  margin-left: 8px;
+}
+.now-site-view .list li {
+  margin-top: 15px;
+}
+.now-site-view .list.inq li a {
+  width: 420px;
+  display: inline-block;
+}
+.now-site-view .news-icon-new {
+  background: rgb(34,180,115);
+  color: #fff;
+  padding: 3px 10px;
+  margin-right: 10px;
+}
+.now-site-view .news-icon-program {
+  background: rgb(0,151,254);
+  color: #fff;
+  padding: 3px 10px;
+  margin-right: 10px;
+}
+.now-site-view .date {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.list-area {
+  border: 1px solid #CCC;
+  padding: 12px;
+  margin-top: 8px;
+}
+.list-area .list-form {
+  margin-top: 18px;
+}
+th.ldd-wh-l,
+td.ldd-wh-l {
+  background-color: #ffffff;
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+td.ldd-wh-l a {
+  text-decoration: none;
+}
+th.ld-lg-l {
+  height: 24px;
+  padding-left: 8px;
+  text-align: left;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  min-width: 40px;
+}
+td.ldd-wh-c {
+  background-color: #ffffff;
+  padding: 3px 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+table.sub {
+  background-color: #CCC;
+}
+table.sub tr.parent th {
+  border-bottom: 1px solid black;
+  padding-left: 8px;
+  padding-top: 6px;
+  padding-bottom: 2px;
+}
+table.sub tr.children th {
+  padding-left: 6px;
+  padding-top: 6px;
+  padding-right: 6px;
+  padding-bottom: 2px;
+}
+table.sub tr.children th:nth-child(1) {
+  border-right: 1px solid black;
+}
+table.sub tr.children th:nth-child(2) {
+  border-right: 1px solid black;
+}
+table.sub tr.children th:last-child {
+
+}
+table.sub2 tr td {
+  border-left: 1px solid black;
+}
+table.sub2 tr td:first-child {
+  border-left:none;
+}
+th.ld-lg-l-sub {
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-bottom-color: black;
+  border-left-color: black;
+  text-align: left;
+  background-color: #CCC;
+}
+div#contents .list-title-s {
+  width: 300px;
+  background-color: #DDD;
+  padding: 7px;
+  font-weight: bold;
+  margin-top: 15px;
+  border: 1px solid #CCC;
+}
+#listtbl-s {
+  width: 300px;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  padding: 7px;
+}
+#listtbl-s .inner {
+  width: 210px;
+  margin: 0 auto;
+}
+#listtbl-s span {
+  margin-right: 20px;
+}
+.btn-dl {
+  border: 1px solid #4c4c4c;
+  color: white;
+  cursor: pointer;
+  background:#4c4c4c;
+  padding: 5px;
+  width: 210px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.btn-del {
+  border: 1px solid rgb(34,186,160);
+  color: white;
+  cursor: pointer;
+  background: rgb(34,186,160);
+  padding: 5px;
+  width: 140px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.btn-more {
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  background:#fff;
+  padding: 5px;
+  width: 140px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.btn-view {
+  border: 1px solid #4c4c4c;
+  color: white;
+  cursor: pointer;
+  background:#4c4c4c;
+  padding: 5px;
+  width: 210px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+/** 検索エリア **/
+.search-block {
+  margin-bottom: 20px;
+}
+.search-block .title {
+  width: 98%;
+  background-color: #DDD;
+  padding: 7px;
+  font-weight: bold;
+  margin-top: 15px;
+  border: 1px solid #CCC;
+  position: relative;
+}
+.search-block .form-contents {
+  width: 98%;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  padding: 7px;
+}
+table.tbl th {
+  font-weight: normal;
+  line-height: 20px;
+}
+table.tbl td {
+  margin-bottom: 12px;
+}
+table.tbl td,
+table.tbl th {
+  float: left;
+  clear: both;
+}
+.btn-search {
+  border: 1px solid #4c4c4c;
+  color: white;
+  cursor: pointer;
+  background:#4c4c4c;
+  padding: 5px;
+  width: 140px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.close-icon {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+/* 情報表示ブロック */
+.info-block {
+  padding:10px;
+  margin-bottom:10px;
+  border: 1px solid #CCC;
+}
+.info-block .info-title {
+  margin-bottom:10px;
+}
+.info-block .info-row {
+  margin-bottom:5px;
+  margin-left:10px;
+}
+.info-block .info-row .row-key,
+.info-block .info-row .row-val {
+  display:inline-block;
+}
+.info-block .info-row .row-key {
+  width:150px;
+}
+
+table.bunch-program-list .row-color td {
+  background-color:#eee;
+}

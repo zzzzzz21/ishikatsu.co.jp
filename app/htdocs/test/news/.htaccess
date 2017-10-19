@@ -1,0 +1,7 @@
+DirectoryIndex index.html index.php
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	RewriteCond $1 !^(index\.php)
+	RewriteRule ^(.*)$ /test/news/index.php?/$1 [L]
+</IfModule>
