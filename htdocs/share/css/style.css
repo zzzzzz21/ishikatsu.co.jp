@@ -4408,7 +4408,12 @@ button {
   }
 }
 .worksBlock + .worksBlock {
-  margin-top: 50px;
+  margin-top: 100px;
+}
+@media (max-width: 767px) {
+  .worksBlock + .worksBlock {
+    margin-top: 50px;
+  }
 }
 .worksBlock__title {
   margin: 0 0 50px;
