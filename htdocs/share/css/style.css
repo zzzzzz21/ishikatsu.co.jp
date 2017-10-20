@@ -793,7 +793,7 @@ button {
 }
 
 .commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable {
-  border: 1px solid #8e8e8e;
+  border: 1px solid #999;
   border-collapse: collapse;
   font-size: 18px;
   line-height: 1.5;
@@ -811,13 +811,13 @@ button {
 }
 @media (max-width: 767px) {
   .commonTable__tr:last-of-type, .companyTable01__tr:last-of-type, .companyTable02__tr:last-of-type, .groupCompanyTable__tr:last-of-type {
-    border-bottom: 1px solid #8e8e8e;
+    border-bottom: 1px solid #999;
   }
 }
 .commonTable__th, .companyTable01__th, .companyTable02__th, .groupCompanyTable__th {
-  background: #cccccc;
+  background: #e2e2e2;
   font-weight: normal;
-  border: 1px solid #8e8e8e;
+  border: 1px solid #999;
   border-collapse: collapse;
   padding: 10px 0 4px 20px;
   width: 112px;
@@ -831,7 +831,7 @@ button {
   }
 }
 .commonTable__td, .companyTable01__td, .companyTable02__td, .groupCompanyTable__td {
-  border: 1px solid #8e8e8e;
+  border: 1px solid #999;
   border-collapse: collapse;
   padding: 0 0 4px 20px;
   width: 726px;
@@ -4527,26 +4527,13 @@ button {
 }
 .managementCaption__title {
   color: #018643;
-}
-.managementCaption__title:before {
-  content: "";
-  background: url(../images/kasou/management_marker.png) left top no-repeat;
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  vertical-align: middle;
-  margin: 0 8px 0 0;
+  border-left: 5px solid #018643;
+  padding: 5px 0 5px 15px;
 }
 @media (max-width: 767px) {
   .managementCaption__title {
     text-align: left;
     font-size: 18px;
-  }
-  .managementCaption__title:before {
-    background: url(../images/kasou/management_marker_sp.png) left top no-repeat;
-    background-size: 100%;
-    width: 23px;
-    height: 23px;
   }
 }
 .managementCaption__image {
