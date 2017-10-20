@@ -395,11 +395,18 @@ button {
 		}
 	}
 	&__smallTitle {
-		@extend .largeHeadline;
+		@extend .middleHeadline;
+		@extend .middleHeadline--gray;
+		text-align: center;
 		margin: 40px auto 0;
+		@include pc {
+			letter-spacing: .05em;
+			line-height: 1.7;
+		}
 		@include sp {
 			margin: 24px auto 0;
 			font-size: 15px;
+			line-height: 1.5;
 		}
 		& + .subtitleSection__lead {
 			margin: 35px auto 0;
@@ -1883,6 +1890,22 @@ button {
 				background-size: cover;
 			}
 		}
+		&.underTop--small06 {
+			background: url(#{$img_path}/kasou/main06_small.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main06_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
+		&.underTop--small07 {
+			background: url(#{$img_path}/kasou/main07_small.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main07_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
 	}
 	&__wrapper {
 		padding: 220px 0 0;
@@ -3270,15 +3293,25 @@ button {
 	&__topButtons {
 		text-align :center;
 		margin: 100px auto 200px;
+		@include sp {
+			margin: 42px auto 80px;
+		}
 	}
 	&__topLink {
 		@extend .greenButton;
 		&--left {
 			@extend .greenButton--pdf;
+			@include sp {
+				width: $commonWidthSp;
+			}
 		}
 		&--right {
 			margin-left: 20px;
 			width: 288px;
+			@include sp {
+				width: $commonWidthSp;
+				margin: 20px auto 0;
+			}
 		}
 	}
 	&__subtitle {
@@ -3622,6 +3655,11 @@ button {
 			padding-top: 15.78125%;
 			margin: 0 0 100px 41%;
 		}
+		&--group {
+			@include pc {
+				margin: 0 0 0 725px;
+			}
+		}
 	}
 	/* 関連会社 */
 	&__groupTitle {
@@ -3630,13 +3668,20 @@ button {
 		width: 705px;
 		height: 96px;
 		margin: 75px auto 85px;
+		@include sp {
+			background-size: 100%;
+			width: 93.75%;
+			height: 0;
+			padding-top: 12.747875%;
+			margin: 20px auto 40px;
+		}
 	}
 	&__groupSubTitle {
 		@extend .smallHeadline;
 		margin: -10px auto 0;
 		@include sp {
 			width: $commonWidthSp02;
-			margin: -10px auto 0;
+			margin: 10px auto 0;
 		}
 	}
 	&__groupText {
@@ -3644,18 +3689,13 @@ button {
 		@extend .middleText--left;
 		margin: 15px auto 0;
 		&.companyContent__groupText--recruit {
-			margin-top: -10px;
+			@include pc {
+				margin-top: -10px;
+			}
 		}
 	}
 }
-.groupBlock {
-	& + .groupBlock {
-		margin-top: 100px;
-	}
-	&.groupBlock--last {
-		margin-bottom: 230px;
-	}
-}
+
 /* googleMap設定 */
 #map_canvas_01 {
 	width: 520px;
@@ -3740,12 +3780,27 @@ button {
 }
 /* 関連会社 */
 .groupBlock {
+	& + .groupBlock {
+		margin-top: 100px;
+		@include sp {
+			margin-top: 50px;
+		}
+	}
+	&.groupBlock--last {
+		font-size: 0;
+	}
 	&__ol {
 		@extend .middleText;
 		@extend .middleText--left;
 		display: inline-block;
 		margin: -10px 0 0 45px;
 		list-style-type: decimal;
+		vertical-align: top;
+		@include sp {
+			display: block;
+			margin: 0 auto;
+			padding: 0 0 0 1.75em;
+		}
 	}
 	&__olItem {
 		position: relative;
@@ -3760,6 +3815,21 @@ button {
 		top: 0;
 
 	}
+	&__image {
+		display: inline-block;
+		vertical-align: top;
+		margin: -7px 0 0 55px;
+		@include sp {
+			width: $commonWidthSp02;
+			margin: 20px auto 0;
+			display: block;
+		}
+		& > img {
+			@include sp {
+				width: $width-100;
+			}
+		}
+	}
 }
 .groupCompanyTable {
 	@extend .commonTable;
@@ -3772,18 +3842,23 @@ button {
 	}
 	&__th {
 		@extend .commonTable__th;
-		width: 255px;
 		@include pc {
 			padding: 1em 0 0.65em 20px;
+			width: 255px;
+		}
+		@include sp {
+			width: 100%;
 		}
 	}
 	&__td {
 		@extend .commonTable__td;
 		width: 415px;
 		padding: 0 0 11px 26px;
-		@include pc {
-			border-left: none;
-			border-right: none;
+		border-left: none;
+		border-right: none;
+		@include sp {
+			display: inline-block;
+			width: 50%;
 		}
 	}
 }
@@ -4246,6 +4321,12 @@ button {
 	}
 	&__title {
 		@extend .middleHeadline--type03;
+	}
+	&__caution {
+		font-size: 14px;
+		@include sp {
+			padding: 20px 0 0 3.125%;
+		}
 	}
 }
 .recruitTable {
