@@ -231,29 +231,29 @@ button {
 }
 
 /* 各フォント */
-.middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead {
+.middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .technologyContent__topLead, .technologyContent__mediumText, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead {
+  .middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .technologyContent__topLead, .technologyContent__mediumText, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead {
     font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
   }
 }
-.middleText--center, .subtitleSection__lead {
+.middleText--center, .subtitleSection__lead, .technologyContent__topLead {
   text-align: center;
   line-height: 2;
 }
 @media (max-width: 767px) {
-  .middleText--center, .subtitleSection__lead {
+  .middleText--center, .subtitleSection__lead, .technologyContent__topLead {
     line-height: 1.7;
   }
 }
-.middleText--left, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .attemptBlock__lead {
+.middleText--left, .technologyContent__mediumText, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .attemptBlock__lead {
   line-height: 1.7;
 }
-.middleText--left + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .attemptBlock__lead + .middleText--left, .middleText--left + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .attemptBlock__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .attemptBlock__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .attemptBlock__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .attemptBlock__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead, .attemptBlock__lead + .philosophySection__lead, .middleText--left + .attemptBlock__lead, .companyContent__messageText + .attemptBlock__lead, .companyContent__groupText + .attemptBlock__lead, .groupBlock__ol + .attemptBlock__lead, .serviceList__text + .attemptBlock__lead, .philosophySection__lead + .attemptBlock__lead, .attemptBlock__lead + .attemptBlock__lead {
+.middleText--left + .middleText--left, .technologyContent__mediumText + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .attemptBlock__lead + .middleText--left, .middleText--left + .technologyContent__mediumText, .technologyContent__mediumText + .technologyContent__mediumText, .companyContent__messageText + .technologyContent__mediumText, .companyContent__groupText + .technologyContent__mediumText, .groupBlock__ol + .technologyContent__mediumText, .serviceList__text + .technologyContent__mediumText, .philosophySection__lead + .technologyContent__mediumText, .attemptBlock__lead + .technologyContent__mediumText, .middleText--left + .companyContent__messageText, .technologyContent__mediumText + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .attemptBlock__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .technologyContent__mediumText + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .attemptBlock__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .technologyContent__mediumText + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .attemptBlock__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .technologyContent__mediumText + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .attemptBlock__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .technologyContent__mediumText + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead, .attemptBlock__lead + .philosophySection__lead, .middleText--left + .attemptBlock__lead, .technologyContent__mediumText + .attemptBlock__lead, .companyContent__messageText + .attemptBlock__lead, .companyContent__groupText + .attemptBlock__lead, .groupBlock__ol + .attemptBlock__lead, .serviceList__text + .attemptBlock__lead, .philosophySection__lead + .attemptBlock__lead, .attemptBlock__lead + .attemptBlock__lead {
   margin-top: 18px;
 }
 
@@ -275,12 +275,11 @@ button {
   font-size: 38px;
   text-align: center;
   font-family: "Noto Serif Japanese";
-  line-height: 0.9;
+  line-height: 1.3;
 }
 @media (max-width: 767px) {
   .hugeHeadline, .subtitleSection__title, .section__title, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
     font-size: 23px;
-    line-height: 0.7;
   }
 }
 .hugeHeadline__english, .subtitleSection__english {
@@ -311,14 +310,14 @@ button {
   }
 }
 
-.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
+.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title, .technologyContent__topTitle {
   font-size: 30px;
   padding: 5px 0 0 15px;
   font-weight: normal;
   letter-spacing: .02em;
 }
 @media (max-width: 767px) {
-  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
+  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title, .technologyContent__topTitle {
     font-size: 20px;
     padding: 0;
     letter-spacing: 0;
@@ -397,9 +396,6 @@ button {
     padding: 35px 0 0;
   }
 }
-.subtitleSection__title--technology {
-  line-height: 1.3;
-}
 @media (max-width: 767px) {
   .subtitleSection__title--technology {
     font-size: 21px;
@@ -432,7 +428,7 @@ button {
   }
 }
 .subtitleSection__lead {
-  margin: 28px auto 0;
+  margin: 25px auto 0;
 }
 @media (max-width: 767px) {
   .subtitleSection__lead {
@@ -1385,18 +1381,18 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link, .greenButtons .companyLinkText__link, .greenButtons .companyContent__button01, .greenButtons .golfMap__link {
+  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link, .greenButtons .technologyContent__topLink, .greenButtons .companyLinkText__link, .greenButtons .companyContent__button01, .greenButtons .golfMap__link {
     display: inline-block;
   }
-  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1), .greenButtons .companyLinkText__link:nth-of-type(1), .greenButtons .companyContent__button01:nth-of-type(1), .greenButtons .golfMap__link:nth-of-type(1) {
+  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1), .greenButtons .technologyContent__topLink:nth-of-type(1), .greenButtons .companyLinkText__link:nth-of-type(1), .greenButtons .companyContent__button01:nth-of-type(1), .greenButtons .golfMap__link:nth-of-type(1) {
     margin-left: 75px;
   }
-  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2), .greenButtons .companyLinkText__link:nth-of-type(2), .greenButtons .companyContent__button01:nth-of-type(2), .greenButtons .golfMap__link:nth-of-type(2) {
+  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2), .greenButtons .technologyContent__topLink:nth-of-type(2), .greenButtons .companyLinkText__link:nth-of-type(2), .greenButtons .companyContent__button01:nth-of-type(2), .greenButtons .golfMap__link:nth-of-type(2) {
     margin: 0 23px 0 92px;
   }
 }
 
-.greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
+.greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .companyLinkText__link, .companyContent__button01, .golfMap__link {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -1408,10 +1404,10 @@ button {
   vertical-align: middle;
   margin: 0 auto;
 }
-.greenButton--pdf, .companyLinkText__link, .companyContent__button01 {
+.greenButton--pdf, .technologyContent__topLink--left, .companyLinkText__link, .companyContent__button01 {
   padding: .8em 2em;
 }
-.greenButton--pdf::before, .companyLinkText__link::before, .companyContent__button01::before {
+.greenButton--pdf::before, .technologyContent__topLink--left::before, .companyLinkText__link::before, .companyContent__button01::before {
   content: "";
   background: url(../images/kasou/icon-pdf02.png) left top no-repeat;
   width: 24px;
@@ -1424,18 +1420,18 @@ button {
   padding: 1.28em 1em;
 }
 @media (min-width: 768px) {
-  .greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
+  .greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .companyLinkText__link, .companyContent__button01, .golfMap__link {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover, .companyLinkText__link:hover, .companyContent__button01:hover, .golfMap__link:hover {
+  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover, .technologyContent__topLink:hover, .companyLinkText__link:hover, .companyContent__button01:hover, .golfMap__link:hover {
     background: #119357;
     color: white;
     opacity: 1;
   }
 }
 @media (max-width: 767px) {
-  .greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
+  .greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .companyLinkText__link, .companyContent__button01, .golfMap__link {
     display: block;
     margin: 0 auto;
   }
@@ -2012,6 +2008,16 @@ button {
 @media (max-width: 767px) {
   .underTop--05 {
     background: url(../images/kasou/main05_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--06 {
+  background: url(../images/kasou/main06.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--06 {
+    background: url(../images/kasou/main06_sp.png) center top no-repeat;
     background-size: cover;
   }
 }
@@ -3106,6 +3112,14 @@ button {
     padding-bottom: 72px;
   }
 }
+.section__title {
+  line-height: 0.9;
+}
+@media (max-width: 767px) {
+  .section__title {
+    line-height: 0.7;
+  }
+}
 @media (min-width: 768px) {
   .section__title.section__title--news {
     -webkit-writing-mode: vertical-rl;
@@ -3625,6 +3639,27 @@ button {
     padding: 30px 0 0;
   }
 }
+.technologyContent__topTitle {
+  text-align: center;
+  color: #666666;
+  margin: -28px auto 0;
+}
+@media (max-width: 767px) {
+  .technologyContent__topTitle {
+    margin: 0 auto;
+  }
+}
+.technologyContent__topLead {
+  margin: 24px auto 68px;
+}
+.technologyContent__topButtons {
+  text-align: center;
+  margin: 100px auto 200px;
+}
+.technologyContent__topLink--right {
+  margin-left: 20px;
+  width: 288px;
+}
 .technologyContent__subtitle {
   letter-spacing: .01em;
 }
@@ -3646,10 +3681,6 @@ button {
     padding: 22px 0 0;
   }
 }
-.technologyContent__mediumText {
-  font-size: 18px;
-  line-height: 1.7;
-}
 .technologyContent__mediumText + .technologyContent__mediumText {
   margin: 30px 0 0;
 }
@@ -3660,7 +3691,6 @@ button {
 }
 @media (max-width: 767px) {
   .technologyContent__mediumText {
-    font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
   }

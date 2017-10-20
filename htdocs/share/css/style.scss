@@ -284,10 +284,9 @@ button {
 	font-size: 38px;
 	text-align: center;
 	font-family: $mincho;
-	line-height: 0.9;
+	line-height: 1.3;
 	@include sp {
 		font-size: 23px;
-		line-height: 0.7;
 	}
 	&__english {
 		color: $commonBlack;
@@ -382,7 +381,6 @@ button {
 			padding: 35px 0 0;
 		}
 		&--technology {
-			line-height: 1.3;
 			@include sp {
 				font-size: 21px;
 			}
@@ -413,7 +411,7 @@ button {
 	&__lead {
 		@extend .middleText;
 		@extend .middleText--center;
-		margin: 28px auto 0;
+		margin: 25px auto 0;
 		@include sp {
 			margin: 25px auto 0;
 		}
@@ -1834,6 +1832,14 @@ button {
 			background-size: cover;
 		}
 	}
+	&--06 {
+		background: url(#{$img_path}/kasou/main06.png) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main06_sp.png) center top no-repeat;
+			background-size: cover;
+		}
+	}
 	&--small {
 		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
 		height: 325px;
@@ -2789,6 +2795,10 @@ button {
 	}
 	&__title {
 		@extend .hugeHeadline;
+			line-height: 0.9;
+		@include sp {
+			line-height: 0.7;
+		}
 		&.section__title--news {
 			@include pc {
 				writing-mode: vertical-rl;
@@ -3243,6 +3253,34 @@ button {
 		width: $width-100;
 		padding: 30px 0 0;
 	}
+	&__topTitle {
+		@extend .middleHeadline;
+		text-align :center;
+		color: $middleGray;
+		margin: -28px auto 0;
+		@include sp {
+			margin: 0 auto;
+		}
+	}
+	&__topLead {
+		@extend .middleText;
+		@extend .middleText--center;
+		margin: 24px auto 68px;
+	}
+	&__topButtons {
+		text-align :center;
+		margin: 100px auto 200px;
+	}
+	&__topLink {
+		@extend .greenButton;
+		&--left {
+			@extend .greenButton--pdf;
+		}
+		&--right {
+			margin-left: 20px;
+			width: 288px;
+		}
+	}
 	&__subtitle {
 		@extend .largeHeadline;
 		letter-spacing: .01em;
@@ -3263,8 +3301,8 @@ button {
 		}
 	}
 	&__mediumText {
-		font-size: 18px;
-		line-height: 1.7;
+		@extend .middleText;
+		@extend .middleText--left;
 		& + &{
 			margin: 30px 0 0;
 			@include sp {
@@ -3272,7 +3310,6 @@ button {
 			}
 		}
 		@include sp {
-			font-size: 12px;
 			width: 93.75%;
 			margin: 0 auto;
 		}
