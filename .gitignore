@@ -6,3 +6,8 @@ app/htdocs/test/news/server.conf.php
 app/htdocs/test/admin/server.conf.php
 app/htdocs/admin/application/views/templates_c/*.php
 app/htdocs/news/application/views/templates_c/*.php
+
+node_modules/
+gulpfile.js
+package.json
+yarn.lock
