@@ -157,7 +157,7 @@ button {
           appearance: none;
 }
 
-.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .photoCol3:after, .photoCol4:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .contentSection:after, .processList:after, .exampleList:after {
+.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after {
   content: "";
   clear: both;
   display: block;
@@ -181,7 +181,7 @@ button {
   }
 }
 
-.textImage, .archive__gooddesign, .techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link, .linkList__link, .illust, .header__icon, .footer__button, .topDl__photo, .processList__photo, .exampleList__photo, .techList__link, .companyContent__portrait, .companyContent__messageSign, .companyContent__groupTitle, .philosophySection__banner {
+.textImage, .archive__gooddesign, .techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link, .linkList__link, .illust, .header__icon, .footer__button, .companyContent__portrait, .companyContent__messageSign, .companyContent__groupTitle, .philosophySection__banner, .golfMap__illust, .attemptBlock__detail--textImage {
   display: block;
   height: 0;
   text-indent: 100%;
@@ -203,6 +203,19 @@ button {
 .linkBlue {
   color: #0066ff;
 }
+.linkBlue--pdf:before {
+  content: "";
+  display: inline-block;
+  background: url(../images/icon-pdf.png) left top no-repeat;
+  width: 16px;
+  height: 17px;
+  margin-right: 12px;
+}
+
+.textIndent, .recruitTable__list {
+  text-indent: -1em;
+  padding-left: 1em;
+}
 
 /********** パーツリスト *******/
 /* 和紙背景 */
@@ -218,38 +231,38 @@ button {
 }
 
 /* 各フォント */
-.middleText, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead {
+.middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .middleText, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead {
+  .middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead {
     font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
   }
 }
-.middleText--center {
+.middleText--center, .subtitleSection__lead {
   text-align: center;
   line-height: 2;
 }
 @media (max-width: 767px) {
-  .middleText--center {
+  .middleText--center, .subtitleSection__lead {
     line-height: 1.7;
   }
 }
-.middleText--left, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead {
+.middleText--left, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .attemptBlock__lead {
   line-height: 1.7;
 }
-.middleText--left + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .middleText--left + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead {
+.middleText--left + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .attemptBlock__lead + .middleText--left, .middleText--left + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .attemptBlock__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .attemptBlock__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .attemptBlock__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .attemptBlock__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead, .attemptBlock__lead + .philosophySection__lead, .middleText--left + .attemptBlock__lead, .companyContent__messageText + .attemptBlock__lead, .companyContent__groupText + .attemptBlock__lead, .groupBlock__ol + .attemptBlock__lead, .serviceList__text + .attemptBlock__lead, .philosophySection__lead + .attemptBlock__lead, .attemptBlock__lead + .attemptBlock__lead {
   margin-top: 18px;
 }
 
-.smallText, .doorNav__subTitle, .doorNav__text, .archive__text, .serviceList__smallText {
+.smallText, .doorNav__subTitle, .doorNav__text, .archive__text, .serviceList__smallText, .managementCaption__text {
   font-size: 14px;
   line-height: 1.75;
 }
 @media (max-width: 767px) {
-  .smallText, .doorNav__subTitle, .doorNav__text, .archive__text, .serviceList__smallText {
+  .smallText, .doorNav__subTitle, .doorNav__text, .archive__text, .serviceList__smallText, .managementCaption__text {
     font-size: 12px;
     line-height: 1.6;
     width: 93.75%;
@@ -257,7 +270,7 @@ button {
   }
 }
 
-.hugeHeadline, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
+.hugeHeadline, .subtitleSection__title, .section__title, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
   color: #009933;
   font-size: 38px;
   text-align: center;
@@ -265,46 +278,47 @@ button {
   line-height: 0.9;
 }
 @media (max-width: 767px) {
-  .hugeHeadline, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
+  .hugeHeadline, .subtitleSection__title, .section__title, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
     font-size: 23px;
     line-height: 0.7;
   }
 }
-.hugeHeadline__english {
+.hugeHeadline__english, .subtitleSection__english {
   color: black;
   font-size: 16px;
   font-family: "メイリオ", "Meiryo";
   font-weight: normal;
   letter-spacing: .35em;
+  text-align: center;
 }
 @media (max-width: 767px) {
-  .hugeHeadline__english {
+  .hugeHeadline__english, .subtitleSection__english {
     font-size: 10px;
     letter-spacing: .2em;
   }
 }
 
-.largeHeadline, .contentSection__subtitle {
+.largeHeadline, .subtitleSection__smallTitle, .technologyContent__subtitle, .worksBlock__title {
   color: #666666;
   font-size: 36px;
   font-weight: normal;
   text-align: center;
 }
 @media (max-width: 767px) {
-  .largeHeadline, .contentSection__subtitle {
+  .largeHeadline, .subtitleSection__smallTitle, .technologyContent__subtitle, .worksBlock__title {
     font-size: 20px;
     line-height: 1.4;
   }
 }
 
-.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
+.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
   font-size: 30px;
   padding: 5px 0 0 15px;
   font-weight: normal;
   letter-spacing: .02em;
 }
 @media (max-width: 767px) {
-  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
+  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
     font-size: 20px;
     padding: 0;
     letter-spacing: 0;
@@ -322,35 +336,107 @@ button {
   }
 }
 
-.middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt {
+.middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
   color: #018643;
   border-left: 5px solid #018643;
 }
 @media (max-width: 767px) {
-  .middleHeadline--green, .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title, .tableSample__title, .topDl__dt {
+  .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
     border: none;
   }
 }
 
-.middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title {
+.middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title {
   color: #666666;
 }
 @media (max-width: 767px) {
-  .middleHeadline--type02, .YearsNews__title, .companyContent__subTitle, .serviceList__title {
+  .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title {
     margin-top: 26px;
   }
 }
 
-.smallHeadline, .doorNav__title, .contentSection__largeText, .companyContent__groupSubTitle, .serviceList__subTitle {
+.middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title {
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title {
+    border-left: 3px solid #018643;
+    text-align: left;
+    padding-left: 8px;
+    margin: 0 0 0 3.125%;
+    line-height: 1.3;
+  }
+}
+
+.smallHeadline, .doorNav__title, .technologyContent__largeText, .companyContent__groupSubTitle, .serviceList__subTitle, .managementCaption__title, .attemptBlock__subTitle {
   color: #666666;
   font-size: 24px;
   font-weight: normal;
 }
 @media (max-width: 767px) {
-  .smallHeadline, .doorNav__title, .contentSection__largeText, .companyContent__groupSubTitle, .serviceList__subTitle {
+  .smallHeadline, .doorNav__title, .technologyContent__largeText, .companyContent__groupSubTitle, .serviceList__subTitle, .managementCaption__title, .attemptBlock__subTitle {
     font-size: 15px;
     line-height: 1.4;
     text-align: center;
+  }
+}
+
+/* サブタイトル＆リード */
+.subtitleSection {
+  margin: 70px auto 0;
+  padding: 0 0 90px;
+}
+@media (max-width: 767px) {
+  .subtitleSection {
+    margin: 0 auto;
+    padding: 0 0 36px;
+  }
+}
+@media (max-width: 767px) {
+  .subtitleSection__title {
+    padding: 35px 0 0;
+  }
+}
+.subtitleSection__title--technology {
+  line-height: 1.3;
+}
+@media (max-width: 767px) {
+  .subtitleSection__title--technology {
+    font-size: 21px;
+  }
+}
+.subtitleSection__english {
+  margin: 8px auto 0;
+}
+@media (max-width: 767px) {
+  .subtitleSection__english {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+}
+.subtitleSection__smallTitle {
+  margin: 40px auto 0;
+}
+@media (max-width: 767px) {
+  .subtitleSection__smallTitle {
+    margin: 24px auto 0;
+    font-size: 15px;
+  }
+}
+.subtitleSection__smallTitle + .subtitleSection__lead {
+  margin: 35px auto 0;
+}
+@media (max-width: 767px) {
+  .subtitleSection__smallTitle + .subtitleSection__lead {
+    margin: 15px auto 0;
+  }
+}
+.subtitleSection__lead {
+  margin: 28px auto 0;
+}
+@media (max-width: 767px) {
+  .subtitleSection__lead {
+    margin: 25px auto 0;
   }
 }
 
@@ -790,7 +876,7 @@ button {
   display: block;
   width: 100%;
   height: 0;
-  padding-top: 50.34965%;
+  padding-top: 50.06993%;
   /* (360/715) * 100% */
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -807,49 +893,39 @@ button {
             transform: scale(0.83333);
   }
 }
-@media (max-width: 767px) {
-  .aboutList__link {
-    padding-top: 50.3125%;
-    /* (322/640) * 100% */
-  }
-}
 .aboutList__link--01 {
-  background: url(../images/about_navi01.jpg) left top no-repeat;
+  background: url(../images/about_navi01.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .aboutList__link--01 {
-    background: url(../images/about_navi01_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
 }
 .aboutList__link--02 {
-  background: url(../images/about_navi02.jpg) left top no-repeat;
+  background: url(../images/about_navi02.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .aboutList__link--02 {
-    background: url(../images/about_navi02_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
 }
 .aboutList__link--03 {
-  background: url(../images/about_navi03.jpg) left top no-repeat;
+  background: url(../images/about_navi03.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .aboutList__link--03 {
-    background: url(../images/about_navi03_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
 }
 .aboutList__link--04 {
-  background: url(../images/about_navi04.jpg) left top no-repeat;
+  background: url(../images/about_navi04.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .aboutList__link--04 {
-    background: url(../images/about_navi04_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -866,7 +942,7 @@ button {
 .borderTop--gray {
   border-top: 1px solid #cccccc;
 }
-.borderTop--dot {
+.borderTop--dot, .attemptBlock__lead--central, .attemptBlock--02, .attemptBlock--03 {
   border-top: 1px dotted black;
 }
 
@@ -876,43 +952,43 @@ button {
 .borderBottom--gray {
   border-bottom: 1px solid #cccccc;
 }
-.borderBottom--dot, .doorNav__item, .companyLinkText, .serviceList {
+.borderBottom--dot, .doorNav__item, .companyLinkText, .serviceList, .managementCaption__text {
   border-bottom: 1px dotted black;
 }
 
 @media (max-width: 767px) {
-  .commonPhoto, .photoCol2__image, .photoCol3__image, .photoCol4__image {
+  .commonPhoto, .photoCol2__image, .exampleList__image, .attemptImages__image, .photoCol3__image, .photoCol4__image, .processList__image {
     width: 93.75%;
     display: block;
     margin: 0 auto;
   }
 }
 
-.photoCol2__item {
+.photoCol2__item, .exampleList__item, .attemptImages__item {
   display: inline-block;
   width: 520px;
 }
 @media (max-width: 767px) {
-  .photoCol2__item {
+  .photoCol2__item, .exampleList__item, .attemptImages__item {
     width: 100%;
     display: block;
   }
 }
-.photoCol2__item:nth-of-type(even) {
+.photoCol2__item:nth-of-type(even), .exampleList__item:nth-of-type(even), .attemptImages__item:nth-of-type(even) {
   float: right;
 }
 @media (max-width: 767px) {
-  .photoCol2__item:nth-of-type(even) {
+  .photoCol2__item:nth-of-type(even), .exampleList__item:nth-of-type(even), .attemptImages__item:nth-of-type(even) {
     float: none;
   }
 }
 @media (min-width: 768px) {
-  .photoCol2__item:nth-of-type(n+3) {
+  .photoCol2__item:nth-of-type(n+3), .exampleList__item:nth-of-type(n+3), .attemptImages__item:nth-of-type(n+3) {
     margin-top: 38px;
   }
 }
 @media (max-width: 767px) {
-  .photoCol2__item:nth-of-type(n+2) {
+  .photoCol2__item:nth-of-type(n+2), .exampleList__item:nth-of-type(n+2), .attemptImages__item:nth-of-type(n+2) {
     margin: 20px auto 0;
   }
 }
@@ -939,23 +1015,23 @@ button {
   }
 }
 
-.photoCol4__item {
+.photoCol4__item, .processList__item {
   display: inline-block;
   float: left;
   vertical-align: top;
 }
 @media (min-width: 768px) {
-  .photoCol4__item + .photoCol4__item {
+  .photoCol4__item + .photoCol4__item, .processList__item + .photoCol4__item, .photoCol4__item + .processList__item, .processList__item + .processList__item {
     margin-left: 18px;
   }
 }
 @media (max-width: 767px) {
-  .photoCol4__item {
+  .photoCol4__item, .processList__item {
     display: block;
     float: none;
     margin: 0 auto;
   }
-  .photoCol4__item + .photoCol4__item {
+  .photoCol4__item + .photoCol4__item, .processList__item + .photoCol4__item, .photoCol4__item + .processList__item, .processList__item + .processList__item {
     margin-top: 38px;
   }
 }
@@ -1002,6 +1078,14 @@ button {
     border-width: 0 0 7px 7px;
   }
 }
+.archive__mainVisual + .archive__list {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .archive__mainVisual + .archive__list {
+    margin-top: 10px;
+  }
+}
 .archive__list {
   font-size: 0;
 }
@@ -1016,17 +1100,48 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .archive__item:nth-of-type(even) {
+  .archive__item--col2:nth-of-type(even) {
     margin-left: 20px;
   }
 }
 @media (min-width: 768px) {
-  .archive__item:nth-of-type(n+3) {
+  .archive__item--col2:nth-of-type(n+3) {
     margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
-  .archive__item:nth-of-type(n+2) {
+  .archive__item--col2:nth-of-type(n+2) {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col4 {
+    margin-left: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .archive__item--col4 {
+    display: inline-block;
+    width: 48%;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col4:nth-of-type(4n+1) {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col4:nth-of-type(n+5) {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .archive__item--col4:nth-of-type(even) {
+    margin-left: 4%;
+  }
+}
+@media (max-width: 767px) {
+  .archive__item--col4:nth-of-type(n+3) {
     margin-top: 10px;
   }
 }
@@ -1072,6 +1187,7 @@ button {
 .bannerCol2__item {
   width: 520px;
   display: inline-block;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .bannerCol2__item {
@@ -1091,6 +1207,10 @@ button {
   display: block;
   width: 520px;
   height: 177px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 @media (max-width: 767px) {
   .bannerCol2__link {
@@ -1100,25 +1220,39 @@ button {
     margin: 0 auto;
   }
 }
+@media (min-width: 768px) {
+  .bannerCol2__link:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .bannerCol2__link:hover > .bannerCol2__text {
+    -webkit-transform: scale(0.83333);
+            transform: scale(0.83333);
+  }
+}
 .bannerCol2__link--01 {
-  background: url(../images/information_navi01.jpg) left top no-repeat;
+  background: url(../images/information_navi01.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .bannerCol2__link--01 {
-    background: url(../images/information_navi01_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
 }
 .bannerCol2__link--02 {
-  background: url(../images/information_navi02.jpg) left top no-repeat;
+  background: url(../images/information_navi02.png) left top no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .bannerCol2__link--02 {
-    background: url(../images/information_navi02_sp.jpg) left top no-repeat;
     background-size: 100%;
   }
+}
+.bannerCol2__text {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 /* 円形のバナー */
@@ -1130,6 +1264,8 @@ button {
 .bannerCircle__item {
   width: 245px;
   display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
 }
 @media (min-width: 768px) {
   .bannerCircle__item:nth-of-type(n+2) {
@@ -1151,11 +1287,25 @@ button {
   display: block;
   width: 245px;
   height: 245px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 @media (min-width: 768px) {
   .bannerCircle__link:before {
     content: "";
     border-radius: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .bannerCircle__link:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .bannerCircle__link:hover > .bannerCircle__text {
+    -webkit-transform: scale(0.83333);
+            transform: scale(0.83333);
   }
 }
 @media (max-width: 767px) {
@@ -1172,7 +1322,6 @@ button {
 }
 @media (max-width: 767px) {
   .bannerCircle__link--01 {
-    background: url(../images/approach_navi01_sp.png) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -1182,7 +1331,6 @@ button {
 }
 @media (max-width: 767px) {
   .bannerCircle__link--02 {
-    background: url(../images/approach_navi02_sp.png) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -1192,7 +1340,6 @@ button {
 }
 @media (max-width: 767px) {
   .bannerCircle__link--03 {
-    background: url(../images/approach_navi03_sp.png) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -1202,9 +1349,14 @@ button {
 }
 @media (max-width: 767px) {
   .bannerCircle__link--04 {
-    background: url(../images/approach_navi04_sp.png) left top no-repeat;
     background-size: 100%;
   }
+}
+.bannerCircle__text {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 .bannerCircle__text.bannerCircle__text--line02 {
   height: 56px;
@@ -1233,18 +1385,18 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link, .greenButtons .companyLinkText__link, .greenButtons .companyContent__button01 {
+  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link, .greenButtons .companyLinkText__link, .greenButtons .companyContent__button01, .greenButtons .golfMap__link {
     display: inline-block;
   }
-  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1), .greenButtons .companyLinkText__link:nth-of-type(1), .greenButtons .companyContent__button01:nth-of-type(1) {
+  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1), .greenButtons .companyLinkText__link:nth-of-type(1), .greenButtons .companyContent__button01:nth-of-type(1), .greenButtons .golfMap__link:nth-of-type(1) {
     margin-left: 75px;
   }
-  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2), .greenButtons .companyLinkText__link:nth-of-type(2), .greenButtons .companyContent__button01:nth-of-type(2) {
+  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2), .greenButtons .companyLinkText__link:nth-of-type(2), .greenButtons .companyContent__button01:nth-of-type(2), .greenButtons .golfMap__link:nth-of-type(2) {
     margin: 0 23px 0 92px;
   }
 }
 
-.greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01 {
+.greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -1272,18 +1424,18 @@ button {
   padding: 1.28em 1em;
 }
 @media (min-width: 768px) {
-  .greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01 {
+  .greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover, .companyLinkText__link:hover, .companyContent__button01:hover {
+  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover, .companyLinkText__link:hover, .companyContent__button01:hover, .golfMap__link:hover {
     background: #119357;
     color: white;
     opacity: 1;
   }
 }
 @media (max-width: 767px) {
-  .greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01 {
+  .greenButton, .doorNav__button, .articleButton__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
     display: block;
     margin: 0 auto;
   }
@@ -1292,6 +1444,11 @@ button {
 /* 技術紹介ナビ */
 .techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
   margin: 90px 0 130px;
+}
+@media (min-width: 768px) {
+  .techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
+    text-align: left;
+  }
 }
 @media (max-width: 767px) {
   .techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
@@ -1635,7 +1792,7 @@ button {
 }
 @media (max-width: 767px) {
   .recruitNav__link--01 {
-    background: url(../images/kasou/attempt_button01_sp.png) left top no-repeat;
+    background: url(../images/kasou/recruit_button01_sp.png) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -1797,6 +1954,12 @@ button {
 }
 
 /* 下層ページタイトルブロック */
+@media (max-width: 767px) {
+  .underMain {
+    padding-top: 44px;
+  }
+}
+
 .underTop {
   background: url(../images/kasou/main01.png) center top no-repeat;
   width: 100%;
@@ -1810,7 +1973,46 @@ button {
     background-size: cover;
     height: 0;
     padding-top: 29.53125%;
-    margin-top: 44px;
+  }
+}
+.underTop--02 {
+  background: url(../images/kasou/main02.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--02 {
+    background: url(../images/kasou/main02_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--03 {
+  background: url(../images/kasou/main03.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--03 {
+    background: url(../images/kasou/main03_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--04 {
+  background: url(../images/kasou/main04.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--04 {
+    background: url(../images/kasou/main04_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--05 {
+  background: url(../images/kasou/main05.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--05 {
+    background: url(../images/kasou/main05_sp.png) center top no-repeat;
+    background-size: cover;
   }
 }
 .underTop--small {
@@ -1825,7 +2027,6 @@ button {
     background-size: cover;
     height: 0;
     padding-top: 29.53125%;
-    margin-top: 44px;
   }
 }
 .underTop--small.underTop--small02 {
@@ -1907,6 +2108,15 @@ button {
   font-weight: normal;
   color: white;
 }
+@media (min-width: 768px) {
+  .underTop__title::after {
+    content: "";
+    border-top: 1px dotted white;
+    width: 130px;
+    display: block;
+    margin: 15px auto 0;
+  }
+}
 @media (max-width: 767px) {
   .underTop__title {
     font-size: 22px;
@@ -1918,7 +2128,7 @@ button {
   font-size: 18px;
   color: #FFF;
   color: white;
-  margin-top: 32px;
+  margin-top: 15px;
   letter-spacing: .2em;
 }
 @media (max-width: 767px) {
@@ -2183,7 +2393,7 @@ button {
 @media (max-width: 767px) {
   .nav {
     float: none;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     display: none;
     margin-top: 0;
   }
@@ -2198,10 +2408,13 @@ button {
   text-align: center;
   padding-bottom: 28px;
 }
+.nav__item:hover .nav__link:before {
+  width: 100%;
+}
 @media (min-width: 768px) {
   .nav__item:hover .megaDrop {
     visibility: visible;
-    height: 440px;
+    opacity: 1;
     border-top: 1px solid #119357;
     border-bottom: 10px solid #119357;
   }
@@ -2250,6 +2463,28 @@ button {
 @media (min-width: 768px) {
   .nav__link {
     cursor: pointer;
+  }
+  .nav__link:before, .nav__link--current:before {
+    content: "";
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+    display: inline-block;
+    width: 0;
+    height: 5px;
+    background: #018643;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .nav__link--current:before {
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 6px;
+    background: #018643;
   }
   .nav__link--first {
     border-left: 1px solid;
@@ -2302,13 +2537,17 @@ button {
   width: 100%;
   left: 0;
   top: 73px;
-  height: 0;
+  height: 440px;
   text-align: left;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   visibility: hidden;
-  z-index: -1;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+@media (min-width: 768px) {
+  .megaDrop {
+    opacity: 0;
+  }
 }
 @media (max-width: 767px) {
   .megaDrop {
@@ -2745,23 +2984,6 @@ button {
 }
 
 /********** トップページ **********/
-.commonGreenTitle, .section__title, .subtitleSection__title {
-  font-family: "Noto Serif Japanese";
-  color: #119357;
-  font-size: 34px;
-  letter-spacing: .12em;
-  text-align: center;
-  line-height: 0.95;
-}
-@media (max-width: 767px) {
-  .commonGreenTitle, .section__title, .subtitleSection__title {
-    font-size: 20px;
-    letter-spacing: .13em;
-    line-height: 1;
-  }
-}
-
-/********** トップページ **********/
 .carousel {
   position: relative;
   z-index: 1;
@@ -2780,6 +3002,11 @@ button {
   display: block;
   margin-bottom: 0;
 }
+@media (max-width: 767px) {
+  .carousel.slick-initialized {
+    margin-bottom: 0 !important;
+  }
+}
 .carousel__dots {
   position: absolute;
   bottom: 7%;
@@ -2792,7 +3019,8 @@ button {
   .carousel__dots {
     display: block;
     position: static;
-    margin-top: 15px;
+    padding: 17px 0;
+    background: black;
   }
 }
 .carousel__dots > li {
@@ -2834,7 +3062,7 @@ button {
 @media (max-width: 767px) {
   .section--news {
     width: 92%;
-    padding: 15px 0 0;
+    padding: 25px 0 0;
   }
 }
 .section--about {
@@ -2937,20 +3165,26 @@ button {
   position: relative;
 }
 @media (min-width: 768px) {
-  .TopNavigationLink:before, .aboutList__link:before, .bannerCol2__link:before, .bannerCircle__link:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
+  .TopNavigationLink, .aboutList__link, .bannerCol2__link, .bannerCircle__link {
+    /*
+    &:before {
+    	content:"";
+    	position: absolute;
+    	top:0;
+    	bottom:0;
+    	left: 0;
+    	right: 0;
+    	background: rgba(0,0,0,0.3);
+    }
+    */
   }
   .TopNavigationLink:hover, .aboutList__link:hover, .bannerCol2__link:hover, .bannerCircle__link:hover {
     opacity: 1;
-  }
-  .TopNavigationLink:hover:before, .aboutList__link:hover:before, .bannerCol2__link:hover:before, .bannerCircle__link:hover:before {
-    background: transparent;
+    /*
+    &:before {
+    	background: rgba(0,0,0,0);
+    }
+    */
   }
 }
 
@@ -3293,6 +3527,9 @@ button {
   font-size: 17px;
   line-height: 1.8;
 }
+.newsArticle__content img {
+  max-width: 100%;
+}
 @media (max-width: 767px) {
   .newsArticle__content {
     border-top: 1px solid #666666;
@@ -3366,87 +3603,63 @@ button {
 }
 
 /* 下層ページ */
-.subtitleSection {
-  margin: 70px auto 0;
-  padding: 0 0 90px;
-}
-@media (max-width: 767px) {
-  .subtitleSection {
-    margin: 0 auto;
-    padding: 0 0 36px;
-  }
-}
-.subtitleSection__title {
-  line-height: 1.4;
-}
-@media (max-width: 767px) {
-  .subtitleSection__title {
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: .1em;
-    padding: 10px 0 0;
-  }
-}
-.subtitleSection__lead {
-  text-align: center;
-  font-size: 18px;
-  line-height: 2;
-  margin: 28px auto 0;
-}
-@media (max-width: 767px) {
-  .subtitleSection__lead {
-    font-size: 12px;
-    margin: 10px auto 0;
-    line-height: 1.7;
-  }
-}
-
 .contentSection {
-  padding: 98px 0 0;
   width: 1080px;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
   .contentSection {
     width: 100%;
+  }
+}
+
+/********** 技術紹介ページ *******************/
+.technologyContent {
+  padding: 98px 0 0;
+  width: 1080px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .technologyContent {
+    width: 100%;
     padding: 30px 0 0;
   }
 }
-.contentSection__subtitle {
+.technologyContent__subtitle {
   letter-spacing: .01em;
 }
 @media (max-width: 767px) {
-  .contentSection__subtitle {
+  .technologyContent__subtitle {
     font-size: 20px;
     letter-spacing: .02em;
     line-height: 1.4;
   }
 }
-.contentSection__largeText {
+.technologyContent__largeText {
   margin: 260px 0 22px;
 }
 @media (max-width: 767px) {
-  .contentSection__largeText {
+  .technologyContent__largeText {
     width: 93.75%;
     margin: 20px auto;
     border-top: 1px dotted;
     padding: 22px 0 0;
   }
 }
-.contentSection__mediumText {
+.technologyContent__mediumText {
   font-size: 18px;
   line-height: 1.7;
 }
-.contentSection__mediumText + .contentSection__mediumText {
+.technologyContent__mediumText + .technologyContent__mediumText {
   margin: 30px 0 0;
 }
 @media (max-width: 767px) {
-  .contentSection__mediumText + .contentSection__mediumText {
+  .technologyContent__mediumText + .technologyContent__mediumText {
     margin: 20px auto 0;
   }
 }
 @media (max-width: 767px) {
-  .contentSection__mediumText {
+  .technologyContent__mediumText {
     font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
@@ -3464,20 +3677,17 @@ button {
 }
 .topDl__photo {
   float: right;
-  background: url(../images/kasou/photo01.jpg) left top no-repeat;
-  width: 520px;
-  height: 308px;
   margin: 78px 0 0;
 }
 @media (max-width: 767px) {
   .topDl__photo {
-    background: url(../images/kasou/photo01_sp.jpg) left top no-repeat;
-    background-size: 100%;
     float: none;
     margin: 17px auto 0;
+  }
+  .topDl__photo > img {
     width: 93.75%;
-    height: 0;
-    padding-top: 50%;
+    display: block;
+    margin: 0 auto;
   }
 }
 .topDl__dt {
@@ -3523,72 +3733,9 @@ button {
     padding: 38px 0 0;
   }
 }
-.processList__item {
-  display: inline-block;
-  vertical-align: top;
-  float: left;
-}
-@media (min-width: 768px) {
-  .processList__item + .processList__item {
-    margin-left: 18px;
-  }
-}
 @media (max-width: 767px) {
-  .processList__item {
-    float: none;
-    display: block;
-    width: 78.666667%;
-    margin: 0 auto;
-  }
-  .processList__item + .processList__item {
-    margin-top: 38px;
-  }
-}
-.processList__photo {
-  width: 256px;
-  height: 170px;
-}
-@media (max-width: 767px) {
-  .processList__photo {
+  .processList__image {
     width: 100%;
-    height: 0;
-    padding-top: 71.186441%;
-  }
-}
-.processList__photo--01 {
-  background: url(../images/kasou/photo02.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .processList__photo--01 {
-    background: url(../images/kasou/photo02_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.processList__photo--02 {
-  background: url(../images/kasou/photo03.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .processList__photo--02 {
-    background: url(../images/kasou/photo03_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.processList__photo--03 {
-  background: url(../images/kasou/photo04.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .processList__photo--03 {
-    background: url(../images/kasou/photo04_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.processList__photo--04 {
-  background: url(../images/kasou/photo05.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .processList__photo--04 {
-    background: url(../images/kasou/photo05_sp.jpg) left top no-repeat;
-    background-size: 100%;
   }
 }
 .processList__text {
@@ -3649,71 +3796,9 @@ button {
     margin: 30px auto 0;
   }
 }
-.exampleList__item {
-  display: inline-block;
-}
-@media (min-width: 768px) {
-  .exampleList__item:nth-of-type(even) {
-    float: right;
-  }
-  .exampleList__item:nth-of-type(n+3) {
-    margin-top: 38px;
-  }
-}
 @media (max-width: 767px) {
-  .exampleList__item {
-    display: block;
+  .exampleList__image {
     width: 100%;
-  }
-  .exampleList__item + .exampleList__item {
-    margin-top: 18px;
-  }
-}
-.exampleList__photo {
-  width: 520px;
-  height: 308px;
-}
-@media (max-width: 767px) {
-  .exampleList__photo {
-    width: 100%;
-    height: 0;
-    padding-top: 59.234609%;
-  }
-}
-.exampleList__photo--01 {
-  background: url(../images/kasou/photo06.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .exampleList__photo--01 {
-    background: url(../images/kasou/photo06_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.exampleList__photo--02 {
-  background: url(../images/kasou/photo07.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .exampleList__photo--02 {
-    background: url(../images/kasou/photo07_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.exampleList__photo--03 {
-  background: url(../images/kasou/photo08.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .exampleList__photo--03 {
-    background: url(../images/kasou/photo08_sp.jpg) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.exampleList__photo--04 {
-  background: url(../images/kasou/photo09.jpg) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .exampleList__photo--04 {
-    background: url(../images/kasou/photo09_sp.jpg) left top no-repeat;
-    background-size: 100%;
   }
 }
 .exampleList__text {
@@ -3776,150 +3861,6 @@ button {
   }
 }
 
-.techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
-  margin: 90px 0 130px;
-}
-@media (max-width: 767px) {
-  .techList, .companyList, .worksList, .managementList, .attemptList, .recruitList {
-    width: 93.75%;
-    margin: 56px auto 50px;
-    text-align: center;
-  }
-}
-.techList__title, .companyList__title, .worksList__title, .managementList__title, .attemptList__title, .recruitList__title {
-  display: inline-block;
-  border-bottom: 3px solid #119357;
-  font-weight: normal;
-  font-size: 22px;
-  padding-bottom: 8px;
-}
-@media (max-width: 767px) {
-  .techList__title, .companyList__title, .worksList__title, .managementList__title, .attemptList__title, .recruitList__title {
-    font-size: 20px;
-    padding-bottom: 5px;
-  }
-}
-.techList__list {
-  margin-top: 24px;
-}
-.techList__item {
-  width: 339px;
-  display: inline-block;
-  float: left;
-  margin: 0 0 0 31.5px;
-}
-@media (min-width: 768px) {
-  .techList__item:nth-of-type(3n+1) {
-    margin-left: 0;
-  }
-  .techList__item:nth-of-type(n+4) {
-    margin-top: 27px;
-  }
-}
-@media (max-width: 767px) {
-  .techList__item {
-    display: block;
-    width: 100%;
-    float: none;
-    margin: 0 auto;
-  }
-  .techList__item + .techList__item {
-    margin-top: 17px;
-  }
-}
-.techList__link {
-  width: 339px;
-  height: 54px;
-}
-@media (max-width: 767px) {
-  .techList__link {
-    width: 100%;
-    height: 0;
-    padding-top: 16%;
-  }
-}
-.techList__link--01 {
-  background: url(../images/kasou/tech_button01.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--01 {
-    background: url(../images/kasou/tech_button01_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--02 {
-  background: url(../images/kasou/tech_button02.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--02 {
-    background: url(../images/kasou/tech_button02_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--03 {
-  background: url(../images/kasou/tech_button03.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--03 {
-    background: url(../images/kasou/tech_button03_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--04 {
-  background: url(../images/kasou/tech_button04.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--04 {
-    background: url(../images/kasou/tech_button04_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--05 {
-  background: url(../images/kasou/tech_button05.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--05 {
-    background: url(../images/kasou/tech_button05_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--06 {
-  background: url(../images/kasou/tech_button06.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--06 {
-    background: url(../images/kasou/tech_button06_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--07 {
-  background: url(../images/kasou/tech_button07.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--07 {
-    background: url(../images/kasou/tech_button07_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--08 {
-  background: url(../images/kasou/tech_button08.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--08 {
-    background: url(../images/kasou/tech_button08_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-.techList__link--09 {
-  background: url(../images/kasou/tech_button09.png) left top no-repeat;
-}
-@media (max-width: 767px) {
-  .techList__link--09 {
-    background: url(../images/kasou/tech_button09_sp.png) left top no-repeat;
-    background-size: 100%;
-  }
-}
-
 .backgroundLink {
   padding: 100px 0 160px;
 }
@@ -3970,17 +3911,6 @@ button {
   .companyContent {
     width: 100%;
     margin: 40px auto 0;
-  }
-}
-.companyContent__subTitle {
-  margin-bottom: 40px;
-}
-@media (max-width: 767px) {
-  .companyContent__subTitle {
-    border-left: 3px solid #018643;
-    text-align: left;
-    padding-left: 8px;
-    margin: 0 0 0 3.125%;
   }
 }
 .companyContent__buttonWrapper {
@@ -4250,8 +4180,8 @@ button {
 @media (max-width: 767px) {
   .philosophySection {
     width: 100%;
-    margin: 47px auto 0;
-    padding-bottom: 110px;
+    margin: 0 auto;
+    padding: 45px 0 110px;
   }
 }
 @media (min-width: 768px) {
@@ -4425,6 +4355,382 @@ button {
     height: 0;
     padding-top: 101.5625%;
     margin: 15px auto 55px;
+  }
+}
+
+/********* 実績紹介 **************/
+.worksContent {
+  width: 1080px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .worksContent {
+    width: 100%;
+  }
+}
+
+.worksBlock {
+  margin-top: 100px;
+}
+@media (max-width: 767px) {
+  .worksBlock {
+    margin-top: 30px;
+  }
+}
+.worksBlock + .worksBlock {
+  margin-top: 50px;
+}
+.worksBlock__title {
+  margin: 0 0 50px;
+}
+@media (max-width: 767px) {
+  .worksBlock__title {
+    margin: 0 0 15px;
+  }
+}
+.worksBlock__title + .worksBlock__lead {
+  margin: -15px 0 50px;
+}
+@media (max-width: 767px) {
+  .worksBlock__title + .worksBlock__lead {
+    margin: -10px auto 10px;
+  }
+}
+.worksBlock__lead {
+  text-align: center;
+  color: #b56f41;
+  margin: 0 0 50px;
+}
+@media (max-width: 767px) {
+  .worksBlock__lead {
+    text-align: left;
+    line-height: 1.8;
+    margin: 0 auto 10px;
+  }
+}
+
+/***********管理運営ページ **************/
+.managementContent {
+  width: 1080px;
+  margin: 80px auto 0;
+}
+@media (max-width: 767px) {
+  .managementContent {
+    width: 100%;
+    margin: 40px auto 0;
+  }
+}
+@media (max-width: 767px) {
+  .managementContent__subTitle {
+    font-size: 18px;
+    letter-spacing: .1em;
+    border-bottom: 2px solid #009933;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    border-left: none;
+    text-align: center;
+    display: inline-block;
+  }
+}
+.managementContent__subText {
+  margin: -18px 0 0 18px;
+}
+@media (max-width: 767px) {
+  .managementContent__subText {
+    margin: -10px auto 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .managementBlock--golf01 {
+    text-align: center;
+  }
+}
+
+.golfMap__illust {
+  background: url(../images/kasou/management-golf_illust01.png) left top no-repeat;
+  width: 1028px;
+  height: 920px;
+  margin: -37px 0 0 45px;
+}
+@media (max-width: 767px) {
+  .golfMap__illust {
+    background: url(../images/kasou/management-golf_illust01_sp.png) left top no-repeat;
+    background-size: 100%;
+    width: 93.75%;
+    height: 0;
+    padding-top: 196.436037%;
+    margin: 0 auto;
+  }
+}
+.golfMap__linkText {
+  text-align: center;
+}
+.golfMap__link {
+  margin: 80px auto 0;
+}
+@media (max-width: 767px) {
+  .golfMap__link {
+    margin: 33px auto 0;
+    width: 55%;
+  }
+}
+
+.managementCaption {
+  margin: 130px auto 0;
+}
+@media (max-width: 767px) {
+  .managementCaption {
+    width: 93.75%;
+    border-top: 1px dotted black;
+    margin: 45px auto 0;
+    padding: 36px 0 0;
+  }
+}
+.managementCaption__item:nth-of-type(n+2) {
+  margin: 102px 0 0;
+}
+@media (max-width: 767px) {
+  .managementCaption__item:nth-of-type(n+2) {
+    margin: 27px 0 0;
+  }
+}
+.managementCaption__title {
+  color: #018643;
+}
+.managementCaption__title:before {
+  content: "";
+  background: url(../images/kasou/management_marker.png) left top no-repeat;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin: 0 8px 0 0;
+}
+@media (max-width: 767px) {
+  .managementCaption__title {
+    text-align: left;
+    font-size: 18px;
+  }
+  .managementCaption__title:before {
+    background: url(../images/kasou/management_marker_sp.png) left top no-repeat;
+    background-size: 100%;
+    width: 23px;
+    height: 23px;
+  }
+}
+.managementCaption__image {
+  margin: 20px 0 0;
+}
+@media (max-width: 767px) {
+  .managementCaption__image {
+    width: 100%;
+    margin: 5px auto 0;
+  }
+}
+.managementCaption__text {
+  margin: 8px 0 0;
+  padding: 0 0 8px;
+  width: 520px;
+}
+@media (max-width: 767px) {
+  .managementCaption__text {
+    width: 100%;
+    margin: 5px 0 0;
+    padding: 0 0 20px;
+  }
+}
+
+/***********石勝の取り組みページ **************/
+.attemptContent {
+  width: 1080px;
+  margin: 80px auto 0;
+}
+@media (max-width: 767px) {
+  .attemptContent {
+    width: 100%;
+    margin: 25px auto 0;
+  }
+}
+
+.attemptBlock {
+  padding: 0 0 32px;
+}
+@media (max-width: 767px) {
+  .attemptBlock {
+    width: 93.75%;
+    margin: 0 auto;
+  }
+}
+.attemptBlock__subTitle {
+  text-align: left;
+  color: #018643;
+}
+@media (max-width: 767px) {
+  .attemptBlock__subTitle {
+    margin: 15px auto 0;
+  }
+}
+@media (min-width: 768px) {
+  .attemptBlock__lead {
+    line-height: 1.6;
+    margin: 15px auto 0;
+  }
+}
+@media (max-width: 767px) {
+  .attemptBlock__lead {
+    width: 100%;
+    margin: 8px auto 0;
+  }
+}
+.attemptBlock__lead--central {
+  padding: 40px 0 0;
+}
+@media (max-width: 767px) {
+  .attemptBlock__lead--central {
+    padding: 27px 0 0;
+    margin: 27px auto 0;
+  }
+}
+.attemptBlock__detail {
+  color: #666666;
+  font-size: 15px;
+  margin: 15px auto 0;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .attemptBlock__detail {
+    font-size: 12px;
+    margin: 10px auto 0;
+  }
+}
+.attemptBlock__detail--center {
+  text-align: center;
+  margin: 5px auto 0;
+}
+@media (max-width: 767px) {
+  .attemptBlock__detail--center {
+    font-size: 10px;
+  }
+}
+.attemptBlock--02 {
+  padding: 40px 0 75px;
+}
+@media (max-width: 767px) {
+  .attemptBlock--02 {
+    padding: 40px 0 30px;
+  }
+}
+.attemptBlock--03 {
+  padding: 85px 0 0;
+}
+@media (max-width: 767px) {
+  .attemptBlock--03 {
+    padding: 10px 0 0;
+  }
+}
+
+.attemptImages {
+  margin: 35px auto 0;
+}
+@media (max-width: 767px) {
+  .attemptImages {
+    margin: 15px auto 0;
+  }
+}
+.attemptImages__image {
+  width: 100%;
+}
+
+/***********採用ページ *****************/
+.recruitContent {
+  width: 1080px;
+  margin: 72px auto 0;
+}
+@media (max-width: 767px) {
+  .recruitContent {
+    width: 100%;
+    margin: 48px auto 0;
+  }
+}
+
+.recruitTable {
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: left;
+  width: 100%;
+  margin: 60px auto 0;
+}
+@media (max-width: 767px) {
+  .recruitTable {
+    width: 93.75%;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 12px auto 0;
+  }
+}
+.recruitTable__tr {
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+}
+.recruitTable__th, .recruitTable__smallTh {
+  font-weight: normal;
+  padding: 18px 0 11px;
+  width: 185px;
+}
+@media (max-width: 767px) {
+  .recruitTable__th, .recruitTable__smallTh {
+    padding: 10px 0 11px;
+    width: 16.5%;
+  }
+}
+@media (min-width: 768px) {
+  .recruitTable__th--process {
+    width: 243px;
+  }
+}
+.recruitTable__td, .recruitTable__smallTd {
+  padding: 18px 0 11px;
+}
+@media (max-width: 767px) {
+  .recruitTable__td, .recruitTable__smallTd {
+    padding: 10px 0 11px 7%;
+  }
+}
+.recruitTable__indent {
+  padding-left: 1em;
+}
+.recruitTable__smallTr:nth-of-type(n+2) {
+  border-top: 1px solid #666666;
+}
+.recruitTable__smallTr:nth-of-type(1) > .recruitTable__th, .recruitTable__smallTr:nth-of-type(1) > .recruitTable__smallTh {
+  padding-top: 0;
+}
+.recruitTable__smallTr:nth-of-type(1) > .recruitTable__td, .recruitTable__smallTr:nth-of-type(1) > .recruitTable__smallTd {
+  padding-top: 0;
+}
+.recruitTable__smallTh {
+  width: 140px;
+}
+@media (max-width: 767px) {
+  .recruitTable__smallTh {
+    display: block;
+    padding: 10px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .recruitTable__smallTd {
+    display: block;
+    padding: 0 0 11px;
+  }
+}
+
+.recruitBlock + .recruitBlock {
+  margin-top: 130px;
+}
+@media (max-width: 767px) {
+  .recruitBlock + .recruitBlock {
+    margin-top: 68px;
   }
 }
 

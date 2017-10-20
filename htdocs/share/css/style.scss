@@ -107,7 +107,6 @@ $set-prefix:'', -webkit-, -moz-, -ms-, -o-;
 $commonWhite: rgb(255,255,255);
 $commonBlack: rgb(0,0,0);
 $commonGreen: rgb(17,147,87);
-$commonGray: rgb(102,102,102);
 $linkColor: rgb(51,51,51);
 $commonWidthPc: 1080px;
 $commonWidthSp: 92%;
@@ -224,6 +223,18 @@ button {
 }
 .linkBlue {
 	color: rgb(0,102,255);
+	&--pdf:before {
+		content: "";
+		display: inline-block;
+		background: url(#{$img_path}/icon-pdf.png) left top no-repeat;
+		width: 16px;
+		height: 17px;
+		margin-right: 12px;
+	}
+}
+.textIndent {
+	text-indent: -1em;
+	padding-left: 1em;
 }
 /********** パーツリスト *******/
 /* 和紙背景 */
@@ -284,6 +295,7 @@ button {
 		font-family: $meiryo;
 		font-weight: normal;
 		letter-spacing: .35em;
+		text-align: center;
 		@include sp {
 			font-size: 10px;
 			letter-spacing: .2em;
@@ -335,6 +347,17 @@ button {
 		margin-top: 26px;
 	}
 }
+.middleHeadline--type03 {
+	@extend .middleHeadline--type02;
+	margin-bottom: 40px;
+	@include sp {
+		border-left: 3px solid #018643;
+		text-align: left;
+		padding-left: 8px;
+		margin: 0 0 0 3.125%;
+		line-height: 1.3;
+	}
+}
 .smallHeadline {
 	color: $middleGray;
 	font-size: 24px;
@@ -343,6 +366,57 @@ button {
 		font-size: 15px;
 		line-height: 1.4;
 		text-align: center;
+	}
+}
+/* サブタイトル＆リード */
+.subtitleSection {
+	margin: 70px auto 0;
+	padding: 0 0 90px;
+	@include sp {
+		margin: 0 auto;
+		padding: 0 0 36px;
+	}
+	&__title {
+		@extend .hugeHeadline;
+		@include sp {
+			padding: 35px 0 0;
+		}
+		&--technology {
+			line-height: 1.3;
+			@include sp {
+				font-size: 21px;
+			}
+		}
+	}
+	&__english {
+		@extend .hugeHeadline__english;
+		margin: 8px auto 0;
+		@include sp {
+			font-size: 12px;
+			letter-spacing: 0;
+		}
+	}
+	&__smallTitle {
+		@extend .largeHeadline;
+		margin: 40px auto 0;
+		@include sp {
+			margin: 24px auto 0;
+			font-size: 15px;
+		}
+		& + .subtitleSection__lead {
+			margin: 35px auto 0;
+			@include sp {
+				margin: 15px auto 0;
+			}
+		}
+	}
+	&__lead {
+		@extend .middleText;
+		@extend .middleText--center;
+		margin: 28px auto 0;
+		@include sp {
+			margin: 25px auto 0;
+		}
 	}
 }
 /* パン屑リスト */
@@ -729,7 +803,7 @@ button {
 		display: block;
 		width: 100%;
 		height: 0;
-		padding-top: 50.34965%; /* (360/715) * 100% */
+		padding-top: 50.06993%; /* (360/715) * 100% */
 		transition: transform .3s;
 		&:hover {
 			@include pc {
@@ -739,38 +813,31 @@ button {
 				}
 			}
 		}
-		@include sp {
-			padding-top: 50.3125%; /* (322/640) * 100% */
-		}
 		&--01 {
-			background: url(#{$img_path}/about_navi01.jpg) left top no-repeat;
+			background: url(#{$img_path}/about_navi01.png) left top no-repeat;
 			background-size: cover;
 			@include sp {
-				background: url(#{$img_path}/about_navi01_sp.jpg) left top no-repeat;
 				background-size: 100%;
 			}
 		}
 		&--02 {
-			background: url(#{$img_path}/about_navi02.jpg) left top no-repeat;
+			background: url(#{$img_path}/about_navi02.png) left top no-repeat;
 			background-size: cover;
 			@include sp {
-				background: url(#{$img_path}/about_navi02_sp.jpg) left top no-repeat;
 				background-size: 100%;
 			}
 		}
 		&--03 {
-			background: url(#{$img_path}/about_navi03.jpg) left top no-repeat;
+			background: url(#{$img_path}/about_navi03.png) left top no-repeat;
 			background-size: cover;
 			@include sp {
-				background: url(#{$img_path}/about_navi03_sp.jpg) left top no-repeat;
 				background-size: 100%;
 			}
 		}
 		&--04 {
-			background: url(#{$img_path}/about_navi04.jpg) left top no-repeat;
+			background: url(#{$img_path}/about_navi04.png) left top no-repeat;
 			background-size: cover;
 			@include sp {
-				background: url(#{$img_path}/about_navi04_sp.jpg) left top no-repeat;
 				background-size: 100%;
 			}
 		}
@@ -921,6 +988,14 @@ button {
 			border-width: 0 0 7px 7px;
 		}
 	}
+	&__mainVisual {
+		& + .archive__list {
+			margin-top: 20px;
+			@include sp {
+				margin-top: 10px;
+			}
+		}
+	}
 	&__list {
 		@extend .clearfix;
 		font-size: 0;
@@ -932,19 +1007,50 @@ button {
 			margin: 0 auto;
 			width: $width-100;
 		}
-		&:nth-of-type(even) {
-			@include pc {
-				margin-left: 20px;
+		&--col2 {
+			&:nth-of-type(even) {
+				@include pc {
+					margin-left: 20px;
+				}
+			}
+			&:nth-of-type(n+3) {
+				@include pc {
+					margin-top: 20px;
+				}
+			}
+			&:nth-of-type(n+2) {
+				@include sp {
+					margin-top: 10px;
+				}
 			}
 		}
-		&:nth-of-type(n+3) {
+		&--col4 {
 			@include pc {
-				margin-top: 20px;
+				margin-left: 16px;
 			}
-		}
-		&:nth-of-type(n+2) {
 			@include sp {
-				margin-top: 10px;
+				display: inline-block;
+				width: 48%;
+			}
+			&:nth-of-type(4n+1) {
+				@include pc {
+					margin-left: 0;
+				}
+			}
+			&:nth-of-type(n+5) {
+				@include pc {
+					margin-top: 10px;
+				}
+			}
+			&:nth-of-type(even) {
+				@include sp {
+					margin-left: 4%;
+				}
+			}
+			&:nth-of-type(n+3) {
+				@include sp {
+					margin-top: 10px;
+				}
 			}
 		}
 	}
@@ -985,6 +1091,7 @@ button {
 	&__item {
 		width: 520px;
 		display: inline-block;
+		overflow: hidden;
 		@include sp {
 			display: block;
 			width: 100%;
@@ -1001,31 +1108,39 @@ button {
 		display: block;
 		width: 520px;
 		height: 177px;
+		transition: transform .3s;
 		@include sp {
 			width: 90.3125%;
 			height: 0;
 			padding-top: 30.78125%;
 			margin: 0 auto;
 		}
+		&:hover {
+			@include pc {
+				transform: scale(1.2);
+				& > .bannerCol2__text {
+					transform: scale(0.8333333333333);
+				}
+			}
+		}
 		&--01 {
-			background: url(#{$img_path}/information_navi01.jpg) left top no-repeat;
+			background: url(#{$img_path}/information_navi01.png) left top no-repeat;
 			background-size: cover;
 			@include sp {
-				background: url(#{$img_path}/information_navi01_sp.jpg) left top no-repeat;
 				background-size: 100%;
 			}
 		}
 		&--02 {
-			background: url(#{$img_path}/information_navi02.jpg) left top no-repeat;
+			background: url(#{$img_path}/information_navi02.png) left top no-repeat;
 			background-size: cover;
 			@include sp {
-				background: url(#{$img_path}/information_navi02_sp.jpg) left top no-repeat;
 				background-size: 100%;
 			}
 		}
 	}
 	&__text {
 		@extend .TopNavigationText;
+		transition: transform .3s;
 	}
 }
 
@@ -1037,6 +1152,8 @@ button {
 	&__item {
 		width: 245px;
 		display: inline-block;
+		overflow : hidden;
+		border-radius: 50%;
 		@include pc {
 			&:nth-of-type(n+2) {
 				margin-left: 33.3333px;
@@ -1057,10 +1174,19 @@ button {
 		display: block;
 		width: 245px;
 		height: 245px;
+		transition: transform .3s;
 		@include pc {
 			&:before {
 				content:"";
 				border-radius: 50%;
+			}
+		}
+		&:hover {
+			@include pc {
+				transform: scale(1.2);
+				& > .bannerCircle__text {
+					transform: scale(0.8333333333333);
+				}
 			}
 		}
 		@include sp {
@@ -1073,7 +1199,6 @@ button {
 			background: url(#{$img_path}/approach_navi01.png) left top no-repeat;
 			background-size: cover;
 			@include sp {
-				background: url(#{$img_path}/approach_navi01_sp.png) left top no-repeat;
 				background-size: 100%;
 			}
 		}
@@ -1081,7 +1206,6 @@ button {
 			background: url(#{$img_path}/approach_navi02.png) left top no-repeat;
 			background-size: cover;
 			@include sp {
-				background: url(#{$img_path}/approach_navi02_sp.png) left top no-repeat;
 				background-size: 100%;
 			}
 		}
@@ -1089,7 +1213,6 @@ button {
 			background: url(#{$img_path}/approach_navi03.png) left top no-repeat;
 			background-size: cover;
 			@include sp {
-				background: url(#{$img_path}/approach_navi03_sp.png) left top no-repeat;
 				background-size: 100%;
 			}
 		}
@@ -1097,13 +1220,13 @@ button {
 			background: url(#{$img_path}/approach_navi04.png) left top no-repeat;
 			background-size: cover;
 			@include sp {
-				background: url(#{$img_path}/approach_navi04_sp.png) left top no-repeat;
 				background-size: 100%;
 			}
 		}
 	}
 	&__text {
 		@extend .TopNavigationText;
+		transition: transform .3s;
 		&.bannerCircle__text--line02 {
 			height: 56px;
 			line-height: 1.2;
@@ -1180,6 +1303,9 @@ button {
 .techList {
 	@extend .clearfix;
 	margin: 90px 0 130px;
+	@include pc {
+		text-align: left;
+	}
 	@include sp {
 		width: $commonWidthSp02;
 		margin: 56px auto 50px;
@@ -1522,7 +1648,7 @@ button {
 		&--01 {
 			background: url(#{$img_path}/kasou/recruit_button01.png) left top no-repeat;
 			@include sp {
-				background: url(#{$img_path}/kasou/attempt_button01_sp.png) left top no-repeat;
+				background: url(#{$img_path}/kasou/recruit_button01_sp.png) left top no-repeat;
 				background-size: 100%;
 			}
 		}
@@ -1659,6 +1785,11 @@ button {
 	}
 }
 /* 下層ページタイトルブロック */
+.underMain {
+	@include sp {
+		padding-top: 44px;
+	}
+}
 .underTop {
 	background: url(#{$img_path}/kasou/main01.png) center top no-repeat;
 	width: 100%;
@@ -1670,7 +1801,38 @@ button {
 		background-size: cover;
 		height: 0;
 		padding-top: 29.53125%;
-		margin-top: 44px;
+	}
+	&--02 {
+		background: url(#{$img_path}/kasou/main02.png) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main02_sp.png) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&--03 {
+		background: url(#{$img_path}/kasou/main03.png) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main03_sp.png) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&--04 {
+		background: url(#{$img_path}/kasou/main04.png) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main04_sp.png) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&--05 {
+		background: url(#{$img_path}/kasou/main05.png) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main05_sp.png) center top no-repeat;
+			background-size: cover;
+		}
 	}
 	&--small {
 		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
@@ -1682,7 +1844,6 @@ button {
 			background-size: cover;
 			height: 0;
 			padding-top: 29.53125%;
-			margin-top: 44px;
 		}
 		&.underTop--small02 {
 			background: url(#{$img_path}/kasou/main02_small.png) center top no-repeat;
@@ -1751,6 +1912,15 @@ button {
 		font-size: 48px;
 		font-weight: normal;
 		color: $commonWhite;
+		@include pc {
+			&::after {
+				content: "";
+				border-top: 1px dotted $commonWhite;
+				width: 130px;
+				display: block;
+				margin: 15px auto 0;
+			}
+		}
 		@include sp {
 			font-size: 22px;
 		}
@@ -1761,7 +1931,7 @@ button {
 		font-size: 18px;
 		color: #FFF;
 		color: white;
-		margin-top: 32px;
+		margin-top: 15px;
 		letter-spacing: .2em;
 		@include sp {
 			font-size: 10px;
@@ -1987,7 +2157,7 @@ button {
 	margin-top: 8px;
 	@include sp {
 		float: none;
-		background: rgba(0,0,0,0.7);
+		background: rgba(0,0,0,0.9);
 		display: none;
 		margin-top:0;
 	}
@@ -2001,10 +2171,13 @@ button {
 		text-align: center;
 		padding-bottom: 28px;
 		&:hover {
+			& .nav__link:before {
+				width: 100%;
+			}
 			@include pc {
 				& .megaDrop {
 					visibility: visible;
-					height: 440px;
+					opacity: 1;
 					border-top: 1px solid $commonGreen;
 					border-bottom: 10px solid $commonGreen;
 				} .megaDrop__inner {
@@ -2049,6 +2222,28 @@ button {
 		font-family: $mincho;
 		@include pc {
 			cursor: pointer;
+			&:before,
+			&--current:before{
+				content: "";
+				position: absolute;
+				bottom: -27px;
+				left: 0;
+				display: inline-block;
+				width: 0;
+				height: 5px;
+				background: $middleGreen;
+				transition: .5s;
+			}
+			&--current:before {
+				content: "";
+				position: absolute;
+				bottom: -28px;
+				left: 0;
+				display: inline-block;
+				width: 100%;
+				height: 6px;
+				background: $middleGreen;
+			}
 			&--first {
 				border-left: 1px solid;
 			}
@@ -2100,12 +2295,15 @@ button {
 	width: 100%;
 	left: 0;
 	top: 73px;
-	height: 0;
+	height: 440px;
 	text-align: left;
-	background: rgba(255,255,255,0.7);
+	background: rgba(255,255,255,0.9);
 	visibility: hidden;
-	z-index: -1;
-	transition: all .3s;
+
+	transition: all .5s;
+	@include pc {
+		opacity: 0;
+	}
 	@include sp {
 		position: static;
 		z-index: 1;
@@ -2484,20 +2682,6 @@ button {
 	}
 }
 /********** トップページ **********/
-.commonGreenTitle {
-	font-family: $mincho;
-	color: $commonGreen;
-	font-size: 34px;
-	letter-spacing: .12em;
-	text-align: center;
-	line-height: 0.95;
-	@include sp {
-		font-size: 20px;
-		letter-spacing: .13em;
-		line-height: 1;
-	}
-}
-/********** トップページ **********/
 .carousel {
 	position: relative;
 	z-index: 1;
@@ -2512,6 +2696,10 @@ button {
 	&.slick-initialized {
 		display: block;
 		margin-bottom: 0;
+		@include sp {
+		//  slick-theme.cssに既存スタイルがあるため、importantを使用する。
+			margin-bottom: 0 !important;
+		}
 	}
 	&__dots {
 		position: absolute;
@@ -2523,7 +2711,8 @@ button {
 		@include sp {
 			display: block;
 			position: static;
-			margin-top: 15px;
+			padding: 17px 0;
+			background: $commonBlack;
 		}
 		& > li {
 			display: inline-block;
@@ -2562,7 +2751,7 @@ button {
 		font-size: 0;
 		@include sp {
 			width: $commonWidthSp;
-			padding: 15px 0 0;
+			padding: 25px 0 0;
 		}
 	}
 	&--about {
@@ -2599,7 +2788,7 @@ button {
 		}
 	}
 	&__title {
-		@extend .commonGreenTitle;
+		@extend .hugeHeadline;
 		&.section__title--news {
 			@include pc {
 				writing-mode: vertical-rl;
@@ -2655,6 +2844,7 @@ button {
 .TopNavigationLink{
 	position: relative;
 	@include pc {
+		/*
 		&:before {
 			content:"";
 			position: absolute;
@@ -2664,11 +2854,14 @@ button {
 			right: 0;
 			background: rgba(0,0,0,0.3);
 		}
+		*/
 		&:hover {
 			opacity: 1;
+			/*
 			&:before {
 				background: rgba(0,0,0,0);
 			}
+			*/
 		}
 	}
 }
@@ -2965,6 +3158,9 @@ button {
 		margin-top: 28px;
 		font-size: 17px;
 		line-height: 1.8;
+		& img {
+			max-width: 100%;
+		}
 		@include sp {
 			border-top: 1px solid #666666;
 			border-bottom: 1px solid #666666;
@@ -3027,39 +3223,18 @@ button {
 }
 
 /* 下層ページ */
+.contentSection {
+	width: $commonWidthPc;
+	margin: 0 auto;
+	@include sp {
+		width: $width-100;
+	}
+}
 .backgroundLead {
 	@extend .background02;
 }
-.subtitleSection {
-	margin: 70px auto 0;
-	padding: 0 0 90px;
-	@include sp {
-		margin: 0 auto;
-		padding: 0 0 36px;
-	}
-	&__title {
-		@extend .commonGreenTitle;
-		line-height: 1.4;
-		@include sp {
-			font-size: 18px;
-			line-height: 1.6;
-			letter-spacing: .1em;
-			padding: 10px 0 0;
-		}
-	}
-	&__lead {
-		text-align: center;
-		font-size: 18px;
-		line-height: 2;
-		margin: 28px auto 0;
-		@include sp {
-			font-size: 12px;
-			margin: 10px auto 0;
-			line-height: 1.7;
-		}
-	}
-}
-.contentSection {
+/********** 技術紹介ページ *******************/
+.technologyContent {
 	@extend .clearfix;
 	padding: 98px 0 0;
 	width: $commonWidthPc;
@@ -3110,20 +3285,16 @@ button {
 		margin: 30px 0 0;
 	}
 	&__photo {
-		@extend .textImage;
 		float: right;
-		background: url(#{$img_path}/kasou/photo01.jpg) left top no-repeat;
-		width: 520px;
-		height: 308px;
 		margin: 78px 0 0;
 		@include sp {
-			background: url(#{$img_path}/kasou/photo01_sp.jpg) left top no-repeat;
-			background-size: 100%;
 			float: none;
 			margin: 17px auto 0;
-			width: $commonWidthSp02;
-			height: 0;
-			padding-top: 50%;
+			& > img {
+				width: $commonWidthSp02;
+				display: block;
+				margin: 0 auto;
+			}
 		}
 	}
 	&__dt {
@@ -3155,7 +3326,7 @@ button {
 	}
 }
 .processList {
-	@extend .clearfix;
+	@extend .photoCol4;
 	border-top: 1px dotted;
 	margin: 90px 0 0;
 	padding: 100px 0 0;
@@ -3165,60 +3336,12 @@ button {
 		padding: 38px 0 0;		
 	}
 	&__item {
-		display: inline-block;
-		vertical-align: top;
-		float: left;
-		@include pc {
-			& + & {
-				margin-left: 18px;
-			}
-		}
-		@include sp {
-			float: none;
-			display: block;
-			width: 78.666667%;
-			margin: 0 auto;
-			& + & {
-				margin-top: 38px;
-			}
-		}
+		@extend .photoCol4__item;
 	}
-	&__photo {
-		@extend .textImage;
-		width: 256px;
-		height: 170px;
+	&__image {
+		@extend .photoCol4__image;
 		@include sp {
 			width: 100%;
-			height: 0;
-			padding-top: 71.186441%;
-		}
-		&--01 {
-			background: url(#{$img_path}/kasou/photo02.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo02_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--02 {
-			background: url(#{$img_path}/kasou/photo03.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo03_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--03 {
-			background: url(#{$img_path}/kasou/photo04.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo04_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--04 {
-			background: url(#{$img_path}/kasou/photo05.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo05_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
 		}
 	}
 	&__text {
@@ -3263,66 +3386,19 @@ button {
 	}
 }
 .exampleList {
-	@extend .clearfix;
+	@extend .photoCol2;
 	margin: 42px 0 0;
 	@include sp {
 		width: $commonWidthSp02;
 		margin: 30px auto 0;
 	}
 	&__item {
-		display: inline-block;
-		@include pc {
-			&:nth-of-type(even)  {
-				float: right;
-			}
-			&:nth-of-type(n+3) {
-				margin-top: 38px;
-			}
-		}
-		@include sp {
-			display: block;
-			width: $width-100;
-			& + & {
-				margin-top: 18px;
-			}
-		}
+		@extend .photoCol2__item;
 	}
-	&__photo {
-		@extend .textImage;
-		width: 520px;
-		height: 308px;
+	&__image {
+		@extend .photoCol2__image;
 		@include sp {
 			width: 100%;
-			height: 0;
-			padding-top: 59.234609%;
-		}
-		&--01 {
-			background: url(#{$img_path}/kasou/photo06.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo06_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--02 {
-			background: url(#{$img_path}/kasou/photo07.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo07_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--03 {
-			background: url(#{$img_path}/kasou/photo08.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo08_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--04 {
-			background: url(#{$img_path}/kasou/photo09.jpg) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/photo09_sp.jpg) left top no-repeat;
-				background-size: 100%;
-			}
 		}
 	}
 	&__text {
@@ -3378,125 +3454,6 @@ button {
 		
 	}
 }
-.techList {
-	@extend .clearfix;
-	margin: 90px 0 130px;
-	@include sp {
-		width: $commonWidthSp02;
-		margin: 56px auto 50px;
-		text-align: center;
-	}
-	&__title {
-		display: inline-block;
-		border-bottom: 3px solid $commonGreen;
-		font-weight: normal;
-		font-size: 22px;
-		padding-bottom: 8px;
-		@include sp {
-			font-size: 20px;
-			padding-bottom: 5px;
-		}
-	}
-	&__list {
-		margin-top: 24px;
-	}
-	&__item {
-		width: 339px;
-		display: inline-block;
-		float: left;
-		margin: 0 0 0 31.5px;
-		@include pc {
-			&:nth-of-type(3n+1) {
-				margin-left: 0;
-			}
-			&:nth-of-type(n+4) {
-				margin-top: 27px;
-			}
-		}
-		@include sp {
-			display: block;
-			width: 100%;
-			float: none;
-			margin: 0 auto;
-			& + & {
-				margin-top: 17px;
-			}
-		}
-	}
-	&__link {
-		@extend .textImage;
-		width: 339px;
-		height: 54px;
-		@include sp {
-			width: 100%;
-			height: 0;
-			padding-top: 16%;
-		}
-		&--01 {
-			background: url(#{$img_path}/kasou/tech_button01.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button01_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--02 {
-			background: url(#{$img_path}/kasou/tech_button02.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button02_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--03 {
-			background: url(#{$img_path}/kasou/tech_button03.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button03_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--04 {
-			background: url(#{$img_path}/kasou/tech_button04.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button04_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--05 {
-			background: url(#{$img_path}/kasou/tech_button05.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button05_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--06 {
-			background: url(#{$img_path}/kasou/tech_button06.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button06_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--07 {
-			background: url(#{$img_path}/kasou/tech_button07.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button07_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--08 {
-			background: url(#{$img_path}/kasou/tech_button08.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button08_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-		&--09 {
-			background: url(#{$img_path}/kasou/tech_button09.png) left top no-repeat;
-			@include sp {
-				background: url(#{$img_path}/kasou/tech_button09_sp.png) left top no-repeat;
-				background-size: 100%;
-			}
-		}
-	}
-}
 .backgroundLink {
 	@extend .background02;
 	padding: 100px 0 160px;
@@ -3544,14 +3501,7 @@ button {
 		margin: 40px auto 0;
 	}
 	&__subTitle {
-		@extend .middleHeadline--type02;
-		margin-bottom: 40px;
-		@include sp {
-			border-left: 3px solid #018643;
-			text-align: left;
-			padding-left: 8px;
-			margin: 0 0 0 3.125%;
-		}
+		@extend .middleHeadline--type03;
 	}
 	&__buttonWrapper {
 		text-align: center;
@@ -3840,8 +3790,8 @@ button {
 	text-align: center;
 	@include sp {
 		width: $width-100;
-		margin: 47px auto 0;
-		padding-bottom: 110px;
+		margin: 0 auto;
+		padding: 45px 0 110px;
 	}
 	&--wide {
 		@include pc {
@@ -3995,6 +3945,361 @@ button {
 			height: 0;
 			padding-top: 101.5625%;
 			margin: 15px auto 55px;
+		}
+	}
+}
+/********* 実績紹介 **************/
+.worksContent {
+	width: $commonWidthPc;
+	margin: 0 auto;
+	@include sp {
+		width: $width-100;
+	}
+}
+.worksBlock {
+	margin-top: 100px;
+	@include sp {
+		margin-top: 30px;
+	}
+	& + .worksBlock {
+		margin-top: 50px;
+	}
+	&__title {
+		@extend .largeHeadline;
+		margin: 0 0 50px;
+		@include sp {
+			margin: 0 0 15px;
+		}
+		& + .worksBlock__lead {
+			margin: -15px 0 50px;
+			@include sp {
+				margin: -10px auto 10px;
+			}
+		}
+	}
+	&__lead {
+		@extend .middleText;
+		text-align: center;
+		color: rgb(181,111,65);
+		margin: 0 0 50px;
+		@include sp {
+			text-align: left;
+			line-height: 1.8;
+			margin: 0 auto 10px;
+		}
+	}
+}
+/***********管理運営ページ **************/
+.managementContent {
+	width: $commonWidthPc;
+	margin: 80px auto 0;
+	@include sp {
+		width: $width-100;
+		margin: 40px auto 0;
+	}
+	&__subTitle {
+		@extend .middleHeadline--type03;
+		@include sp {
+			font-size: 18px;
+			letter-spacing: .1em;
+			border-bottom: 2px solid $rightGreen;
+			padding-bottom: 5px;
+			margin-bottom: 25px;
+			border-left: none;
+			text-align: center;
+			display: inline-block;
+		}
+	}
+	&__subText {
+		@extend .middleText;
+		margin: -18px 0 0 18px;
+		@include sp {
+			margin: -10px auto 30px;
+		}
+	}	
+}
+.managementBlock {
+	&--golf01 {
+		@include sp {
+			text-align: center;
+		}
+	}
+}
+.golfMap {
+	&__illust {
+		@extend .textImage;
+		background: url(#{$img_path}/kasou/management-golf_illust01.png) left top no-repeat;
+		width: 1028px;
+		height: 920px;
+		margin: -37px 0 0 45px;
+		@include sp {
+			background: url(#{$img_path}/kasou/management-golf_illust01_sp.png) left top no-repeat;
+			background-size: 100%;
+			width: $commonWidthSp02;
+			height: 0;
+			padding-top: 196.436037%;
+			margin: 0 auto;
+		}
+	}
+	&__linkText {
+		text-align: center;
+	}
+	&__link {
+		@extend .greenButton;
+		margin: 80px auto 0;
+		@include sp {
+			margin: 33px auto 0;
+			width: 55%;
+		}
+	}
+}
+.managementCaption {
+	margin: 130px auto 0;
+	@include sp {
+		width: $commonWidthSp02;
+		border-top: 1px dotted $commonBlack;
+		margin: 45px auto 0;
+		padding: 36px 0 0;
+	}
+	&__item {
+		&:nth-of-type(n+2) {
+			margin: 102px 0 0;
+			@include sp {
+				margin: 27px 0 0;
+			}
+		}
+	}
+	&__title {
+		@extend .smallHeadline;
+		color: $middleGreen;
+		&:before {
+			content: "";
+			background: url(#{$img_path}/kasou/management_marker.png) left top no-repeat;
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			vertical-align: middle;
+			margin: 0 8px 0 0;
+		}
+		@include sp {
+			text-align: left;
+			font-size: 18px;
+			&:before {
+			background: url(#{$img_path}/kasou/management_marker_sp.png) left top no-repeat;
+				background-size: 100%;
+				width: 23px;
+				height: 23px;
+			}
+		}
+	}
+	&__image {
+		margin: 20px 0 0;
+		@include sp {
+			width: $width-100;
+			margin: 5px auto 0;
+		}
+	}
+	&__text {
+		@extend .smallText;
+		@extend .borderBottom--dot;
+		margin: 8px 0 0;
+		padding: 0 0 8px;
+		width: 520px;
+		@include sp {
+			width: $width-100;
+			margin: 5px 0 0;
+			padding: 0 0 20px;
+		}
+	}
+
+}
+/***********石勝の取り組みページ **************/
+.attemptContent {
+	width: $commonWidthPc;
+	margin: 80px auto 0;
+	@include sp {
+		width: $width-100;
+		margin: 25px auto 0;
+	}
+	&__title {
+		@extend .middleHeadline--type03;
+	}
+}
+.attemptBlock {
+	padding: 0 0 32px;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 0 auto;
+	}
+	&__subTitle {
+		text-align: left;
+		@extend .smallHeadline;
+		color: $middleGreen;
+		@include sp {
+			margin: 15px auto 0;
+		}
+	}
+	&__lead {
+		@extend .middleText;
+		@extend .middleText--left;
+		@include pc {
+			line-height: 1.6;
+			margin: 15px auto 0;
+		}
+		@include sp {
+			width: $width-100;
+			margin: 8px auto 0;
+		}
+		&--central {
+			@extend .borderTop--dot;
+			padding: 40px 0 0;
+			@include sp {
+				padding: 27px 0 0;
+				margin: 27px auto 0;
+			}
+		}
+	}
+	&__detail {
+		color: $middleGray;
+		font-size: 15px;
+		margin: 15px auto 0;
+		line-height: 1.6;
+		@include sp {
+			font-size: 12px;
+			margin: 10px auto 0;
+		}
+		&--textImage {
+			@extend .textImage;
+
+		}
+		&--center {
+			text-align: center;
+			margin: 5px auto 0;
+			@include sp {
+				font-size: 10px;
+			}
+		}
+	}
+	&--02 {
+		@extend .borderTop--dot;
+		padding: 40px 0 75px;
+		@include sp {
+			padding: 40px 0 30px;
+		}
+	}
+	&--03 {
+		@extend .borderTop--dot;
+		padding: 85px 0 0;
+		@include sp {
+			padding: 10px 0 0;
+		}
+	}
+}
+.attemptImages {
+	@extend .photoCol2;
+	margin: 35px auto 0;
+	@include sp {
+		margin: 15px auto 0;
+	}
+	&__item {
+		@extend .photoCol2__item;
+	}
+	&__image {
+		@extend .photoCol2__image;
+		width: 100%;
+	}
+}
+/***********採用ページ *****************/
+.recruitContent {
+	width: $commonWidthPc;
+	margin: 72px auto 0;
+	@include sp {
+		width: $width-100;
+		margin: 48px auto 0;
+	}
+	&__title {
+		@extend .middleHeadline--type03;
+	}
+}
+.recruitTable {
+	font-size: 17px;
+	line-height: 1.8;
+	text-align: left;
+	width: $width-100;
+	margin: 60px auto 0;
+	@include sp {
+		width: $commonWidthSp02;
+		font-size: 12px;
+		line-height: 1.6;
+		margin: 12px auto 0;
+	}
+	&__tr {
+		border-top: 1px solid $middleGray;
+		border-bottom: 1px solid $middleGray;
+	}
+	&__th {
+		font-weight: normal;
+		padding: 18px 0 11px;
+		width: 185px;
+		@include sp {
+			padding: 10px 0 11px;
+			width: 16.5%;
+		}
+		&--process {
+			@include pc {
+				width: 243px;
+			}
+		}
+	}
+	&__td {
+		padding: 18px 0 11px;
+		@include sp {
+			padding: 10px 0 11px 7%;
+		}
+	}
+	&__list {
+		@extend .textIndent;
+	}
+	&__indent {
+		padding-left: 1em;
+	}
+	&__smallTable {
+	}
+	&__smallTr {
+		&:nth-of-type(n+2) {
+			border-top: 1px solid $middleGray;
+		}
+		&:nth-of-type(1) {
+			& > .recruitTable__th {
+				padding-top: 0;
+			}
+			& > .recruitTable__td {
+				padding-top: 0;
+			}
+		}
+	}
+	&__smallTh {
+		@extend .recruitTable__th;
+		width: 140px;
+		@include sp {
+			display: block;
+			padding: 10px 0 0;
+		}
+	}
+	&__smallTd {
+		@extend .recruitTable__td;
+		@include sp {
+			display: block;
+			padding: 0 0 11px;
+		}
+	}
+	
+}
+.recruitBlock {
+	& + .recruitBlock {
+		margin-top: 130px;
+		@include sp {
+			margin-top: 68px;
 		}
 	}
 }

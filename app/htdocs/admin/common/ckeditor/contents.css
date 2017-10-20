@@ -1,0 +1,227 @@
+/*
+Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+*/
+
+body
+{
+	/* Font */
+	font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+	font-size: 12px;
+
+	/* Text color */
+	color: #333;
+
+	/* Remove the background color to make it transparent */
+	background-color: #fff;
+
+	margin: 20px;
+}
+
+.cke_editable
+{
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+blockquote
+{
+	font-style: italic;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+}
+
+.cke_contents_ltr blockquote
+{
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+}
+
+.cke_contents_rtl blockquote
+{
+	padding-left: 8px;
+	padding-right: 20px;
+	border-right-width: 5px;
+}
+
+a
+{
+	color: #0782C1;
+}
+
+ol,ul,dl
+{
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right: 0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+	padding: 0 40px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+hr
+{
+	border: 0px;
+	border-top: 1px solid #ccc;
+}
+
+img.right
+{
+	border: 1px solid #ccc;
+	float: right;
+	margin-left: 15px;
+	padding: 5px;
+}
+
+img.left
+{
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+pre
+{
+	white-space: pre-wrap; /* CSS 2.1 */
+	word-wrap: break-word; /* IE7 */
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	-webkit-tab-size: 4;
+	tab-size: 4;
+}
+
+.marker
+{
+	background-color: Yellow;
+}
+
+span[lang]
+{
+	font-style: italic;
+}
+
+figure
+{
+	text-align: center;
+	border: solid 1px #ccc;
+	border-radius: 2px;
+	background: rgba(0,0,0,0.05);
+	padding: 10px;
+	margin: 10px 20px;
+	display: inline-block;
+}
+
+figure > figcaption
+{
+	text-align: center;
+	display: block; /* For IE8 */
+}
+
+a > img {
+	padding: 1px;
+	margin: 1px;
+	border: none;
+	outline: 1px solid #0782C1;
+}
+/*カラー・ボーダー設定
+------------------------------*/
+.bgg			{	background-color:		#eee;}
+.bgw			{	background-color:		#fff;}
+.bgy			{	background-color:		#ff9;}
+.bg2g			{	background-color:		#ccc;}
+.bgbl			{	background-color:		#cff;}
+.bgor			{	background-color:		#fec;}
+.bgdg			{	background-color:		#555;}
+
+
+.fcbk			{	color:					#333;}
+.fcwh			{	color:					#fff;}
+.fcgy			{	color:					#999;}
+.fcre			{	color:					#c00;}
+.fcbl			{	color:					#00c;}
+.fcgr			{	color:					#393;}
+
+.bdts			{	border-top:				1px solid #666;}
+.bdbs			{	border-bottom:			1px solid #666;}
+.bdts2			{	border-top:				1px solid #999;}
+.bdbs2			{	border-bottom:			1px solid #999;}
+.bdtd			{	border-top:				1px dashed #666;}
+.bdbd			{	border-bottom:			1px dashed #666;}
+.bdls			{	border-left:			1px solid #ccc;}
+
+.bdboxs			{	border:					1px solid #666;}
+.bdboxd			{	border:					1px dashed #666;}
+
+
+
+/*位置・配置・フォント設定
+------------------------------*/
+.tac			{	text-align:				center;}
+.tar			{	text-align:				right;}
+.tal			{	text-align:				left;}
+
+.fll			{	float:					left;}
+.flr			{	float:					right;}
+.flc			{	clear:					both;}
+
+.fs16			{	font-size:				1.6em;}
+.fs14			{	font-size:				1.4em;}
+.fs12			{	font-size:				1.2em;}
+.fs10			{	font-size:				1.0em;}
+.fs08			{	font-size:				0.8em;}
+
+.fsi			{	font-style:				italic;}
+.fwb			{	font-weight:			bold;}
+.fwn			{	font-weight:			normal;}
+
+.sup			{
+					font-size:				0.8em;
+					position:				relative;
+					top:					-0.4em;
+					}
+
+.tdud			{text-decoration: underline;}
+
+
+.tvat{
+	vertical-align:middle;
+}
+
+/*テーブルセット>
+------------------------------*/
+td.tw05			{	width:					5%;}
+td.tw10			{	width:					10%;}
+td.tw15			{	width:					15%;}
+td.tw20			{	width:					20%;}
+td.tw25			{	width:					25%;}
+td.tw30			{	width:					30%;}
+td.tw35			{	width:					35%;}
+td.tw40			{	width:					40%;}
+td.tw45			{	width:					45%;}
+td.tw50			{	width:					50%;}
+td.tw55			{	width:					55%;}
+td.tw60			{	width:					60%;}
+td.tw65			{	width:					65%;}
+td.tw70			{	width:					70%;}
+td.tw75			{	width:					75%;}
+td.tw80			{	width:					80%;}
+td.tw85			{	width:					85%;}
+td.tw90			{	width:					90%;}
+td.tw95			{	width:					95%;}
+
+table			{
+					margin:					0 auto;
+					}
+
+td				{
+					line-height:			1.2em;
+					}

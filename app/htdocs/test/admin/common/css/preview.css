@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.tool-bar {
+  padding:15px;
+  border-bottom:1px solid #ccc;
+  margin-bottom:5px;
+}
+
+.iframe-block {
+  text-align:center;
+}
+
+.iframe-block table.iframe-table {
+  text-align:center;
+  margin: 0 auto;
+}
+
+#iframe_frame {
+  border:none;
+  vertical-align:bottom;
+}
+
+#iframe_frame-head,
+#iframe_frame-left,
+#iframe_frame-right,
+#iframe_frame-bottom {
+  display:none;
+}
+
+.iframe-block img {
+  vertical-align:bottom;
+}

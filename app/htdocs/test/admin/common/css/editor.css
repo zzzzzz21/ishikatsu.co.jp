@@ -1,0 +1,94 @@
+@charset "utf-8";
+/*カラー・ボーダー設定
+------------------------------*/
+.bgg			{	background-color:		#eee;}
+.bgw			{	background-color:		#fff;}
+.bgy			{	background-color:		#ff9;}
+.bg2g			{	background-color:		#ccc;}
+.bgbl			{	background-color:		#cff;}
+.bgor			{	background-color:		#fec;}
+.bgdg			{	background-color:		#555;}
+
+
+.fcbk			{	color:					#333;}
+.fcwh			{	color:					#fff;}
+.fcgy			{	color:					#999;}
+.fcre			{	color:					#c00;}
+.fcbl			{	color:					#00c;}
+.fcgr			{	color:					#393;}
+
+.bdts			{	border-top:				1px solid #666;}
+.bdbs			{	border-bottom:			1px solid #666;}
+.bdts2			{	border-top:				1px solid #999;}
+.bdbs2			{	border-bottom:			1px solid #999;}
+.bdtd			{	border-top:				1px dashed #666;}
+.bdbd			{	border-bottom:			1px dashed #666;}
+.bdls			{	border-left:			1px solid #ccc;}
+
+.bdboxs			{	border:					1px solid #666;}
+.bdboxd			{	border:					1px dashed #666;}
+
+
+
+/*位置・配置・フォント設定
+------------------------------*/
+.tac			{	text-align:				center;}
+.tar			{	text-align:				right;}
+.tal			{	text-align:				left;}
+
+.fll			{	float:					left;}
+.flr			{	float:					right;}
+.flc			{	clear:					both;}
+
+.fs16			{	font-size:				1.6em;}
+.fs14			{	font-size:				1.4em;}
+.fs12			{	font-size:				1.2em;}
+.fs10			{	font-size:				1.0em;}
+.fs08			{	font-size:				0.8em;}
+
+.fsi			{	font-style:				italic;}
+.fwb			{	font-weight:			bold;}
+.fwn			{	font-weight:			normal;}
+
+.sup			{
+					font-size:				0.8em;
+					position:				relative;
+					top:					-0.4em;
+					}
+
+.tdud			{text-decoration: underline;}
+
+
+.tvat{
+	vertical-align:middle;
+}
+
+/*テーブルセット>
+------------------------------*/
+td.tw05			{	width:					5%;}
+td.tw10			{	width:					10%;}
+td.tw15			{	width:					15%;}
+td.tw20			{	width:					20%;}
+td.tw25			{	width:					25%;}
+td.tw30			{	width:					30%;}
+td.tw35			{	width:					35%;}
+td.tw40			{	width:					40%;}
+td.tw45			{	width:					45%;}
+td.tw50			{	width:					50%;}
+td.tw55			{	width:					55%;}
+td.tw60			{	width:					60%;}
+td.tw65			{	width:					65%;}
+td.tw70			{	width:					70%;}
+td.tw75			{	width:					75%;}
+td.tw80			{	width:					80%;}
+td.tw85			{	width:					85%;}
+td.tw90			{	width:					90%;}
+td.tw95			{	width:					95%;}
+
+table			{
+					margin:					0 auto;
+					}
+
+td				{
+					line-height:			1.2em;
+					}

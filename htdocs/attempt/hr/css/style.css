@@ -4,9 +4,8 @@
 } */
 
 
-.photoCol2__image {
-  width: 93%;
-  height: 400px;
+.attemptImages__image {
+  height: 347px;
 }
 
 .photoCol2__item:nth-of-type(n+3){

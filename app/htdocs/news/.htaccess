@@ -1,0 +1,12 @@
+AuthUserFile /var/www/html/test/.htpw
+AuthGroupFile /dev/null
+AuthName "Basic Auth"
+AuthType Basic
+Require valid-user
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	RewriteCond $1 !^(index\.php|files)
+	RewriteRule ^(.*)$ /news/index.php?/$1 [L]
+</IfModule>

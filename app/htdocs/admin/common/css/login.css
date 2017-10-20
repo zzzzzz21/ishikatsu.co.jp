@@ -1,0 +1,66 @@
+@charset "utf-8";
+#wrapper {
+  margin-top:0;
+}
+
+#login-wrap {
+  padding-top: 200px;
+  width: 430px;
+  min-height: 320px;
+  height: 320px;
+  margin: 0 auto;
+}
+#login {
+  padding: 25px 0 15px;
+  position: relative;
+  text-align: center;
+  width: 430px;
+  z-index: 99;
+}
+#login .logo img {
+  margin: 0 auto 20px;
+}
+#login table {
+  width: 270px;
+  margin: 0 auto;
+}
+#login table th {
+  font-weight: normal;
+  text-align: left;
+  padding: 5px 5px 0 5px;
+}
+#login table td {
+  text-align: left;
+  padding: 0 5px 5px 5px;
+}
+#login table th, #login table td {
+  font-size: 70%;
+  float:left;
+  clear:both;
+}
+#login table td input.text-input {
+  border: 1px solid #BDC7D8;
+  height: 20px;
+  width: 250px;
+  padding: 5px;
+  margin-top: 20px;
+}
+.btn-login {
+  border: 1px solid #4c4c4c;
+  color: white;
+  cursor: pointer;
+  background:#4c4c4c;
+  padding: 5px;
+  width: 100px;
+  font-weight: bold;
+}
+#login table td.centered {
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+  float: none;
+}
+.error {
+  color: #C00;
+  font-weight: bold;
+}

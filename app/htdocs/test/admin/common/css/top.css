@@ -1,0 +1,39 @@
+@charset "utf-8";
+div#contents {
+  padding-top: 25px;
+/*  padding-top: 85px;*/
+  padding-left: 250px;
+  background: #ffffff;
+}
+div#contents .list-title {
+  width: 98%;
+  background-color: #DDD;
+  padding: 7px;
+  font-weight: bold;
+  margin-top: 30px;
+  border: 1px solid #CCC;
+}
+#listtbl {
+  padding: 7px;
+  width: 98%;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+table.vlne {
+  width:100%;
+  margin-top: 10px;
+}
+td.ldd-wh-l {
+  background-color: #ffffff;
+  padding: 3px 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+th.ld-lg-l {
+  height: 24px;
+  padding-left: 8px;
+  text-align: left;
+  border-bottom: 2px solid #CCC;
+  padding-bottom: 2px;
+}
