@@ -107,7 +107,6 @@ $set-prefix:'', -webkit-, -moz-, -ms-, -o-;
 $commonWhite: rgb(255,255,255);
 $commonBlack: rgb(0,0,0);
 $commonGreen: rgb(17,147,87);
-$commonGray: rgb(102,102,102);
 $linkColor: rgb(51,51,51);
 $commonWidthPc: 1080px;
 $commonWidthSp: 92%;
@@ -224,6 +223,14 @@ button {
 }
 .linkBlue {
 	color: rgb(0,102,255);
+	&--pdf:before {
+		content: "";
+		display: inline-block;
+		background: url(#{$img_path}/icon-pdf.png) left top no-repeat;
+		width: 16px;
+		height: 17px;
+		margin-right: 12px;
+	}
 }
 .textIndent {
 	text-indent: -1em;
@@ -288,6 +295,7 @@ button {
 		font-family: $meiryo;
 		font-weight: normal;
 		letter-spacing: .35em;
+		text-align: center;
 		@include sp {
 			font-size: 10px;
 			letter-spacing: .2em;
@@ -347,6 +355,7 @@ button {
 		text-align: left;
 		padding-left: 8px;
 		margin: 0 0 0 3.125%;
+		line-height: 1.3;
 	}
 }
 .smallHeadline {
@@ -357,6 +366,57 @@ button {
 		font-size: 15px;
 		line-height: 1.4;
 		text-align: center;
+	}
+}
+/* サブタイトル＆リード */
+.subtitleSection {
+	margin: 70px auto 0;
+	padding: 0 0 90px;
+	@include sp {
+		margin: 0 auto;
+		padding: 0 0 36px;
+	}
+	&__title {
+		@extend .hugeHeadline;
+		@include sp {
+			padding: 35px 0 0;
+		}
+		&--technology {
+			line-height: 1.3;
+			@include sp {
+				font-size: 21px;
+			}
+		}
+	}
+	&__english {
+		@extend .hugeHeadline__english;
+		margin: 8px auto 0;
+		@include sp {
+			font-size: 12px;
+			letter-spacing: 0;
+		}
+	}
+	&__smallTitle {
+		@extend .largeHeadline;
+		margin: 40px auto 0;
+		@include sp {
+			margin: 24px auto 0;
+			font-size: 15px;
+		}
+		& + .subtitleSection__lead {
+			margin: 35px auto 0;
+			@include sp {
+				margin: 15px auto 0;
+			}
+		}
+	}
+	&__lead {
+		@extend .middleText;
+		@extend .middleText--center;
+		margin: 28px auto 0;
+		@include sp {
+			margin: 10px auto 0;
+		}
 	}
 }
 /* パン屑リスト */
@@ -1588,7 +1648,7 @@ button {
 		&--01 {
 			background: url(#{$img_path}/kasou/recruit_button01.png) left top no-repeat;
 			@include sp {
-				background: url(#{$img_path}/kasou/attempt_button01_sp.png) left top no-repeat;
+				background: url(#{$img_path}/kasou/recruit_button01_sp.png) left top no-repeat;
 				background-size: 100%;
 			}
 		}
@@ -1763,6 +1823,14 @@ button {
 		background-size: cover;
 		@include sp {
 			background: url(#{$img_path}/kasou/main04_sp.png) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&--05 {
+		background: url(#{$img_path}/kasou/main05.png) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main05_sp.png) center top no-repeat;
 			background-size: cover;
 		}
 	}
@@ -2603,20 +2671,6 @@ button {
 	}
 }
 /********** トップページ **********/
-.commonGreenTitle {
-	font-family: $mincho;
-	color: $commonGreen;
-	font-size: 34px;
-	letter-spacing: .12em;
-	text-align: center;
-	line-height: 0.95;
-	@include sp {
-		font-size: 20px;
-		letter-spacing: .13em;
-		line-height: 1;
-	}
-}
-/********** トップページ **********/
 .carousel {
 	position: relative;
 	z-index: 1;
@@ -2686,7 +2740,7 @@ button {
 		font-size: 0;
 		@include sp {
 			width: $commonWidthSp;
-			padding: 15px 0 0;
+			padding: 25px 0 0;
 		}
 	}
 	&--about {
@@ -2723,7 +2777,7 @@ button {
 		}
 	}
 	&__title {
-		@extend .commonGreenTitle;
+		@extend .hugeHeadline;
 		&.section__title--news {
 			@include pc {
 				writing-mode: vertical-rl;
@@ -3158,59 +3212,15 @@ button {
 }
 
 /* 下層ページ */
+.contentSection {
+	width: $commonWidthPc;
+	margin: 0 auto;
+	@include sp {
+		width: $width-100;
+	}
+}
 .backgroundLead {
 	@extend .background02;
-}
-.subtitleSection {
-	margin: 70px auto 0;
-	padding: 0 0 90px;
-	@include sp {
-		margin: 0 auto;
-		padding: 0 0 36px;
-	}
-	&__title {
-		@extend .commonGreenTitle;
-		line-height: 1.4;
-		@include sp {
-			font-size: 18px;
-			line-height: 1.6;
-			letter-spacing: .1em;
-			padding: 10px 0 0;
-		}
-	}
-	&__english {
-		text-align: center;
-		color: $commonBlack;
-		font-size: 15px;
-		letter-spacing: .05em;
-		margin: 8px auto 0;
-		@include sp {
-			font-size: 12px;
-			letter-spacing: 0;
-		}
-	}
-	&__smallTitle {
-		@extend .largeHeadline;
-		margin: 40px auto 0;
-		@include sp {
-			margin: 24px auto 0;
-			font-size: 15px;
-		}
-		& + .subtitleSection__lead {
-			margin: 35px auto 0;
-			@include sp {
-				margin: 15px auto 0;
-			}
-		}
-	}
-	&__lead {
-		@extend .middleText;
-		@extend .middleText--center;
-		margin: 28px auto 0;
-		@include sp {
-			margin: 10px auto 0;
-		}
-	}
 }
 /********** 技術紹介ページ *******************/
 .technologyContent {
@@ -3984,7 +3994,6 @@ button {
 			border-bottom: 2px solid $rightGreen;
 			padding-bottom: 5px;
 			margin-bottom: 25px;
-			line-height: 1.3;
 			border-left: none;
 			text-align: center;
 			display: inline-block;
@@ -4086,21 +4095,80 @@ button {
 		padding: 0 0 8px;
 		width: 520px;
 		@include sp {
-			width: 100%;
+			width: $width-100;
 			margin: 5px 0 0;
 			padding: 0 0 20px;
 		}
 	}
 
 }
+/***********石勝の取り組みページ **************/
+.attemptContent {
+	width: $commonWidthPc;
+	margin: 80px auto 0;
+	@include sp {
+		width: $width-100;
+		margin: 40px auto 0;
+	}
+	&__title {
+		@extend .middleHeadline--type03;
+	}
+}
+.attemptBlock {
+	padding: 0 0 32px;
+	&__subTitle {
+		@extend .smallHeadline;
+		color: $middleGreen;
+	}
+	&__lead {
+		@extend .middleText;
+		line-height: 1.6;
+		margin: 15px 0 0;
+		&--central {
+			@extend .borderTop--dot;
+			padding: 40px 0 0;
+		}
+	}
+	&__detail {
+		color: $middleGray;
+		font-size: 15px;
+		margin: 15px 0 0;
+		line-height: 1.6;
+		&--textImage {
+			@extend .textImage;
 
+		}
+		&--center {
+			text-align: center;
+			margin: 5px 0 0;
+		}
+	}
+	&--02 {
+		@extend .borderTop--dot;
+		padding: 40px 0 75px;
+	}
+	&--03 {
+		@extend .borderTop--dot;
+		padding: 85px 0;
+	}
+}
+.attemptImages {
+	@extend .photoCol2;
+	margin: 35px 0 0;
+	&__item {
+		@extend .photoCol2__item;
+	}
+}
 /***********採用ページ *****************/
 .recruitContent {
 	width: $commonWidthPc;
 	margin: 72px auto 0;
-	&__title {
+	@include sp {
 		width: $width-100;
-		@extend .middleHeadline--type02;
+		margin: 48px auto 0;
+	}
+	&__title {
+		@extend .middleHeadline--type03;
 	}
 }
 .recruitTable {
@@ -4109,6 +4177,12 @@ button {
 	text-align: left;
 	width: $width-100;
 	margin: 60px auto 0;
+	@include sp {
+		width: $commonWidthSp02;
+		font-size: 12px;
+		line-height: 1.6;
+		margin: 12px auto 0;
+	}
 	&__tr {
 		border-top: 1px solid $middleGray;
 		border-bottom: 1px solid $middleGray;
@@ -4117,15 +4191,27 @@ button {
 		font-weight: normal;
 		padding: 18px 0 11px;
 		width: 185px;
+		@include sp {
+			padding: 10px 0 11px;
+			width: 16.5%;
+		}
 		&--process {
-			width: 243px;
+			@include pc {
+				width: 243px;
+			}
 		}
 	}
 	&__td {
 		padding: 18px 0 11px;
+		@include sp {
+			padding: 10px 0 11px 7%;
+		}
 	}
 	&__list {
 		@extend .textIndent;
+	}
+	&__indent {
+		padding-left: 1em;
 	}
 	&__smallTable {
 	}
@@ -4144,15 +4230,26 @@ button {
 	}
 	&__smallTh {
 		@extend .recruitTable__th;
-		width: 142px;
+		width: 140px;
+		@include sp {
+			display: block;
+			padding: 10px 0 0;
+		}
 	}
 	&__smallTd {
 		@extend .recruitTable__td;
+		@include sp {
+			display: block;
+			padding: 0 0 11px;
+		}
 	}
 	
 }
 .recruitBlock {
 	& + .recruitBlock {
 		margin-top: 130px;
+		@include sp {
+			margin-top: 68px;
+		}
 	}
 }

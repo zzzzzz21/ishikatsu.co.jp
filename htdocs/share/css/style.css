@@ -157,7 +157,7 @@ button {
           appearance: none;
 }
 
-.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after {
+.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after {
   content: "";
   clear: both;
   display: block;
@@ -181,7 +181,7 @@ button {
   }
 }
 
-.textImage, .archive__gooddesign, .techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link, .linkList__link, .illust, .header__icon, .footer__button, .companyContent__portrait, .companyContent__messageSign, .companyContent__groupTitle, .philosophySection__banner, .golfMap__illust {
+.textImage, .archive__gooddesign, .techNav__link, .companyNav__link, .worksNav__link, .managementNav__link, .attemptNav__link, .recruitNav__link, .linkList__link, .illust, .header__icon, .footer__button, .companyContent__portrait, .companyContent__messageSign, .companyContent__groupTitle, .philosophySection__banner, .golfMap__illust, .attemptBlock__detail--textImage {
   display: block;
   height: 0;
   text-indent: 100%;
@@ -203,6 +203,14 @@ button {
 .linkBlue {
   color: #0066ff;
 }
+.linkBlue--pdf:before {
+  content: "";
+  display: inline-block;
+  background: url(../images/icon-pdf.png) left top no-repeat;
+  width: 16px;
+  height: 17px;
+  margin-right: 12px;
+}
 
 .textIndent, .recruitTable__list {
   text-indent: -1em;
@@ -223,11 +231,11 @@ button {
 }
 
 /* 各フォント */
-.middleText, .underNav__item, .subBreadcrumb__item, .subtitleSection__lead, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText {
+.middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .middleText, .underNav__item, .subBreadcrumb__item, .subtitleSection__lead, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText {
+  .middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead {
     font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
@@ -262,7 +270,7 @@ button {
   }
 }
 
-.hugeHeadline, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
+.hugeHeadline, .subtitleSection__title, .section__title, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
   color: #009933;
   font-size: 38px;
   text-align: center;
@@ -270,20 +278,21 @@ button {
   line-height: 0.9;
 }
 @media (max-width: 767px) {
-  .hugeHeadline, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
+  .hugeHeadline, .subtitleSection__title, .section__title, .companyContent__portraitText, .philosophySection__title, .philosophySection__head {
     font-size: 23px;
     line-height: 0.7;
   }
 }
-.hugeHeadline__english {
+.hugeHeadline__english, .subtitleSection__english {
   color: black;
   font-size: 16px;
   font-family: "メイリオ", "Meiryo";
   font-weight: normal;
   letter-spacing: .35em;
+  text-align: center;
 }
 @media (max-width: 767px) {
-  .hugeHeadline__english {
+  .hugeHeadline__english, .subtitleSection__english {
     font-size: 10px;
     letter-spacing: .2em;
   }
@@ -302,14 +311,14 @@ button {
   }
 }
 
-.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .YearsNews__title, .serviceList__title, .recruitContent__title, .tableSample__title, .topDl__dt, .newsArticle__title {
+.middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
   font-size: 30px;
   padding: 5px 0 0 15px;
   font-weight: normal;
   letter-spacing: .02em;
 }
 @media (max-width: 767px) {
-  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .YearsNews__title, .serviceList__title, .recruitContent__title, .tableSample__title, .topDl__dt, .newsArticle__title {
+  .middleHeadline, .middleHeadline--gray, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title {
     font-size: 20px;
     padding: 0;
     letter-spacing: 0;
@@ -327,47 +336,107 @@ button {
   }
 }
 
-.middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .YearsNews__title, .serviceList__title, .recruitContent__title, .tableSample__title, .topDl__dt {
+.middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
   color: #018643;
   border-left: 5px solid #018643;
 }
 @media (max-width: 767px) {
-  .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .YearsNews__title, .serviceList__title, .recruitContent__title, .tableSample__title, .topDl__dt {
+  .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
     border: none;
   }
 }
 
-.middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .YearsNews__title, .serviceList__title, .recruitContent__title {
+.middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title {
   color: #666666;
 }
 @media (max-width: 767px) {
-  .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .YearsNews__title, .serviceList__title, .recruitContent__title {
+  .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title {
     margin-top: 26px;
   }
 }
 
-.middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle {
+.middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title {
   margin-bottom: 40px;
 }
 @media (max-width: 767px) {
-  .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle {
+  .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title {
     border-left: 3px solid #018643;
     text-align: left;
     padding-left: 8px;
     margin: 0 0 0 3.125%;
+    line-height: 1.3;
   }
 }
 
-.smallHeadline, .doorNav__title, .technologyContent__largeText, .companyContent__groupSubTitle, .serviceList__subTitle, .managementCaption__title {
+.smallHeadline, .doorNav__title, .technologyContent__largeText, .companyContent__groupSubTitle, .serviceList__subTitle, .managementCaption__title, .attemptBlock__subTitle {
   color: #666666;
   font-size: 24px;
   font-weight: normal;
 }
 @media (max-width: 767px) {
-  .smallHeadline, .doorNav__title, .technologyContent__largeText, .companyContent__groupSubTitle, .serviceList__subTitle, .managementCaption__title {
+  .smallHeadline, .doorNav__title, .technologyContent__largeText, .companyContent__groupSubTitle, .serviceList__subTitle, .managementCaption__title, .attemptBlock__subTitle {
     font-size: 15px;
     line-height: 1.4;
     text-align: center;
+  }
+}
+
+/* サブタイトル＆リード */
+.subtitleSection {
+  margin: 70px auto 0;
+  padding: 0 0 90px;
+}
+@media (max-width: 767px) {
+  .subtitleSection {
+    margin: 0 auto;
+    padding: 0 0 36px;
+  }
+}
+@media (max-width: 767px) {
+  .subtitleSection__title {
+    padding: 35px 0 0;
+  }
+}
+.subtitleSection__title--technology {
+  line-height: 1.3;
+}
+@media (max-width: 767px) {
+  .subtitleSection__title--technology {
+    font-size: 21px;
+  }
+}
+.subtitleSection__english {
+  margin: 8px auto 0;
+}
+@media (max-width: 767px) {
+  .subtitleSection__english {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+}
+.subtitleSection__smallTitle {
+  margin: 40px auto 0;
+}
+@media (max-width: 767px) {
+  .subtitleSection__smallTitle {
+    margin: 24px auto 0;
+    font-size: 15px;
+  }
+}
+.subtitleSection__smallTitle + .subtitleSection__lead {
+  margin: 35px auto 0;
+}
+@media (max-width: 767px) {
+  .subtitleSection__smallTitle + .subtitleSection__lead {
+    margin: 15px auto 0;
+  }
+}
+.subtitleSection__lead {
+  margin: 28px auto 0;
+}
+@media (max-width: 767px) {
+  .subtitleSection__lead {
+    margin: 10px auto 0;
   }
 }
 
@@ -873,7 +942,7 @@ button {
 .borderTop--gray {
   border-top: 1px solid #cccccc;
 }
-.borderTop--dot {
+.borderTop--dot, .attemptBlock__lead--central, .attemptBlock--02, .attemptBlock--03 {
   border-top: 1px dotted black;
 }
 
@@ -895,31 +964,31 @@ button {
   }
 }
 
-.photoCol2__item, .exampleList__item {
+.photoCol2__item, .exampleList__item, .attemptImages__item {
   display: inline-block;
   width: 520px;
 }
 @media (max-width: 767px) {
-  .photoCol2__item, .exampleList__item {
+  .photoCol2__item, .exampleList__item, .attemptImages__item {
     width: 100%;
     display: block;
   }
 }
-.photoCol2__item:nth-of-type(even), .exampleList__item:nth-of-type(even) {
+.photoCol2__item:nth-of-type(even), .exampleList__item:nth-of-type(even), .attemptImages__item:nth-of-type(even) {
   float: right;
 }
 @media (max-width: 767px) {
-  .photoCol2__item:nth-of-type(even), .exampleList__item:nth-of-type(even) {
+  .photoCol2__item:nth-of-type(even), .exampleList__item:nth-of-type(even), .attemptImages__item:nth-of-type(even) {
     float: none;
   }
 }
 @media (min-width: 768px) {
-  .photoCol2__item:nth-of-type(n+3), .exampleList__item:nth-of-type(n+3) {
+  .photoCol2__item:nth-of-type(n+3), .exampleList__item:nth-of-type(n+3), .attemptImages__item:nth-of-type(n+3) {
     margin-top: 38px;
   }
 }
 @media (max-width: 767px) {
-  .photoCol2__item:nth-of-type(n+2), .exampleList__item:nth-of-type(n+2) {
+  .photoCol2__item:nth-of-type(n+2), .exampleList__item:nth-of-type(n+2), .attemptImages__item:nth-of-type(n+2) {
     margin: 20px auto 0;
   }
 }
@@ -1723,7 +1792,7 @@ button {
 }
 @media (max-width: 767px) {
   .recruitNav__link--01 {
-    background: url(../images/kasou/attempt_button01_sp.png) left top no-repeat;
+    background: url(../images/kasou/recruit_button01_sp.png) left top no-repeat;
     background-size: 100%;
   }
 }
@@ -1933,6 +2002,16 @@ button {
 @media (max-width: 767px) {
   .underTop--04 {
     background: url(../images/kasou/main04_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--05 {
+  background: url(../images/kasou/main05.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--05 {
+    background: url(../images/kasou/main05_sp.png) center top no-repeat;
     background-size: cover;
   }
 }
@@ -2895,23 +2974,6 @@ button {
 }
 
 /********** トップページ **********/
-.commonGreenTitle, .section__title, .subtitleSection__title {
-  font-family: "Noto Serif Japanese";
-  color: #119357;
-  font-size: 34px;
-  letter-spacing: .12em;
-  text-align: center;
-  line-height: 0.95;
-}
-@media (max-width: 767px) {
-  .commonGreenTitle, .section__title, .subtitleSection__title {
-    font-size: 20px;
-    letter-spacing: .13em;
-    line-height: 1;
-  }
-}
-
-/********** トップページ **********/
 .carousel {
   position: relative;
   z-index: 1;
@@ -2990,7 +3052,7 @@ button {
 @media (max-width: 767px) {
   .section--news {
     width: 92%;
-    padding: 15px 0 0;
+    padding: 25px 0 0;
   }
 }
 .section--about {
@@ -3531,63 +3593,13 @@ button {
 }
 
 /* 下層ページ */
-.subtitleSection {
-  margin: 70px auto 0;
-  padding: 0 0 90px;
+.contentSection {
+  width: 1080px;
+  margin: 0 auto;
 }
 @media (max-width: 767px) {
-  .subtitleSection {
-    margin: 0 auto;
-    padding: 0 0 36px;
-  }
-}
-.subtitleSection__title {
-  line-height: 1.4;
-}
-@media (max-width: 767px) {
-  .subtitleSection__title {
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: .1em;
-    padding: 10px 0 0;
-  }
-}
-.subtitleSection__english {
-  text-align: center;
-  color: black;
-  font-size: 15px;
-  letter-spacing: .05em;
-  margin: 8px auto 0;
-}
-@media (max-width: 767px) {
-  .subtitleSection__english {
-    font-size: 12px;
-    letter-spacing: 0;
-  }
-}
-.subtitleSection__smallTitle {
-  margin: 40px auto 0;
-}
-@media (max-width: 767px) {
-  .subtitleSection__smallTitle {
-    margin: 24px auto 0;
-    font-size: 15px;
-  }
-}
-.subtitleSection__smallTitle + .subtitleSection__lead {
-  margin: 35px auto 0;
-}
-@media (max-width: 767px) {
-  .subtitleSection__smallTitle + .subtitleSection__lead {
-    margin: 15px auto 0;
-  }
-}
-.subtitleSection__lead {
-  margin: 28px auto 0;
-}
-@media (max-width: 767px) {
-  .subtitleSection__lead {
-    margin: 10px auto 0;
+  .contentSection {
+    width: 100%;
   }
 }
 
@@ -4405,7 +4417,6 @@ button {
     border-bottom: 2px solid #009933;
     padding-bottom: 5px;
     margin-bottom: 25px;
-    line-height: 1.3;
     border-left: none;
     text-align: center;
     display: inline-block;
@@ -4520,13 +4531,62 @@ button {
   }
 }
 
+/***********石勝の取り組みページ **************/
+.attemptContent {
+  width: 1080px;
+  margin: 80px auto 0;
+}
+@media (max-width: 767px) {
+  .attemptContent {
+    width: 100%;
+    margin: 40px auto 0;
+  }
+}
+
+.attemptBlock {
+  padding: 0 0 32px;
+}
+.attemptBlock__subTitle {
+  color: #018643;
+}
+.attemptBlock__lead {
+  line-height: 1.6;
+  margin: 15px 0 0;
+}
+.attemptBlock__lead--central {
+  padding: 40px 0 0;
+}
+.attemptBlock__detail {
+  color: #666666;
+  font-size: 15px;
+  margin: 15px 0 0;
+  line-height: 1.6;
+}
+.attemptBlock__detail--center {
+  text-align: center;
+  margin: 5px 0 0;
+}
+.attemptBlock--02 {
+  padding: 40px 0 75px;
+}
+.attemptBlock--03 {
+  padding: 85px 0;
+}
+
+.attemptImages {
+  margin: 35px 0 0;
+}
+
 /***********採用ページ *****************/
 .recruitContent {
   width: 1080px;
   margin: 72px auto 0;
 }
-.recruitContent__title {
-  width: 100%;
+@media (max-width: 767px) {
+  .recruitContent {
+    width: 100%;
+    margin: 48px auto 0;
+  }
 }
 
 .recruitTable {
@@ -4535,6 +4595,14 @@ button {
   text-align: left;
   width: 100%;
   margin: 60px auto 0;
+}
+@media (max-width: 767px) {
+  .recruitTable {
+    width: 93.75%;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 12px auto 0;
+  }
 }
 .recruitTable__tr {
   border-top: 1px solid #666666;
@@ -4545,11 +4613,27 @@ button {
   padding: 18px 0 11px;
   width: 185px;
 }
-.recruitTable__th--process {
-  width: 243px;
+@media (max-width: 767px) {
+  .recruitTable__th, .recruitTable__smallTh {
+    padding: 10px 0 11px;
+    width: 16.5%;
+  }
+}
+@media (min-width: 768px) {
+  .recruitTable__th--process {
+    width: 243px;
+  }
 }
 .recruitTable__td, .recruitTable__smallTd {
   padding: 18px 0 11px;
+}
+@media (max-width: 767px) {
+  .recruitTable__td, .recruitTable__smallTd {
+    padding: 10px 0 11px 7%;
+  }
+}
+.recruitTable__indent {
+  padding-left: 1em;
 }
 .recruitTable__smallTr:nth-of-type(n+2) {
   border-top: 1px solid #666666;
@@ -4561,11 +4645,28 @@ button {
   padding-top: 0;
 }
 .recruitTable__smallTh {
-  width: 142px;
+  width: 140px;
+}
+@media (max-width: 767px) {
+  .recruitTable__smallTh {
+    display: block;
+    padding: 10px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .recruitTable__smallTd {
+    display: block;
+    padding: 0 0 11px;
+  }
 }
 
 .recruitBlock + .recruitBlock {
   margin-top: 130px;
+}
+@media (max-width: 767px) {
+  .recruitBlock + .recruitBlock {
+    margin-top: 68px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
