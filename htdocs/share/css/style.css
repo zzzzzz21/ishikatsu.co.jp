@@ -250,10 +250,10 @@ button {
     line-height: 1.7;
   }
 }
-.middleText--left, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead {
+.middleText--left, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .attemptBlock__lead {
   line-height: 1.7;
 }
-.middleText--left + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .middleText--left + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead {
+.middleText--left + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .attemptBlock__lead + .middleText--left, .middleText--left + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .attemptBlock__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .attemptBlock__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .attemptBlock__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .attemptBlock__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead, .attemptBlock__lead + .philosophySection__lead, .middleText--left + .attemptBlock__lead, .companyContent__messageText + .attemptBlock__lead, .companyContent__groupText + .attemptBlock__lead, .groupBlock__ol + .attemptBlock__lead, .serviceList__text + .attemptBlock__lead, .philosophySection__lead + .attemptBlock__lead, .attemptBlock__lead + .attemptBlock__lead {
   margin-top: 18px;
 }
 
@@ -436,7 +436,7 @@ button {
 }
 @media (max-width: 767px) {
   .subtitleSection__lead {
-    margin: 10px auto 0;
+    margin: 25px auto 0;
   }
 }
 
@@ -957,7 +957,7 @@ button {
 }
 
 @media (max-width: 767px) {
-  .commonPhoto, .photoCol2__image, .exampleList__image, .photoCol3__image, .photoCol4__image, .processList__image {
+  .commonPhoto, .photoCol2__image, .exampleList__image, .attemptImages__image, .photoCol3__image, .photoCol4__image, .processList__image {
     width: 93.75%;
     display: block;
     margin: 0 auto;
@@ -2464,7 +2464,7 @@ button {
   .nav__link {
     cursor: pointer;
   }
-  .nav__link:before {
+  .nav__link:before, .nav__link--current:before {
     content: "";
     position: absolute;
     bottom: -27px;
@@ -2475,6 +2475,16 @@ button {
     background: #018643;
     -webkit-transition: .5s;
     transition: .5s;
+  }
+  .nav__link--current:before {
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 6px;
+    background: #018643;
   }
   .nav__link--first {
     border-left: 1px solid;
@@ -4539,42 +4549,97 @@ button {
 @media (max-width: 767px) {
   .attemptContent {
     width: 100%;
-    margin: 40px auto 0;
+    margin: 25px auto 0;
   }
 }
 
 .attemptBlock {
   padding: 0 0 32px;
 }
+@media (max-width: 767px) {
+  .attemptBlock {
+    width: 93.75%;
+    margin: 0 auto;
+  }
+}
 .attemptBlock__subTitle {
+  text-align: left;
   color: #018643;
 }
-.attemptBlock__lead {
-  line-height: 1.6;
-  margin: 15px 0 0;
+@media (max-width: 767px) {
+  .attemptBlock__subTitle {
+    margin: 15px auto 0;
+  }
+}
+@media (min-width: 768px) {
+  .attemptBlock__lead {
+    line-height: 1.6;
+    margin: 15px auto 0;
+  }
+}
+@media (max-width: 767px) {
+  .attemptBlock__lead {
+    width: 100%;
+    margin: 8px auto 0;
+  }
 }
 .attemptBlock__lead--central {
   padding: 40px 0 0;
 }
+@media (max-width: 767px) {
+  .attemptBlock__lead--central {
+    padding: 27px 0 0;
+    margin: 27px auto 0;
+  }
+}
 .attemptBlock__detail {
   color: #666666;
   font-size: 15px;
-  margin: 15px 0 0;
+  margin: 15px auto 0;
   line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .attemptBlock__detail {
+    font-size: 12px;
+    margin: 10px auto 0;
+  }
 }
 .attemptBlock__detail--center {
   text-align: center;
-  margin: 5px 0 0;
+  margin: 5px auto 0;
+}
+@media (max-width: 767px) {
+  .attemptBlock__detail--center {
+    font-size: 10px;
+  }
 }
 .attemptBlock--02 {
   padding: 40px 0 75px;
 }
+@media (max-width: 767px) {
+  .attemptBlock--02 {
+    padding: 40px 0 30px;
+  }
+}
 .attemptBlock--03 {
-  padding: 85px 0;
+  padding: 85px 0 0;
+}
+@media (max-width: 767px) {
+  .attemptBlock--03 {
+    padding: 10px 0 0;
+  }
 }
 
 .attemptImages {
-  margin: 35px 0 0;
+  margin: 35px auto 0;
+}
+@media (max-width: 767px) {
+  .attemptImages {
+    margin: 15px auto 0;
+  }
+}
+.attemptImages__image {
+  width: 100%;
 }
 
 /***********採用ページ *****************/

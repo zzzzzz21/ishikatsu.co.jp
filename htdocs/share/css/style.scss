@@ -415,7 +415,7 @@ button {
 		@extend .middleText--center;
 		margin: 28px auto 0;
 		@include sp {
-			margin: 10px auto 0;
+			margin: 25px auto 0;
 		}
 	}
 }
@@ -2222,7 +2222,8 @@ button {
 		font-family: $mincho;
 		@include pc {
 			cursor: pointer;
-			&:before {
+			&:before,
+			&--current:before{
 				content: "";
 				position: absolute;
 				bottom: -27px;
@@ -2232,6 +2233,16 @@ button {
 				height: 5px;
 				background: $middleGreen;
 				transition: .5s;
+			}
+			&--current:before {
+				content: "";
+				position: absolute;
+				bottom: -28px;
+				left: 0;
+				display: inline-block;
+				width: 100%;
+				height: 6px;
+				background: $middleGreen;
 			}
 			&--first {
 				border-left: 1px solid;
@@ -4108,7 +4119,7 @@ button {
 	margin: 80px auto 0;
 	@include sp {
 		width: $width-100;
-		margin: 40px auto 0;
+		margin: 25px auto 0;
 	}
 	&__title {
 		@extend .middleHeadline--type03;
@@ -4116,47 +4127,86 @@ button {
 }
 .attemptBlock {
 	padding: 0 0 32px;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 0 auto;
+	}
 	&__subTitle {
+		text-align: left;
 		@extend .smallHeadline;
 		color: $middleGreen;
+		@include sp {
+			margin: 15px auto 0;
+		}
 	}
 	&__lead {
 		@extend .middleText;
-		line-height: 1.6;
-		margin: 15px 0 0;
+		@extend .middleText--left;
+		@include pc {
+			line-height: 1.6;
+			margin: 15px auto 0;
+		}
+		@include sp {
+			width: $width-100;
+			margin: 8px auto 0;
+		}
 		&--central {
 			@extend .borderTop--dot;
 			padding: 40px 0 0;
+			@include sp {
+				padding: 27px 0 0;
+				margin: 27px auto 0;
+			}
 		}
 	}
 	&__detail {
 		color: $middleGray;
 		font-size: 15px;
-		margin: 15px 0 0;
+		margin: 15px auto 0;
 		line-height: 1.6;
+		@include sp {
+			font-size: 12px;
+			margin: 10px auto 0;
+		}
 		&--textImage {
 			@extend .textImage;
 
 		}
 		&--center {
 			text-align: center;
-			margin: 5px 0 0;
+			margin: 5px auto 0;
+			@include sp {
+				font-size: 10px;
+			}
 		}
 	}
 	&--02 {
 		@extend .borderTop--dot;
 		padding: 40px 0 75px;
+		@include sp {
+			padding: 40px 0 30px;
+		}
 	}
 	&--03 {
 		@extend .borderTop--dot;
-		padding: 85px 0;
+		padding: 85px 0 0;
+		@include sp {
+			padding: 10px 0 0;
+		}
 	}
 }
 .attemptImages {
 	@extend .photoCol2;
-	margin: 35px 0 0;
+	margin: 35px auto 0;
+	@include sp {
+		margin: 15px auto 0;
+	}
 	&__item {
 		@extend .photoCol2__item;
+	}
+	&__image {
+		@extend .photoCol2__image;
+		width: 100%;
 	}
 }
 /***********採用ページ *****************/
