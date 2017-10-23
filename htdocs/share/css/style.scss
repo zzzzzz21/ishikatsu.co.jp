@@ -4456,6 +4456,25 @@ button {
 		@include sp {
 			margin: 8px auto 0;
 		}
+		& + .otherContent__lead {
+			@include sp {
+				margin-top: 5px;
+			}
+		}
+		&.otherContent__lead--indent {
+			padding: 0 0 0 1em;
+			@include sp {
+				padding: 0;
+			}
+		}
+	}
+	&__last {
+		text-align: right;
+		padding: 45px 10px 230px 0;
+		@include sp {
+			padding: 50px 5% 80px 0;
+			font-size: 12px;
+		}
 	}
 }
 .contactTable {
@@ -4497,5 +4516,126 @@ button {
 				width: 116px;
 			}
 		}
+	}
+}
+.termsBlock + .termsBlock {
+	margin-top: 115px;
+	@include sp {
+		margin-top: 50px;
+	}
+}
+
+.termsLargeList {
+	margin: 80px auto 0;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 40px auto 0;
+		font-size: 12px;
+	}
+	&__item {
+		&:nth-of-type(n+2) {
+			margin-top: 53px;
+			@include sp {
+				margin-top: 20px;
+			}
+		}
+	}
+	&__title {
+		@extend .smallHeadline;
+		@extend .borderBottom--dot;
+		padding: 0 0 6px;
+		@include sp {
+			text-align: left;
+			font-size: 17px;
+			text-indent: -1.5em;
+			padding-left: 1.5em;
+		}
+	}
+	&__number {
+		margin-right: 0.8em;
+		@include sp {
+			margin-right: 0.5em;
+		}
+	}
+	&__text {
+		margin: 22px auto 0;
+		line-height: 1.8;
+		@include sp {
+			margin: 10px auto 0;
+		}
+	}
+}
+.termsSmallList {
+	list-style-type: decimal;
+	line-height: 1.8;
+	padding: 0 0 0 3em;
+	margin: 30px auto 0;
+	@include sp {
+		width: $commonWidthSp02;
+		font-size: 12px;
+		margin: 20px auto 0;
+		padding: 0 0 0 1.5em;
+	}
+	&__item {
+		&:nth-of-type(n+2) {
+			margin-top: 30px;
+			@include sp {
+				margin-top: 25px;
+			}
+		}
+		&.termsSmallList__item--type02 {
+			&:nth-of-type(n+2) {
+				margin-top: 43px;
+			}
+		}
+	}
+	&__text {
+		padding: 7px 0 0 1em;
+		@include sp {
+			padding: 0 0 0 1em;
+		}
+	}
+	&__subTitle {
+		padding: 35px 0 0 .7em;
+		@include sp {
+			text-indent: -1em;
+			padding: 25px 0 0 1em;
+		}
+	}
+}
+.termsMiniList {
+    margin: 10px auto 0;
+    padding: 0 0 0 0.5em;
+	line-height: 1.9;
+	@include sp {
+		line-height: 1.95;
+		margin: 5px auto 0;
+		text-indent: -3em;
+		padding: 0 0 0 3.5em;
+	}
+	&.termsMiniList--indent {
+		text-indent: -2.7em;
+		padding: 11px 0 0 2.5em;
+		.termsMiniList__item:nth-of-type(n+2) {
+			margin-top: 16px;
+		}
+	}
+}
+.termsGroupList {
+	padding: 18px 0 0 1.7em;
+	@include sp {
+		padding: 12px 0 0;
+		line-height: 1.95;
+	}
+	&__item {
+		&:nth-of-type(n+2) {
+			margin-top: 35px;
+			@include sp {
+				margin-top: 20px;
+			}
+		}
+	}
+	&__dt {
+		color: $middleGreen;
 	}
 }
