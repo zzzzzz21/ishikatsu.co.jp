@@ -231,11 +231,11 @@ button {
 }
 
 /* 各フォント */
-.middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .technologyContent__topLead, .technologyContent__mediumText, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead {
+.middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .technologyContent__topLead, .technologyContent__mediumText, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead, .otherContent__lead {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .technologyContent__topLead, .technologyContent__mediumText, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead {
+  .middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .technologyContent__topLead, .technologyContent__mediumText, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead, .otherContent__lead {
     font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
@@ -250,10 +250,10 @@ button {
     line-height: 1.7;
   }
 }
-.middleText--left, .technologyContent__mediumText, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .attemptBlock__lead {
+.middleText--left, .technologyContent__mediumText, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .attemptBlock__lead, .otherContent__lead {
   line-height: 1.7;
 }
-.middleText--left + .middleText--left, .technologyContent__mediumText + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .attemptBlock__lead + .middleText--left, .middleText--left + .technologyContent__mediumText, .technologyContent__mediumText + .technologyContent__mediumText, .companyContent__messageText + .technologyContent__mediumText, .companyContent__groupText + .technologyContent__mediumText, .groupBlock__ol + .technologyContent__mediumText, .serviceList__text + .technologyContent__mediumText, .philosophySection__lead + .technologyContent__mediumText, .attemptBlock__lead + .technologyContent__mediumText, .middleText--left + .companyContent__messageText, .technologyContent__mediumText + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .attemptBlock__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .technologyContent__mediumText + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .attemptBlock__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .technologyContent__mediumText + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .attemptBlock__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .technologyContent__mediumText + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .attemptBlock__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .technologyContent__mediumText + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead, .attemptBlock__lead + .philosophySection__lead, .middleText--left + .attemptBlock__lead, .technologyContent__mediumText + .attemptBlock__lead, .companyContent__messageText + .attemptBlock__lead, .companyContent__groupText + .attemptBlock__lead, .groupBlock__ol + .attemptBlock__lead, .serviceList__text + .attemptBlock__lead, .philosophySection__lead + .attemptBlock__lead, .attemptBlock__lead + .attemptBlock__lead {
+.middleText--left + .middleText--left, .technologyContent__mediumText + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .attemptBlock__lead + .middleText--left, .otherContent__lead + .middleText--left, .middleText--left + .technologyContent__mediumText, .technologyContent__mediumText + .technologyContent__mediumText, .companyContent__messageText + .technologyContent__mediumText, .companyContent__groupText + .technologyContent__mediumText, .groupBlock__ol + .technologyContent__mediumText, .serviceList__text + .technologyContent__mediumText, .philosophySection__lead + .technologyContent__mediumText, .attemptBlock__lead + .technologyContent__mediumText, .otherContent__lead + .technologyContent__mediumText, .middleText--left + .companyContent__messageText, .technologyContent__mediumText + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .attemptBlock__lead + .companyContent__messageText, .otherContent__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .technologyContent__mediumText + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .attemptBlock__lead + .companyContent__groupText, .otherContent__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .technologyContent__mediumText + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .attemptBlock__lead + .groupBlock__ol, .otherContent__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .technologyContent__mediumText + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .attemptBlock__lead + .serviceList__text, .otherContent__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .technologyContent__mediumText + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead, .attemptBlock__lead + .philosophySection__lead, .otherContent__lead + .philosophySection__lead, .middleText--left + .attemptBlock__lead, .technologyContent__mediumText + .attemptBlock__lead, .companyContent__messageText + .attemptBlock__lead, .companyContent__groupText + .attemptBlock__lead, .groupBlock__ol + .attemptBlock__lead, .serviceList__text + .attemptBlock__lead, .philosophySection__lead + .attemptBlock__lead, .attemptBlock__lead + .attemptBlock__lead, .otherContent__lead + .attemptBlock__lead, .middleText--left + .otherContent__lead, .technologyContent__mediumText + .otherContent__lead, .companyContent__messageText + .otherContent__lead, .companyContent__groupText + .otherContent__lead, .groupBlock__ol + .otherContent__lead, .serviceList__text + .otherContent__lead, .philosophySection__lead + .otherContent__lead, .attemptBlock__lead + .otherContent__lead, .otherContent__lead + .otherContent__lead {
   margin-top: 18px;
 }
 
@@ -310,14 +310,14 @@ button {
   }
 }
 
-.middleHeadline, .middleHeadline--gray, .subtitleSection__smallTitle, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title, .technologyContent__topTitle {
+.middleHeadline, .middleHeadline--gray, .subtitleSection__smallTitle, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title, .technologyContent__topTitle {
   font-size: 30px;
   padding: 5px 0 0 15px;
   font-weight: normal;
   letter-spacing: .02em;
 }
 @media (max-width: 767px) {
-  .middleHeadline, .middleHeadline--gray, .subtitleSection__smallTitle, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title, .technologyContent__topTitle {
+  .middleHeadline, .middleHeadline--gray, .subtitleSection__smallTitle, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title, .technologyContent__topTitle {
     font-size: 20px;
     padding: 0;
     letter-spacing: 0;
@@ -335,30 +335,30 @@ button {
   }
 }
 
-.middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
+.middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
   color: #018643;
   border-left: 5px solid #018643;
 }
 @media (max-width: 767px) {
-  .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
+  .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
     border: none;
   }
 }
 
-.middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title {
+.middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title {
   color: #666666;
 }
 @media (max-width: 767px) {
-  .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .YearsNews__title, .serviceList__title {
+  .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title {
     margin-top: 26px;
   }
 }
 
-.middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title {
+.middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title {
   margin-bottom: 40px;
 }
 @media (max-width: 767px) {
-  .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title {
+  .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title {
     border-left: 3px solid #018643;
     text-align: left;
     padding-left: 8px;
@@ -800,7 +800,7 @@ button {
   }
 }
 
-.commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable {
+.commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable, .contactTable {
   border: 1px solid #999;
   border-collapse: collapse;
   font-size: 18px;
@@ -809,7 +809,7 @@ button {
   width: 100%;
 }
 @media (max-width: 767px) {
-  .commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable {
+  .commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable, .contactTable {
     font-size: 12px;
     line-height: 1.7;
     width: 93.75%;
@@ -818,11 +818,11 @@ button {
   }
 }
 @media (max-width: 767px) {
-  .commonTable__tr:last-of-type, .companyTable01__tr:last-of-type, .companyTable02__tr:last-of-type, .groupCompanyTable__tr:last-of-type {
+  .commonTable__tr:last-of-type, .companyTable01__tr:last-of-type, .companyTable02__tr:last-of-type, .groupCompanyTable__tr:last-of-type, .contactTable__tr:last-of-type {
     border-bottom: 1px solid #999;
   }
 }
-.commonTable__th, .companyTable01__th, .companyTable02__th, .groupCompanyTable__th {
+.commonTable__th, .companyTable01__th, .companyTable02__th, .groupCompanyTable__th, .contactTable__th {
   background: #e2e2e2;
   font-weight: normal;
   border: 1px solid #999;
@@ -831,21 +831,21 @@ button {
   width: 112px;
 }
 @media (max-width: 767px) {
-  .commonTable__th, .companyTable01__th, .companyTable02__th, .groupCompanyTable__th {
+  .commonTable__th, .companyTable01__th, .companyTable02__th, .groupCompanyTable__th, .contactTable__th {
     display: block;
     width: 100%;
     padding: 6px 10px 1px 10px;
     border-bottom: none;
   }
 }
-.commonTable__td, .companyTable01__td, .companyTable02__td, .groupCompanyTable__td {
+.commonTable__td, .companyTable01__td, .companyTable02__td, .groupCompanyTable__td, .contactTable__td {
   border: 1px solid #999;
   border-collapse: collapse;
   padding: 0 0 4px 20px;
   width: 726px;
 }
 @media (max-width: 767px) {
-  .commonTable__td, .companyTable01__td, .companyTable02__td, .groupCompanyTable__td {
+  .commonTable__td, .companyTable01__td, .companyTable02__td, .groupCompanyTable__td, .contactTable__td {
     display: block;
     width: 100%;
     padding: 6px 10px 1px 10px;
@@ -2100,6 +2100,46 @@ button {
 @media (max-width: 767px) {
   .underTop--small.underTop--small07 {
     background: url(../images/kasou/main07_small_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--small.underTop--small08 {
+  background: url(../images/kasou/main08_small.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--small.underTop--small08 {
+    background: url(../images/kasou/main08_small_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--small.underTop--small09 {
+  background: url(../images/kasou/main09_small.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--small.underTop--small09 {
+    background: url(../images/kasou/main09_small_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--small.underTop--small10 {
+  background: url(../images/kasou/main10_small.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--small.underTop--small10 {
+    background: url(../images/kasou/main10_small_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop--small.underTop--small11 {
+  background: url(../images/kasou/main11_small.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop--small.underTop--small11 {
+    background: url(../images/kasou/main11_small_sp.png) center top no-repeat;
     background-size: cover;
   }
 }
@@ -4855,6 +4895,68 @@ button {
 @media (max-width: 767px) {
   .recruitBlock + .recruitBlock {
     margin-top: 68px;
+  }
+}
+
+/* その他ページ(お問い合わせ・ビジネスパートナーのみなさま・サイトのご利用について・個人情報の保護) */
+.otherContent {
+  width: 1080px;
+  margin: 60px auto 0;
+}
+@media (max-width: 767px) {
+  .otherContent {
+    width: 100%;
+    margin: 10px auto 0;
+  }
+}
+.otherContent__lead {
+  margin: -12px auto 0;
+}
+@media (max-width: 767px) {
+  .otherContent__lead {
+    margin: 8px auto 0;
+  }
+}
+
+.contactTable {
+  margin: 60px auto 255px;
+}
+@media (max-width: 767px) {
+  .contactTable {
+    margin: 40px auto 80px;
+  }
+}
+@media (min-width: 768px) {
+  .contactTable__th {
+    vertical-align: middle;
+    padding: 31px 0 31px 24px;
+    width: 198px;
+  }
+}
+@media (max-width: 767px) {
+  .contactTable__th {
+    padding: 10px 0 8px 8px;
+  }
+}
+@media (min-width: 768px) {
+  .contactTable__td {
+    vertical-align: middle;
+    padding: 31px 0 31px 24px;
+  }
+}
+@media (max-width: 767px) {
+  .contactTable__td {
+    padding: 10px 0 8px 8px;
+  }
+}
+@media (min-width: 768px) {
+  .contactTable__td:nth-of-type(1) {
+    width: 180px;
+  }
+}
+@media (min-width: 768px) {
+  .contactTable__td:nth-of-type(2) {
+    width: 116px;
   }
 }
 

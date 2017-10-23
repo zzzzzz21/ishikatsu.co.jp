@@ -1906,6 +1906,38 @@ button {
 				background-size: cover;
 			}
 		}
+		&.underTop--small08 {
+			background: url(#{$img_path}/kasou/main08_small.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main08_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
+		&.underTop--small09 {
+			background: url(#{$img_path}/kasou/main09_small.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main09_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
+		&.underTop--small10 {
+			background: url(#{$img_path}/kasou/main10_small.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main10_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
+		&.underTop--small11 {
+			background: url(#{$img_path}/kasou/main11_small.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main11_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
 	}
 	&__wrapper {
 		padding: 220px 0 0;
@@ -4403,6 +4435,67 @@ button {
 		margin-top: 130px;
 		@include sp {
 			margin-top: 68px;
+		}
+	}
+}
+/* その他ページ(お問い合わせ・ビジネスパートナーのみなさま・サイトのご利用について・個人情報の保護) */
+.otherContent {
+	width: $commonWidthPc;
+	margin: 60px auto 0;
+	@include sp {
+		width: $width-100;
+		margin: 10px auto 0;
+	}
+	&__title {
+		@extend .middleHeadline--type03;
+	}
+	&__lead {
+		@extend .middleText;
+		@extend .middleText--left;
+		margin: -12px auto 0;
+		@include sp {
+			margin: 8px auto 0;
+		}
+	}
+}
+.contactTable {
+	@extend .commonTable;
+	margin: 60px auto 255px;
+	@include sp {
+		margin: 40px auto 80px;
+	}
+	&__tr {
+		@extend .commonTable__tr;
+	}
+	&__th {
+		@extend .commonTable__th;
+		@include pc {
+			vertical-align: middle;
+			padding: 31px 0 31px 24px;
+			width: 198px;
+		}
+		@include sp {
+			padding: 10px 0 8px 8px;
+		}
+	}
+	&__td {
+		@extend .commonTable__td;
+		@include pc {
+			vertical-align: middle;
+			padding: 31px 0 31px 24px;
+		}
+		@include sp {
+			padding: 10px 0 8px 8px;
+		}
+		&:nth-of-type(1) {
+			@include pc {
+				width: 180px;
+			}
+		}
+		&:nth-of-type(2) {
+			@include pc {
+				width: 116px;
+			}
 		}
 	}
 }
