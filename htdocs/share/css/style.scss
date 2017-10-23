@@ -3299,19 +3299,10 @@ button {
 	}
 	&__topLink {
 		@extend .greenButton;
-		&--left {
-			@extend .greenButton--pdf;
-			@include sp {
-				width: $commonWidthSp;
-			}
-		}
-		&--right {
-			margin-left: 20px;
-			width: 288px;
-			@include sp {
-				width: $commonWidthSp;
-				margin: 20px auto 0;
-			}
+		width: 288px;
+		@include sp {
+			width: $commonWidthSp;
+			margin: 20px auto 0;
 		}
 	}
 	&__subtitle {
@@ -3723,7 +3714,7 @@ button {
 	height: 578px;
 	@include sp {
 		width: 93.75%;
-		margin: 0 auto;
+		margin: 20px auto 0;
 		height: 0;
 		padding-top: 62.5%;
 	}
@@ -3798,7 +3789,7 @@ button {
 		vertical-align: top;
 		@include sp {
 			display: block;
-			margin: 0 auto;
+			margin: 20px auto 0;
 			padding: 0 0 0 1.75em;
 		}
 	}
@@ -3836,6 +3827,9 @@ button {
 	@include pc {
 		line-height: 1.7;
 		margin: 0 auto;
+	}
+	@include sp {
+		margin: 20px auto 0;
 	}
 	&__tr {
 		@extend .commonTable__tr;
@@ -4164,7 +4158,7 @@ button {
 		margin: 80px auto 0;
 		@include sp {
 			margin: 33px auto 0;
-			width: 55%;
+			width: 60%;
 		}
 	}
 }
@@ -4187,9 +4181,10 @@ button {
 	&__title {
 		@extend .smallHeadline;
 		color: $middleGreen;
-		border-left: 5px solid #018643;
+		border-left: 5px solid $middleGreen;
 		padding: 5px 0 5px 15px;
 		@include sp {
+			border-left: 3px solid $middleGreen;
 			text-align: left;
 			font-size: 18px;
 		}

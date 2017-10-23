@@ -1412,10 +1412,10 @@ button {
   vertical-align: middle;
   margin: 0 auto;
 }
-.greenButton--pdf, .technologyContent__topLink--left, .companyLinkText__link, .companyContent__button01 {
+.greenButton--pdf, .companyLinkText__link, .companyContent__button01 {
   padding: .8em 2em;
 }
-.greenButton--pdf::before, .technologyContent__topLink--left::before, .companyLinkText__link::before, .companyContent__button01::before {
+.greenButton--pdf::before, .companyLinkText__link::before, .companyContent__button01::before {
   content: "";
   background: url(../images/kasou/icon-pdf02.png) left top no-repeat;
   width: 24px;
@@ -3689,17 +3689,11 @@ button {
     margin: 42px auto 80px;
   }
 }
-@media (max-width: 767px) {
-  .technologyContent__topLink--left {
-    width: 92%;
-  }
-}
-.technologyContent__topLink--right {
-  margin-left: 20px;
+.technologyContent__topLink {
   width: 288px;
 }
 @media (max-width: 767px) {
-  .technologyContent__topLink--right {
+  .technologyContent__topLink {
     width: 92%;
     margin: 20px auto 0;
   }
@@ -4145,7 +4139,7 @@ button {
 @media (max-width: 767px) {
   #map_canvas_03 {
     width: 93.75%;
-    margin: 0 auto;
+    margin: 20px auto 0;
     height: 0;
     padding-top: 62.5%;
   }
@@ -4206,7 +4200,7 @@ button {
 @media (max-width: 767px) {
   .groupBlock__ol {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto 0;
     padding: 0 0 0 1.75em;
   }
 }
@@ -4244,6 +4238,11 @@ button {
   .groupCompanyTable {
     line-height: 1.7;
     margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .groupCompanyTable {
+    margin: 20px auto 0;
   }
 }
 @media (min-width: 768px) {
@@ -4601,7 +4600,7 @@ button {
 @media (max-width: 767px) {
   .golfMap__link {
     margin: 33px auto 0;
-    width: 55%;
+    width: 60%;
   }
 }
 
@@ -4631,6 +4630,7 @@ button {
 }
 @media (max-width: 767px) {
   .managementCaption__title {
+    border-left: 3px solid #018643;
     text-align: left;
     font-size: 18px;
   }
