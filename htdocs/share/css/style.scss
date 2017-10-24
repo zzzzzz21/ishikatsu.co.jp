@@ -4494,6 +4494,214 @@ button {
 	}
 }
 /* その他ページ(お問い合わせ・ビジネスパートナーのみなさま・サイトのご利用について・個人情報の保護) */
+.downloadContent {
+	width: $commonWidthPc;
+	margin: 60px auto 0;
+	@include sp {
+		width: $width-100;
+		margin: 10px auto 0;
+	}
+	&__title {
+		@extend .middleHeadline--type03;
+	}
+	&__lead {
+		@extend .middleText;
+		@extend .middleText--left;
+		margin: -12px auto 0;
+		@include sp {
+			margin: 8px auto 0;
+		}
+	}
+	&__caution {
+		@extend .middleText;
+		@extend .middleText--left;
+		margin: 65px auto 190px;
+		@include sp {
+			margin: 12px auto 80px;
+		}
+	}
+}
+.donwloadTop {
+	margin-bottom: 95px;
+	@include sp {
+		margin-bottom: 45px;
+	}
+}
+.downloadBlock {
+	& + .downloadBlock {
+		margin: 45px auto 0;
+		@include sp {
+			margin: 35px auto 0;
+		}
+	}
+}
+.tableList {
+	@extend .clearfix;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 10px auto 0;
+	}
+	&__item {
+		width: 48%;
+		display: inline-block;
+		&:nth-of-type(even) {
+			@include pc {
+				float: right;
+			}
+		}
+		&:nth-of-type(n+3) {
+			@include pc {
+				margin-top: 40px;
+			}
+		}
+		&:nth-of-type(n+2) {
+			@include sp {
+				margin-top: 10px;
+			}
+		}
+		@include sp {
+			width: 100%;
+		}
+	}
+}
+.filesTable {
+	@extend .commonTable;
+	text-align: left;
+	table-layout: fixed;
+	width: 100%;
+	&__tr {
+		&:nth-of-type(1) {
+			& .filesTable__th {
+				background: #e2e2e2;
+			}
+			& .filesTable__td {
+				background: #e2e2e2;
+			}
+		}
+	}
+	&__th {
+		width: 32%;
+		border: 1px solid #999;
+		vertical-align: top;
+		font-weight: normal;
+		padding: 20px 0 13px 15px;
+		@include sp {
+			padding: 6px 0 13px 10px;
+		}
+		&.filesTable__th--partnerTop {
+			@include sp {
+				height: 60px;
+			}
+		}
+		&.filesTable__th--partner {
+			width: 34%;
+			@include sp {
+				padding: 6px 0 17px 10px;
+			}
+		}
+	}
+	&__td {
+		border: 1px solid #999;
+		vertical-align: top;
+		word-break: break-all;
+		padding: 20px 10px 13px 15px;
+		@include sp {
+			padding: 6px 10px 13px 10px;
+		}
+		&.filesTable__td--partnerTop {
+			@include sp {
+				height: 60px;
+			}
+		}
+	}
+	&__wrapper {
+		@include sp {
+			min-height: 52px;
+		}
+	}
+	&__link {
+		display: inline-block;
+		@include sp {
+			max-width: 10em;
+			display: block;
+		}
+		&:nth-of-type(even) {
+			@include pc {
+				margin-left: 15px;
+			}
+		}
+		&:nth-of-type(n+2) {
+			@include sp {
+				margin-top: 12px;
+			}
+		}
+		&:nth-of-type(n+3) {
+			@include pc {
+				margin-top: 12px;
+			}
+		}
+		&.filesTable__pdf {
+			&::before {
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				background: url(#{$img_path}/icon-pdf.png) left top no-repeat;
+				width: 16px;
+				height: 17px;
+				margin-right: 5px;
+				@include sp {
+					background: url(#{$img_path}/icon-pdf_sp.png) left top no-repeat;
+					background-size: 100%;
+				}
+			}
+		}
+		&.filesTable__zip {
+			&::before {
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				background: url(#{$img_path}/kasou/icon-zip.png) left top no-repeat;
+				width: 16px;
+				height: 16px;
+				margin-right: 5px;
+				@include sp {
+					background: url(#{$img_path}/kasou/icon-zip_sp.png) left top no-repeat;
+					background-size: 100%;
+				}
+			}
+		}
+		&.filesTable__word {
+			&::before {
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				background: url(#{$img_path}/kasou/icon-word.png) left top no-repeat;
+				width: 17px;
+				height: 18px;
+				margin-right: 5px;
+				@include sp {
+					background: url(#{$img_path}/kasou/icon-word_sp.png) left top no-repeat;
+					background-size: 100%;
+				}
+			}
+		}
+		&.filesTable__excel {
+			&::before {
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				background: url(#{$img_path}/kasou/icon-excel.png) left top no-repeat;
+				width: 17px;
+				height: 18px;
+				margin-right: 5px;
+				@include sp {
+					background: url(#{$img_path}/kasou/icon-excel_sp.png) left top no-repeat;
+					background-size: 100%;
+				}
+			}
+		}
+	}
+}
 .otherContent {
 	width: $commonWidthPc;
 	margin: 60px auto 0;

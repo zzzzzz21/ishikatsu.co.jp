@@ -157,7 +157,7 @@ button {
           appearance: none;
 }
 
-.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after {
+.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after, .tableList:after {
   content: "";
   clear: both;
   display: block;
@@ -231,11 +231,11 @@ button {
 }
 
 /* 各フォント */
-.middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .technologyContent__topLead, .technologyContent__mediumText, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead, .otherContent__lead {
+.middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .technologyContent__topLead, .technologyContent__mediumText, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead, .downloadContent__lead, .downloadContent__caution, .otherContent__lead {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .technologyContent__topLead, .technologyContent__mediumText, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead, .otherContent__lead {
+  .middleText, .subtitleSection__lead, .underNav__item, .subBreadcrumb__item, .technologyContent__topLead, .technologyContent__mediumText, .companyContent__messageText, .companyContent__messagePosition, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .worksBlock__lead, .managementContent__subText, .attemptBlock__lead, .downloadContent__lead, .downloadContent__caution, .otherContent__lead {
     font-size: 12px;
     width: 93.75%;
     margin: 0 auto;
@@ -250,10 +250,10 @@ button {
     line-height: 1.7;
   }
 }
-.middleText--left, .technologyContent__mediumText, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .attemptBlock__lead, .otherContent__lead {
+.middleText--left, .technologyContent__mediumText, .companyContent__messageText, .companyContent__groupText, .groupBlock__ol, .serviceList__text, .philosophySection__lead, .attemptBlock__lead, .downloadContent__lead, .downloadContent__caution, .otherContent__lead {
   line-height: 1.7;
 }
-.middleText--left + .middleText--left, .technologyContent__mediumText + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .attemptBlock__lead + .middleText--left, .otherContent__lead + .middleText--left, .middleText--left + .technologyContent__mediumText, .technologyContent__mediumText + .technologyContent__mediumText, .companyContent__messageText + .technologyContent__mediumText, .companyContent__groupText + .technologyContent__mediumText, .groupBlock__ol + .technologyContent__mediumText, .serviceList__text + .technologyContent__mediumText, .philosophySection__lead + .technologyContent__mediumText, .attemptBlock__lead + .technologyContent__mediumText, .otherContent__lead + .technologyContent__mediumText, .middleText--left + .companyContent__messageText, .technologyContent__mediumText + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .attemptBlock__lead + .companyContent__messageText, .otherContent__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .technologyContent__mediumText + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .attemptBlock__lead + .companyContent__groupText, .otherContent__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .technologyContent__mediumText + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .attemptBlock__lead + .groupBlock__ol, .otherContent__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .technologyContent__mediumText + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .attemptBlock__lead + .serviceList__text, .otherContent__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .technologyContent__mediumText + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead, .attemptBlock__lead + .philosophySection__lead, .otherContent__lead + .philosophySection__lead, .middleText--left + .attemptBlock__lead, .technologyContent__mediumText + .attemptBlock__lead, .companyContent__messageText + .attemptBlock__lead, .companyContent__groupText + .attemptBlock__lead, .groupBlock__ol + .attemptBlock__lead, .serviceList__text + .attemptBlock__lead, .philosophySection__lead + .attemptBlock__lead, .attemptBlock__lead + .attemptBlock__lead, .otherContent__lead + .attemptBlock__lead, .middleText--left + .otherContent__lead, .technologyContent__mediumText + .otherContent__lead, .companyContent__messageText + .otherContent__lead, .companyContent__groupText + .otherContent__lead, .groupBlock__ol + .otherContent__lead, .serviceList__text + .otherContent__lead, .philosophySection__lead + .otherContent__lead, .attemptBlock__lead + .otherContent__lead, .otherContent__lead + .otherContent__lead {
+.middleText--left + .middleText--left, .technologyContent__mediumText + .middleText--left, .companyContent__messageText + .middleText--left, .companyContent__groupText + .middleText--left, .groupBlock__ol + .middleText--left, .serviceList__text + .middleText--left, .philosophySection__lead + .middleText--left, .attemptBlock__lead + .middleText--left, .downloadContent__lead + .middleText--left, .downloadContent__caution + .middleText--left, .otherContent__lead + .middleText--left, .middleText--left + .technologyContent__mediumText, .technologyContent__mediumText + .technologyContent__mediumText, .companyContent__messageText + .technologyContent__mediumText, .companyContent__groupText + .technologyContent__mediumText, .groupBlock__ol + .technologyContent__mediumText, .serviceList__text + .technologyContent__mediumText, .philosophySection__lead + .technologyContent__mediumText, .attemptBlock__lead + .technologyContent__mediumText, .downloadContent__lead + .technologyContent__mediumText, .downloadContent__caution + .technologyContent__mediumText, .otherContent__lead + .technologyContent__mediumText, .middleText--left + .companyContent__messageText, .technologyContent__mediumText + .companyContent__messageText, .companyContent__messageText + .companyContent__messageText, .companyContent__groupText + .companyContent__messageText, .groupBlock__ol + .companyContent__messageText, .serviceList__text + .companyContent__messageText, .philosophySection__lead + .companyContent__messageText, .attemptBlock__lead + .companyContent__messageText, .downloadContent__lead + .companyContent__messageText, .downloadContent__caution + .companyContent__messageText, .otherContent__lead + .companyContent__messageText, .middleText--left + .companyContent__groupText, .technologyContent__mediumText + .companyContent__groupText, .companyContent__messageText + .companyContent__groupText, .companyContent__groupText + .companyContent__groupText, .groupBlock__ol + .companyContent__groupText, .serviceList__text + .companyContent__groupText, .philosophySection__lead + .companyContent__groupText, .attemptBlock__lead + .companyContent__groupText, .downloadContent__lead + .companyContent__groupText, .downloadContent__caution + .companyContent__groupText, .otherContent__lead + .companyContent__groupText, .middleText--left + .groupBlock__ol, .technologyContent__mediumText + .groupBlock__ol, .companyContent__messageText + .groupBlock__ol, .companyContent__groupText + .groupBlock__ol, .groupBlock__ol + .groupBlock__ol, .serviceList__text + .groupBlock__ol, .philosophySection__lead + .groupBlock__ol, .attemptBlock__lead + .groupBlock__ol, .downloadContent__lead + .groupBlock__ol, .downloadContent__caution + .groupBlock__ol, .otherContent__lead + .groupBlock__ol, .middleText--left + .serviceList__text, .technologyContent__mediumText + .serviceList__text, .companyContent__messageText + .serviceList__text, .companyContent__groupText + .serviceList__text, .groupBlock__ol + .serviceList__text, .serviceList__text + .serviceList__text, .philosophySection__lead + .serviceList__text, .attemptBlock__lead + .serviceList__text, .downloadContent__lead + .serviceList__text, .downloadContent__caution + .serviceList__text, .otherContent__lead + .serviceList__text, .middleText--left + .philosophySection__lead, .technologyContent__mediumText + .philosophySection__lead, .companyContent__messageText + .philosophySection__lead, .companyContent__groupText + .philosophySection__lead, .groupBlock__ol + .philosophySection__lead, .serviceList__text + .philosophySection__lead, .philosophySection__lead + .philosophySection__lead, .attemptBlock__lead + .philosophySection__lead, .downloadContent__lead + .philosophySection__lead, .downloadContent__caution + .philosophySection__lead, .otherContent__lead + .philosophySection__lead, .middleText--left + .attemptBlock__lead, .technologyContent__mediumText + .attemptBlock__lead, .companyContent__messageText + .attemptBlock__lead, .companyContent__groupText + .attemptBlock__lead, .groupBlock__ol + .attemptBlock__lead, .serviceList__text + .attemptBlock__lead, .philosophySection__lead + .attemptBlock__lead, .attemptBlock__lead + .attemptBlock__lead, .downloadContent__lead + .attemptBlock__lead, .downloadContent__caution + .attemptBlock__lead, .otherContent__lead + .attemptBlock__lead, .middleText--left + .downloadContent__lead, .technologyContent__mediumText + .downloadContent__lead, .companyContent__messageText + .downloadContent__lead, .companyContent__groupText + .downloadContent__lead, .groupBlock__ol + .downloadContent__lead, .serviceList__text + .downloadContent__lead, .philosophySection__lead + .downloadContent__lead, .attemptBlock__lead + .downloadContent__lead, .downloadContent__lead + .downloadContent__lead, .downloadContent__caution + .downloadContent__lead, .otherContent__lead + .downloadContent__lead, .middleText--left + .downloadContent__caution, .technologyContent__mediumText + .downloadContent__caution, .companyContent__messageText + .downloadContent__caution, .companyContent__groupText + .downloadContent__caution, .groupBlock__ol + .downloadContent__caution, .serviceList__text + .downloadContent__caution, .philosophySection__lead + .downloadContent__caution, .attemptBlock__lead + .downloadContent__caution, .downloadContent__lead + .downloadContent__caution, .downloadContent__caution + .downloadContent__caution, .otherContent__lead + .downloadContent__caution, .middleText--left + .otherContent__lead, .technologyContent__mediumText + .otherContent__lead, .companyContent__messageText + .otherContent__lead, .companyContent__groupText + .otherContent__lead, .groupBlock__ol + .otherContent__lead, .serviceList__text + .otherContent__lead, .philosophySection__lead + .otherContent__lead, .attemptBlock__lead + .otherContent__lead, .downloadContent__lead + .otherContent__lead, .downloadContent__caution + .otherContent__lead, .otherContent__lead + .otherContent__lead {
   margin-top: 18px;
 }
 
@@ -310,14 +310,14 @@ button {
   }
 }
 
-.middleHeadline, .middleHeadline--gray, .subtitleSection__smallTitle, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title, .technologyContent__topTitle {
+.middleHeadline, .middleHeadline--gray, .subtitleSection__smallTitle, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .downloadContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title, .technologyContent__topTitle {
   font-size: 30px;
   padding: 5px 0 0 15px;
   font-weight: normal;
   letter-spacing: .02em;
 }
 @media (max-width: 767px) {
-  .middleHeadline, .middleHeadline--gray, .subtitleSection__smallTitle, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title, .technologyContent__topTitle {
+  .middleHeadline, .middleHeadline--gray, .subtitleSection__smallTitle, .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .downloadContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt, .newsArticle__title, .technologyContent__topTitle {
     font-size: 20px;
     padding: 0;
     letter-spacing: 0;
@@ -335,30 +335,30 @@ button {
   }
 }
 
-.middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
+.middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .downloadContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
   color: #018643;
   border-left: 5px solid #018643;
 }
 @media (max-width: 767px) {
-  .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
+  .middleHeadline--green, .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .downloadContent__title, .otherContent__title, .YearsNews__title, .serviceList__title, .tableSample__title, .topDl__dt {
     border: none;
   }
 }
 
-.middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title {
+.middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .downloadContent__title, .otherContent__title, .YearsNews__title, .serviceList__title {
   color: #666666;
 }
 @media (max-width: 767px) {
-  .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title, .YearsNews__title, .serviceList__title {
+  .middleHeadline--type02, .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .downloadContent__title, .otherContent__title, .YearsNews__title, .serviceList__title {
     margin-top: 26px;
   }
 }
 
-.middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title {
+.middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .downloadContent__title, .otherContent__title {
   margin-bottom: 40px;
 }
 @media (max-width: 767px) {
-  .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .otherContent__title {
+  .middleHeadline--type03, .companyContent__subTitle, .managementContent__subTitle, .attemptContent__title, .recruitContent__title, .downloadContent__title, .otherContent__title {
     border-left: 3px solid #018643;
     text-align: left;
     padding-left: 8px;
@@ -800,7 +800,7 @@ button {
   }
 }
 
-.commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable, .contactTable {
+.commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable, .filesTable, .contactTable {
   border: 1px solid #999;
   border-collapse: collapse;
   font-size: 18px;
@@ -809,7 +809,7 @@ button {
   width: 100%;
 }
 @media (max-width: 767px) {
-  .commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable, .contactTable {
+  .commonTable, .tableSample__table, .companyTable01, .companyTable02, .groupCompanyTable, .filesTable, .contactTable {
     font-size: 12px;
     line-height: 1.7;
     width: 93.75%;
@@ -4990,6 +4990,224 @@ button {
 }
 
 /* その他ページ(お問い合わせ・ビジネスパートナーのみなさま・サイトのご利用について・個人情報の保護) */
+.downloadContent {
+  width: 1080px;
+  margin: 60px auto 0;
+}
+@media (max-width: 767px) {
+  .downloadContent {
+    width: 100%;
+    margin: 10px auto 0;
+  }
+}
+.downloadContent__lead {
+  margin: -12px auto 0;
+}
+@media (max-width: 767px) {
+  .downloadContent__lead {
+    margin: 8px auto 0;
+  }
+}
+.downloadContent__caution {
+  margin: 65px auto 190px;
+}
+@media (max-width: 767px) {
+  .downloadContent__caution {
+    margin: 12px auto 80px;
+  }
+}
+
+.donwloadTop {
+  margin-bottom: 95px;
+}
+@media (max-width: 767px) {
+  .donwloadTop {
+    margin-bottom: 45px;
+  }
+}
+
+.downloadBlock + .downloadBlock {
+  margin: 45px auto 0;
+}
+@media (max-width: 767px) {
+  .downloadBlock + .downloadBlock {
+    margin: 35px auto 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .tableList {
+    width: 93.75%;
+    margin: 10px auto 0;
+  }
+}
+.tableList__item {
+  width: 48%;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .tableList__item:nth-of-type(even) {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .tableList__item:nth-of-type(n+3) {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .tableList__item:nth-of-type(n+2) {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .tableList__item {
+    width: 100%;
+  }
+}
+
+.filesTable {
+  text-align: left;
+  table-layout: fixed;
+  width: 100%;
+}
+.filesTable__tr:nth-of-type(1) .filesTable__th {
+  background: #e2e2e2;
+}
+.filesTable__tr:nth-of-type(1) .filesTable__td {
+  background: #e2e2e2;
+}
+.filesTable__th {
+  width: 32%;
+  border: 1px solid #999;
+  vertical-align: top;
+  font-weight: normal;
+  padding: 20px 0 13px 15px;
+}
+@media (max-width: 767px) {
+  .filesTable__th {
+    padding: 6px 0 13px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .filesTable__th.filesTable__th--partnerTop {
+    height: 60px;
+  }
+}
+.filesTable__th.filesTable__th--partner {
+  width: 34%;
+}
+@media (max-width: 767px) {
+  .filesTable__th.filesTable__th--partner {
+    padding: 6px 0 17px 10px;
+  }
+}
+.filesTable__td {
+  border: 1px solid #999;
+  vertical-align: top;
+  word-break: break-all;
+  padding: 20px 10px 13px 15px;
+}
+@media (max-width: 767px) {
+  .filesTable__td {
+    padding: 6px 10px 13px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .filesTable__td.filesTable__td--partnerTop {
+    height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .filesTable__wrapper {
+    min-height: 52px;
+  }
+}
+.filesTable__link {
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .filesTable__link {
+    max-width: 10em;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .filesTable__link:nth-of-type(even) {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .filesTable__link:nth-of-type(n+2) {
+    margin-top: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .filesTable__link:nth-of-type(n+3) {
+    margin-top: 12px;
+  }
+}
+.filesTable__link.filesTable__pdf::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/icon-pdf.png) left top no-repeat;
+  width: 16px;
+  height: 17px;
+  margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .filesTable__link.filesTable__pdf::before {
+    background: url(../images/icon-pdf_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.filesTable__link.filesTable__zip::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/kasou/icon-zip.png) left top no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .filesTable__link.filesTable__zip::before {
+    background: url(../images/kasou/icon-zip_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.filesTable__link.filesTable__word::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/kasou/icon-word.png) left top no-repeat;
+  width: 17px;
+  height: 18px;
+  margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .filesTable__link.filesTable__word::before {
+    background: url(../images/kasou/icon-word_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+.filesTable__link.filesTable__excel::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/kasou/icon-excel.png) left top no-repeat;
+  width: 17px;
+  height: 18px;
+  margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .filesTable__link.filesTable__excel::before {
+    background: url(../images/kasou/icon-excel_sp.png) left top no-repeat;
+    background-size: 100%;
+  }
+}
+
 .otherContent {
   width: 1080px;
   margin: 60px auto 0;
