@@ -5167,7 +5167,7 @@ button {
   }
 }
 .termsSmallList.termsSmallList--termsPage {
-  padding: 0 0 0 1em;
+  padding: 0 0 0 1.3em;
   margin: 25px auto 0;
 }
 @media (max-width: 767px) {
@@ -5175,6 +5175,11 @@ button {
     padding: 0 0 0 0.5em;
     margin: 10px auto 0;
     line-height: 1.7;
+  }
+}
+@media (min-width: 768px) {
+  .termsSmallList__item {
+    padding: 0 0 0 5px;
   }
 }
 .termsSmallList__item:nth-of-type(n+2) {
@@ -5208,7 +5213,6 @@ button {
 
 .termsMiniList {
   margin: 10px auto 0;
-  padding: 0 0 0 0.5em;
   line-height: 1.9;
 }
 @media (max-width: 767px) {
@@ -5216,8 +5220,14 @@ button {
     line-height: 1.95;
     margin: 5px auto 0;
     text-indent: -3em;
-    padding: 0 0 0 3.5em;
+    padding: 0 0 0 3em;
   }
+}
+.termsMiniList__number {
+  padding: 0 0 0 0.5em;
+}
+.termsMiniList__number--multi {
+  padding: 0;
 }
 .termsMiniList.termsMiniList--indent {
   text-indent: -2.7em;
