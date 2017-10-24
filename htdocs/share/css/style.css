@@ -4097,7 +4097,7 @@ button {
 }
 @media (max-width: 767px) {
   .companyLinkText__link {
-    width: 62%;
+    width: 78%;
   }
 }
 
@@ -4253,12 +4253,11 @@ button {
 #map_canvas_02 {
   width: 1080px;
   height: 578px;
-  margin-bottom: 258px;
 }
 @media (max-width: 767px) {
   #map_canvas_02 {
     width: 93.75%;
-    margin: 20px auto 100px;
+    margin: 20px auto 0;
     height: 0;
     padding-top: 62.5%;
   }

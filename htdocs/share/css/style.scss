@@ -3638,7 +3638,7 @@ button {
 		@extend .greenButton;
 		@extend .greenButton--pdf;
 		@include sp {
-			width: 62%;
+			width: 78%;
 		}
 	}
 }
@@ -3789,10 +3789,9 @@ button {
 #map_canvas_02 {
 	width: 1080px;
 	height: 578px;
-	margin-bottom: 258px;
 	@include sp {
 		width: 93.75%;
-		margin: 20px auto 100px;
+		margin: 20px auto 0;
 		height: 0;
 		padding-top: 62.5%;
 	}
