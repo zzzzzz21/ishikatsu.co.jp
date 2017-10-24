@@ -1807,15 +1807,15 @@ button {
 		height: 0;
 		padding-top: 29.53125%;
 	}
-	&--02 {
-		background: url(#{$img_path}/kasou/main02.png) center top no-repeat;
+	&.underTop--02 { /* /works/ */
+		background: url(#{$img_path}/kasou/main02.jpg) center top no-repeat;
 		background-size: cover;
 		@include sp {
-			background: url(#{$img_path}/kasou/main02_sp.png) center top no-repeat;
+			background: url(#{$img_path}/kasou/main02_sp.jpg) center top no-repeat;
 			background-size: cover;
 		}
 	}
-	&--03 {
+	&.underTop--03 { /* /recruit/ */
 		background: url(#{$img_path}/kasou/main03.png) center top no-repeat;
 		background-size: cover;
 		@include sp {
@@ -1823,15 +1823,15 @@ button {
 			background-size: cover;
 		}
 	}
-	&--04 {
-		background: url(#{$img_path}/kasou/main04.png) center top no-repeat;
+	&.underTop--04 { /* /management/golf/ */
+		background: url(#{$img_path}/kasou/main04.jpg) center top no-repeat;
 		background-size: cover;
 		@include sp {
-			background: url(#{$img_path}/kasou/main04_sp.png) center top no-repeat;
+			background: url(#{$img_path}/kasou/main04_sp.jpg) center top no-repeat;
 			background-size: cover;
 		}
 	}
-	&--05 {
+	&.underTop--05 { /* /attempt/ */
 		background: url(#{$img_path}/kasou/main05.png) center top no-repeat;
 		background-size: cover;
 		@include sp {
@@ -1839,7 +1839,7 @@ button {
 			background-size: cover;
 		}
 	}
-	&--06 {
+	&.underTop--06 { /* /technology/ */
 		background: url(#{$img_path}/kasou/main06.png) center top no-repeat;
 		background-size: cover;
 		@include sp {
@@ -1847,7 +1847,63 @@ button {
 			background-size: cover;
 		}
 	}
-	&--small {
+	&.underTop--07 { /* /works/awards/ */
+		background: url(#{$img_path}/kasou/main07.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main07_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--08 { /* /works/kodate/ */
+		background: url(#{$img_path}/kasou/main08.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main08_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--09 { /* /works/mansion/ */
+		background: url(#{$img_path}/kasou/main09.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main09_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--10 { /* /works/others/ */
+		background: url(#{$img_path}/kasou/main10.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main10_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--11 { /* /works/public/ */
+		background: url(#{$img_path}/kasou/main11.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main11_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--12 { /* /attempt/reconstruction/ */
+		background: url(#{$img_path}/kasou/main12.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main12_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--13 { /* /works/resort/ */
+		background: url(#{$img_path}/kasou/main13.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main13_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&--small { /* /news/以下全て */
 		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
 		height: 325px;
 		background-size: cover;
@@ -1858,7 +1914,7 @@ button {
 			height: 0;
 			padding-top: 29.53125%;
 		}
-		&.underTop--small02 {
+		&.underTop--small02 { /* /company/  */
 			background: url(#{$img_path}/kasou/main02_small.png) center top no-repeat;
 			background-size: cover;
 			@include sp {
@@ -1866,7 +1922,7 @@ button {
 				background-size: cover;
 			}
 		}
-		&.underTop--small03 {
+		&.underTop--small03 { /* /company/message/ */
 			background: url(#{$img_path}/kasou/main03_small.png) center top no-repeat;
 			background-size: cover;
 			@include sp {
@@ -1874,7 +1930,7 @@ button {
 				background-size: cover;
 			}
 		}
-		&.underTop--small04 {
+		&.underTop--small04 { /* /philosophy/以下全て */
 			background: url(#{$img_path}/kasou/main04_small.png) center top no-repeat;
 			background-size: cover;
 			@include sp {
@@ -1882,7 +1938,7 @@ button {
 				background-size: cover;
 			}
 		}
-		&.underTop--small05 {
+		&.underTop--small05 { /* /company/service/ */
 			background: url(#{$img_path}/kasou/main05_small.png) center top no-repeat;
 			background-size: cover;
 			@include sp {
@@ -1890,7 +1946,7 @@ button {
 				background-size: cover;
 			}
 		}
-		&.underTop--small06 {
+		&.underTop--small06 { /* /company/history/ */
 			background: url(#{$img_path}/kasou/main06_small.png) center top no-repeat;
 			background-size: cover;
 			@include sp {
@@ -1898,7 +1954,7 @@ button {
 				background-size: cover;
 			}
 		}
-		&.underTop--small07 {
+		&.underTop--small07 { /* /company/group/ */
 			background: url(#{$img_path}/kasou/main07_small.png) center top no-repeat;
 			background-size: cover;
 			@include sp {
@@ -1906,7 +1962,7 @@ button {
 				background-size: cover;
 			}
 		}
-		&.underTop--small08 {
+		&.underTop--small08 { /* /contact/ */
 			background: url(#{$img_path}/kasou/main08_small.png) center top no-repeat;
 			background-size: cover;
 			@include sp {
@@ -1922,7 +1978,7 @@ button {
 				background-size: cover;
 			}
 		}
-		&.underTop--small10 {
+		&.underTop--small10 { /* /privacy/ */
 			background: url(#{$img_path}/kasou/main10_small.png) center top no-repeat;
 			background-size: cover;
 			@include sp {
@@ -1930,7 +1986,7 @@ button {
 				background-size: cover;
 			}
 		}
-		&.underTop--small11 {
+		&.underTop--small11 { /* /terms/ */
 			background: url(#{$img_path}/kasou/main11_small.png) center top no-repeat;
 			background-size: cover;
 			@include sp {
