@@ -4982,6 +4982,16 @@ button {
     width: 116px;
   }
 }
+@media (min-width: 768px) {
+  .contactTable__td.contactTable__td--colspan {
+    padding: 0;
+  }
+  .contactTable__td.contactTable__td--colspan .contactTable__inner {
+    border-right: 1px solid #999;
+    padding: 31px 44px 31px 24px;
+    display: inline-block;
+  }
+}
 
 .termsBlock + .termsBlock {
   margin-top: 115px;
@@ -5038,6 +5048,17 @@ button {
     margin: 10px auto 0;
   }
 }
+.termsLargeList.termsLargeList--termsPage {
+  margin: 55px auto 215px;
+}
+@media (max-width: 767px) {
+  .termsLargeList.termsLargeList--termsPage {
+    margin: 35px auto 105px;
+  }
+}
+.termsLargeList.termsLargeList--termsPage .termsLargeList__item:nth-of-type(n+2) {
+  margin-top: 70px;
+}
 
 .termsSmallList {
   list-style-type: decimal;
@@ -5051,6 +5072,17 @@ button {
     font-size: 12px;
     margin: 20px auto 0;
     padding: 0 0 0 1.5em;
+  }
+}
+.termsSmallList.termsSmallList--termsPage {
+  padding: 0 0 0 1em;
+  margin: 25px auto 0;
+}
+@media (max-width: 767px) {
+  .termsSmallList.termsSmallList--termsPage {
+    padding: 0 0 0 0.5em;
+    margin: 10px auto 0;
+    line-height: 1.7;
   }
 }
 .termsSmallList__item:nth-of-type(n+2) {
@@ -5122,6 +5154,33 @@ button {
 }
 .termsGroupList__dt {
   color: #018643;
+}
+
+.termsLink {
+  padding: 20px 0 22px 1em;
+}
+@media (max-width: 767px) {
+  .termsLink {
+    padding: 20px 0 0 1em;
+  }
+}
+.termsLink__right {
+  display: inline-block;
+  margin: 0 0 0 35px;
+}
+@media (max-width: 767px) {
+  .termsLink__right {
+    margin: 0;
+  }
+}
+.termsLink__right:before {
+  content: "";
+  background: url(../images/kasou/icon-mail.png) left top no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+  height: 18px;
+  margin: 0 5px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

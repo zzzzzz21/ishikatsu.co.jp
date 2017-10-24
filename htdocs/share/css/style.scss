@@ -4516,6 +4516,16 @@ button {
 				width: 116px;
 			}
 		}
+		&.contactTable__td--colspan {
+			@include pc {
+				padding: 0;
+				& .contactTable__inner {
+					border-right: 1px solid #999;
+					padding: 31px 44px 31px 24px;
+					display: inline-block;
+				}
+			}
+		}
 	}
 }
 .termsBlock + .termsBlock {
@@ -4564,6 +4574,15 @@ button {
 			margin: 10px auto 0;
 		}
 	}
+	&.termsLargeList--termsPage {
+		margin: 55px auto 215px;
+		@include sp {
+			margin: 35px auto 105px;
+		}
+		& .termsLargeList__item:nth-of-type(n+2) {
+			margin-top: 70px;
+		}
+	}
 }
 .termsSmallList {
 	list-style-type: decimal;
@@ -4575,6 +4594,15 @@ button {
 		font-size: 12px;
 		margin: 20px auto 0;
 		padding: 0 0 0 1.5em;
+	}
+	&.termsSmallList--termsPage {
+		padding: 0 0 0 1em;
+		margin: 25px auto 0;
+		@include sp {
+			padding: 0 0 0 0.5em;
+			margin: 10px auto 0;
+			line-height: 1.7;
+		}
 	}
 	&__item {
 		&:nth-of-type(n+2) {
@@ -4637,5 +4665,27 @@ button {
 	}
 	&__dt {
 		color: $middleGreen;
+	}
+}
+.termsLink {
+	padding: 20px 0 22px 1em;
+	@include sp {
+		padding: 20px 0 0 1em;
+	}
+	&__right {
+		display: inline-block;
+		margin: 0 0 0 35px;
+		@include sp {
+			margin: 0;
+		}
+		&:before {
+			content: "";
+			background: url(#{$img_path}/kasou/icon-mail.png) left top no-repeat;
+			display: inline-block;
+			vertical-align: middle;
+			width: 28px;
+			height: 18px;
+			margin: 0 5px 0 0;
+		}
 	}
 }
