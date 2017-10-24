@@ -2,6 +2,15 @@
   background: url(../img/bg_main.jpg) center center no-repeat;
 }
 
+.topDl__photo {
+  margin: 0;
+}
+
+.topDl__photo.first img {
+  width: 500px;
+}
+
+
 @media (min-width: 768px) {
   .topDl.first {
     height: 308px;
@@ -13,14 +22,6 @@
 
 .topDl__dd {
   max-width: 485px;
-}
-
-.topDl__photo.first {
-  background: url(../img/photo_earthwall-stage.jpg) left top no-repeat;
-}
-
-.topDl__photo.second {
-  background: url(../img/photo_basic.jpg) left top no-repeat;
 }
 
 .imgContainer {

@@ -3,10 +3,6 @@
   /* background-size: cover; */
 }
 
-.topDl__photo {
-  background: url(../img/img_logo.png) center no-repeat;
-}
-
 .topDl__dd {
   max-width: 485px;
 }
