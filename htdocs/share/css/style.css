@@ -1103,6 +1103,12 @@ button {
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .archive__item--col2 {
+    display: inline-block;
+    width: 48%;
+  }
+}
 @media (min-width: 768px) {
   .archive__item--col2:nth-of-type(even) {
     margin-left: 20px;
@@ -1114,8 +1120,54 @@ button {
   }
 }
 @media (max-width: 767px) {
-  .archive__item--col2:nth-of-type(n+2) {
+  .archive__item--col2:nth-of-type(even) {
+    margin-left: 4%;
+  }
+}
+@media (max-width: 767px) {
+  .archive__item--col2:nth-of-type(n+3) {
     margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col2 .archive__image {
+    width: 510px;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col3 {
+    margin-left: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .archive__item--col3 {
+    display: inline-block;
+    width: 48%;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col3:nth-of-type(3n+1) {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col3:nth-of-type(n+4) {
+    margin-top: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .archive__item--col3:nth-of-type(even) {
+    margin-left: 4%;
+  }
+}
+@media (max-width: 767px) {
+  .archive__item--col3:nth-of-type(n+3) {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col3 .archive__image {
+    width: 337.3px;
   }
 }
 @media (min-width: 768px) {
@@ -1147,6 +1199,11 @@ button {
 @media (max-width: 767px) {
   .archive__item--col4:nth-of-type(n+3) {
     margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .archive__item--col4 .archive__image {
+    width: 248px;
   }
 }
 .archive__image {
@@ -4363,6 +4420,7 @@ button {
 }
 .groupCompanyTable__text--col {
   width: 100%;
+  float: none;
 }
 
 /* 事業紹介 */

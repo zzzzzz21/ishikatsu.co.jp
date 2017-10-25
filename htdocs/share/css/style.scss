@@ -1012,6 +1012,10 @@ button {
 			width: $width-100;
 		}
 		&--col2 {
+			@include sp {
+				display: inline-block;
+				width: 48%;
+			}
 			&:nth-of-type(even) {
 				@include pc {
 					margin-left: 20px;
@@ -1022,9 +1026,53 @@ button {
 					margin-top: 20px;
 				}
 			}
-			&:nth-of-type(n+2) {
+			&:nth-of-type(even) {
+				@include sp {
+					margin-left: 4%;
+				}
+			}
+			&:nth-of-type(n+3) {
 				@include sp {
 					margin-top: 10px;
+				}
+			}
+			& .archive__image {
+				@include pc {
+					width: 510px;
+				}
+			}
+		}
+		&--col3 {
+			@include pc {
+				margin-left: 14px;
+			}
+			@include sp {
+				display: inline-block;
+				width: 48%;
+			}
+			&:nth-of-type(3n+1) {
+				@include pc {
+					margin-left: 0;
+				}
+			}
+			&:nth-of-type(n+4) {
+				@include pc {
+					margin-top: 14px;
+				}
+			}
+			&:nth-of-type(even) {
+				@include sp {
+					margin-left: 4%;
+				}
+			}
+			&:nth-of-type(n+3) {
+				@include sp {
+					margin-top: 10px;
+				}
+			}
+			& .archive__image {
+				@include pc {
+					width: 337.3px;
 				}
 			}
 		}
@@ -1054,6 +1102,11 @@ button {
 			&:nth-of-type(n+3) {
 				@include sp {
 					margin-top: 10px;
+				}
+			}
+			& .archive__image {
+				@include pc {
+					width: 248px;
 				}
 			}
 		}
