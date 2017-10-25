@@ -5241,6 +5241,7 @@ button {
 }
 
 .attemptImages {
+  text-align: center;
   margin: 35px auto 0;
 }
 
@@ -5363,6 +5364,16 @@ button {
 }
 
 @media (min-width: 768px) {
+  .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    opacity: 0.5;
+    height: 475px;
+  }
   .archive__item--col2 .archive__image {
     width: 510px;
     height: 270px;
@@ -5394,7 +5405,26 @@ button {
   }
 }
 
+.underTop__wrapper {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
 @media (max-width: 767px) {
+  .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    opacity: 0.5;
+    height: 100%;
+  }
   .archive__item--col2 {
     width: 48%;
     display: inline-block;
