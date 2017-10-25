@@ -4327,17 +4327,20 @@ button {
 	width: $commonWidthPc;
 	margin: 80px auto 0;
 	@include sp {
-		width: $width-100;
+		width: $commonWidthSp02;
 		margin: 25px auto 0;
 	}
 	&__title {
 		@extend .middleHeadline--type03;
+		@include sp {
+			margin-left: 0;
+		}
 	}
 }
 .attemptBlock {
 	padding: 0 0 32px;
 	@include sp {
-		width: $commonWidthSp02;
+		width: $width-100;
 		margin: 0 auto;
 	}
 	&__subTitle {

@@ -4818,8 +4818,13 @@ button {
 }
 @media (max-width: 767px) {
   .attemptContent {
-    width: 100%;
+    width: 93.75%;
     margin: 25px auto 0;
+  }
+}
+@media (max-width: 767px) {
+  .attemptContent__title {
+    margin-left: 0;
   }
 }
 
@@ -4828,7 +4833,7 @@ button {
 }
 @media (max-width: 767px) {
   .attemptBlock {
-    width: 93.75%;
+    width: 100%;
     margin: 0 auto;
   }
 }
