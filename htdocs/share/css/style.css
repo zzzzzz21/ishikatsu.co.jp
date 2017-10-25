@@ -58,7 +58,7 @@ del {
 }
 
 abbr[title], dfn[title] {
-  border-bottom: 1pxdotted;
+  border-bottom: 1px dotted;
   cursor: help;
 }
 
@@ -157,7 +157,7 @@ button {
           appearance: none;
 }
 
-.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after, .tableList:after {
+.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after, .groupCompanyTable__td:after, .tableList:after {
   content: "";
   clear: both;
   display: block;
@@ -195,7 +195,7 @@ button {
   height: 0;
   border-style: solid;
   border-width: 4.5px 0 4.5px 7.8px;
-  border-color: transparent transparent transparent #119357;
+  border-color: transparent transparent transparent #018643;
   display: inline-block;
   margin-right: 5px;
 }
@@ -1368,7 +1368,7 @@ button {
 }
 @media (max-width: 767px) {
   .bannerCircle__text.bannerCircle__text--line02 {
-    heigth: 48px;
+    height: 48px;
     line-height: 1.5;
   }
 }
@@ -1389,18 +1389,18 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link, .greenButtons .technologyContent__topLink, .greenButtons .companyLinkText__link, .greenButtons .companyContent__button01, .greenButtons .golfMap__link {
+  .greenButtons .greenButton, .greenButtons .doorNav__button, .greenButtons .articleButton__link, .greenButtons .technologyContent__topLink, .greenButtons .catalogButtons__link, .greenButtons .companyLinkText__link, .greenButtons .companyContent__button01, .greenButtons .golfMap__link {
     display: inline-block;
   }
-  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1), .greenButtons .technologyContent__topLink:nth-of-type(1), .greenButtons .companyLinkText__link:nth-of-type(1), .greenButtons .companyContent__button01:nth-of-type(1), .greenButtons .golfMap__link:nth-of-type(1) {
+  .greenButtons .greenButton:nth-of-type(1), .greenButtons .doorNav__button:nth-of-type(1), .greenButtons .articleButton__link:nth-of-type(1), .greenButtons .technologyContent__topLink:nth-of-type(1), .greenButtons .catalogButtons__link:nth-of-type(1), .greenButtons .companyLinkText__link:nth-of-type(1), .greenButtons .companyContent__button01:nth-of-type(1), .greenButtons .golfMap__link:nth-of-type(1) {
     margin-left: 75px;
   }
-  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2), .greenButtons .technologyContent__topLink:nth-of-type(2), .greenButtons .companyLinkText__link:nth-of-type(2), .greenButtons .companyContent__button01:nth-of-type(2), .greenButtons .golfMap__link:nth-of-type(2) {
+  .greenButtons .greenButton:nth-of-type(2), .greenButtons .doorNav__button:nth-of-type(2), .greenButtons .articleButton__link:nth-of-type(2), .greenButtons .technologyContent__topLink:nth-of-type(2), .greenButtons .catalogButtons__link:nth-of-type(2), .greenButtons .companyLinkText__link:nth-of-type(2), .greenButtons .companyContent__button01:nth-of-type(2), .greenButtons .golfMap__link:nth-of-type(2) {
     margin: 0 23px 0 92px;
   }
 }
 
-.greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .companyLinkText__link, .companyContent__button01, .golfMap__link {
+.greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .catalogButtons__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -1412,10 +1412,10 @@ button {
   vertical-align: middle;
   margin: 0 auto;
 }
-.greenButton--pdf, .companyLinkText__link, .companyContent__button01 {
+.greenButton--pdf, .catalogButtons__link--pdf, .companyLinkText__link, .companyContent__button01 {
   padding: .8em 2em;
 }
-.greenButton--pdf::before, .companyLinkText__link::before, .companyContent__button01::before {
+.greenButton--pdf::before, .catalogButtons__link--pdf::before, .companyLinkText__link::before, .companyContent__button01::before {
   content: "";
   background: url(../images/kasou/icon-pdf02.png) left top no-repeat;
   width: 24px;
@@ -1428,18 +1428,18 @@ button {
   padding: 1.28em 1em;
 }
 @media (min-width: 768px) {
-  .greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .companyLinkText__link, .companyContent__button01, .golfMap__link {
+  .greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .catalogButtons__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover, .technologyContent__topLink:hover, .companyLinkText__link:hover, .companyContent__button01:hover, .golfMap__link:hover {
-    background: #119357;
+  .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover, .technologyContent__topLink:hover, .catalogButtons__link:hover, .companyLinkText__link:hover, .companyContent__button01:hover, .golfMap__link:hover {
+    background: #018643;
     color: white;
     opacity: 1;
   }
 }
 @media (max-width: 767px) {
-  .greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .companyLinkText__link, .companyContent__button01, .golfMap__link {
+  .greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .catalogButtons__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
     display: block;
     margin: 0 auto;
   }
@@ -1463,7 +1463,7 @@ button {
 }
 .techList__title, .companyList__title, .worksList__title, .managementList__title, .attemptList__title, .recruitList__title {
   display: inline-block;
-  border-bottom: 3px solid #119357;
+  border-bottom: 3px solid #018643;
   font-weight: normal;
   font-size: 22px;
   padding-bottom: 8px;
@@ -2581,8 +2581,8 @@ button {
   .nav__item:hover .megaDrop {
     visibility: visible;
     opacity: 1;
-    border-top: 1px solid #119357;
-    border-bottom: 10px solid #119357;
+    border-top: 1px solid #018643;
+    border-bottom: 10px solid #018643;
   }
   .nav__item:hover .megaDrop__inner {
     display: block;
@@ -2655,16 +2655,6 @@ button {
   .nav__link--first {
     border-left: 1px solid;
   }
-}
-.nav__link--isCurrent:after {
-  position: absolute;
-  content: "";
-  border-top: 1px solid #119357;
-  border-bottom: 8px solid #119357;
-  display: block;
-  width: 100%;
-  top: 38px;
-  left: 0;
 }
 @media (max-width: 767px) {
   .nav__link {
@@ -2741,7 +2731,7 @@ button {
 }
 .megaDrop__title {
   font-size: 28px;
-  color: #119357;
+  color: #009933;
 }
 @media (max-width: 767px) {
   .megaDrop__title {
@@ -2754,16 +2744,14 @@ button {
   width: 362px;
   height: 195px;
   display: inline-block;
-  column-count: 2;
   -webkit-column-count: 2;
-  -moz-column-count: 2;
   -ms-column-count: 2;
   -o-column-count: 2;
-  column-fill: auto;
+  column-count: 2;
   -webkit-column-fill: auto;
-  -moz-column-fill: auto;
   -ms-column-fill: auto;
   -o-column-fill: auto;
+  column-fill: auto;
 }
 @media (max-width: 767px) {
   .megaDrop__menu {
@@ -2771,11 +2759,10 @@ button {
     display: block;
     margin-top: 0;
     font-size: 11px;
-    column-fill: balance;
     -webkit-column-fill: balance;
-    -moz-column-fill: balance;
     -ms-column-fill: balance;
     -o-column-fill: balance;
+    column-fill: balance;
     margin-bottom: 10px;
     height: 180px;
   }
@@ -2944,7 +2931,7 @@ button {
     transition: .3s;
   }
   .footer__contactButton:hover {
-    background: #119357;
+    background: #018643;
     color: white;
     opacity: 1;
   }
@@ -4026,38 +4013,14 @@ button {
   }
 }
 .catalogButtons__link {
-  display: inline-block;
-  width: 268px;
-  border: 1px solid;
-  line-height: 52px;
-  font-size: 14px;
-}
-.catalogButtons__link--pdf::before {
-  content: "";
-  background: url(../images/kasou/icon-pdf02.png) left top no-repeat;
-  width: 24px;
-  height: 27px;
-  display: inline-block;
-  margin: 0 5px 0 0;
-  vertical-align: middle;
+  width: 316px;
 }
 .catalogButtons__link:nth-of-type(2) {
   margin: 0 0 0 24px;
 }
 @media (max-width: 767px) {
   .catalogButtons__link:nth-of-type(2) {
-    margin: 20px 0 0;
-  }
-}
-@media (min-width: 768px) {
-  .catalogButtons__link {
-    -webkit-transition: .3s;
-    transition: .3s;
-  }
-  .catalogButtons__link:hover {
-    background: #119357;
-    color: white;
-    opacity: 1;
+    margin: 20px auto 0;
   }
 }
 
@@ -4139,22 +4102,21 @@ button {
     background-size: 100%;
     width: 93.75%;
     height: 0;
-    padding-top: 71.09375%;
+    padding-top: 62.5%;
     margin: 35px auto 0;
   }
 }
 .companyContent__portraitText {
   position: absolute;
-  text-align: right;
+  text-align: left;
   right: 35px;
-  top: 20px;
+  top: 80px;
   line-height: 1.8;
   letter-spacing: .05em;
 }
 @media (max-width: 767px) {
   .companyContent__portraitText {
     position: static;
-    text-align: left;
     width: 93.75%;
     margin: 3px auto 0;
     font-size: 17px;
@@ -4179,28 +4141,28 @@ button {
 }
 @media (max-width: 767px) {
   .companyContent__messagePosition {
-    padding: 20px 31% 0 0;
+    padding: 20px 18% 0 0;
     font-size: 10px;
   }
 }
 .companyContent__messageSign {
   background: url(../images/kasou/message_text01.png) left top no-repeat;
   background-size: 100%;
-  width: 361px;
-  height: 101px;
-  margin: 0 0  260px 725px;
+  width: 300px;
+  height: 92px;
+  margin: 0 0  260px 745px;
 }
 @media (max-width: 767px) {
   .companyContent__messageSign {
-    width: 56.40625%;
+    width: 36%;
     height: 0;
-    padding-top: 15.78125%;
-    margin: 0 0 100px 41%;
+    padding-top: 11.069252%;
+    margin: 0 0 100px 60%;
   }
 }
 @media (min-width: 768px) {
   .companyContent__messageSign--group {
-    margin: 0 0 0 725px;
+    margin: 0 0 0 745px;
   }
 }
 .companyContent__groupTitle {
@@ -4379,7 +4341,8 @@ button {
 @media (min-width: 768px) {
   .groupCompanyTable__th {
     padding: 1em 0 0.65em 20px;
-    width: 255px;
+    width: 223px;
+    vertical-align: top;
   }
 }
 @media (max-width: 767px) {
@@ -4388,16 +4351,18 @@ button {
   }
 }
 .groupCompanyTable__td {
-  width: 415px;
-  padding: 0 0 11px 26px;
-  border-left: none;
-  border-right: none;
+  padding: 1em 0 11px 26px;
+  vertical-align: top;
 }
-@media (max-width: 767px) {
-  .groupCompanyTable__td {
-    display: inline-block;
-    width: 50%;
-  }
+.groupCompanyTable__text {
+  width: 50%;
+  float: left;
+}
+.groupCompanyTable__text + .groupCompanyTable__text {
+  padding-left: 15px;
+}
+.groupCompanyTable__text--col {
+  width: 100%;
 }
 
 /* 事業紹介 */

@@ -49,7 +49,7 @@ del{
 	text-decoration:line-through;
 }
 abbr[title],dfn[title] {
-	border-bottom:1pxdotted;
+	border-bottom:1px dotted;
 	cursor:help;
 }
 table {
@@ -103,10 +103,9 @@ table {
 
 // 変数
 $img_path: "../images";
-$set-prefix:'', -webkit-, -moz-, -ms-, -o-;
+$set-prefix: -webkit-, -moz-, -ms-, -o-, '';
 $commonWhite: rgb(255,255,255);
 $commonBlack: rgb(0,0,0);
-$commonGreen: rgb(17,147,87);
 $linkColor: rgb(51,51,51);
 $commonWidthPc: 1080px;
 $commonWidthSp: 92%;
@@ -215,7 +214,7 @@ button {
 			height: 0;
 			border-style: solid;
 			border-width: 4.5px 0 4.5px 7.8px;
-			border-color: transparent transparent transparent $commonGreen;
+			border-color: transparent transparent transparent $middleGreen;
 			display: inline-block;
 			margin-right: 5px;
 		}
@@ -1236,7 +1235,7 @@ button {
 			height: 56px;
 			line-height: 1.2;
 			@include sp {
-				heigth: 48px;
+				height : 48px;
 				line-height: 1.5;
 			}
 		}
@@ -1294,7 +1293,7 @@ button {
 	@include pc {
 		transition: .3s;
 		&:hover {
-			background: $commonGreen;
+			background: $middleGreen;
 			color: $commonWhite;
 			opacity: 1;
 		}
@@ -1318,7 +1317,7 @@ button {
 	}
 	&__title {
 		display: inline-block;
-		border-bottom: 3px solid $commonGreen;
+		border-bottom: 3px solid $middleGreen;
 		font-weight: normal;
 		font-size: 22px;
 		padding-bottom: 8px;
@@ -2295,8 +2294,8 @@ button {
 				& .megaDrop {
 					visibility: visible;
 					opacity: 1;
-					border-top: 1px solid $commonGreen;
-					border-bottom: 10px solid $commonGreen;
+					border-top: 1px solid $middleGreen;
+					border-bottom: 10px solid $middleGreen;
 				} .megaDrop__inner {
 					display: block;
 				}
@@ -2365,19 +2364,6 @@ button {
 				border-left: 1px solid;
 			}
 		}
-		&--isCurrent{
-			&:after {
-				position: absolute;
-				content: "";
-				border-top: 1px solid $commonGreen;
-				border-bottom: 8px solid $commonGreen;
-				display: block;
-				width: 100%;
-				top: 38px;
-				left: 0;
-
-			}
-		}
 		@include sp {
 			padding: 0 0 0 20px;
 			border-right: none;
@@ -2441,7 +2427,7 @@ button {
 	}
 	&__title {
 		font-size: 28px;
-		color: $commonGreen;
+		color: $rightGreen;
 		@include sp {
 			display: none;
 		}
@@ -2611,7 +2597,7 @@ button {
 		@include pc {
 			transition: .3s;
 			&:hover {
-				background: $commonGreen;
+				background: $middleGreen;
 				color: $commonWhite;
 				opacity: 1;
 			}
@@ -3570,37 +3556,17 @@ button {
 		margin: 55px auto 0;
 	}
 	&__link {
-		display: inline-block;
-		width: 268px;
-		border: 1px solid;
-		line-height: 52px;
-		font-size: 14px;
+		@extend .greenButton;
+		width: 316px;
 		&--pdf {
-			&::before {
-				content:"";
-				background: url(#{$img_path}/kasou/icon-pdf02.png) left top no-repeat;
-				width: 24px;
-				height: 27px;
-				display: inline-block;
-				margin: 0 5px 0 0;
-				vertical-align: middle;
-			}
+			@extend .greenButton--pdf;
 		}
 		&:nth-of-type(2) {
 			margin: 0 0 0 24px;
 			@include sp {
-				margin: 20px 0 0;
+				margin: 20px auto 0;
 			}
 		}
-		@include pc {
-			transition: .3s;
-			&:hover {
-				background: $commonGreen;
-				color: $commonWhite;
-				opacity: 1;
-			}
-		}
-		
 	}
 }
 .backgroundLink {
@@ -3678,7 +3644,7 @@ button {
 			background-size: 100%;
 			width: 93.75%;
 			height: 0;
-			padding-top: 71.09375%;
+			padding-top: 62.5%;
 			margin: 35px auto 0;
 		}
 		
@@ -3686,14 +3652,13 @@ button {
 	&__portraitText {
 		@extend .hugeHeadline;
 		position: absolute;
-		text-align: right;
+		text-align: left;
 		right: 35px;
-		top: 20px;
+		top: 80px;
 		line-height: 1.8;
 		letter-spacing: .05em;
 		@include sp {
 			position: static;
-			text-align: left;
 			width: 93.75%;
 			margin: 3px auto 0;
 			font-size: 17px;
@@ -3717,7 +3682,7 @@ button {
 		text-align: right;
 		padding: 38px 215px 0 0;
 		@include sp {
-			padding: 20px 31% 0 0;
+			padding: 20px 18% 0 0;
 			font-size: 10px;
 		}
 	}
@@ -3725,18 +3690,18 @@ button {
 		@extend .textImage;
 		background: url(#{$img_path}/kasou/message_text01.png) left top no-repeat;
 		background-size: 100%;
-		width: 361px;
-		height: 101px;
-		margin: 0 0  260px 725px;
+		width: 300px;
+		height: 92px;
+		margin: 0 0  260px 745px;
 		@include sp {
-			width: 56.40625%;
+			width: 36%;
 			height: 0;
-			padding-top: 15.78125%;
-			margin: 0 0 100px 41%;
+			padding-top: 11.069252%;
+			margin: 0 0 100px 60%;
 		}
 		&--group {
 			@include pc {
-				margin: 0 0 0 725px;
+				margin: 0 0 0 745px;
 			}
 		}
 	}
@@ -3925,7 +3890,8 @@ button {
 		@extend .commonTable__th;
 		@include pc {
 			padding: 1em 0 0.65em 20px;
-			width: 255px;
+			width: 223px;
+			vertical-align: top;
 		}
 		@include sp {
 			width: 100%;
@@ -3933,13 +3899,19 @@ button {
 	}
 	&__td {
 		@extend .commonTable__td;
-		width: 415px;
-		padding: 0 0 11px 26px;
-		border-left: none;
-		border-right: none;
-		@include sp {
-			display: inline-block;
-			width: 50%;
+		@extend .clearfix;
+		padding: 1em 0 11px 26px;
+		vertical-align: top;
+	}
+	&__text {
+		width: 50%;
+		float: left;
+		& + .groupCompanyTable__text {
+			padding-left: 15px;
+		}
+		&--col {
+			width: 100%;
+			float: none;
 		}
 	}
 }
