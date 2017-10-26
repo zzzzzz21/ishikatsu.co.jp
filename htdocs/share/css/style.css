@@ -2190,6 +2190,72 @@ button {
     background-size: cover;
   }
 }
+.underTop.underTop--16 {
+  /* /technology/earthwall/ */
+  background: url(../images/kasou/main16.jpg) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop.underTop--16 {
+    background: url(../images/kasou/main16_sp.jpg) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop.underTop--17 {
+  /* /technology/earthwall-stage/ */
+  background: url(../images/kasou/main17.jpg) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop.underTop--17 {
+    background: url(../images/kasou/main17_sp.jpg) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop.underTop--18 {
+  /* /technology/picnicturf/ */
+  background: url(../images/kasou/main18.jpg) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop.underTop--18 {
+    background: url(../images/kasou/main18_sp.jpg) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop.underTop--19 {
+  /* /technology/biocube/ */
+  background: url(../images/kasou/main19.jpg) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop.underTop--19 {
+    background: url(../images/kasou/main19_sp.jpg) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop.underTop--20 {
+  /* /technology/rebunker/ */
+  background: url(../images/kasou/main20.jpg) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop.underTop--20 {
+    background: url(../images/kasou/main20_sp.jpg) center top no-repeat;
+    background-size: cover;
+  }
+}
+.underTop.underTop--21 {
+  /* /technology/gardenpartners/ */
+  background: url(../images/kasou/main21.png) center top no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .underTop.underTop--21 {
+    background: url(../images/kasou/main21_sp.png) center top no-repeat;
+    background-size: cover;
+  }
+}
 .underTop--small {
   /* /news/以下全て */
   background: url(../images/kasou/main01_small.png) center top no-repeat;

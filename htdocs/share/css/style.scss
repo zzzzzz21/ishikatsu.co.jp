@@ -1971,6 +1971,54 @@ button {
 			background-size: cover;
 		}
 	}
+	&.underTop--16 { /* /technology/earthwall/ */
+		background: url(#{$img_path}/kasou/main16.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main16_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--17 { /* /technology/earthwall-stage/ */
+		background: url(#{$img_path}/kasou/main17.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main17_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--18 { /* /technology/picnicturf/ */
+		background: url(#{$img_path}/kasou/main18.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main18_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--19 { /* /technology/biocube/ */
+		background: url(#{$img_path}/kasou/main19.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main19_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--20 { /* /technology/rebunker/ */
+		background: url(#{$img_path}/kasou/main20.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main20_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--21 { /* /technology/gardenpartners/ */
+		background: url(#{$img_path}/kasou/main21.png) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main21_sp.png) center top no-repeat;
+			background-size: cover;
+		}
+	}
 	&--small { /* /news/以下全て */
 		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
 		height: 325px;
