@@ -4192,7 +4192,7 @@ button {
 			margin: 0 0 15px;
 		}
 		& + .worksBlock__lead {
-			margin: -15px 0 50px;
+			margin: -30px 0 50px;
 			@include sp {
 				margin: -10px auto 10px;
 			}
@@ -4200,12 +4200,11 @@ button {
 	}
 	&__lead {
 		@extend .middleText;
-		text-align: center;
+		@extend .middleText--center;
 		color: rgb(181,111,65);
 		margin: 0 0 50px;
 		@include sp {
 			text-align: left;
-			line-height: 1.8;
 			margin: 0 auto 10px;
 		}
 	}

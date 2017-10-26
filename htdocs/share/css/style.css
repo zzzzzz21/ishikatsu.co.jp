@@ -241,12 +241,12 @@ button {
     margin: 0 auto;
   }
 }
-.middleText--center, .subtitleSection__lead, .technologyContent__topLead {
+.middleText--center, .subtitleSection__lead, .technologyContent__topLead, .worksBlock__lead {
   text-align: center;
   line-height: 2;
 }
 @media (max-width: 767px) {
-  .middleText--center, .subtitleSection__lead, .technologyContent__topLead {
+  .middleText--center, .subtitleSection__lead, .technologyContent__topLead, .worksBlock__lead {
     line-height: 1.7;
   }
 }
@@ -4671,7 +4671,7 @@ button {
   }
 }
 .worksBlock__title + .worksBlock__lead {
-  margin: -15px 0 50px;
+  margin: -30px 0 50px;
 }
 @media (max-width: 767px) {
   .worksBlock__title + .worksBlock__lead {
@@ -4679,14 +4679,12 @@ button {
   }
 }
 .worksBlock__lead {
-  text-align: center;
   color: #b56f41;
   margin: 0 0 50px;
 }
 @media (max-width: 767px) {
   .worksBlock__lead {
     text-align: left;
-    line-height: 1.8;
     margin: 0 auto 10px;
   }
 }
