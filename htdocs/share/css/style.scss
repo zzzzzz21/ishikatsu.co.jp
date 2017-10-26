@@ -1955,6 +1955,22 @@ button {
 			background-size: cover;
 		}
 	}
+	&.underTop--14 { /* /management/administrator/ */
+		background: url(#{$img_path}/kasou/main14.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main14_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--15 { /* /management/ */
+		background: url(#{$img_path}/kasou/main15.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main15_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
 	&--small { /* /news/以下全て */
 		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
 		height: 325px;
@@ -4281,12 +4297,25 @@ button {
 		margin: 45px auto 0;
 		padding: 36px 0 0;
 	}
+	&--top {
+		@include sp {
+			border-top: none;
+			padding: 0;
+		}
+	}
 	&__item {
 		&:nth-of-type(n+2) {
 			margin: 102px 0 0;
 			@include sp {
 				margin: 27px 0 0;
 			}
+		}
+		&.managementCaption__item--top {
+			&:nth-of-type(n+2) {
+				@include sp {
+					margin: 50px 0 0;
+				}
+			}	
 		}
 	}
 	&__title {
@@ -4320,6 +4349,58 @@ button {
 		}
 	}
 
+}
+.managementImages {
+	@extend .photoCol2;
+	margin: 20px 0 0;
+	@include sp {
+		margin: 10px auto 0;
+	}
+	&__item {
+		@extend .photoCol2__item;
+		@extend .clearfix;
+		@include sp {
+			width: 48%;
+			display: inline-block;
+			&:nth-of-type(even) {
+				margin-left: 4%;
+				float: right;
+			}
+			&:nth-of-type(2) {
+				margin-top: 0;
+			}
+			&:nth-of-type(n+3) {
+				margin-top: 20px;
+			}
+		}
+		&--top {
+			@include sp {
+				width: $width-100;
+			}
+			&:nth-of-type(even) {
+				@include sp {
+					float: none;
+					margin: 20px auto 0;
+				}
+			}
+			&:nth-of-type(2) {
+				@include sp {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	&__image {
+		@extend .photoCol2__image;
+		width: $width-100;
+	}
+	&__text {
+		@extend .smallText;
+		@include sp {
+			width: $width-100;
+			margin: 5px auto 0;
+		}
+	}
 }
 /***********石勝の取り組みページ **************/
 .attemptContent {
