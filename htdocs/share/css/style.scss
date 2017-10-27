@@ -3663,14 +3663,25 @@ button {
 	@extend .photoCol2;
 	margin: 42px 0 0;
 	@include sp {
-		width: $commonWidthSp02;
+		width: $width-100;
 		margin: 30px auto 0;
+	}
+	&--tpm {
+		@include sp {
+			width: $commonWidthSp02;
+		}
 	}
 	&__item {
 		@extend .photoCol2__item;
+		&--col3 {
+			@extend .photoCol3__item;
+		}
 	}
 	&__image {
 		@extend .photoCol2__image;
+		&--col3 {
+			width: 100%;
+		}
 		@include sp {
 			width: 100%;
 		}
@@ -3684,6 +3695,10 @@ button {
 		@include sp {
 			font-size: 12px;
 			margin: 8px 0 0 5px;
+		}
+		&--col3 {
+			padding-left: 0;
+			text-indent: 0;
 		}
 	}
 }
@@ -3729,7 +3744,10 @@ button {
 .characteristicList {
 	width: 600px;
 	@include sp {
-		width: 100%;
+		width: $width-100;
+	}
+	&--w100 {
+		width: $width-100;
 	}
 	&__dt {
 		@extend .middleHeadline--gray;
@@ -3815,12 +3833,233 @@ button {
 .earthwallBlock {
 	@extend .technologyBlock;
 }
+/* アースウォールステージ */
+.earthwall-stageBlock {
+	@extend .technologyBlock;
+	& + .earthwall-stageBlock  {
+		@include pc {
+			margin-top: 80px;
+		}
+	}
+}
+.earthwall-stageWrapper {
+	@extend .clearfix;
+	margin: 78px auto 0;
+	@include sp {
+		margin: 20px auto 0;
+	}
+	&--type02 {
+		@include pc {
+			margin: 40px auto 0;
+		}
+	}
+	&__text {
+		@extend .middleText;
+		@extend .middleText--left;
+		display:inline-block;
+		width: 520px;
+		@include sp {
+			width: 93.75%;
+			display: block;
+			margin: 20px auto 0;
+		}
+	}
+	&__image {
+		float: right;
+		@include sp {
+			float: none;
+			width: $commonWidthSp02;
+			margin: 20px auto 0;
+			& > img {
+				width: $width-100;
+			}
+		}
+	}
+}
+.earthwall-stageTable {
+	@extend .commonTable;
+	width: 625px;
+	float: left;
+	@include sp {
+		width: $width-100;
+		float: none;
+	}
+	&__tr {
+		@extend .commonTable__tr;
+	}
+	&__th {
+		@extend .commonTable__th;
+		@include pc {
+			width: 190px;
+		}
+	}
+	&__td {
+		@extend .commonTable__td;
+		@include pc {
+			width: auto;
+			padding: 10px 20px 4px 20px;
+		}
+	}
+}
+.earthwall-stageImageList {
+	@extend .clearfix;
+	font-size: 0;
+	margin: 20px auto 0;
+	@include sp {
+		width: $width-100;
+	}
+	&__item {
+		display: inline-block;
+		float: left;
+		@include sp {
+			display: block;
+			margin: 0 auto;
+			width: $width-100;
+			float: none;
+		}
+		&:nth-of-type(n+2) {
+			@include pc {
+				margin-left: 20px;
+			}
+			@include sp {
+				margin-top: 20px;
+			}
+		}
+	}
+	&__image {
+		width: 200px;
+		@include sp {
+			width: 100%;
+		}
+	}
+}
+.earthwall-stageIllust01 {
+	@extend .textImage;
+	background: url(#{$img_path}/kasou/earthwall-stage_illust02.png) left top no-repeat;
+	margin: 40px auto 0;
+	width: 1080px;
+	height: 602px;
+	@include sp {
+		background: url(#{$img_path}/kasou/earthwall-stage_illust02_sp.png) left top no-repeat;
+		background-size: 100%;
+		width: $commonWidthSp02;
+		height: 0;
+		padding-top: 146.71875%;
+
+	}
+}
+/* バンカー再生工法 */
+.rebunkerBlock {
+	@extend .technologyBlock;
+	&--system {
+		position: relative;
+	}
+}
+.rebunkerContainer {
+	@extend .middleText;
+	@extend .middleText--left;
+	overflow: hidden;
+	margin-top: 15px;
+	@include sp {
+		width: $width-100;
+	}
+	&--effect {
+		@include sp {
+			width: $commonWidthSp02;
+		}
+	}
+	&__sizeFifty {
+		@include pc {
+			width: 50%;
+			float: left;
+		}
+	}
+	&__sizeFiftyItem {
+		list-style-type: disc;
+		margin-left: 50px;
+		line-height: 1.5;
+		@include sp {
+			margin-left: 15px;
+		}
+	}
+}
+.rebunkerLogo01 {
+	@include sp {
+		max-width: 214px;
+		/*　このページのみに適用させるため、importantを使用する */
+		margin-bottom: 20px !important;
+	}
+}
+.rebunkerIllust01 {
+	@extend .textImage;
+	background: url(#{$img_path}/kasou/rebunker_illust01.png) left top no-repeat;
+	margin: 20px auto 0;
+	width: 1080px;
+	height: 336px;
+	@include sp {
+		background: url(#{$img_path}/kasou/rebunker_illust01_sp.png) left top no-repeat;
+		background-size: 100%;
+		width: $commonWidthSp02;
+		height: 0;
+		padding-top: 279.21875%;
+	}
+}
+.rebunkerIllust02 {
+	@extend .textImage;
+	background: url(#{$img_path}/kasou/rebunker_illust02.png) left top no-repeat;
+	margin: 20px auto 0;
+	width: 1080px;
+	height: 180px;
+	@include sp {
+		background: url(#{$img_path}/kasou/rebunker_illust02_sp.png) left top no-repeat;
+		background-size: 100%;
+		width: $commonWidthSp02;
+		height: 0;
+		padding-top: 274.375%;
+	}
+}
+.rebunkerIllust03 {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	@include sp {
+		position: static;
+		margin: 20px auto 0;
+	}
+	&__text {
+		@extend .middleText;
+		@extend .middleText--left;
+	}
+	&__image {
+		& > img {
+			max-width: 470px;
+			@include sp {
+				width: 100%;
+				max-width: none;
+			}
+		}
+	}
+}
+.rebunkerIllust04 {
+	@extend .textImage;
+	@extend .illust--01;
+	margin: 58px auto 0;
+	@include sp {
+		margin: -40px auto 0;
+	}
+}
+.rebunkerLastText {
+	@extend .smallHeadline;
+	color: $commonBlack;
+	margin-top: 40px;
+}
 /*********** 
 会社案内ページ
 ************/
 
 /* 会社概要 */
 .companyBlock {
+	@extend .clearfix;
 	& + .companyBlock {
 		margin-top: 80px;
 		@include sp {
