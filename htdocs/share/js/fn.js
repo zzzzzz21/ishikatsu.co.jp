@@ -12,7 +12,7 @@ $(document).ready(function(){
 			$(this).attr("src", $(this).attr("src").replace('.png', '_sp.png'));
 		});
 	}
-    
+    // ヘッダー設定
     $('.nav__item').hover(function(){
         $(this).parent().parent().parent().parent().toggleClass('header--active');
     });
@@ -23,6 +23,28 @@ $(document).ready(function(){
 		$("html, body").animate({scrollTop:position}, 250, "swing");
 		return false;
 	});
+    // ヘッダーのカレント
+    var url = location.href;
+    $('.nav__item .nav__link').removeClass('nav__link--current');
+    if (url.match(/company/)) {
+        $('#nav__company').addClass('nav__link--current');
+    }
+    if (url.match(/technology/)) {
+        $('#nav__technology').addClass('nav__link--current');
+    }
+    if (url.match(/works/)) {
+        $('#nav__works').addClass('nav__link--current');
+    }
+    if (url.match(/management/)) {
+        $('#nav__management').addClass('nav__link--current');
+    }
+    if (url.match(/attempt/)) {
+        $('#nav__attempt').addClass('nav__link--current');
+    }
+    if (url.match(/recruit/)) {
+        $('#nav__recruit').addClass('nav__link--current');
+    }
+    // トップへ戻るボタン
     var toTopButton = $('.footer__button');
     toTopButton.hide();
     $(window).scroll(function () {
@@ -71,7 +93,7 @@ function inlitialize01() {
         {lat: 34.7572835, lng: 135.4990204}, // 大阪府吹田市広芝町3-29 エッグビル第三江坂301号
         {lat: 33.5288224, lng: 130.4783761}, // 福岡県大野城市白木原1-1-41 アルメリア白木原二階
         {lat: 24.7479549, lng: 125.2744878}, // 沖縄県宮古島市下地字上地410-1
-    ]
+    ];
     latlng_02 = new google.maps.LatLng(address_02[0]['lat'], address_02[0]['lng']);
     var myOptions = {
         zoom: 5,
@@ -87,7 +109,7 @@ function inlitialize01() {
             map: map_02,
             label : (i+1).toString()
         });
-    };
+    }
 }
 /* グループ会社ページのgoogleMap設定 */
 var map_03;
@@ -135,5 +157,5 @@ function inlitialize02() {
             map: map_03,
             label : (i+1).toString()
         });
-    };
+    }
 }
