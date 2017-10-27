@@ -1338,6 +1338,10 @@ button {
 			display: inline-block;
 			margin: 0 5px 0 0;
 			vertical-align: middle;
+			@include sp {
+				background: url(#{$img_path}/kasou/icon-pdf02_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
 		}
 	}
 	&--small {
@@ -3166,6 +3170,10 @@ button {
 			display: inline-block;
 			width: 16px;
 			height: 17px;
+			@include sp {
+				background: url(#{$img_path}/icon-blank_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
 		}
 		&--pdf:after {
 			content: "";
@@ -3173,6 +3181,10 @@ button {
 			display: inline-block;
 			width: 16px;
 			height: 17px;
+			@include sp {
+				background: url(#{$img_path}/icon-pdf_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
 		}
 		&.newsList__link--detail {
 			max-width: 753px;
@@ -3458,6 +3470,16 @@ button {
 	@extend .background02;
 }
 /********** 技術紹介ページ *******************/
+.technologyBlock {
+	position: relative;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 0 auto;
+	}
+	& + .technologyBlock {
+		margin-top: 40px;
+	}
+}
 .technologyContent {
 	@extend .clearfix;
 	padding: 98px 0 0;
@@ -3674,7 +3696,12 @@ button {
 	}
 	&__link {
 		@extend .greenButton;
-		width: 316px;
+		@include pc {
+			min-width: 316px;
+		}
+		@include sp {
+			width: $commonWidthSp02;
+		}
 		&--pdf {
 			@extend .greenButton--pdf;
 		}
@@ -3686,6 +3713,57 @@ button {
 		}
 	}
 }
+.imageWrapper {
+	margin: 40px 0 0;
+	@include sp {
+		margin: 20px 0 0;
+	}
+	& > img {
+		@include sp {
+			width: $commonWidthSp02;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+}
+.characteristicList {
+	width: 600px;
+	@include sp {
+		width: 100%;
+	}
+	&__dt {
+		@extend .middleHeadline--gray;
+		margin-top: 40px;
+		@include sp {
+			margin-top: 20px;
+		}
+	}
+	&__dd {
+		@extend .middleText;
+		@extend .middleText--left;
+		margin-top: 20px;
+		@include sp {
+			margin-top: 10px;
+		}
+	}
+}
+.characterImage {
+	position: absolute;
+	top: 110px;
+	right: 0;
+	@include sp {
+		position: static;
+		margin-top: 40px;
+	}
+	& > img {
+		max-width: 470px;
+		@include sp {
+			width: $commonWidthSp02;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+}
 .backgroundLink {
 	@extend .background02;
 	padding: 100px 0 160px;
@@ -3694,6 +3772,49 @@ button {
 	}
 }
 
+/* ガーデンパートナーズ */
+.gardenpartnersBlock {
+	@extend .technologyBlock;
+}
+.gardenpartnersList {
+	list-style-type: decimal;
+	@extend .middleText;
+	@extend .middleText--left;
+	margin: 40px 0 0;
+	width: 800px;
+	padding: 0 0 0 1.5em;
+	@include sp {
+		margin: 40px auto 0;
+		width: $commonWidthSp02;
+	}
+}
+.gardenpartnersIllust {
+	@extend .textImage;
+	background: url(#{$img_path}/kasou/gardenpartners_illust01.png) left top no-repeat;
+	margin: 40px auto 0;
+	width: 1080px;
+	height: 961px;
+	@include sp {
+		background: url(#{$img_path}/kasou/gardenpartners_illust01_sp.png) left top no-repeat;
+		background-size: 100%;
+		width: $commonWidthSp02;
+		height: 0;
+		padding-top: 385.78125%;
+
+	}
+}
+/* ピクニックターフ */
+.picnicturfBlock {
+	@extend .technologyBlock;
+}
+/* バイオキューブターフ */
+.biocubeBlock {
+	@extend .technologyBlock;
+}
+/* アースウォール */
+.earthwallBlock {
+	@extend .technologyBlock;
+}
 /*********** 
 会社案内ページ
 ************/
