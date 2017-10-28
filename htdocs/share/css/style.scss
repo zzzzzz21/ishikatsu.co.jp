@@ -121,6 +121,7 @@ $gray: rgb(153,153,153);
 $rightGray: rgb(204,204,204);
 $archiveBackground: rgb(236,241,247);
 $archiveSubBackground: rgb(185,197,208);
+$newsLinkColor: #06f;
 // ブレークポイント
 @mixin sp {
 	@media (max-width: 767px) {
@@ -234,6 +235,10 @@ button {
 .textIndent {
 	text-indent: -1em;
 	padding-left: 1em;
+}
+sup {
+	vertical-align: super;
+	font-size: small;
 }
 /********** パーツリスト *******/
 /* 和紙背景 */
@@ -663,17 +668,17 @@ button {
 			}
 		}
 		&:first-child .subBreadcrumb__link{
-			@include pc {
-				border-radius: 10px 0 0 10px;
-			}
+//			@include pc {
+//				border-radius: 10px 0 0 10px;
+//			}
 		}
 		&:last-child .subBreadcrumb__link {
 			&::after {
 				border: none;
 			}
-			@include pc {
-				border-radius: 0 10px 10px 0;
-			}
+//			@include pc {
+//				border-radius: 0 10px 10px 0;
+//			}
 		}
 		&--multiLine {
 			@include pc {
@@ -3375,6 +3380,12 @@ button {
 	@include sp {
 		width: $commonWidthSp02;
 		margin: 15px auto 0;
+	}
+	a:link, a:visited, a:active {
+		color: $newsLinkColor;
+	}
+	a:hover {
+		text-decoration: underline;
 	}
 	&__title {
 		@extend .middleHeadline;

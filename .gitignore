@@ -6,3 +6,7 @@ app/htdocs/test/news/server.conf.php
 app/htdocs/test/admin/server.conf.php
 app/htdocs/admin/application/views/templates_c/*.php
 app/htdocs/news/application/views/templates_c/*.php
+/htdocs/news/application/errors
+/htdocs/news/application/core
+/htdocs/news/application
+/htdocs/news/index.php
