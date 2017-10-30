@@ -1729,7 +1729,7 @@ class MY_Controller extends CI_Controller {
 			$this->show_404();
 			return;
 		}
-
+		return $value;
 		mb_substitute_character('');
 		$value = mb_convert_encoding(mb_convert_encoding($value, 'SJIS', 'UTF-8'), 'UTF-8', 'SJIS');
 		return $value;

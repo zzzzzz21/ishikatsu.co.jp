@@ -12,5 +12,15 @@ $config['sitemap'] = array(
 		'changefreq' => 'daily',
 		'priority'   => '0.8',
 	),
+	'news_detail' => array(
+		'lastmod'    => 'now',
+		'changefreq' => 'daily',
+		'priority'   => '0.9',
+	),
+	'static' => array(
+		'lastmod'    => 'now',
+		'changefreq' => 'never',
+		'priority'   => '0.8',
+	),
 
 );

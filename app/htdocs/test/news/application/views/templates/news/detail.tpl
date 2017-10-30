@@ -27,7 +27,8 @@
 			</section>
 			<ul class="breadcrumb">
 				<li class="breadcrumb__item"><a href="../../" class="breadcrumb__link">TOP</a><span class="breadcrumb__arrow">＞</span></li>
-				<li class="breadcrumb__item"><a href="../../news/" class="breadcrumb__link">お知らせ</a></li>
+				<li class="breadcrumb__item"><a href="../../news/" class="breadcrumb__link">お知らせ</a><span class="breadcrumb__arrow">＞</span></li>
+				<li class="breadcrumb__item">{{$detail.title}}</li>
 			</ul>
 			<article class="newsArticle">
 				<p class="newsArticle__time"><time class="newsArticle__date" datetime="{{$detail.disp_date|custom_date_format:'Y-m-d'}}">{{$detail.disp_date|custom_date_format:'Y年m月d日'}}</time></p>
