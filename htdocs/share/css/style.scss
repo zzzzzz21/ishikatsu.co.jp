@@ -2129,7 +2129,7 @@ sup {
 				background-size: cover;
 			}
 		}
-		&.underTop--small11 { /* /terms/ */
+		&.underTop--small11 { /* /terms/ , /error/下層/ */
 			background: url(#{$img_path}/kasou/main11_small.png) center top no-repeat;
 			background-size: cover;
 			@include sp {
@@ -4951,6 +4951,7 @@ sup {
 	}
 	&__caution {
 		font-size: 14px;
+		color: red;
 		@include sp {
 			padding: 20px 0 0 3.125%;
 		}
@@ -5502,6 +5503,29 @@ sup {
 			width: 28px;
 			height: 18px;
 			margin: 0 5px 0 0;
+		}
+	}
+}
+/* エラーページ*/
+.errorContent {
+	width: $commonWidthPc;
+	margin: 70px auto 100px;
+	@include sp {
+		width: $commonWidthSp02;
+		margin: 40px auto 50px;
+	}
+	&__title {
+		@extend .largeHeadline;
+	}
+	&__text {
+		@extend .smallHeadline;
+		margin: 40px auto 0;
+	}
+	&__errorText {
+		text-align: center;
+		margin: 60px auto 0;
+		@include sp {
+			margin: 30px auto 0;
 		}
 	}
 }
