@@ -577,15 +577,8 @@ sup {
 	}
 	&__button {
 		@extend .greenButton;
-		position: relative;
 		@include sp {
 			width: 56%;
-		}
-		&::after {
-			content:"＞";
-			display: inline-block;
-			position: absolute;
-			right: 5px;
 		}
 	}
 }
@@ -3558,7 +3551,7 @@ sup {
 	}
 	&__largeText {
 		@extend .smallHeadline;
-		margin: 260px 0 22px;
+		margin: 300px 0 22px;
 		@include sp {
 			width: $commonWidthSp02;
 			margin: 20px auto;
@@ -4336,6 +4329,7 @@ sup {
 		}
 	}
 	&.groupBlock--last {
+		@extend .clearfix;
 		font-size: 0;
 	}
 	&__ol {
@@ -4367,8 +4361,10 @@ sup {
 	&__image {
 		display: inline-block;
 		vertical-align: top;
-		margin: -7px 0 0 55px;
+		margin: -7px 0 0 0;
+		float: right;
 		@include sp {
+			float: none;
 			width: $commonWidthSp02;
 			margin: 20px auto 0;
 			display: block;
@@ -5520,6 +5516,8 @@ sup {
 	&__text {
 		@extend .smallHeadline;
 		margin: 40px auto 0;
+		line-height: 1.6;
+		text-align: center;
 	}
 	&__errorText {
 		text-align: center;

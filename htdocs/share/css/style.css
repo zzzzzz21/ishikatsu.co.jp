@@ -176,7 +176,7 @@ a.colorbox:before {
   line-height: 1;
 }
 
-.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .managementImages:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after, .earthwall-stageWrapper:after, .earthwall-stageImageList:after, .companyBlock:after, .groupCompanyTable__td:after, .managementImages__item:after, .tableList:after {
+.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .managementImages:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after, .earthwall-stageWrapper:after, .earthwall-stageImageList:after, .companyBlock:after, .groupBlock.groupBlock--last:after, .groupCompanyTable__td:after, .managementImages__item:after, .tableList:after {
   content: "";
   clear: both;
   display: block;
@@ -616,19 +616,10 @@ sup {
     margin-top: 30px;
   }
 }
-.doorNav__button {
-  position: relative;
-}
 @media (max-width: 767px) {
   .doorNav__button {
     width: 56%;
   }
-}
-.doorNav__button::after {
-  content: "＞";
-  display: inline-block;
-  position: absolute;
-  right: 5px;
 }
 
 /* 第3階層ナビゲーション */
@@ -4024,7 +4015,7 @@ sup {
   }
 }
 .technologyContent__largeText {
-  margin: 260px 0 22px;
+  margin: 300px 0 22px;
 }
 @media (max-width: 767px) {
   .technologyContent__largeText {
@@ -4860,10 +4851,12 @@ sup {
 .groupBlock__image {
   display: inline-block;
   vertical-align: top;
-  margin: -7px 0 0 55px;
+  margin: -7px 0 0 0;
+  float: right;
 }
 @media (max-width: 767px) {
   .groupBlock__image {
+    float: none;
     width: 93.75%;
     margin: 20px auto 0;
     display: block;
@@ -6094,6 +6087,8 @@ sup {
 }
 .errorContent__text {
   margin: 40px auto 0;
+  line-height: 1.6;
+  text-align: center;
 }
 .errorContent__errorText {
   text-align: center;
