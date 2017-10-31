@@ -27,7 +27,7 @@
 					<li class="breadcrumb__item"><a href="../../" class="breadcrumb__link">TOP</a><span class="breadcrumb__arrow">＞</span></li>
 					<li class="breadcrumb__item"><a href="../../company/" class="breadcrumb__link">会社案内</a><span class="breadcrumb__arrow">＞</span></li>
 					<li class="breadcrumb__item"><a href="../../company/philosophy/" class="breadcrumb__link">企業理念</a><span class="breadcrumb__arrow">＞</span></li>
-					<li class="breadcrumb__item"><a href="../../company/philosophy/zoen.html" class="breadcrumb__link">連鎖植生とその維持育成</a></li>
+					<li class="breadcrumb__item"><a href="../../company/philosophy/zoen.shtml" class="breadcrumb__link">連鎖植生とその維持育成</a></li>
 				</ul>
 				<section class="philosophySection">
 					<h2 class="philosophySection__title">
@@ -50,8 +50,8 @@
 					</ul>
 					<ul class="subBreadcrumb">
 						<li class="subBreadcrumb__item"><a href="../../company/philosophy/" class="subBreadcrumb__link">ブランドメッセージ</a></li>
-						<li class="subBreadcrumb__item"><a href="../../company/philosophy/origin.html" class="subBreadcrumb__link">私たちの起源と進化</a></li>
-						<li class="subBreadcrumb__item"><a href="../../company/philosophy/zoen.html" class="subBreadcrumb__link subBreadcrumb__link--current">連鎖植生とその維持育成</a></li>
+						<li class="subBreadcrumb__item"><a href="../../company/philosophy/origin.shtml" class="subBreadcrumb__link">私たちの起源と進化</a></li>
+						<li class="subBreadcrumb__item"><a href="../../company/philosophy/zoen.shtml" class="subBreadcrumb__link subBreadcrumb__link--current">連鎖植生とその維持育成</a></li>
 						<li class="subBreadcrumb__item subBreadcrumb__item--multiLine"><a href="../../company/philosophy/enginieering.html" class="subBreadcrumb__link subBreadcrumb__link--multiLine">トータル・エンジニアリング<br>・システム</a></li>
 					</ul>
 <!--#include virtual="../../share/include/companyList.html" -->

@@ -824,7 +824,7 @@ sup {
 		width: 100%;
 		height: 0;
 		padding-top: 50.06993%; /* (360/715) * 100% */
-		transition: transform .3s;
+		transition: transform 1s;
 		&:hover {
 			@include pc {
 				transform: scale(1.2);
@@ -864,7 +864,7 @@ sup {
 	}
 	&__text {
 		@extend .TopNavigationText;
-		transition: transform .3s;
+		transition: transform 1s;
 	}
 }
 .borderTop {
@@ -1181,7 +1181,7 @@ sup {
 		display: block;
 		width: 520px;
 		height: 177px;
-		transition: transform .3s;
+		transition: transform 1s;
 		@include sp {
 			width: 90.3125%;
 			height: 0;
@@ -1213,7 +1213,7 @@ sup {
 	}
 	&__text {
 		@extend .TopNavigationText;
-		transition: transform .3s;
+		transition: transform 1s;
 	}
 }
 
@@ -1247,7 +1247,7 @@ sup {
 		display: block;
 		width: 245px;
 		height: 245px;
-		transition: transform .3s;
+		transition: transform 1s;
 		@include pc {
 			&:before {
 				content:"";
@@ -1299,7 +1299,7 @@ sup {
 	}
 	&__text {
 		@extend .TopNavigationText;
-		transition: transform .3s;
+		transition: transform 1s;
 		&.bannerCircle__text--line02 {
 			height: 56px;
 			line-height: 1.2;
@@ -3088,7 +3088,6 @@ sup {
 .TopNavigationLink{
 	position: relative;
 	@include pc {
-		/*
 		&:before {
 			content:"";
 			position: absolute;
@@ -3096,16 +3095,13 @@ sup {
 			bottom:0;
 			left: 0;
 			right: 0;
-			background: rgba(0,0,0,0.3);
+			transition: 1s;
 		}
-		*/
 		&:hover {
 			opacity: 1;
-			/*
 			&:before {
-				background: rgba(0,0,0,0);
+				background: rgba(0,0,0,0.5);
 			}
-			*/
 		}
 	}
 }
