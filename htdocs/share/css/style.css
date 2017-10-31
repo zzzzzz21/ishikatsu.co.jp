@@ -5379,13 +5379,13 @@ sup {
 @media (min-width: 768px) {
   .attemptBlock__lead {
     line-height: 1.6;
-    margin: 15px auto 0;
+    margin: 40px auto 0;
   }
 }
 @media (max-width: 767px) {
   .attemptBlock__lead {
     width: 100%;
-    margin: 8px auto 0;
+    margin: 15px auto 0;
   }
 }
 .attemptBlock__lead--central {

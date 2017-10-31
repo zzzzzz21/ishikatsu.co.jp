@@ -4859,11 +4859,11 @@ sup {
 		@extend .middleText--left;
 		@include pc {
 			line-height: 1.6;
-			margin: 15px auto 0;
+			margin: 40px auto 0;
 		}
 		@include sp {
 			width: $width-100;
-			margin: 8px auto 0;
+			margin: 15px auto 0;
 		}
 		&--central {
 			@extend .borderTop--dot;
