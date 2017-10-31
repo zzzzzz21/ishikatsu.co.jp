@@ -887,10 +887,10 @@ sup {
   height: 0;
   padding-top: 50.06993%;
   /* (360/715) * 100% */
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 @media (min-width: 768px) {
   .aboutList__link:hover {
@@ -939,10 +939,10 @@ sup {
   }
 }
 .aboutList__text {
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .borderTop--green {
@@ -1273,10 +1273,10 @@ sup {
   display: block;
   width: 520px;
   height: 177px;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 @media (max-width: 767px) {
   .bannerCol2__link {
@@ -1315,10 +1315,10 @@ sup {
   }
 }
 .bannerCol2__text {
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 /* 円形のバナー */
@@ -1353,10 +1353,10 @@ sup {
   display: block;
   width: 245px;
   height: 245px;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 @media (min-width: 768px) {
   .bannerCircle__link:before {
@@ -1419,10 +1419,10 @@ sup {
   }
 }
 .bannerCircle__text {
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 .bannerCircle__text.bannerCircle__text--line02 {
   height: 56px;
@@ -3482,26 +3482,21 @@ sup {
   position: relative;
 }
 @media (min-width: 768px) {
-  .TopNavigationLink, .aboutList__link, .bannerCol2__link, .bannerCircle__link {
-    /*
-    &:before {
-    	content:"";
-    	position: absolute;
-    	top:0;
-    	bottom:0;
-    	left: 0;
-    	right: 0;
-    	background: rgba(0,0,0,0.3);
-    }
-    */
+  .TopNavigationLink:before, .aboutList__link:before, .bannerCol2__link:before, .bannerCircle__link:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   .TopNavigationLink:hover, .aboutList__link:hover, .bannerCol2__link:hover, .bannerCircle__link:hover {
     opacity: 1;
-    /*
-    &:before {
-    	background: rgba(0,0,0,0);
-    }
-    */
+  }
+  .TopNavigationLink:hover:before, .aboutList__link:hover:before, .bannerCol2__link:hover:before, .bannerCircle__link:hover:before {
+    background: rgba(0, 0, 0, 0.5);
   }
 }
 
