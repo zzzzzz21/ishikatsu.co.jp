@@ -8,7 +8,7 @@
 	<meta property="og:title" content="石勝エクステリア「都市緑化技術で新しい造園を創造」">
 	<meta property="og:url" content="http://www.ishikatsu.co.jp/">
 	<meta property="og:description" content="石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
-<!--#include virtual="share/include/common_include.html" -->
+{{include_html file="common_include.html"}}
 	<script src="share/slick/slick.min.js"></script>
 	<link rel="stylesheet" href="share/slick/slick.css">
 	<link rel="stylesheet" href="share/slick/slick-theme.css">
@@ -23,12 +23,12 @@
 			});
 		});
 	</script>
-<!--#include virtual="share/include/gtm01.html" -->
+{{include_html file="gtm01.html"}}
 </head>
 <body>
-<!--#include virtual="share/include/gtm02.html" -->
+{{include_html file="gtm02.html"}}
 	<div class="wrapper" id="wrapperTop">
-<!--#include virtual="share/include/header.html" -->
+{{include_html file="header.html"}}
 		<div class="topMain">
 			<ul class="carousel">
 				<li class="carousel__item"><img src="share/images/carousel02.png" class="carousel__image" alt="みどりとともに 新しい時代の「造園」を描くリーディングカンパニーへ"></li>
@@ -41,7 +41,12 @@
 					お知らせ<br><span class="section__subTitle">News</span>
 				</h2>
 				<ul class="newsList">
-<!--#include virtual="news/toplist/" -->
+{{foreach from=$open_news_list item=item}}
+					<li class="newsList__item">
+						<p class="newsList__Timetext"><time class="newsList__date" datetime="{{$item.disp_date|date_format:'Y-m-d'}}">{{$item.disp_date|date_format:'Y年m月d日'}}</time></p>
+						<p class="newsList__Linktext">{{include file="parts/news_link.tpl" item=$item}}{{$item.title}}</a></p>
+					</li>
+{{/foreach}}
 				</ul>
 				<a href="#TODO" class="newsDetail">お知らせ一覧へ</a>
 			</section>
@@ -91,7 +96,7 @@
 				</section>
 			</div>
 		</div>
-<!--#include virtual="share/include/footer.html" -->
+{{include_html file="footer.html"}}
 	</div>
 </body>
 </html>

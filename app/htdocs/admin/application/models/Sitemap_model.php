@@ -75,6 +75,47 @@ class Sitemap_model extends MY_Model
 		{
 			$data[] = $this->getIniData("{$url}/news/{$val['info_id']}/", "news_detail");
 		}
+
+		// 静的ページ系
+		$data[] = $this->getIniData("{$url}/technology/rebunker/", "static");
+		$data[] = $this->getIniData("{$url}/technology/tpm/", "static");
+		$data[] = $this->getIniData("{$url}/technology/gardenpartners/", "static");
+		$data[] = $this->getIniData("{$url}/technology/download/", "static");
+		$data[] = $this->getIniData("{$url}/technology/biocube/", "static");
+		$data[] = $this->getIniData("{$url}/technology/earthwall-stage/", "static");
+		$data[] = $this->getIniData("{$url}/technology/picnicturf/", "static");
+		$data[] = $this->getIniData("{$url}/technology/earthwall/", "static");
+		$data[] = $this->getIniData("{$url}/technology/", "static");
+		$data[] = $this->getIniData("{$url}/attempt/hr/", "static");
+		$data[] = $this->getIniData("{$url}/attempt/csr/", "static");
+		$data[] = $this->getIniData("{$url}/attempt/reconstruction/", "static");
+		$data[] = $this->getIniData("{$url}/attempt/", "static");
+		$data[] = $this->getIniData("{$url}/partslist.html", "static");
+		$data[] = $this->getIniData("{$url}/partners/", "static");
+		$data[] = $this->getIniData("{$url}/works/awards/", "static");
+		$data[] = $this->getIniData("{$url}/works/others/", "static");
+		$data[] = $this->getIniData("{$url}/works/mansion/", "static");
+		$data[] = $this->getIniData("{$url}/works/kodate/", "static");
+		$data[] = $this->getIniData("{$url}/works/public/", "static");
+		$data[] = $this->getIniData("{$url}/works/resort/", "static");
+		$data[] = $this->getIniData("{$url}/works/", "static");
+		$data[] = $this->getIniData("{$url}/management/administrator/", "static");
+		$data[] = $this->getIniData("{$url}/management/golf/", "static");
+		$data[] = $this->getIniData("{$url}/management/", "static");
+		$data[] = $this->getIniData("{$url}/privacy/", "static");
+		$data[] = $this->getIniData("{$url}/terms/", "static");
+		$data[] = $this->getIniData("{$url}/recruit/", "static");
+		$data[] = $this->getIniData("{$url}/company/history/", "static");
+		$data[] = $this->getIniData("{$url}/company/group/", "static");
+		$data[] = $this->getIniData("{$url}/company/message/", "static");
+		$data[] = $this->getIniData("{$url}/company/service/", "static");
+		$data[] = $this->getIniData("{$url}/company/philosophy/enginieering.html", "static");
+		$data[] = $this->getIniData("{$url}/company/philosophy/origin.html", "static");
+		$data[] = $this->getIniData("{$url}/company/philosophy/zoen.html", "static");
+		$data[] = $this->getIniData("{$url}/company/philosophy/", "static");
+		$data[] = $this->getIniData("{$url}/company/", "static");
+		$data[] = $this->getIniData("{$url}/contact/", "static");
+
 		$this->createXml($filename, $data, false);
 	}
 
