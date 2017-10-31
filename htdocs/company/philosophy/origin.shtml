@@ -51,7 +51,7 @@
 						<li class="subBreadcrumb__item"><a href="../../company/philosophy/" class="subBreadcrumb__link">ブランドメッセージ</a></li>
 						<li class="subBreadcrumb__item"><a href="../../company/philosophy/origin.shtml" class="subBreadcrumb__link subBreadcrumb__link--current">私たちの起源と進化</a></li>
 						<li class="subBreadcrumb__item"><a href="../../company/philosophy/zoen.shtml" class="subBreadcrumb__link">連鎖植生とその維持育成</a></li>
-						<li class="subBreadcrumb__item subBreadcrumb__item--multiLine"><a href="../../company/philosophy/enginieering.html" class="subBreadcrumb__link subBreadcrumb__link--multiLine">トータル・エンジニアリング<br>・システム</a></li>
+						<li class="subBreadcrumb__item subBreadcrumb__item--multiLine"><a href="../../company/philosophy/enginieering.shtml" class="subBreadcrumb__link subBreadcrumb__link--multiLine">トータル・エンジニアリング<br>・システム</a></li>
 					</ul>
 <!--#include virtual="../../share/include/companyList.html" -->
 				</section>
