@@ -79,7 +79,7 @@
 							<table class="filesTable">
 								<tr class="filesTable__tr">
 									<th class="filesTable__th filesTable__th--partner filesTable__th--partnerTop">書式名称</th>
-									<td class="filesTable__td filesTable__td--partnerTop">表紙（取扱要領)</td>
+									<td class="filesTable__td filesTable__td--partnerTop">表紙（取扱要領）</td>
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th filesTable__th--partner">ファイル形式</th>
