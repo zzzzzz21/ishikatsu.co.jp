@@ -28,7 +28,7 @@
 				<li class="breadcrumb__item"><a href="../../company/service/" class="breadcrumb__link">事業紹介</a></li>
 			</ul>
 			<section class="companyContent">
-				<h2 class="companyContent__subTitle">営業概要</h2>
+				<h2 class="companyContent__subTitle">事業紹介</h2>
 				<table class="companyTable01">
 					<tbody>
 						<tr class="companyTable01__tr">
