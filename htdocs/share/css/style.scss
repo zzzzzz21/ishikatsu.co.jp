@@ -3452,13 +3452,6 @@ sup {
 	margin: -30px auto 85px;
 	&__link {
 		@extend .greenButton;
-		position: relative;
-		&::after {
-			content:"＜";
-			display: inline-block;
-			position: absolute;
-			left: 5px;
-		}
 		@include sp {
 			width: 46%;
 		}
@@ -5146,7 +5139,7 @@ sup {
 		border: 1px solid #999;
 		vertical-align: top;
 		word-break: break-all;
-		padding: 20px 10px 13px 15px;
+		padding: 20px 8px 13px 8px;
 		@include sp {
 			padding: 6px 10px 13px 10px;
 		}
