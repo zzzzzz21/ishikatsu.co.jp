@@ -2672,8 +2672,9 @@ sup {
 .header__icon {
   float: left;
   background: url(../images/main-logo.png) left top no-repeat;
+  background-size: 100%;
   width: 218px;
-  height: 36px;
+  height: 34px;
 }
 @media (max-width: 767px) {
   .header__icon {
@@ -2681,7 +2682,7 @@ sup {
     background: url(../images/main-logo_sp.png) left top no-repeat;
     background-size: 100%;
     width: 167px;
-    height: 28px;
+    height: 26px;
     display: inline-block;
     margin: 10px 0 4px 10px;
   }
@@ -5364,7 +5365,7 @@ sup {
   .attemptBlock {
     width: 100%;
     margin: 0 auto;
-	padding: 0 0 32px;
+    padding: 0 0 32px;
   }
 }
 .attemptBlock__subTitle {

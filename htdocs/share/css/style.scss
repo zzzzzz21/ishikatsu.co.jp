@@ -2373,14 +2373,15 @@ sup {
 		@extend .textImage;
 		float: left;
 		background: url(#{$img_path}/main-logo.png) left top no-repeat;
+		background-size: 100%;
 		width: 218px;
-		height: 36px;
+		height: 34px;
 		@include sp {
 			float: none;
 			background: url(#{$img_path}/main-logo_sp.png) left top no-repeat;
 			background-size: 100%;
 			width: 167px;
-			height: 28px;
+			height: 26px;
 			display: inline-block;
 			margin: 10px 0 4px 10px;
 		}
