@@ -749,6 +749,7 @@ sup {
 .subBreadcrumb__link {
   width: 100%;
   display: block;
+  border-radius: 10px;
   background: white;
 }
 .subBreadcrumb__link::after {
@@ -893,12 +894,12 @@ sup {
 }
 @media (min-width: 768px) {
   .aboutList__link:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .aboutList__link:hover > .aboutList__text {
-    -webkit-transform: scale(0.83333);
-            transform: scale(0.83333);
+    -webkit-transform: scale(0.90909);
+            transform: scale(0.90909);
   }
 }
 .aboutList__link--01 {
@@ -1285,16 +1286,6 @@ sup {
     margin: 0 auto;
   }
 }
-@media (min-width: 768px) {
-  .bannerCol2__link:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  .bannerCol2__link:hover > .bannerCol2__text {
-    -webkit-transform: scale(0.83333);
-            transform: scale(0.83333);
-  }
-}
 .bannerCol2__link--01 {
   background: url(../images/information_navi01.png) left top no-repeat;
   background-size: cover;
@@ -1361,16 +1352,6 @@ sup {
   .bannerCircle__link:before {
     content: "";
     border-radius: 50%;
-  }
-}
-@media (min-width: 768px) {
-  .bannerCircle__link:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  .bannerCircle__link:hover > .bannerCircle__text {
-    -webkit-transform: scale(0.83333);
-            transform: scale(0.83333);
   }
 }
 @media (max-width: 767px) {
@@ -3555,7 +3536,8 @@ sup {
 .newsList__Timetext {
   display: table-cell;
   width: 182px;
-  vertical-align: middle;
+  vertical-align: top;
+  line-height: 1.8;
 }
 @media (max-width: 767px) {
   .newsList__Timetext {
@@ -3567,12 +3549,12 @@ sup {
 .newsList__Linktext {
   display: table-cell;
   line-height: 1.8;
-  vertical-align: middle;
+  vertical-align: top;
   position: relative;
 }
 @media (max-width: 767px) {
   .newsList__Linktext {
-    line-height: 1.1;
+    line-height: 1.3;
     display: block;
     margin-top: 7px;
   }
@@ -3587,6 +3569,7 @@ sup {
   content: "";
   background: url(../images/icon-blank.png) left top no-repeat;
   display: inline-block;
+  vertical-align: middle;
   width: 16px;
   height: 17px;
 }
@@ -3600,6 +3583,7 @@ sup {
   content: "";
   background: url(../images/icon-pdf.png) left top no-repeat;
   display: inline-block;
+  vertical-align: middle;
   width: 16px;
   height: 17px;
 }
@@ -5379,13 +5363,13 @@ sup {
 @media (min-width: 768px) {
   .attemptBlock__lead {
     line-height: 1.6;
-    margin: 40px auto 0;
+    margin: 15px auto 0;
   }
 }
 @media (max-width: 767px) {
   .attemptBlock__lead {
     width: 100%;
-    margin: 15px auto 0;
+    margin: 8px auto 0;
   }
 }
 .attemptBlock__lead--central {
