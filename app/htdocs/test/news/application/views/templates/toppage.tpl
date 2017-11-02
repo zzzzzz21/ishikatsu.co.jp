@@ -48,7 +48,7 @@
 					</li>
 {{/foreach}}
 				</ul>
-				<a href="#TODO" class="newsDetail">お知らせ一覧へ</a>
+				<a href="news/" class="newsDetail">お知らせ一覧へ</a>
 			</section>
 			<section class="section section--about">
 				<h2 class="section__title">

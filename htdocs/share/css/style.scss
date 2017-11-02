@@ -3114,20 +3114,22 @@ sup {
 		}
 		@include sp {
 			border-bottom: 1px dotted $commonBlack;
-			padding-bottom: 8px;
 		}
 		&.newsList__item--detail {
 			border-bottom: 1px solid $rightGray;
 			@include pc {
-				min-height: 100px;
-				padding: 1em 0;
 				&:nth-of-type(n+2) {
 					margin-top: 0;
 				}
 			}
+			& .newsList__Timetext {
+				@include pc {
+					padding: 1em 0 0;
+				}
+			}
 			@include sp {
 				border-bottom: 1px dotted $rightGray;
-				padding-bottom: 30px;
+				padding-bottom: 0;
 			}
 		}
 	}
@@ -3135,7 +3137,9 @@ sup {
 		display: table-cell;
 		width: 182px;
 		vertical-align: top;
-		line-height: 1.8;
+		@include pc {
+			line-height: 1.8;
+		}
 		@include sp {
 			display: block;
 			font-size: 13px;
@@ -3157,11 +3161,32 @@ sup {
 				line-height: 1.5;
 				margin-top: 4px;
 			}
+			& .newsList__link {
+				display: block;
+				@include pc {
+					min-height: 100px;
+					padding: 1em 0;
+				}
+				@include sp {
+					padding-bottom: 30px
+				}
+			}
+			& .newsList__link.newsList__link--detail {
+				padding-right: 145px;
+				@include sp {
+					padding-right: 10%;
+				}
+			}
 		}
 	}
 	&__date {
 	}
 	&__link {
+		@include sp {
+			width: 100%;
+			display: block;
+			padding-bottom: 8px;
+		}
 		&--blank:after {
 			content: "";
 			background: url(#{$img_path}/icon-blank.png) left top no-repeat;
@@ -3169,6 +3194,7 @@ sup {
 			vertical-align: middle;
 			width: 16px;
 			height: 17px;
+			margin-left: .6em;
 			@include sp {
 				background: url(#{$img_path}/icon-blank_sp.png) left top no-repeat;
 				background-size: 100%;
@@ -3181,13 +3207,13 @@ sup {
 			vertical-align: middle;
 			width: 16px;
 			height: 17px;
+			margin-left: .6em;
 			@include sp {
 				background: url(#{$img_path}/icon-pdf_sp.png) left top no-repeat;
 				background-size: 100%;
 			}
 		}
 		&.newsList__link--detail {
-			max-width: 753px;
 			display: inline-block;
 			&::before {
 			content: '';
@@ -3206,7 +3232,7 @@ sup {
 			margin: auto;
 			}
 			@include sp {
-				width: 90%;
+				width: 100%;
 				&::before {
 					width: 10px;
 					height: 10px;
