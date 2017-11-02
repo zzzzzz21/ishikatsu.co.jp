@@ -3124,7 +3124,7 @@ sup {
 			}
 			& .newsList__Timetext {
 				@include pc {
-					padding: 1em 0 0;
+					padding: 2em 0 0;
 				}
 			}
 			@include sp {
@@ -3164,8 +3164,7 @@ sup {
 			& .newsList__link {
 				display: block;
 				@include pc {
-					min-height: 100px;
-					padding: 1em 0;
+					padding: 2em 0;
 				}
 				@include sp {
 					padding-bottom: 30px
