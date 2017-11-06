@@ -703,7 +703,7 @@ sup {
 	&__link {
 		width: 100%;
 		display: block;
-		border-radius: 10px;
+//		border-radius: 10px;
 		background: $commonWhite;
 		&::after {
 			position: absolute;
@@ -3193,7 +3193,7 @@ sup {
 			vertical-align: middle;
 			width: 16px;
 			height: 17px;
-			margin-left: .6em;
+			margin-left: .4em;
 			@include sp {
 				background: url(#{$img_path}/icon-blank_sp.png) left top no-repeat;
 				background-size: 100%;
@@ -3206,7 +3206,7 @@ sup {
 			vertical-align: middle;
 			width: 16px;
 			height: 17px;
-			margin-left: .6em;
+			margin-left: .4em;
 			@include sp {
 				background: url(#{$img_path}/icon-pdf_sp.png) left top no-repeat;
 				background-size: 100%;
@@ -3283,16 +3283,13 @@ sup {
 	margin: 0 auto;
 }
 .newsDetail {
-	display: none;
-	@include sp {
-		display: block;
-		font-size: 14px;
-		text-align: center;
-		line-height: 52px;
-		width: 210px;
-		margin: 50px auto 0;
-		border: 1px solid $commonBlack;
-	}
+	display: block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 52px;
+    width: 210px;
+    margin: 50px auto 0;
+    border: 1px solid $commonBlack;
 }
 .pagerButton {
 	@extend .clearfix;
@@ -4579,13 +4576,16 @@ sup {
 		}
 	}
 	&__head {
-		@extend .hugeHeadline;
-		font-size: 66px;
 		margin-top: 100px;
-		font-weight: bold;
 		@include sp {
-			font-size: 32px;
-			margin-top: 75px;
+			width: 72%;
+			margin: 75px auto 0;
+			text-align: center;
+			> img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
 		}
 	}
 	&__headText {
@@ -4595,34 +4595,44 @@ sup {
 		margin-top: 43px;
 		@include sp {
 			width: $commonWidthSp02;
-			font-size: 12px;
+			font-size: 14px;
 			line-height: 1.7;
 			margin: 20px auto 0;
-			text-align: left;
+//			text-align: left;
 		}
 	}
 	&__banner {
-		@extend .textImage;
-		background: url(#{$img_path}/kasou/philosophy_illust04.png) left top no-repeat;
-		width: 1090px;
-		height: 508px;
-		margin: 85px 0 160px;
+		position: relative;
+		margin: 85px auto 160px;
+		padding: 4em 1em;
+		background: #fff;
 		@include sp {
-			background: url(#{$img_path}/kasou/philosophy_illust04_sp.png) left top no-repeat;
-			background-size: 100%;
-			width: 100%;
-			height: 0;
-			padding-top: 101.5625%;
+			width: $commonWidthSp02;
 			margin: 15px auto 55px;
 		}
 	}
-}
-/********* 実績紹介 **************/
-.worksContent {
-	width: $commonWidthPc;
-	margin: 0 auto;
-	@include sp {
-		width: $width-100;
+	&__list {
+		margin: 40px auto 0;
+		font-family: "Noto Serif Japanese";
+		font-size: 22px;
+		text-align: left;
+		line-height: 1.4;
+		width: 560px;
+		@include sp {
+			width: $commonWidthSp;
+			margin-top: 20px;
+			font-size: 14px;
+		}
+		&__item {
+			position: relative;
+			&:before {
+				position: relative;
+				content: '・';
+			}
+			& + & {
+				margin-top: 1em;
+			}
+		}
 	}
 }
 .worksBlock {

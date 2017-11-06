@@ -10,3 +10,9 @@ app/htdocs/news/application/views/templates_c/*.php
 /htdocs/news/application/core
 /htdocs/news/application
 /htdocs/news/index.php
+/htdocs/*.htaccess
+/htdocs/admin
+/htdocs/ckimg/news
+/htdocs/index.php
+/htdocs/news/*.htaccess
+/htdocs/news/files

@@ -34,7 +34,7 @@
 						ブランドメッセージ
 					</h2>
 					<p class="philosophySection__lead">石勝グループでは、「みどりとともに」を企業スローガンに掲げ、私たちがめざす姿と行動基準を定めています。グループ全社員は、このブランドメッセージに従い、自然と共生する空間づくりのプロフェッショナルとして、お客さまの想いに寄り添いながら、次世代につながる環境創造に努めています。</p>
-					<p class="philosophySection__head">みどりとともに</p>
+					<p class="philosophySection__head"><img src="../../share/images/midoritotomoni_logo.png" alt="みどりとともに"></p>
 					<p class="philosophySection__headText">
 江戸時代の石造職人衆「石勝」を起源に持つ私たちは、<br class="pcDisp">自然と共生する空間づくりのプロフェッショナル集団です。
 <br>
@@ -50,9 +50,17 @@
 					<p class="philosophySection__headText">
 新しい時代の「造園」を描くリーディングカンパニーへ。<br class="pcDisp">私たちは、みどりへの想いを胸に、<br class="pcDisp">お客さまの心が豊かになる環境を創造し続けます。
 					</p>
-					<p class="philosophySection__banner">
-						石勝エクステリアの約束
-					</p>
+					<div class="philosophySection__banner">
+						<section class="philosophySection__banner__inner">
+							<h3 class="philosophySection__title">石勝エクステリアの約束</h3>
+							<ul class="philosophySection__list">
+								<li class="philosophySection__list__item">自然と熟知し、お客さまの期待に応え続けます</li>
+								<li class="philosophySection__list__item">自分たちでしかできない技術を追求します</li>
+								<li class="philosophySection__list__item">常に一歩先を行く空間デザインを提案します</li>
+								<li class="philosophySection__list__item">景観・風景・風土を次世代に残すために行動します</li>
+							</ul>
+						</section>
+					</div>
 					<ul class="subBreadcrumb">
 						<li class="subBreadcrumb__item"><a href="../../company/philosophy/" class="subBreadcrumb__link  subBreadcrumb__link--current">ブランドメッセージ</a></li>
 						<li class="subBreadcrumb__item"><a href="../../company/philosophy/origin.shtml" class="subBreadcrumb__link">私たちの起源と進化</a></li>
