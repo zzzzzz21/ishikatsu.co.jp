@@ -76,7 +76,7 @@
 			<section class="earthwallBlock">
 				<h3 class="middleHeadline--green pcmt90 spmt40">潅水（水やり）について</h3>
 				<p class="middleText middleText--left pcmt25 spmt20">自動潅水装置により水やりを制御します。季節ごとに適した水量、適した時間に潅水します。<br class="pcDisp">また、点滴型のドリップ管を使用することで植物に安定した水量の潅水が可能になります。</p>
-				<p class="imageWrapper"><img src="../earthwall/images/earthwall_illust02.png" alt="潅水（水やり）について"></p>
+				<p class="imageWrapper"><img src="images/picnicturf_illust02.png" alt="潅水（水やり）について"></p>
 			</section>
 			<section class="picnicturfBlock">
 				<h2 class="technologyContent__subtitle pcmt100">ピクニックターフ施工事例</h2>
