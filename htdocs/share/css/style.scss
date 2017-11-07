@@ -4604,11 +4604,42 @@ sup {
 	&__banner {
 		position: relative;
 		margin: 85px auto 160px;
-		padding: 4em 1em;
-		background: #fff;
+		width: 1090px;
+		@include pc {
+			border-style: solid;
+			border-width: 60px;
+			@include PropertyPrefix(border-image, url(#{$img_path}/kasou/philosophy_background01.png) 120 stretch);
+		}
 		@include sp {
-			width: $commonWidthSp02;
+			width: $width-100;
 			margin: 15px auto 55px;
+			z-index: 2;
+			padding: 4em 1em;
+			&:after {
+				content: "";
+				box-sizing: border-box;
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border-style: solid;
+				border-width: 120px 110px;
+				-moz-border-image: url(#{$img_path}/kasou/philosophy_background01_sp.png) 120 110 repeat;
+				-webkit-border-image: url(#{$img_path}/kasou/philosophy_background01_sp.png) 120 110 repeat;
+				-o-border-image: url(#{$img_path}/kasou/philosophy_background01_sp.png) 120 110 repeat;
+				border-image: url(#{$img_path}/kasou/philosophy_background01_sp.png) 120 110 fill repeat;
+				zoom: 0.5;
+			}
+		}
+	}
+	&__banner__inner {
+		background: $commonWhite;
+		@include sp {
+			background: transparent;
+			position: relative;
+			z-index: 1;
 		}
 	}
 	&__list {

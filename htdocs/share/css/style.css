@@ -152,7 +152,9 @@ button {
   cursor: pointer;
   outline: none;
   padding: 0;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 a.colorbox {
@@ -884,14 +886,19 @@ sup {
   height: 0;
   padding-top: 50.06993%;
   /* (360/715) * 100% */
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 @media (min-width: 768px) {
   .aboutList__link:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .aboutList__link:hover > .aboutList__text {
-    transform: scale(0.90909);
+    -webkit-transform: scale(0.90909);
+            transform: scale(0.90909);
   }
 }
 .aboutList__link--01 {
@@ -931,7 +938,10 @@ sup {
   }
 }
 .aboutList__text {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .borderTop--green {
@@ -1262,7 +1272,10 @@ sup {
   display: block;
   width: 520px;
   height: 177px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 @media (max-width: 767px) {
   .bannerCol2__link {
@@ -1291,7 +1304,10 @@ sup {
   }
 }
 .bannerCol2__text {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 /* 円形のバナー */
@@ -1326,7 +1342,10 @@ sup {
   display: block;
   width: 245px;
   height: 245px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 @media (min-width: 768px) {
   .bannerCircle__link:before {
@@ -1379,7 +1398,10 @@ sup {
   }
 }
 .bannerCircle__text {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 .bannerCircle__text.bannerCircle__text--line02 {
   height: 56px;
@@ -1420,7 +1442,8 @@ sup {
 }
 
 .greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .catalogButtons__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: inline-block;
   min-height: 27px;
   border: 1px solid;
@@ -1453,6 +1476,7 @@ sup {
 }
 @media (min-width: 768px) {
   .greenButton, .doorNav__button, .articleButton__link, .technologyContent__topLink, .catalogButtons__link, .companyLinkText__link, .companyContent__button01, .golfMap__link {
+    -webkit-transition: .3s;
     transition: .3s;
   }
   .greenButton:hover, .doorNav__button:hover, .articleButton__link:hover, .technologyContent__topLink:hover, .catalogButtons__link:hover, .companyLinkText__link:hover, .companyContent__button01:hover, .golfMap__link:hover {
@@ -2712,6 +2736,7 @@ sup {
     border-bottom: 1px solid white;
     position: relative;
     overflow: hidden;
+    -webkit-transition: max-height .3s ease;
     transition: max-height .3s ease;
   }
   .nav__item:after {
@@ -2750,6 +2775,7 @@ sup {
     width: 0;
     height: 5px;
     background: #018643;
+    -webkit-transition: .5s;
     transition: .5s;
   }
   .nav__link--current:before {
@@ -2807,6 +2833,7 @@ sup {
   text-align: left;
   background: rgba(255, 255, 255, 0.9);
   visibility: hidden;
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 @media (min-width: 768px) {
@@ -2854,12 +2881,10 @@ sup {
   height: 195px;
   display: inline-block;
   -webkit-column-count: 2;
-  -moz-column-count: 2;
   -ms-column-count: 2;
   -o-column-count: 2;
   column-count: 2;
   -webkit-column-fill: auto;
-  -moz-column-fill: auto;
   -ms-column-fill: auto;
   -o-column-fill: auto;
   column-fill: auto;
@@ -2871,7 +2896,6 @@ sup {
     margin-top: 0;
     font-size: 11px;
     -webkit-column-fill: balance;
-    -moz-column-fill: balance;
     -ms-column-fill: balance;
     -o-column-fill: balance;
     column-fill: balance;
@@ -3039,6 +3063,7 @@ sup {
 }
 @media (min-width: 768px) {
   .footer__contactButton {
+    -webkit-transition: .3s;
     transition: .3s;
   }
   .footer__contactButton:hover {
@@ -3380,7 +3405,9 @@ sup {
 }
 @media (min-width: 768px) {
   .section__title.section__title--news {
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
     position: relative;
     display: inline-block;
     text-align: left;
@@ -3442,6 +3469,7 @@ sup {
     bottom: 0;
     left: 0;
     right: 0;
+    -webkit-transition: 1s;
     transition: 1s;
   }
   .TopNavigationLink:hover, .aboutList__link:hover, .bannerCol2__link:hover, .bannerCircle__link:hover {
@@ -3608,7 +3636,6 @@ sup {
   border: 0px;
   border-top: solid 2px #018643;
   border-right: solid 2px #018643;
-  -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
@@ -3727,7 +3754,6 @@ sup {
   border: 0px;
   border-top: solid 2px #018643;
   border-right: solid 2px #018643;
-  -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
@@ -3744,7 +3770,6 @@ sup {
 .pagerButton__link--prev::after {
   border-top: solid 2px #018643;
   border-right: solid 2px #018643;
-  -ms-transform: rotate(230deg);
   -webkit-transform: rotate(230deg);
   transform: rotate(230deg);
   left: -60px;
@@ -5080,13 +5105,49 @@ sup {
 .philosophySection__banner {
   position: relative;
   margin: 85px auto 160px;
-  padding: 4em 1em;
-  background: #fff;
+  width: 1090px;
+}
+@media (min-width: 768px) {
+  .philosophySection__banner {
+    border-style: solid;
+    border-width: 60px;
+    -ms-border-image: url(../images/kasou/philosophy_background01.png) 120 stretch;
+    -o-border-image: url(../images/kasou/philosophy_background01.png) 120 stretch;
+    border-image: url(../images/kasou/philosophy_background01.png) 120 stretch;
+  }
 }
 @media (max-width: 767px) {
   .philosophySection__banner {
-    width: 93.75%;
+    width: 100%;
     margin: 15px auto 55px;
+    z-index: 2;
+    padding: 4em 1em;
+  }
+  .philosophySection__banner:after {
+    content: "";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 120px 110px;
+    -o-border-image: url(../images/kasou/philosophy_background01_sp.png) 120 110 repeat;
+    border-image: url(../images/kasou/philosophy_background01_sp.png) 120 110 fill repeat;
+    zoom: 0.5;
+  }
+}
+.philosophySection__banner__inner {
+  background: white;
+}
+@media (max-width: 767px) {
+  .philosophySection__banner__inner {
+    background: transparent;
+    position: relative;
+    z-index: 1;
   }
 }
 .philosophySection__list {
