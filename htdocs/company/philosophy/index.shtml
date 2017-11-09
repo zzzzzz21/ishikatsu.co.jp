@@ -35,21 +35,19 @@
 					</h2>
 					<p class="philosophySection__lead">石勝グループでは、「みどりとともに」を企業スローガンに掲げ、私たちがめざす姿と行動基準を定めています。グループ全社員は、このブランドメッセージに従い、自然と共生する空間づくりのプロフェッショナルとして、お客さまの想いに寄り添いながら、次世代につながる環境創造に努めています。</p>
 					<p class="philosophySection__head"><img src="../../share/images/midoritotomoni_logo.png" alt="みどりとともに"></p>
-					<p class="philosophySection__headText">
-江戸時代の石造職人衆「石勝」を起源に持つ私たちは、<br class="pcDisp">自然と共生する空間づくりのプロフェッショナル集団です。
-<br>
-卓越した技術力と洗練されたデザイン力を強みに、<br class="pcDisp">都市を彩る商業施設、オフィスビルから<br class="pcDisp">住宅、公園、緑地、リゾート、ゴルフ場に至るまで<br class="pcDisp">さまざまな場所で、やすらぎと癒しの空間を創造しています。
-					</p>
-					<p class="philosophySection__headText">
-景観10年、風景100年、風土1000年。
-<br>
-その土地で長い年月をかけて育まれる「造園」の姿は、<br class="pcDisp">自然と人の営みの歴史そのものです。
-					</p>
-					<p class="philosophySection__headText">私たちは、みどりの先駆者として、悠久の自然を尊重しながら、<br class="pcDisp">美しい景観・風景・風土を次世代に残すことを使命としています。
-					</p>
-					<p class="philosophySection__headText">
-新しい時代の「造園」を描くリーディングカンパニーへ。<br class="pcDisp">私たちは、みどりへの想いを胸に、<br class="pcDisp">お客さまの心が豊かになる環境を創造し続けます。
-					</p>
+					<p class="philosophySection__headText">江戸時代の石造職人衆「石勝」を<br class="spDisp">起源に持つ私たちは、<br>
+					自然と共生する空間づくりの<br class="spDisp">プロフェッショナル集団です。<br>
+					卓越した技術力と洗練されたデザイン力を強みに、<br>
+					都市を彩る商業施設、オフィスビルから<br>
+					住宅、公園、緑地、リゾート、ゴルフ場に<br class="spDisp">至るまで<br class="pcDisp">さまざまな場所で、<br class="spDisp">やすらぎと癒しの空間を創造しています。</p>
+					<p class="philosophySection__headText">景観10年、風景100年、風土1000年。<br>
+					その土地で長い年月をかけて<br class="spDisp">育まれる「造園」の姿は、<br>
+					自然と人の営みの歴史そのものです。</p>
+					<p class="philosophySection__headText">私たちは、みどりの先駆者として、<br class="spDisp">悠久の自然を尊重しながら、<br>
+					美しい景観・風景・風土を<br class="spDisp">次世代に残すことを使命としています。</p>
+					<p class="philosophySection__headText">新しい時代の「造園」を描く<br class="spDisp">リーディングカンパニーへ。<br>
+					私たちは、みどりへの想いを胸に、<br>
+					お客さまの心が豊かになる環境を創造し続けます。</p>
 					<div class="philosophySection__banner">
 						<section class="philosophySection__banner__inner">
 							<h3 class="philosophySection__title">石勝エクステリアの約束</h3>
