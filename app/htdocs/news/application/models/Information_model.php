@@ -190,6 +190,7 @@ SELECT SQL_CALC_FOUND_ROWS
  ,title
  ,link_url
  ,is_target
+ ,contents_type
  ,content_ext
  ,content_filesize
 FROM
@@ -212,7 +213,44 @@ EOD;
 		$row_num_query = $this->db->query('SELECT FOUND_ROWS() as cnt');
 		$row_num = $row_num_query->row_array();
 		$this->row_num = $row_num['cnt'];
+		if ($rs)
+		{
+			foreach ($rs as $key => $val)
+			{
+				$add_text = '';
+				if ($val['contents_type'] == 3)
+				{
+					$add_text = '（' . strtoupper($val['content_ext']) . ':' . $this->filesize_format($val['content_filesize']) . '）';
+				}
+				$rs[$key]['title'] .= $add_text;
+			}
+		}
 		return $rs;
+	}
+
+	public function filesize_format($string)
+	{
+		if ($string < 1024) {
+			// B
+			return ($string)."B";
+		}
+
+		if ($string < 1024*1024) {
+			// KB
+			return (round($string / 1024 * 100) / 100)."KB";
+		}
+
+		if ($string < 1024*1024*1024) {
+			// MB
+			return (round($string / 1024 / 1024 * 100) / 100)."MB";
+		}
+
+		if ($string < 1024*1024*1024*1024) {
+			// GB
+			return (round($string / 1024 / 1024 / 1024 * 100) / 100)."GB";
+		}
+
+		return ($string);
 	}
 
 	/**
