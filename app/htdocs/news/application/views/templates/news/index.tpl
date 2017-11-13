@@ -8,7 +8,7 @@
 {{include_html file="common_include_01.html"}}
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="お知らせ一覧｜石勝エクステリア「都市緑化技術で新しい造園を創造」">
-	<meta property="og:url" content="http://www.ishikatsu.co.jp/news/">
+	<meta property="og:url" content="https://www.ishikatsu.co.jp/news/">
 	<meta property="og:description" content="お知らせ一覧。石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
 {{include_html file="gtm01.html"}}
 </head>

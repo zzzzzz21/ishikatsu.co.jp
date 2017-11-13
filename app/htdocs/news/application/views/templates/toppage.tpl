@@ -6,7 +6,7 @@
 	<meta name="description" content="石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="石勝エクステリア「都市緑化技術で新しい造園を創造」">
-	<meta property="og:url" content="http://www.ishikatsu.co.jp/">
+	<meta property="og:url" content="https://www.ishikatsu.co.jp/">
 	<meta property="og:description" content="石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
 {{include_html file="common_include.html"}}
 	<script src="share/slick/slick.min.js"></script>
@@ -48,7 +48,7 @@
 					</li>
 {{/foreach}}
 				</ul>
-				<a href="#TODO" class="newsDetail">お知らせ一覧へ</a>
+				<a href="news/" class="newsDetail">お知らせ一覧へ</a>
 			</section>
 			<section class="section section--about">
 				<h2 class="section__title">
