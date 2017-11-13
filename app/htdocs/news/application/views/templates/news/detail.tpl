@@ -10,7 +10,7 @@
 	<meta name="twitter:image" content="https://www.ishikatsu.co.jp/share/images/og_image.png">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="{{$detail.title}} - お知らせ｜石勝エクステリア「都市緑化技術で新しい造園を創造」">
-	<meta property="og:url" content="http://www.ishikatsu.co.jp/news/detail/{{$detail.info_id}}/">
+	<meta property="og:url" content="https://www.ishikatsu.co.jp/news/detail/{{$detail.info_id}}/">
 	<meta property="og:description" content="{{$detail.title}} - お知らせ。石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
 {{include_html file="gtm01.html"}}
 </head>
