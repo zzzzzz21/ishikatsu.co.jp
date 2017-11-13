@@ -2326,7 +2326,7 @@ sup {
 	position: absolute;
 	left: 0;
 	top:0;
-	z-index: 2;
+	z-index: 10000;
 	background: rgba(255,255,255, 0.9);
 	@include sp {
 		position: fixed;
@@ -4667,6 +4667,17 @@ sup {
 				margin-top: 1em;
 			}
 		}
+	}
+}
+/********** 実績紹介ページ *******************/
+.worksContent {
+	@extend .clearfix;
+	padding: 98px 0 0;
+	width: $commonWidthPc;
+	margin: 0 auto;
+	@include sp {
+		width: $width-100;
+		padding: 30px 0 0;
 	}
 }
 .worksBlock {

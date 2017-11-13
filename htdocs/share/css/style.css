@@ -174,7 +174,7 @@ a.colorbox:before {
   line-height: 1;
 }
 
-.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .managementImages:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after, .earthwall-stageWrapper:after, .earthwall-stageImageList:after, .companyBlock:after, .groupBlock.groupBlock--last:after, .groupCompanyTable__td:after, .managementImages__item:after, .tableList:after {
+.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .managementImages:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after, .earthwall-stageWrapper:after, .earthwall-stageImageList:after, .companyBlock:after, .groupBlock.groupBlock--last:after, .groupCompanyTable__td:after, .worksContent:after, .managementImages__item:after, .tableList:after {
   content: "";
   clear: both;
   display: block;
@@ -2592,7 +2592,7 @@ sup {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 10000;
   background: rgba(255, 255, 255, 0.9);
 }
 @media (max-width: 767px) {
@@ -5155,6 +5155,19 @@ sup {
 }
 .philosophySection__list__item + .philosophySection__list__item {
   margin-top: 1em;
+}
+
+/********** 実績紹介ページ *******************/
+.worksContent {
+  padding: 98px 0 0;
+  width: 1080px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .worksContent {
+    width: 100%;
+    padding: 30px 0 0;
+  }
 }
 
 .worksBlock {
