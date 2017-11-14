@@ -1610,6 +1610,13 @@ sup {
 				background-size: 100%;
 			}
 		}
+		&--08 {
+			background: url(#{$img_path}/kasou/works_button08.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/works_button08_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
 	}
 }
 /* 実績紹介ナビ2 */
