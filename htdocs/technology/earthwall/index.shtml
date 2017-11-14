@@ -31,22 +31,16 @@
 			</ul>
 			<section class="subtitleSection">
 				<h2 class="subtitleSection__title subtitleSection__title--technology">
-					多品種植栽の壁面緑化<br class="spDisp">システム「アースウォール」
+					多品種植栽の壁面緑化システム<br class="spDisp">「アースウォール」
 				</h2>
 				<p class="subtitleSection__lead">
-都市における垂直面の緑化は、人工的な景観に潤いを与え、
-<br>
-ヒートアイランド現象の緩和や生物多様性の保全に貢献します。
-<br>
-当社独自の壁面緑化工法である「アースウォール」は、
-<br>
-連続した基盤で曲面施工を可能とした多品種植栽の壁面緑化システムです。
+都市における垂直面の緑化は、人工的な景観に潤いを与え、<br class="pcDisp">ヒートアイランド現象の緩和や生物多様性の保全に貢献します。<br class="pcDisp">当社独自の壁面緑化工法である「アースウォール」は、<br class="pcDisp">連続した基盤で曲面施工を可能とした多品種植栽の壁面緑化システムです。
 				</p>
 			</section>
 		</div>
 		<div class="technologyContent">
 			<section class="earthwallBlock">
-				<h2 class="technologyContent__subtitle">壁面緑化工法<br class="spDisp">（特許取得済み　特許第3651893 号）</h2>
+				<h2 class="technologyContent__subtitle">壁面緑化工法<br class="spDisp">（特許取得済み 特許第3651893号）</h2>
 				<h3 class="middleHeadline--green pcmt90 spmt40">製品の特徴</h3>
 				<dl class="characteristicList">
 					<dt class="characteristicList__dt">軽量であるため施工が容易</dt>
@@ -97,7 +91,7 @@
 				</ul>
 			</section>
 			<div class="catalogButtons">
-				<a href="../files/earthwall.pdf" target="_blank" class="catalogButtons__link catalogButtons__link--pdf">壁面緑化工法 カタログダウンロード</a>
+				<a href="../files/earthwall.pdf" target="_blank" class="catalogButtons__link catalogButtons__link--pdf">アースウォール カタログダウンロード</a>
 				<a href="../download/" class="catalogButtons__link">カタログ一覧</a>
 			</div>
 <!--#include virtual="../../share/include/techList.html" -->

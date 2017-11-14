@@ -33,12 +33,6 @@
 				<table class="companyTable01">
 					<tbody>
 						<tr class="companyTable01__tr">
-							<th class="companyTable01__th">業務センター</th>
-							<td class="companyTable01__td">
-								〒225-0003　神奈川県横浜市青葉区新石川3-34-1
-							</td>
-						</tr>
-						<tr class="companyTable01__tr">
 							<th class="companyTable01__th">企画</th>
 							<td class="companyTable01__td companyTable01__td--multiLine">
 								・コンセプトワーク ・ 開発企画 ・ 利用運営企画 ・ 新技術の開発
@@ -71,7 +65,7 @@
 							<td class="companyTable01__td companyTable01__td--multiLine">
 							・造園工事 ・ 土木工事 ・ TPM移植工事（大径木機械移植工事）
 							<br>
-							・屋上、壁面特殊緑化工事 ・ 施工管理
+							・屋上、壁面特殊緑化工事 ・ 施工監理
 							</td>
 						</tr>
 						<tr class="companyTable01__tr">
@@ -79,9 +73,9 @@
 							<td class="companyTable01__td companyTable01__td--multiLine">
 								・緑地管理（維持育成）
 								<br>
-								・指定管理者制度
+								・指定管理者制度（公園管理・運営）
 								<br>
-								・ゴルフ場管理
+								・ゴルフコース管理
 								<br>
 								・ガーデンパートナーズ（コンサルタント業務）
 							</td>

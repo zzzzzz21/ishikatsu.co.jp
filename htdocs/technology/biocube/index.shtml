@@ -34,15 +34,7 @@
 					省スペースで多面的な緑化を行う<br class="spDisp">「バイオキューブ」
 				</h2>
 				<p class="subtitleSection__lead">
-					人工的な建物に立体的なみどりの空間を創出することで
-					<br class="pcDisp">
-					そこに季節の花や実などの彩りが添えられ、
-					<br class="pcDisp">
-					訪れる生きものたちが都市生活に潤いを与えてくれます。
-					<br class="pcDisp">
-					当社独自の立体型緑化工法である「バイオキューブ」は、
-					<br class="pcDisp">
-					本来みどりとともにあるべき人と地域を優しい景観という絆で結びます。
+					人工的な建物に立体的なみどりの空間を創出することで<br class="pcDisp">そこに季節の花や実などの彩りが添えられ、<br class="pcDisp">訪れる生きものたちが都市生活に潤いを与えてくれます。<br class="pcDisp">当社独自の立体型緑化工法である「バイオキューブ」は、<br class="pcDisp">本来みどりとともにあるべき人と地域を優しい景観という絆で結びます。
 				</p>
 			</section>
 		</div>
@@ -97,7 +89,7 @@
 					</ul>
 				</section>
 				<div class="catalogButtons">
-					<a href="../files/biocube.pdf" target="_blank" class="catalogButtons__link catalogButtons__link--pdf">立体型緑化工法システム カタログダウンロード</a>
+					<a href="../files/biocube.pdf" target="_blank" class="catalogButtons__link catalogButtons__link--pdf">バイオキューブ カタログダウンロード</a>
 					<a href="../download/" class="catalogButtons__link">カタログ一覧</a>
 				</div>
 <!--#include virtual="../../share/include/techList.html" -->

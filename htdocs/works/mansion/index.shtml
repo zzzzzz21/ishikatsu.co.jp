@@ -43,6 +43,7 @@
 					<h3 class="worksBlock__title">
 						ブランズシティ品川勝島
 					</h3>
+					<p class="worksBlock__lead">品川区「みどりの顕彰制度」 緑化賞（2017年）<br>JBIB「いきもの共生事業所認証」（2015年）</p>
 					<div class="archive">
 						<p class="archive__mainVisual">
 							<img src="images/photo_katsushima_main.jpg" class="archive__image" alt="ブランズシティ品川勝島">
@@ -62,11 +63,6 @@
 							</li>
 						</ul>
 						<p class="archive__text">
-							品川区「みどりの顕彰制度」 緑化賞（2017年）
-							<br>
-							JBIB「いきもの共生事業所認証」（2015年）
-							<br>
-							<br>
 							竣工：2015年（植栽工事）
 							<br>
 							所在地：東京都品川区
