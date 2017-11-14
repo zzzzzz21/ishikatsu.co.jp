@@ -28,7 +28,7 @@
 <!--#include virtual="../share/include/header_01.html" -->
 
 		<div class="underMain">
-			<section class="underTop underTop--small underTop--small09">
+			<section class="underTop underTop--small underTop--small12">
 				<div class="underTop__wrapper underTop__wrapper--small">
 					<h1 class="underTop__title">ビジネスパートナーのみなさま</h1>
 					<p class="underTop__subTitle">For Business Partners</p>
@@ -46,7 +46,7 @@
 						<br>
 						本サイトではビジネスパートナー様向けに指定書式のダウンロードサービスをご提供しています。
 						<br>
-						必要なファイルをダウンロードしてお使い下さい。
+						必要なファイルをダウンロードしてお使いください。
 					</p>
 				</section>
 				<section class="downloadBlock">
@@ -617,7 +617,7 @@
 						<br>
 						・色設定は白黒です。
 						<br>
-						・必要事項を記入捺印の上、提出先までお送り下さい。
+						・必要事項を記入捺印の上、提出先までお送りください。
 					</p>
 				</section>
 			</div>

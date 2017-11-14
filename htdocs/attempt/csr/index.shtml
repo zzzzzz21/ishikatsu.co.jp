@@ -17,7 +17,7 @@
 	<div class="wrapper" id="wrapperTop">
 <!--#include virtual="../../share/include/header_02.html" -->
 		<div class="underMain">
-			<section class="underTop underTop--05">
+			<section class="underTop underTop--24">
 				<div class="underTop__wrapper">
 					<h1 class="underTop__title">CSR</h1>
 					<p class="underTop__subTitle">Corporate Social Responsibility</p>
@@ -31,18 +31,10 @@
 				</ul>
 				<section class="subtitleSection">
 					<h2 class="subtitleSection__title">
-						事業活動を通じた環境・社会・地域への貢献
+						事業活動を通じた<br class="spDisp">環境・社会・地域への貢献
 					</h2>
 					<p class="subtitleSection__lead">
-						私たちは、心が豊かになる環境を創造し続けるため、
-						<br class="pcDisp">
-						事業活動を通じて環境・社会・地域に貢献しています。
-						<br class="pcDisp">
-						当社が保持する技術を活用・発展させ、自然や生物多様性の保護・保全、
-						<br class="pcDisp">
-						持続可能な街づくり、地域コミュニティの形成など、
-						<br class="pcDisp">
-						さまざまな今日的な課題に対して具体的な解決策を提示しています。
+						私たちは、心が豊かになる環境を創造し続けるため、<br class="pcDisp">事業活動を通じて環境・社会・地域に貢献しています。<br class="pcDisp">当社が保持する技術を活用・発展させ、自然や生物多様性の保護・保全、<br class="pcDisp">持続可能な街づくり、地域コミュニティの形成など、<br class="pcDisp">さまざまな今日的な課題に対して具体的な解決策を提示しています。
 					</p>
 				</section>
 			</div>
@@ -58,11 +50,9 @@
 							<p class="attemptBlock__detail attemptBlock__detail--center">鳥や昆虫が好む在来種の山野草を植栽した「おもはらの森」中央テーブル部</p>
 						</li>
 					</ul>
-					<p class="attemptBlock__detail">
+					<p class="attemptBlock__detail attemptBlock__detail--black">
 						この建物の設計にあたっては、従来のような建物に植栽を合わせるのではなく、逆転の発想として、植栽が主体の建築設計がされています。クロスする両道路からも屋上に緑があると分かるような外壁形状の工夫が施され、施設に森が乗っているような豊かな景観を演出し、周辺のケヤキ並木とも調和したデザインです。周辺には、明治神宮の森をはじめとするまとまりのある緑地が点在し、それらをつなぐ中継点としてエコロジカル・ネットワークの役割を目指しています。
 					</p>
-				</div>
-				<div class="attemptBlock attemptBlock--02">
 					<p class="attemptBlock__lead">
 						こうしたコンセプトで創出された屋上庭園「おもはらの森」では、施設がオープンした2012年から継続的に生態系のモニタリング調査を実施しています。調査は、専門家が行う「任意観察調査」と、現地に設置したセンサー付きカメラが自動撮影する「定点撮影調査」の2つの調査方法で実施しています。
 					</p>
@@ -76,11 +66,9 @@
 							<p class="attemptBlock__detail attemptBlock__detail--center">センサー付きカメラによるバードバスの「定点撮影調査」</p>
 						</li>
 					</ul>
-					<p class="attemptBlock__detail">
+					<p class="attemptBlock__detail attemptBlock__detail--black">
 						本調査では、周辺の明治神宮の森や代々木公園などから飛来する鳥や昆虫などの生息・飛来状況を調べ、生態系の推移を把握・データ化しています。調査結果を受けて、より生物多様性を高めるために、植栽の維持管理で「蝶のための吸蜜用植物の補植」「シジュウカラが巣材とするミズゴケの枝への設置」「巣箱の清掃や再配置」などを継続して行い、緑化改善を図っています。
 					</p>
-				</div>
-				<div class="attemptBlock attemptBlock--02">
 					<p class="attemptBlock__lead">
 						これらの取り組みの結果、森や林で活動するシジュウカラの雛が巣箱で孵ったり、周辺の明治神宮で確認されている冬鳥のジョウビタキが確認されたりするなど、屋上庭園が森として鳥に認識されつつあります。都市部の屋上庭園でも、エコロジカル・ネットワークに寄与する緑を創出できることが、本調査を実施することで分かりました。
 					</p>
@@ -94,8 +82,8 @@
 							<p class="attemptBlock__detail attemptBlock__detail--center">明治神宮でも確認されるジョウビタキの飛来写真</p>
 						</li>
 					</ul>
-					<p class="attemptBlock__detail">
-						本取り組みは、「世界屋上緑化会議 名古屋大会 2015」「一級造園施工技士の会」で発表したほか、<br>「屋上・壁面・特殊緑化コンクール」の屋上緑化部門で日経新聞社賞を受賞しました。
+					<p class="attemptBlock__detail attemptBlock__detail--black">
+						本取り組みは、「世界屋上緑化会議 名古屋大会 2015」「一級造園施工技士の会」で発表したほか、「屋上・壁面・特殊緑化コンクール」の屋上緑化部門で日経新聞社賞を受賞しました。
 					</p>
 				</div>
 				<section class="attemptBlock attemptBlock--02">
@@ -111,11 +99,9 @@
 							<p class="attemptBlock__detail attemptBlock__detail--center">樹齢300年前後のクロマツが並ぶ松並木の全景写真</p>
 						</li>
 					</ul>
-					<p class="attemptBlock__detail">
+					<p class="attemptBlock__detail attemptBlock__detail--black">
 						この松並木のある群馬県道2号前橋館林線は、主要な幹線道路となっており、交通量が非常に多く、常時渋滞となっていました。この渋滞を緩和するために、前橋市では2車線道路を4車線に拡幅する計画を策定しました。中央分離帯にあるクロマツ66本のうち50本は、この計画範囲にあり、当初の計画では伐採する予定でした。ただ、保全を求める地域住民からの強い要望と、それに応えた前橋市が公約として保全に乗り出すなど、環境保護や文化的景観価値の保全という観点からも注目を集める一大事業となりました。
 					</p>
-				</section>
-				<div class="attemptBlock attemptBlock--02">
 					<p class="attemptBlock__lead">
 						バイパスを拡幅する際には中央分離帯内の松並木を移動し、整理する必要がありました。しかし、作業幅員が狭く、道路占有の必要性やその影響による工期長期化の恐れがありました。また、旧利根川の氾濫原であり、1メートル下の層には玉石、上層には砂質土という土質により、掘り取り時には根鉢が崩れ、活着率が著しく低下する懸念がありました。
 					</p>
@@ -129,13 +115,13 @@
 							<p class="attemptBlock__detail attemptBlock__detail--center">移植されたクロマツが約600ｍにわたって並びます</p>
 						</li>
 					</ul>
-					<p class="attemptBlock__detail">
+					<p class="attemptBlock__detail attemptBlock__detail--black">
 						私たちは、移植前から移植後までの一連の作業に関して「樹木医」に技術監理させ、樹木の活着率を高める工夫として移植1年前の「根回し」を診断結果から提案・実施し、移植時の根系切断による吸水阻害を大幅に減少させました。当社の特許技術である「TPM工法」（専用機械による移植工法）を採用することで、短工期かつ中央分離帯内での作業を可能とし、大型バケットで根鉢を底部より包み込む機械により、根鉢崩壊を防ぎました。これらの工夫により、松並木の保全が可能となりました。
 						<br>
 						<br>
 						開発時には、経済的理由から安易に既存木を伐採処理する場合が多いですが、「保全する」という選択は、郷土の歴史や文化を守ること、生きものである樹木の命、そこに暮らすさまざまな生きものの棲みか、地域住民の心情、社会的貢献を果たした事業主の評価など、目先の経済性よりもはるかに大きな成果をもたらすこととなりました。
 					</p>
-				</div>
+				</section>
 <!--#include virtual="../../share/include/attemptList.html" -->
 			</section>
 		</div>

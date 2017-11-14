@@ -17,17 +17,27 @@
 	<div class="wrapper" id="wrapperTop">
 <!--#include virtual="../../share/include/header_02.html" -->
 		<div class="underMain">
-			<section class="underTop underTop--10">
+			<section class="underTop underTop--22">
 				<div class="underTop__wrapper">
 					<h1 class="underTop__title">教育施設</h1>
 					<p class="underTop__subTitle">Educational Facilities</p>
 				</div>
 			</section>
-			<ul class="breadcrumb">
-				<li class="breadcrumb__item"><a href="../../" class="breadcrumb__link">TOP</a><span class="breadcrumb__arrow">＞</span></li>
-				<li class="breadcrumb__item"><a href="../../works/" class="breadcrumb__link">実績紹介</a><span class="breadcrumb__arrow">＞</span></li>
-				<li class="breadcrumb__item"><a href="../../works/educational-facilities/" class="breadcrumb__link">教育施設</a></li>
-			</ul>
+			<div class="backgroundLead">
+				<ul class="breadcrumb">
+					<li class="breadcrumb__item"><a href="../../" class="breadcrumb__link">TOP</a><span class="breadcrumb__arrow">＞</span></li>
+					<li class="breadcrumb__item"><a href="../../works/" class="breadcrumb__link">実績紹介</a><span class="breadcrumb__arrow">＞</span></li>
+					<li class="breadcrumb__item"><a href="../../works/educational-facilities/" class="breadcrumb__link">教育施設</a></li>
+				</ul>
+				<section class="subtitleSection">
+					<h2 class="subtitleSection__title">
+						教育施設の実績紹介
+					</h2>
+					<p class="subtitleSection__lead">
+						幼稚園から大学まで、四季の彩りを感じ、周辺環境と調和した<br class="pcDisp">学ぶ場に相応しいキャンパスランドスケープを創出します。
+					</p>
+				</section>
+			</div>
 			<div class="worksContent">
 				<section class="worksBlock">
 					<h3 class="worksBlock__title">

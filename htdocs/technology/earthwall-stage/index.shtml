@@ -39,18 +39,18 @@
 			</section>
 		</div>
 			<div class="technologyContent">
-				<div class="earthwall-stageBlock">
-					<div class="earthwall-stageWrapper">
-						<p class="earthwall-stageWrapper__image"><img src="images/photo01.jpg" alt="EARTH WALL STAGE"></p>
-						<p class="earthwall-stageWrapper__text">
-							アースウォール・ステージは屋内のわずかなスペースにも対応でき、底面潅水式で壁面上段から簡単に水やりができます。
-							<br><br>
-							市販の植物を使用することができるので、屋内の景観を美しく保てるよう自由な植物選択が出来ます。植物が生き生きと生育出来るステージなのです。
-						</p>
-					</div>
-				</div>
 				<section class="earthwall-stageBlock">
 					<h2 class="technologyContent__subtitle">アースウォール・ステージ</h2>
+					<div class="earthwall-stageBlock">
+						<div class="earthwall-stageWrapper">
+							<p class="earthwall-stageWrapper__image"><img src="images/photo01.jpg" alt="EARTH WALL STAGE"></p>
+							<p class="earthwall-stageWrapper__text">
+								アースウォール・ステージは屋内のわずかなスペースにも対応でき、底面潅水式で壁面上段から簡単に水やりができます。
+								<br><br>
+								市販の植物を使用することができるので、屋内の景観を美しく保てるよう自由な植物選択が出来ます。植物が生き生きと生育出来るステージなのです。
+							</p>
+						</div>
+					</div>
 					<h3 class="middleHeadline--green pcmt90 spmt40">製品の特徴</h3>
 					<dl class="characteristicList characteristicList--w100">
 						<dt class="characteristicList__dt">簡単施工で仕上がりが綺麗</dt>
@@ -92,7 +92,7 @@
 							</tbody>
 						</table>
 					</div>
-					<p class="smallHeadline pcmt25 spmt20">アースウォール・ステージは、やすらぎの室内空間をみどりとともに演出します。</p>
+					<p class="earthwall-stageText">アースウォール・ステージは、やすらぎの室内空間をみどりとともに演出します。</p>
 				</section>
 				<section class="earthwall-stageBlock">
 					<h3 class="middleHeadline--green pcmt90 spmt40">屋内植物事例</h3>

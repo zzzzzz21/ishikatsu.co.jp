@@ -44,10 +44,9 @@
 					<p class="philosophySection__lead philosophySection__lead--zoen">
 						時代は変わって、その技は造園技術へと進化していきました。石勝エクステリアが伝統と技術の双方を社風に備えているわけは、こうした数世紀にまたがる文化を背景に持っているからにほかなりません。
 					</p>
-					<p class="philosophySection__lead philosophySection__lead--zoen">
+					<p class="philosophySection__lead philosophySection__lead--zoen philosophySection__lead--zoenLast">
 						私たちは、人間を含めたすべての生き物にとって重要な「緑」「水」「土」の自然資源を基盤とした造園こそ、経済と環境が調和する社会へ貢献できる職域であり、職能であると確信しています。「景観10年、風景100年、風土1000年」を造園の進化と考え、まず景観を整え、やがてその景観が風景として土地になじんでいく、そんな時の流れを願って造園事業に取り組んでいます。
 					</p>
-					<p class="philosophySection__illust philosophySection__illust--04"><img src="../../share/images/kasou/philosophy_illust03.png" alt=""></p>
 					<ul class="subBreadcrumb">
 						<li class="subBreadcrumb__item"><a href="../../company/philosophy/" class="subBreadcrumb__link">ブランドメッセージ</a></li>
 						<li class="subBreadcrumb__item"><a href="../../company/philosophy/origin.shtml" class="subBreadcrumb__link subBreadcrumb__link--current">私たちの起源と進化</a></li>
