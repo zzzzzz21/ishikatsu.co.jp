@@ -33,8 +33,8 @@
 			<ul class="carousel">
 				<li class="carousel__item"><img src="share/images/carousel02.png" class="carousel__image" alt="みどりとともに 新しい時代の「造園」を描くリーディングカンパニーへ"></li>
 				<li class="carousel__item"><img src="share/images/carousel03.png" class="carousel__image" alt="技術紹介 石勝エクステリアが培ってきた独自の都市緑化技術"></li>
-				<li class="carousel__item"><img src="share/images/carousel04.png" class="carousel__image" alt="管理運営 お客さまや地域の皆様の心が豊かになる環境創造をめざして"></li>
-				<li class="carousel__item"><img src="share/images/carousel05.png" class="carousel__image" alt="実績紹介 都市開発から住宅、リゾート、公共施設まで、石勝エクステリアの美しい景観づくり"></li>
+				<li class="carousel__item"><a href="management/"><img src="share/images/carousel04.png" class="carousel__image" alt="管理運営 お客さまや地域の皆様の心が豊かになる環境創造をめざして"></a></li>
+				<li class="carousel__item"><a href="works/"><img src="share/images/carousel05.png" class="carousel__image" alt="実績紹介 都市開発から住宅、リゾート、公共施設まで、石勝エクステリアの美しい景観づくり"></a></li>
 			</ul>
 			<section class="section section--news">
 				<h2 class="section__title section__title--news">

@@ -47,11 +47,11 @@
 				</section>
 			</div>
 			<section class="attemptContent">
-				<h3 class="attemptContent__title">パラオパシフィックリゾート／<br class="spDisp">東急不動産</h3>
+				<h3 class="attemptContent__title">パラオ パシフィック リゾート／<br class="spDisp">東急不動産</h3>
 				<section class="attemptBlock">
 					<h4 class="attemptBlock__subTitle">現地調査から景観創造まで</h4>
 					<p class="attemptBlock__lead">
-						パラオパシフィックリゾートはパラオ共和国コロール州アラカベサン島西岸に位置する本格的 ビーチリゾートホテルとして1984 年に開業しました。開発に際しては東急不動産の「環境保護と開発の両立」という基本方針の基、石勝エクステリアは開発前の環境調査から造園工事の施工管理をまでを担当しました。
+						パラオ パシフィック リゾートはパラオ共和国コロール州アラカベサン島西岸に位置する本格的 ビーチリゾートホテルとして1984 年に開業しました。開発に際しては東急不動産の「環境保護と開発の両立」という基本方針の基、石勝エクステリアは開発前の環境調査から造園工事の施工管理をまでを担当しました。
 					</p>
 					<ul class="attemptImages">
 						<li class="attemptImages__item">
@@ -61,7 +61,7 @@
 							<img src="images/photo02.jpg" alt="" class="attemptImages__image">
 						</li>
 					</ul>
-					<p class="attemptBlock__detail">
+					<p class="attemptBlock__detail attemptBlock__detail--black">
 						海外プロジェクトの成功のポイントである事前調査に3年をかけ、計画用地内の既存樹はもちろん、巨岩の位置、形質の調査、造園材料調査ほか多岐にわたりました。<br class="spDisp"><br class="spDisp">現地では植物専門の造 園業社がないため樹木生産が行われておらず、苗圃造成から着手し、造園材料の供給源として苗圃を開設するという初めての取組みとなりました。
 					</p>
 				</section>
@@ -80,7 +80,7 @@
 						<li class="attemptImages__item">
 							<img src="images/photo04.jpg" alt="" class="attemptImages__image">
 							<p class="attemptBlock__detail attemptBlock__detail--center">
-								パラオパシフィックリゾート周辺の植生図
+								パラオ パシフィック リゾート周辺の植生図
 							</p>
 						</li>
 					</ul>

@@ -30,7 +30,7 @@
 			</ul>
 			<div class="downloadContent">
 				<section class="donwloadTop">
-					<h3 class="downloadContent__title">カタログ<br class="spDisp">ダウンロード</h3>
+					<h3 class="downloadContent__title">カタログダウンロード</h3>
 					<p class="downloadContent__lead">
 						アクセスいただき、誠にありがとうございます。
 						<br>
@@ -81,7 +81,7 @@
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th">技術概要</th>
-									<td class="filesTable__td">人工的な空間に潤いを与える垂直面の緑化工法。</td>
+									<td class="filesTable__td">人工的な空間に潤いを与える垂直面の緑化工法</td>
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th">更新日</th>
@@ -105,7 +105,7 @@
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th">技術概要</th>
-									<td class="filesTable__td">簡単施工・管理と生育に適したシステムで潤いのある緑の舞台を創出。</td>
+									<td class="filesTable__td">簡単施工・管理と生育に適したシステムで潤いのある緑の舞台を創出</td>
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th">更新日</th>
@@ -129,7 +129,7 @@
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th">技術概要</th>
-									<td class="filesTable__td">ヒートアイランド現象の緩和や緑のネットワーク形成に寄与。</td>
+									<td class="filesTable__td">ヒートアイランド現象の緩和や緑のネットワーク形成に寄与</td>
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th">更新日</th>
@@ -153,7 +153,7 @@
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th">技術概要</th>
-									<td class="filesTable__td">人工的な建物に立体的な緑の空間を提供。</td>
+									<td class="filesTable__td">人工的な建物に立体的な緑の空間を提供</td>
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th">更新日</th>
@@ -182,7 +182,7 @@
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th">技術概要</th>
-									<td class="filesTable__td">資源を廃棄しない自然環境にやさしいバンカー再生工法。</td>
+									<td class="filesTable__td">資源を廃棄しない自然環境にやさしいバンカー再生工法</td>
 								</tr>
 								<tr class="filesTable__tr">
 									<th class="filesTable__th">更新日</th>
@@ -198,7 +198,7 @@
 					<p class="downloadContent__caution">
 						【注意事項】
 						<br>
-						「<a href="../../terms/" class="linkBlue">ご利用について</a>」をご確認いただき、ご使用下さい。
+						「<a href="../../terms/" class="linkBlue">ご利用について</a>」をご確認いただき、ご使用ください。
 					</p>
 				</section>
 			</div>

@@ -185,6 +185,7 @@ button {
 }
 a.colorbox {
 	position: relative;
+	display: block;
 	&:before {
 		display: inline-block;
 		position: absolute;
@@ -2023,6 +2024,30 @@ sup {
 			background-size: cover;
 		}
 	}
+	&.underTop--22 { /* /works/educational-facilities/ */
+		background: url(#{$img_path}/kasou/main22.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main22_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--23 { /* /attempt/hr/ */
+		background: url(#{$img_path}/kasou/main23.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main23_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
+	&.underTop--24 { /* /attempt/csr/ */
+		background: url(#{$img_path}/kasou/main24.jpg) center top no-repeat;
+		background-size: cover;
+		@include sp {
+			background: url(#{$img_path}/kasou/main24_sp.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
 	&--small { /* /news/以下全て */
 		background: url(#{$img_path}/kasou/main01_small.png) center top no-repeat;
 		height: 325px;
@@ -2111,6 +2136,14 @@ sup {
 			background-size: cover;
 			@include sp {
 				background: url(#{$img_path}/kasou/main11_small_sp.png) center top no-repeat;
+				background-size: cover;
+			}
+		}
+		&.underTop--small12 {
+			background: url(#{$img_path}/kasou/main01.png) center top no-repeat;
+			background-size: cover;
+			@include sp {
+				background: url(#{$img_path}/kasou/main01_sp.png) center top no-repeat;
 				background-size: cover;
 			}
 		}
@@ -3123,8 +3156,9 @@ sup {
 				}
 			}
 			& .newsList__Timetext {
-				@include pc {
-					padding: 2em 0 0;
+				padding: 2em 0 0;
+				@include sp {
+					padding: 0 0 0 3.125%;
 				}
 			}
 			@include sp {
@@ -3167,13 +3201,13 @@ sup {
 					padding: 2em 0;
 				}
 				@include sp {
-					padding-bottom: 30px
+					padding: 0 3.125% 30px;
 				}
 			}
 			& .newsList__link.newsList__link--detail {
 				padding-right: 145px;
 				@include sp {
-					padding-right: 10%;
+					padding:0 13.125% 30px 3.125%;
 				}
 			}
 		}
@@ -3215,30 +3249,33 @@ sup {
 		&.newsList__link--detail {
 			display: inline-block;
 			&::before {
-			content: '';
-			width: 18px;
-			height: 18px;
-			border: 0px;
-			border-top: solid 2px $middleGreen;
-			border-right: solid 2px $middleGreen;
-			-ms-transform: rotate(45deg);
-			-webkit-transform: rotate(45deg);
-			transform: rotate(45deg);
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 20px;
-			margin: auto;
+				content: '';
+				width: 18px;
+				height: 18px;
+				border: 0px;
+				border-top: solid 2px $middleGreen;
+				border-right: solid 2px $middleGreen;
+				-ms-transform: rotate(45deg);
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 20px;
+				margin: auto;
 				.section--news & {
 					content: none;
 				}
 			}
 			@include sp {
 				width: 100%;
+				position: static;
 				&::before {
 					width: 10px;
 					height: 10px;
-					right: -5px;
+					top: 50%;
+					margin-top: -17.5px;
+					right: 3%;
 				}
 			}
 		}
@@ -3253,7 +3290,7 @@ sup {
 			letter-spacing: .05em;
 		}
 		@include sp {
-			width: $commonWidthSp02;
+			width: $width-100;
 			margin: 14px auto 0;
 		}
 	}
@@ -3638,6 +3675,7 @@ sup {
 	}
 	&__image {
 		@extend .photoCol4__image;
+		width: 256px;
 		@include sp {
 			width: 100%;
 		}
@@ -3972,6 +4010,11 @@ sup {
 
 	}
 }
+.earthwall-stageText {
+	@extend .smallHeadline;
+	color: $commonBlack;
+	margin-top: 40px;
+}
 /* バンカー再生工法 */
 .rebunkerBlock {
 	@extend .technologyBlock;
@@ -4209,9 +4252,9 @@ sup {
 	/* 関連会社 */
 	&__groupTitle {
 		@extend .textImage;
-		background: url(#{$img_path}/kasou/group_title01.png) left top no-repeat;
-		width: 705px;
-		height: 96px;
+		background: url(#{$img_path}/kasou/group_title01.png?20171114) left top no-repeat;
+		width: 637px;
+		height: 95px;
 		margin: 75px auto 85px;
 		@include sp {
 			background-size: 100%;
@@ -4223,6 +4266,9 @@ sup {
 	}
 	&__groupSubTitle {
 		@extend .smallHeadline;
+		color: $middleGreen;
+		font-family: $mincho;
+		text-align: left;
 		margin: -10px auto 0;
 		@include sp {
 			width: $commonWidthSp02;
@@ -4504,6 +4550,12 @@ sup {
 			& + .philosophySection__lead--zoen {
 				margin-top: 20px;
 			}
+			&.philosophySection__lead--zoenLast {
+				margin-bottom: 100px;
+				@include sp {
+					margin-bottom: 50px;
+				}
+			}
 		}
 		&--top {
 			text-align: center;
@@ -4531,6 +4583,7 @@ sup {
 	&__enginieeringText {
 		font-size: 20px;
 		margin-top: 15px;
+		text-align: center;
 		@include sp {
 			font-size: 10px;
 			margin-top: 10px;
@@ -4539,12 +4592,13 @@ sup {
 	&__illust {
 		&.philosophySection__illust--01 {
 			margin: 35px auto 140px;
+			text-align: center;
 			@include sp {
 				margin: 20px auto 45px;
 			}
 			& > img {
 				@include sp {
-					width: 97.03125%;
+					width: $commonWidthSp02;
 				}
 			}
 		}
@@ -4759,11 +4813,11 @@ sup {
 		height: 920px;
 		margin: -37px 0 0 45px;
 		@include sp {
-			background: url(#{$img_path}/kasou/management-golf_illust01_sp.png) left top no-repeat;
+			background: url(#{$img_path}/kasou/management-golf_illust01_sp.png?20171114) left top no-repeat;
 			background-size: 100%;
 			width: $commonWidthSp02;
 			height: 0;
-			padding-top: 196.436037%;
+			padding-top: 197.533445%;
 			margin: 0 auto;
 		}
 	}
@@ -4783,7 +4837,6 @@ sup {
 	margin: 130px auto 0;
 	@include sp {
 		width: $commonWidthSp02;
-		border-top: 1px dotted $commonBlack;
 		margin: 45px auto 0;
 		padding: 36px 0 0;
 	}
@@ -4828,7 +4881,6 @@ sup {
 	}
 	&__text {
 		@extend .smallText;
-		@extend .borderBottom--dot;
 		margin: 8px 0 0;
 		padding: 0 0 8px;
 		width: 520px;
@@ -4962,16 +5014,17 @@ sup {
 				font-size: 10px;
 			}
 		}
+		&--black {
+			color: $commonBlack;
+		}
 	}
 	&--02 {
-		@extend .borderTop--dot;
 		padding: 40px 0 75px;
 		@include sp {
 			padding: 40px 0 30px;
 		}
 	}
 	&--03 {
-		@extend .borderTop--dot;
 		padding: 85px 0 0;
 		@include sp {
 			padding: 10px 0 0;
@@ -5099,10 +5152,14 @@ sup {
 	margin: 60px auto 0;
 	@include sp {
 		width: $width-100;
-		margin: 10px auto 0;
+		margin: 40px auto 0;
 	}
 	&__title {
 		@extend .middleHeadline--type03;
+		border-left: 5px solid $middleGray;
+		@include sp {
+			border-left: 3px solid $middleGray;
+		}
 	}
 	&__lead {
 		@extend .middleText;

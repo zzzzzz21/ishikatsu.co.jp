@@ -17,7 +17,7 @@
 	<div class="wrapper" id="wrapperTop">
 <!--#include virtual="../../share/include/header_02.html" -->
 		<div class="underMain">
-			<section class="underTop underTop--05">
+			<section class="underTop underTop--23">
 				<div class="underTop__wrapper">
 					<h1 class="underTop__title">人材育成</h1>
 					<p class="underTop__subTitle">Human Resource Development</p>
@@ -52,7 +52,7 @@
 				<h3 class="attemptContent__title">大型専用機械移植工法<br class="spDisp">「TPM 工法」研修会</h3>
 				<div class="attemptBlock">
 					<p class="attemptBlock__lead">
-						2014年5月27日、当社が特許を所有する大径木機械移植工法「TPM 工法」の研修会を千葉県<br>大網白里市の圃場にて開催しました。
+						2014年5月27日、当社が特許を所有する大径木機械移植工法「TPM 工法」の研修会を千葉県大網白里市の圃場にて開催しました。
 					</p>
 					<ul class="attemptImages">
 						<li class="attemptImages__item">

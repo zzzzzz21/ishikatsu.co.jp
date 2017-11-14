@@ -29,15 +29,21 @@
 				<li class="breadcrumb__item"><a href="../../company/service/" class="breadcrumb__link">事業紹介</a></li>
 			</ul>
 			<section class="companyContent">
+				<h2 class="companyContent__subTitle">トータル・エンジニアリング・システム</h2>
+				<p class="philosophySection__lead">
+					「みどりとともに」を掲げる私たちの都市緑化および造園事業は、シームレスかつバウンダリーレスなサービス提供のシステムによって実現されています。
+				</p>
+				<p class="philosophySection__lead">
+					私たちは、屋内・屋外、生活、都市、余暇と、環境を問わず維持可能な緑化を、企画から調査、計画、設計、施工、管理・運営まで統合した確かな技術力で提供します。この「トータル・エンジニアリング・システム」は、当社独自の特許工法や多様なテクノロジーを統合・活用して提供される、みどりをつなぐ環境ソリューションです。
+				</p>
+				<h3 class="philosophySection__enginieeringTitle">環境技術のイノベーション</h3>
+				<p class="philosophySection__enginieeringText">多様なテクノロジーを活用・統合</p>
+				<p class="philosophySection__illust philosophySection__illust--01"><img src="../../share/images/kasou/philosophy_illust01.png" alt="環境技術のイノベーション"></p>
+			</section>
+			<section class="companyContent">
 				<h2 class="companyContent__subTitle">事業紹介</h2>
 				<table class="companyTable01">
 					<tbody>
-						<tr class="companyTable01__tr">
-							<th class="companyTable01__th">業務センター</th>
-							<td class="companyTable01__td">
-								〒225-0003　神奈川県横浜市青葉区新石川3-34-1
-							</td>
-						</tr>
 						<tr class="companyTable01__tr">
 							<th class="companyTable01__th">企画</th>
 							<td class="companyTable01__td companyTable01__td--multiLine">
@@ -71,7 +77,7 @@
 							<td class="companyTable01__td companyTable01__td--multiLine">
 							・造園工事 ・ 土木工事 ・ TPM移植工事（大径木機械移植工事）
 							<br>
-							・屋上、壁面特殊緑化工事 ・ 施工管理
+							・屋上、壁面特殊緑化工事 ・ 施工監理
 							</td>
 						</tr>
 						<tr class="companyTable01__tr">
@@ -79,9 +85,9 @@
 							<td class="companyTable01__td companyTable01__td--multiLine">
 								・緑地管理（維持育成）
 								<br>
-								・指定管理者制度
+								・指定管理者制度（公園管理・運営）
 								<br>
-								・ゴルフ場管理
+								・ゴルフコース管理
 								<br>
 								・ガーデンパートナーズ（コンサルタント業務）
 							</td>

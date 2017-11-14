@@ -31,24 +31,16 @@
 			</ul>
 			<section class="subtitleSection">
 				<h2 class="subtitleSection__title subtitleSection__title--technology">
-					人工地盤における薄層の<br class="spDisp">緑化工法「ピクニックターフ」
+					人工地盤における薄層の緑化工法<br class="spDisp">「ピクニックターフ」
 				</h2>
 				<p class="subtitleSection__lead">
-					屋上緑化はヒートアイランド現象の緩和や
-					<br class="pcDisp">
-					みどりのネットワーク形成による生物多様性の保全など
-					<br class="pcDisp">
-					都市環境の向上に寄与しています。
-					<br class="pcDisp">
-					当社独自の屋上緑化工法である「ピクニックターフ」は、 
-					<br class="pcDisp">
-					屋上などの人工地盤を緑化し、人と地域を優しい景観という絆で結びます。
+					屋上緑化はヒートアイランド現象の緩和や<br class="pcDisp">みどりのネットワーク形成による生物多様性の保全など<br class="pcDisp">都市環境の向上に寄与しています。<br class="pcDisp">当社独自の屋上緑化工法である「ピクニックターフ」は、 <br class="pcDisp">屋上などの人工地盤を緑化し、人と地域を優しい景観という絆で結びます。
 				</p>
 			</section>
 		</div>
 		<div class="technologyContent">
 			<section class="picnicturfBlock">
-				<h2 class="technologyContent__subtitle">屋上緑化工法<br class="spDisp">（特許取得済み　特許第 3610318 号）</h2>
+				<h2 class="technologyContent__subtitle">屋上緑化工法<br class="spDisp">（特許取得済み 特許第 3610318号）</h2>
 				<h3 class="middleHeadline--green pcmt90 spmt40">製品の特徴</h3>
 				<dl class="characteristicList">
 					<dt class="characteristicList__dt">軽量化を実現</dt>
@@ -102,7 +94,7 @@
 			</section>
 			<div class="catalogButtons">
 				<a href="../files/picnict.pdf" target="_blank" class="catalogButtons__link catalogButtons__link--pdf">
-					屋上緑化工法 カタログダウンロード
+					ピクニックターフ カタログダウンロード
 				</a>
 				<a href="../download/" class="catalogButtons__link">
 					カタログ一覧

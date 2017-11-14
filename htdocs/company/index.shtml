@@ -97,6 +97,10 @@
 								<th class="companyTable01__th">関連会社</th>
 								<td class="companyTable01__td"><a href="../company/group/">株式会社 石勝グリーンメンテナンス</a></td>
 							</tr>
+							<tr class="companyTable01__tr">
+								<th class="companyTable01__th">資本構成</th>
+								<td class="companyTable01__td"><a href="../company/group/">東急不動産99.9%</a></td>
+							</tr>
 						</tbody>
 					</table>
 				</section>

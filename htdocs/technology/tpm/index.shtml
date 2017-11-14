@@ -34,15 +34,7 @@
 					専用機械で伐採せずに<br class="spDisp">大径木移植を行う「TPM工法」
 				</h2>
 				<p class="subtitleSection__lead">
-					樹齢何十年、何百年の大径木は、その地域の人々の暮らしに寄り添いながら、
-					<br>
-					景観の記憶を残し、生物多様性の保全にも大きく寄与しています。
-					<br>
-					伐採せず、地域の資産である樹木を守りながらも緑化プランの作成に
-					<br>
-					自由な幅を生み出す当社独自の大径木移植技術「TPM 工法」は、
-					<br>
-					人間生活と自然の調和・共存を実現するための技術です。
+					樹齢何十年、何百年の大径木は、その地域の人々の暮らしに寄り添いながら、<br class="pcDisp">景観の記憶を残し、生物多様性の保全にも大きく寄与しています。<br class="pcDisp">伐採せず、地域の資産である樹木を守りながらも緑化プランの作成に<br class="pcDisp">自由な幅を生み出す当社独自の大径木移植技術「TPM 工法」は、<br class="pcDisp">人間生活と自然の調和・共存を実現するための技術です。
 				</p>
 			</section>
 		</div>
@@ -130,7 +122,7 @@
 				</li>
 			</ul>
 			<div class="catalogButtons">
-				<a href="../files/tpm.pdf" target="_blank" class="catalogButtons__link catalogButtons__link--pdf">樹木移植工法 カタログダウンロード</a>
+				<a href="../files/tpm.pdf" target="_blank" class="catalogButtons__link catalogButtons__link--pdf">TPM工法 カタログダウンロード</a>
 				<a href="../download/" class="catalogButtons__link">カタログ一覧</a>
 			</div>
 <!--#include virtual="../../share/include/techList.html" -->

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+	<meta charset="utf-8">
+	<title>教育施設 - 施工実績｜石勝エクステリア「都市緑化技術で新しい造園を創造」</title>
+	<meta name="description" content="教育施設 - 施工実績。石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
+	<meta property="fb:app_id" content="353263888467358">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="教育施設 - 施工実績｜石勝エクステリア「都市緑化技術で新しい造園を創造」">
+	<meta property="og:url" content="https://www.ishikatsu.co.jp/works/educational-facilities/">
+	<meta property="og:description" content="教育施設 - 施工実績。石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
+<!--#include virtual="../../share/include/common_include_02.html" -->
+<!--#include virtual="../../share/include/gtm01.html" -->
+</head>
+<body>
+<!--#include virtual="../../share/include/gtm02.html" -->
+	<div class="wrapper" id="wrapperTop">
+<!--#include virtual="../../share/include/header_02.html" -->
+		<div class="underMain">
+			<section class="underTop underTop--22">
+				<div class="underTop__wrapper">
+					<h1 class="underTop__title">教育施設</h1>
+					<p class="underTop__subTitle">Educational Facilities</p>
+				</div>
+			</section>
+			<div class="backgroundLead">
+				<ul class="breadcrumb">
+					<li class="breadcrumb__item"><a href="../../" class="breadcrumb__link">TOP</a><span class="breadcrumb__arrow">＞</span></li>
+					<li class="breadcrumb__item"><a href="../../works/" class="breadcrumb__link">実績紹介</a><span class="breadcrumb__arrow">＞</span></li>
+					<li class="breadcrumb__item"><a href="../../works/educational-facilities/" class="breadcrumb__link">教育施設</a></li>
+				</ul>
+				<section class="subtitleSection">
+					<h2 class="subtitleSection__title">
+						教育施設の実績紹介
+					</h2>
+					<p class="subtitleSection__lead">
+						幼稚園から大学まで、四季の彩りを感じ、周辺環境と調和した<br class="pcDisp">学ぶ場に相応しいキャンパスランドスケープを創出します。
+					</p>
+				</section>
+			</div>
+			<div class="worksContent">
+				<section class="worksBlock">
+					<h3 class="worksBlock__title">
+						東京都市大学世田谷キャンパス<br class="spDisp">　シンボルツリー植栽工事
+					</h3>
+					<div class="archive">
+						<p class="archive__mainVisual">
+							<img src="images/photo_tcu_main.jpg" class="archive__image" alt="東京都市大学世田谷キャンパス　シンボルツリー植栽工事">
+						</p>
+						<ul class="archive__list">
+							<li class="archive__item archive__item--col4">
+								<a href="images/photo_tcu_01-large.jpg" class="colorbox group5"><img src="images/photo_tcu_01.jpg" class="archive__image" alt="東京都市大学世田谷キャンパス　シンボルツリー植栽工事"></a>
+							</li>
+							<li class="archive__item archive__item--col4">
+								<a href="images/photo_tcu_02-large.jpg" class="colorbox group5"><img src="images/photo_tcu_02.jpg" class="archive__image" alt="東京都市大学世田谷キャンパス　シンボルツリー植栽工事"></a>
+							</li>
+							<li class="archive__item archive__item--col4">
+								<a href="images/photo_tcu_03-large.jpg" class="colorbox group5"><img src="images/photo_tcu_03.jpg" class="archive__image" alt="東京都市大学世田谷キャンパス　シンボルツリー植栽工事"></a>
+							</li>
+							<li class="archive__item archive__item--col4">
+								<a href="images/photo_tcu_04-large.jpg" class="colorbox group5"><img src="images/photo_tcu_04.jpg" class="archive__image" alt="東京都市大学世田谷キャンパス　シンボルツリー植栽工事"></a>
+							</li>
+						</ul>
+						<p class="archive__text">
+							竣工：2016年
+							<br>
+							所在地：東京都世田谷区
+							<br>
+							事業主：東京都市大学
+							<br>
+							担当業務：工事（植栽工事）
+						</p>
+					</div>
+				</section>
+				<!--#include virtual="../../share/include/worksList.html" -->
+			</div>
+		</div>
+<!--#include virtual="../../share/include/footer_02.html" -->
+	</div>
+</body>
+</html>

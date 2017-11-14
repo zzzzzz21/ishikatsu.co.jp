@@ -34,21 +34,23 @@
 					屋内にみどりを創出する<br class="spDisp">「アースウォール・ステージ」
 				</h2>
 				<p class="subtitleSection__lead">
-					都市空間のなかでも屋内垂直面の緑化は無機質な景観に
-					<br class="pcDisp">
-					安らぎと癒しを与えてくれる画期的なコンセプトです。
-					<br class="pcDisp">
-					人と地域が自然に融合することを大切に実績を積み重ねてきた
-					<br class="pcDisp">
-					当社の屋内壁面緑化システム「アースウォール・ステージ」は、
-					<br class="pcDisp">
-					「みどりとともに」を屋内でも実践できるシステムです。
+					都市空間のなかでも屋内垂直面の緑化は無機質な景観に<br class="pcDisp">安らぎと癒しを与えてくれる画期的なコンセプトです。<br class="pcDisp">人と地域が自然に融合することを大切に実績を積み重ねてきた<br class="pcDisp">当社の屋内壁面緑化システム「アースウォール・ステージ」は、<br class="pcDisp">「みどりとともに」を屋内でも実践できるシステムです。
 				</p>
 			</section>
 		</div>
 			<div class="technologyContent">
 				<section class="earthwall-stageBlock">
 					<h2 class="technologyContent__subtitle">アースウォール・ステージ</h2>
+					<div class="earthwall-stageBlock">
+						<div class="earthwall-stageWrapper">
+							<p class="earthwall-stageWrapper__image"><img src="images/photo01.jpg" alt="EARTH WALL STAGE"></p>
+							<p class="earthwall-stageWrapper__text">
+								アースウォール・ステージは屋内のわずかなスペースにも対応でき、底面潅水式で壁面上段から簡単に水やりができます。
+								<br><br>
+								市販の植物を使用することができるので、屋内の景観を美しく保てるよう自由な植物選択が出来ます。植物が生き生きと生育出来るステージなのです。
+							</p>
+						</div>
+					</div>
 					<h3 class="middleHeadline--green pcmt90 spmt40">製品の特徴</h3>
 					<dl class="characteristicList characteristicList--w100">
 						<dt class="characteristicList__dt">簡単施工で仕上がりが綺麗</dt>
@@ -62,18 +64,7 @@
 					</dl>
 				</section>
 				<section class="earthwall-stageBlock">
-					<h2 class="technologyContent__subtitle">EARTH WALL STAGE</h2>
-					<div class="earthwall-stageWrapper">
-						<p class="earthwall-stageWrapper__image"><img src="images/photo01.jpg" alt="EARTH WALL STAGE"></p>
-						<p class="earthwall-stageWrapper__text">
-							アースウォール・ステージは屋内のわずかなスペースにも対応でき、底面潅水式で壁面上段から簡単に水やりができます。
-							<br><br>
-							市販の植物を使用することができるので、屋内の景観を美しく保てるよう自由な植物選択が出来ます。植物が生き生きと生育出来るステージなのです。
-						</p>
-					</div>
-				</section>
-				<section class="earthwall-stageBlock">
-					<h3 class="middleHeadline--green pcmt90 spmt40">アースウォール・ステージ基本型</h3>
+					<h3 class="middleHeadline--green pcmt90 spmt40">基本型</h3>
 					<div class="earthwall-stageWrapper earthwall-stageWrapper--type02">
 						<p class="earthwall-stageWrapper__image"><img src="../../share/images/kasou/earthwall-stage_illust01.png" alt="アースウォール・ステージ基本型"></p>
 						<table class="earthwall-stageTable">
@@ -101,11 +92,11 @@
 							</tbody>
 						</table>
 					</div>
+					<p class="earthwall-stageText">アースウォール・ステージは、やすらぎの室内空間をみどりとともに演出します。</p>
 				</section>
 				<section class="earthwall-stageBlock">
-					<h2 class="hugeHeadline pcmt130">アースウォール・ステージはやすらぎの室内空間を<br>みどりとともに演出します。</h2>
-					<h3 class="middleHeadline--green pcmt90 spmt40">屋内植物事例STAGE対応</h3>
-        			<p class="middleText middleText--left pcmt25 spmt20">観葉植物を中心とした色鮮やかな植栽が可能です。</p>
+					<h3 class="middleHeadline--green pcmt90 spmt40">屋内植物事例</h3>
+					<p class="middleText middleText--left pcmt25 spmt20">観葉植物を中心とした色鮮やかな植栽が可能です。</p>
 					<ul class="earthwall-stageImageList">
 						<li class="earthwall-stageImageList__item"><img src="images/photo02.jpg" class="earthwall-stageImageList__image" alt="ポトス"><p class="smallText">ポトス</p></li>
 						<li class="earthwall-stageImageList__item"><img src="images/photo03.jpg" class="earthwall-stageImageList__image" alt="セローム"><p class="smallText">セローム</p></li>
@@ -115,7 +106,7 @@
 					</ul>
 				</section>
 				<section class="earthwall-stageBlock">
-					<h2 class="technologyContent__subtitle">アースウォール施工事例</h2>
+					<h2 class="technologyContent__subtitle">施工事例</h2>
 					<p class="middleText middleText--left pcmt25 spmt20">ユニット式によりさまざまなシーンに合った緑化が可能です。小規模やちょっとしたスペース、インテリアと一体にさせるなど様々なシーンで植物を楽しむことができます。</p>
 					<ul class="exampleList">
 						<li class="exampleList__item--col3">
@@ -137,7 +128,7 @@
 					<p class="earthwall-stageIllust01">ステージの仕組みの画像</p>
 				</section>
 				<div class="catalogButtons">
-					<a href="../files/earthwallstage.pdf" target="_blank" class="catalogButtons__link catalogButtons__link--pdf">屋内壁面緑化システムカタログ<br>ダウンロード</a>
+					<a href="../files/earthwallstage.pdf" target="_blank" class="catalogButtons__link catalogButtons__link--pdf">アースウォール・ステージ<br>ダウンロード</a>
 					<a href="../files/earth_wall_stage_2015.6.22.pdf" target="_blank" class="catalogButtons__link catalogButtons__link--pdf">図面ダウンロード 基本型詳細図<br>（PDF:840KB）</a>
 				</div>
 <!--#include virtual="../../share/include/techList.html" -->
