@@ -5022,6 +5022,9 @@ sup {
 		}
 		&--black {
 			color: $commonBlack;
+			@include pc {
+				font-size: 18px;
+			}
 		}
 	}
 	&--02 {

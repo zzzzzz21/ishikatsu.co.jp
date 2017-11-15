@@ -5575,6 +5575,11 @@ sup {
 .attemptBlock__detail--black {
   color: black;
 }
+@media (min-width: 768px) {
+  .attemptBlock__detail--black {
+    font-size: 18px;
+  }
+}
 .attemptBlock--02 {
   padding: 40px 0 75px;
 }
