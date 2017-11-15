@@ -2414,7 +2414,7 @@ sup {
 		display: none;
 		@include sp {
 			display: block;
-			background: url(#{$img_path}/button-menu_sp.png) left top no-repeat;
+			background: url(#{$img_path}/button-menu_sp.png?20171115) left top no-repeat;
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -2977,13 +2977,12 @@ sup {
 			display: block;
 			position: static;
 			padding: 17px 0;
-			background: $commonBlack;
 		}
 		& > li {
 			display: inline-block;
 			width: 12px;
 			height: 12px;
-			background: rgb(247,255,255);
+			background: rgb(221,220,220);
 			border-radius: 50%;
 			@include sp {
 				width: 8px;
@@ -2996,7 +2995,7 @@ sup {
 				}
 			}
 			&.slick-active {
-				background: rgb(185,191,203);
+				background: $gray;
 			}
 			& > button {
 				font-size: 0;
