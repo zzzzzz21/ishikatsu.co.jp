@@ -177,7 +177,7 @@ a.colorbox:before {
   line-height: 1;
 }
 
-.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .managementImages:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after, .earthwall-stageWrapper:after, .earthwall-stageImageList:after, .companyBlock:after, .groupBlock.groupBlock--last:after, .groupCompanyTable__td:after, .worksContent:after, .managementImages__item:after, .tableList:after {
+.clearfix:after, .doorNav:after, .aboutList:after, .photoCol2:after, .exampleList:after, .managementImages:after, .attemptImages:after, .photoCol3:after, .photoCol4:after, .processList:after, .archive__list:after, .techList:after, .companyList:after, .worksList:after, .managementList:after, .attemptList:after, .recruitList:after, .techNav:after, .companyNav:after, .worksNav:after, .managementNav:after, .attemptNav:after, .recruitNav:after, .megaDrop__menu:after, .footerNav__list:after, .copyRight__wrapper:after, .pagerButton:after, .technologyContent:after, .earthwallImageList:after, .earthwall-stageWrapper:after, .earthwall-stageImageList:after, .companyBlock:after, .groupBlock.groupBlock--last:after, .groupCompanyTable__td:after, .worksContent:after, .managementImages__item:after, .tableList:after {
   content: "";
   clear: both;
   display: block;
@@ -4366,6 +4366,53 @@ sup {
   }
 }
 
+.composeList {
+  margin: 25px 0 0;
+  font-size: 0;
+  width: 700px;
+}
+@media (max-width: 767px) {
+  .composeList {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+}
+@media (min-width: 768px) {
+  .composeList__item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .composeList__item:nth-of-type(n+5) {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .composeList__item {
+    display: inline-block;
+    width: 48%;
+  }
+  .composeList__item:nth-of-type(even) {
+    margin-left: 4%;
+  }
+  .composeList__item:nth-of-type(n+3) {
+    margin-top: 10px;
+  }
+}
+.composeList__image {
+  width: 155px;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .composeList__image {
+    width: 100%;
+  }
+}
+.composeList .smallText, .composeList .doorNav__subTitle, .composeList .doorNav__text, .composeList .archive__text, .composeList .serviceList__smallText, .composeList .managementCaption__text, .composeList .managementImages__text {
+  text-align: center;
+}
+
 /* ガーデンパートナーズ */
 .gardenpartnersList {
   list-style-type: decimal;
@@ -4399,6 +4446,66 @@ sup {
 /* ピクニックターフ */
 /* バイオキューブターフ */
 /* アースウォール */
+.earthwallImageList {
+  font-size: 0;
+  margin: 25px 0 0;
+  width: 790px;
+}
+@media (max-width: 767px) {
+  .earthwallImageList {
+    margin: 20px auto 0;
+    width: 100%;
+  }
+}
+.earthwallImageList__item {
+  display: inline-block;
+  float: left;
+}
+@media (max-width: 767px) {
+  .earthwallImageList__item {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    float: none;
+  }
+}
+@media (min-width: 768px) {
+  .earthwallImageList__item:nth-of-type(n+2) {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .earthwallImageList__item:nth-of-type(n+2) {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .earthwallImageList__item:nth-of-type(n+4) {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .earthwallImageList__item:nth-of-type(4) {
+    margin-left: 0;
+  }
+}
+.earthwallImageList__image {
+  width: 250px;
+}
+@media (min-width: 768px) {
+  .earthwallImageList__image {
+    height: 166px;
+  }
+}
+@media (max-width: 767px) {
+  .earthwallImageList__image {
+    width: 100%;
+  }
+}
+.earthwallImageList .smallText, .earthwallImageList .doorNav__subTitle, .earthwallImageList .doorNav__text, .earthwallImageList .archive__text, .earthwallImageList .serviceList__smallText, .earthwallImageList .managementCaption__text, .earthwallImageList .managementImages__text {
+  text-align: center;
+}
+
 /* アースウォールステージ */
 @media (min-width: 768px) {
   .earthwall-stageBlock + .earthwall-stageBlock {

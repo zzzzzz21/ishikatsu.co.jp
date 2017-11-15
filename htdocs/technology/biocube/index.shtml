@@ -56,11 +56,26 @@
 				</section>
 				<section class="biocubeBlock">
 					<h3 class="middleHeadline--green pcmt90 spmt40">製品の構成資材</h3>
-					<p class="imageWrapper"><img src="images/image01.jpg" alt="製品の構成資材"></p>
+					<ul class="composeList">
+						<li class="composeList__item"><img src="../images/compose09.jpg" class="composeList__image" alt="赤玉土"><p class="smallText">赤玉土</p></li>
+						<li class="composeList__item"><img src="../images/compose11.jpg" class="composeList__image" alt="不織布"><p class="smallText">不織布</p></li>
+						<li class="composeList__item"><img src="../images/compose08.jpg" class="composeList__image" alt="水苔"><p class="smallText">水苔</p></li>
+						<li class="composeList__item"><img src="../images/compose06.jpg" class="composeList__image" alt="芯材（人口軽量土壌）"><p class="smallText">芯材（人口軽量土壌）</p></li>
+						<li class="composeList__item"><img src="../images/compose07.jpg" class="composeList__image" alt="もみ殻くん炭"><p class="smallText">もみ殻くん炭</p></li>
+						<li class="composeList__item"><img src="../images/compose10.jpg" class="composeList__image" alt="撥水材（バーライト）"><p class="smallText">撥水材（バーライト）</p></li>
+						<li class="composeList__item"><img src="../images/compose01.jpg" class="composeList__image" alt="樹脂メッシュシート"><p class="smallText">樹脂メッシュシート</p></li>
+					</ul>
 				</section>
 				<section class="biocubeBlock">
 					<h3 class="middleHeadline--green pcmt90 spmt40">植栽事例</h3>
-					<p class="imageWrapper"><img src="images/image02.jpg" alt="植栽事例"></p>
+					<ul class="earthwallImageList">
+						<li class="earthwallImageList__item"><img src="images/photo07.jpg" class="earthwallImageList__image" alt="中木（イロハモミジ）"><p class="smallText">中木（イロハモミジ）</p></li>
+						<li class="earthwallImageList__item"><img src="images/photo08.jpg" class="earthwallImageList__image" alt="低木（ヒュウガミズキ）"><p class="smallText">低木（ヒュウガミズキ）</p></li>
+						<li class="earthwallImageList__item"><img src="images/photo09.jpg" class="earthwallImageList__image" alt="地被（オタフクナンテン）"><p class="smallText">地被（オタフクナンテン）</p></li>
+						<li class="earthwallImageList__item"><img src="images/photo10.jpg" class="earthwallImageList__image" alt="つる植物（ハツユキカズラ）"><p class="smallText">つる植物（ハツユキカズラ）</p></li>
+						<li class="earthwallImageList__item"><img src="images/photo11.jpg" class="earthwallImageList__image" alt="宿根草（ヤブラン）"><p class="smallText">宿根草（ヤブラン）</p></li>
+						<li class="earthwallImageList__item"><img src="images/photo12.jpg" class="earthwallImageList__image" alt="シダ類（フイリイノモトソウ）"><p class="smallText">シダ類（フイリイノモトソウ）</p></li>
+					</ul>
 				</section>
 				<section class="earthwallBlock">
 					<h3 class="middleHeadline--green pcmt90 spmt40">潅水（水やり）について</h3>

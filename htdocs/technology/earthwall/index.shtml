@@ -58,11 +58,23 @@
 			</section>
 			<section class="earthwallBlock">
 				<h3 class="middleHeadline--green pcmt90 spmt40">製品の構成資材</h3>
-				<p class="imageWrapper"><img src="images/earthwall_image01.jpg" alt="製品の構成資材"></p>
+				<ul class="composeList">
+					<li class="composeList__item"><img src="../images/compose01.jpg" class="composeList__image" alt="樹脂メッシュシート"><p class="smallText">樹脂メッシュシート</p></li>
+					<li class="composeList__item"><img src="../images/compose12.jpg" class="composeList__image" alt="樹脂多孔管"><p class="smallText">樹脂多孔管</p></li>
+					<li class="composeList__item"><img src="../images/compose08.jpg" class="composeList__image" alt="水苔"><p class="smallText">水苔</p></li>
+					<li class="composeList__item"><img src="../images/compose07.jpg" class="composeList__image" alt="もみ殻くん炭"><p class="smallText">もみ殻くん炭</p></li>
+				</ul>
 			</section>
 			<section class="earthwallBlock">
 				<h3 class="middleHeadline--green pcmt90 spmt40">植栽事例</h3>
-				<p class="imageWrapper"><img src="images/earthwall_image02.jpg" alt="植栽事例"></p>
+				<ul class="earthwallImageList">
+					<li class="earthwallImageList__item"><img src="images/earthwall_image12.jpg" class="earthwallImageList__image" alt="木本類（フイリヤツデ）"><p class="smallText">木本類（フイリヤツデ）</p></li>
+					<li class="earthwallImageList__item"><img src="images/earthwall_image11.jpg" class="earthwallImageList__image" alt="草本類（セイヨウイワナンテン）"><p class="smallText">草本類（セイヨウイワナンテン）</p></li>
+					<li class="earthwallImageList__item"><img src="images/earthwall_image10.jpg" class="earthwallImageList__image" alt="宿根草（ヒマラヤユキノシタ）"><p class="smallText">宿根草（ヒマラヤユキノシタ）</p></li>
+					<li class="earthwallImageList__item"><img src="images/earthwall_image09.jpg" class="earthwallImageList__image" alt="宿根草（ヤブラン）"><p class="smallText">宿根草（ヤブラン）</p></li>
+					<li class="earthwallImageList__item"><img src="images/earthwall_image08.jpg" class="earthwallImageList__image" alt="つる植物（ヘデラヘリックス）"><p class="smallText">つる植物（ヘデラヘリックス）</p></li>
+					<li class="earthwallImageList__item"><img src="images/earthwall_image07.jpg" class="earthwallImageList__image" alt="シダ類（フイリイノモトソウ）"><p class="smallText">シダ類（フイリイノモトソウ）</p></li>
+				</ul>
 			</section>
 			<section class="earthwallBlock">
 				<h3 class="middleHeadline--green pcmt90 spmt40">潅水（水やり）について</h3>

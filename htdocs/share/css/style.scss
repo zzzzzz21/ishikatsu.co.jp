@@ -3857,7 +3857,45 @@ sup {
 		padding: 34px 0 84px;
 	}
 }
-
+.composeList {
+	margin: 25px 0 0;
+	font-size: 0;
+	width: 700px;
+	@include sp {
+		width: 100%;
+		margin: 20px auto 0;
+	}
+	&__item {
+		@include pc {
+			display: inline-block;
+			margin-right: 15px;
+			&:nth-of-type(n+5) {
+				margin-top: 15px;
+			}
+		}
+		@include sp {
+			display: inline-block;
+			width: 48%;
+			&:nth-of-type(even) {
+				margin-left: 4%;
+			}
+			&:nth-of-type(n+3) {
+				margin-top: 10px;
+			}
+		}
+	}
+	&__image {
+		width: 155px;
+		border: 1px solid $commonBlack;
+		box-sizing: border-box;
+		@include sp {
+			width: 100%;
+		}
+	}
+	& .smallText {
+		text-align: center;
+	}
+}
 /* ガーデンパートナーズ */
 .gardenpartnersBlock {
 	@extend .technologyBlock;
@@ -3900,6 +3938,56 @@ sup {
 /* アースウォール */
 .earthwallBlock {
 	@extend .technologyBlock;
+}
+.earthwallImageList {
+	@extend .clearfix;
+	font-size: 0;
+	margin: 25px 0 0;
+	width: 790px;
+	@include sp {
+		margin: 20px auto 0;
+		width: $width-100;
+	}
+	&__item {
+		display: inline-block;
+		float: left;
+		@include sp {
+			display: block;
+			margin: 0 auto;
+			width: $width-100;
+			float: none;
+		}
+		&:nth-of-type(n+2) {
+			@include pc {
+				margin-left: 20px;
+			}
+			@include sp {
+				margin-top: 20px;
+			}
+		}
+		&:nth-of-type(n+4) {
+			@include pc {
+				margin-top: 20px;
+			}
+		}
+		&:nth-of-type(4) {
+			@include pc {
+				margin-left: 0;
+			}
+		}
+	}
+	&__image {
+		width: 250px;
+		@include pc {
+			height: 166px;
+		}
+		@include sp {
+			width: 100%;
+		}
+	}
+	& .smallText {
+		text-align: center;
+	}
 }
 /* アースウォールステージ */
 .earthwall-stageBlock {
