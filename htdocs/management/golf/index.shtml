@@ -19,7 +19,7 @@
 		<div class="underMain">
 			<section class="underTop underTop--04">
 				<div class="underTop__wrapper">
-					<h1 class="underTop__title">ゴルフ場管理事業</h1>
+					<h1 class="underTop__title">ゴルフ場管理</h1>
 					<p class="underTop__subTitle">Golf Course Management</p>
 				</div>
 			</section>
@@ -27,7 +27,7 @@
 				<ul class="breadcrumb">
 					<li class="breadcrumb__item"><a href="../../" class="breadcrumb__link">TOP</a><span class="breadcrumb__arrow">＞</span></li>
 					<li class="breadcrumb__item"><a href="../../management/" class="breadcrumb__link">管理運営</a><span class="breadcrumb__arrow">＞</span></li>
-					<li class="breadcrumb__item"><a href="../../management/golf/" class="breadcrumb__link">ゴルフ場管理事業</a></li>
+					<li class="breadcrumb__item"><a href="../../management/golf/" class="breadcrumb__link">ゴルフ場管理</a></li>
 				</ul>
 				<section class="subtitleSection">
 					<h2 class="subtitleSection__title">
