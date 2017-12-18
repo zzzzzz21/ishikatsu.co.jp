@@ -5161,6 +5161,39 @@ sup {
 		}
 	}
 }
+.recruitButton {
+	color: #FFF;
+	font-size: 0;
+	margin: 0 auto 20px;
+	&__item {
+		display: inline-block;
+		@extend .middleText;
+		font-family: $mincho;
+		@include pc {
+			width: 450px;
+		}
+		@include sp {
+			display: block;
+			font-size: 14px;
+		}
+		&:nth-of-type(2) {
+			margin: 0 0 0 40px;
+			@include sp {
+				margin: 20px auto 0;
+			}
+		}
+	}
+	&__link {
+		text-align: center;
+		background: $gray;
+		padding: .8em .2em;
+		color: $commonWhite;
+		display: block;
+		@include sp {
+			padding: 1.28em 2em;
+		}
+	}
+}
 .recruitTable {
 	font-size: 17px;
 	line-height: 1.8;

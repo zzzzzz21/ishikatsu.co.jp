@@ -29,7 +29,11 @@
 				<li class="breadcrumb__item"><a href="../recruit/" class="breadcrumb__link">募集要項</a></li>
 			</ul>
 			<div class="recruitContent">
-				<section class="recruitBlock">
+				<ul class="recruitButton">
+					<li class="recruitButton__item"><a href="#newgraduateBlock" class="recruitButton__link">新卒者募集</a></li>
+					<li class="recruitButton__item"><a href="#careerBlock" class="recruitButton__link">正社員募集（キャリア）</a></li>
+				</ul>
+				<section class="recruitBlock" id="newgraduateBlock">
 					<h3 class="recruitContent__title">2018年4月採用 <br class="spDisp">新卒者募集要項</h3>
 					<p class="recruitContent__caution">※終了しました。</p>
 					<table class="recruitTable">
@@ -229,7 +233,7 @@
 						</tr>
 					</table>
 				</section>
-				<section class="recruitBlock">
+				<section class="recruitBlock" id="careerBlock">
 					<h3 class="recruitContent__title">正社員募集要項<br class="spDisp">（キャリア）</h3>
 					<table class="recruitTable">
 						<tr class="recruitTable__tr">

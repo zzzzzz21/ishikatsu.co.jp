@@ -19,7 +19,11 @@ $(document).ready(function(){
 	$('a[href^="#"]').click(function(){
 		var href= $(this).attr("href");
 		var target = $(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top;
+        if (isSP == false) {
+	    	var position = target.offset().top;
+        } else {
+	    	var position = target.offset().top-45;
+        }
 		$("html, body").animate({scrollTop:position}, 250, "swing");
 		return false;
 	});
@@ -134,8 +138,8 @@ var address_03 = { // ƒ}[ƒJ[‚ğ—§‚Ä‚éˆÜ“xEŒy“x
     '18': {lat: 35.605034, lng: 139.551051}, // _“ŞìŒ§ìès‘½–€‹æeŒ`7-1-18
     '19': {lat: 34.955156, lng: 135.51443}, // ‹“s•{‹T‰ªs¼•Ê‰@’¬—MŒ´“Œ[’J9”Ô’n
     '20': {lat: 34.870678, lng: 135.131755}, // •ºŒÉŒ§O–Øs‹gì’¬•Ä“cš•½ŠÔ701
-    '21': {lat: 34.8706822, lng: 135.1295667}, // •ºŒÉŒ§O–ØsŒû‹gì’¬‘PË›š–{’J72-5
-    '22': {lat: 34.769309, lng:  135.064713}, // •ºŒÉŒ§O–Øsuõ’¬O’Ã“c1525-8
+    '21': {lat: 34.847192, lng: 135.085496}, // •ºŒÉŒ§O–ØsŒû‹gì’¬‘PË›72-5
+    '22': {lat: 34.769309, lng: 135.064713}, // •ºŒÉŒ§O–Øsuõ’¬O’Ã“c1525-8
     '23': {lat: 34.930634, lng: 135.004931}, // •ºŒÉŒ§‰Á“ŒsãO‘š’†R1132-3
     '24': {lat: 34.840428, lng: 134.900957}, // •ºŒÉŒ§¬–ìs—ˆZ’¬1225
     '25': {lat: 24.726874, lng: 125.281882} // ‰«“êŒ§‹{ŒÃ“‡s‰º’nš—^“ß”e1591-1
