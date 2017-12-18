@@ -16,3 +16,4 @@ app/htdocs/news/application/views/templates_c/*.php
 /htdocs/index.php
 /htdocs/news/*.htaccess
 /htdocs/news/files
+/htdocs/list.txt

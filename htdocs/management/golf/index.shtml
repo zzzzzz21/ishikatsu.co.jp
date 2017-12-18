@@ -2,13 +2,13 @@
 <html lang="ja">
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<meta charset="utf-8">
-	<title>ゴルフ場管理 - 管理運営｜石勝エクステリア「都市緑化技術で新しい造園を創造」</title>
-	<meta name="description" content="ゴルフ場管理 - 管理運営。石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
+	<title>ゴルフコース管理 - 管理運営｜石勝エクステリア「都市緑化技術で新しい造園を創造」</title>
+	<meta name="description" content="ゴルフコース管理 - 管理運営。石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
 	<meta property="fb:app_id" content="353263888467358">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="ゴルフ場管理 - 管理運営｜石勝エクステリア「都市緑化技術で新しい造園を創造」">
+	<meta property="og:title" content="ゴルフコース管理 - 管理運営｜石勝エクステリア「都市緑化技術で新しい造園を創造」">
 	<meta property="og:url" content="https://www.ishikatsu.co.jp/management/golf/">
-	<meta property="og:description" content="ゴルフ場管理 - 管理運営。石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
+	<meta property="og:description" content="ゴルフコース管理 - 管理運営。石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
 <!--#include virtual="../../share/include/common_include_02.html" -->
 <!--#include virtual="../../share/include/gtm01.html" -->
 </head>
@@ -19,7 +19,7 @@
 		<div class="underMain">
 			<section class="underTop underTop--04">
 				<div class="underTop__wrapper">
-					<h1 class="underTop__title">ゴルフ場管理</h1>
+					<h1 class="underTop__title">ゴルフコース管理</h1>
 					<p class="underTop__subTitle">Golf Course Management</p>
 				</div>
 			</section>
@@ -27,7 +27,7 @@
 				<ul class="breadcrumb">
 					<li class="breadcrumb__item"><a href="../../" class="breadcrumb__link">TOP</a><span class="breadcrumb__arrow">＞</span></li>
 					<li class="breadcrumb__item"><a href="../../management/" class="breadcrumb__link">管理運営</a><span class="breadcrumb__arrow">＞</span></li>
-					<li class="breadcrumb__item"><a href="../../management/golf/" class="breadcrumb__link">ゴルフ場管理</a></li>
+					<li class="breadcrumb__item"><a href="../../management/golf/" class="breadcrumb__link">ゴルフコース管理</a></li>
 				</ul>
 				<section class="subtitleSection">
 					<h2 class="subtitleSection__title">
