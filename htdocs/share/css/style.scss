@@ -5164,11 +5164,11 @@ sup {
 .recruitButton {
 	color: #FFF;
 	font-size: 0;
-	margin: 0 auto 40px;
+	margin: 0 auto 80px;
+	text-align: center;
 	&__item {
 		display: inline-block;
 		@extend .middleText;
-		font-family: $mincho;
 		@include pc {
 			width: 450px;
 		}
@@ -5185,7 +5185,7 @@ sup {
 	}
 	&__link {
 		text-align: center;
-		background: $gray;
+		background: $middleGreen;
 		padding: .8em .2em;
 		color: $commonWhite;
 		display: block;
