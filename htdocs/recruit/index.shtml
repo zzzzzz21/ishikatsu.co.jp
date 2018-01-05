@@ -238,10 +238,10 @@
 					<table class="recruitTable">
 						<tr class="recruitTable__tr">
 							<th class="recruitTable__th">採用職種</th>
-							<td class="recruitTable__td">技術総合職</td>
+							<td class="recruitTable__td">技術総合職　他</td>
 						</tr>
 						<tr class="recruitTable__tr">
-							<th class="recruitTable__th">求める人材</th>
+							<th class="recruitTable__th">求める人材　１</th>
 							<td class="recruitTable__td">
 								造園建設、緑地管理に特化した環境創造事業を進める中、首都圏を中心に緑化の需要が増大しています。
 								<br>
@@ -250,7 +250,7 @@
 								尚、業務拡充に伴い造園・外構設計技術者の方を特に募集しています。
 							</td>
 						</tr>
-						<tr class="recruitTable__tr">
+						<tr class="recruitTable__tr no-border">
 							<th class="recruitTable__th">主な業務内容</th>
 							<td class="recruitTable__td">
 								・営業（造園事業の提案営業）
@@ -266,28 +266,40 @@
 								・ゴルフコース管理業務
 							</td>
 						</tr>
-						<tr class="recruitTable__tr">
+						<tr class="recruitTable__tr no-border">
 							<th class="recruitTable__th">雇用形態</th>
-							<td class="recruitTable__td">正社員</td>
+							<td class="recruitTable__td">正社員、契約社員</td>
+						</tr>
+						<tr class="recruitTable__tr">
+							<th class="recruitTable__th">求める人材　２</th>
+							<td class="recruitTable__td">
+								公園管理運営に知見のある方 、公園管理運営業務マネージメント業務が出来る方を募集
+							</td>
+						</tr>
+						<tr class="recruitTable__tr no-border">
+							<th class="recruitTable__th">主な業務内容</th>
+							<td class="recruitTable__td">
+								公園管理運営業務・マネージメント業務
+							</td>
+						</tr>
+						<tr class="recruitTable__tr no-border">
+							<th class="recruitTable__th">雇用形態</th>
+							<td class="recruitTable__td">正社員、契約社員</td>
+						</tr>
+						<tr class="recruitTable__tr no-border">
+							<th class="recruitTable__th">応募資格</th>
+							<td class="recruitTable__td">技術士、一級造園施工管理技士、公園管理運営士等資格を有する方</td>
 						</tr>
 						<tr class="recruitTable__tr">
 							<th class="recruitTable__th">勤務地</th>
 							<td class="recruitTable__td">本社、横浜業務センター、当社支店・営業所（仙台・千葉・静岡・大阪・福岡・沖縄）</td>
 						</tr>
-						<tr class="recruitTable__tr">
+						<tr class="recruitTable__tr no-border">
 							<th class="recruitTable__th">勤務時間</th>
 							<td class="recruitTable__td">
 								標準勤務時間帯　9:00～17:30　（昼休み12:00～13:00）
 								<br>
 								（担当業務よって勤務時間帯を変更して運用する場合があります）
-							</td>
-						</tr>
-						<tr class="recruitTable__tr">
-							<th class="recruitTable__th">勤務時間</th>
-							<td class="recruitTable__td">
-								応談（職務経歴、取得資格を考慮のうえ、当社給与規定に基づき基本給与を決定します）
-								<br>
-								給与例：30歳（施工監理技術職）365,000円/月（職務手当含む）
 							</td>
 						</tr>
 						<tr class="recruitTable__tr">
@@ -329,13 +341,13 @@
 							</td>
 						</tr>
 						<tr class="recruitTable__tr">
-							<th class="recruitTable__th">応募資格</th>
+							<th class="recruitTable__th">応募資格<br>（求める人材１の方）</th>
 							<td class="recruitTable__td">
 								<ul class="recruitTable__list">
 									<li class="recruitTable__item">・高等学校卒業又は同等以上の認定を有すること</li>
 									<li class="recruitTable__item">・「主な業務内容」の職務経歴を有すること</li>
 									<li class="recruitTable__item">・普通自動車運転免許を有すること</li>
-									<li class="recruitTable__item">・一・二級造園（土木）施工監理技士資格を有するまたは、その資格取得を目指している方<br>（造園建設業に関する技術系資格を有する場合はご相談ください）</li>
+									<li class="recruitTable__item">・一・二級造園（土木）施工監理技士資格を有するまたは、その資格取得を目指している方歓迎<br>（造園建設業に関する技術系資格を有する場合はご相談ください）</li>
 								</ul>
 							</td>
 						</tr>
@@ -363,6 +375,8 @@
 								株式会社石勝エクステリア　経営管理本部　総務・人事部　採用担当
 								<br>
 								TEL:045-912-7572（平日9:30～17:00）
+								<br>
+								E-MAIL : <a href="mailto:saiyou-s@ishikatsu.co.jp" class="linkBlue">saiyou-s@ishikatsu.co.jp</a>
 							</td>
 						</tr>
 					</table>

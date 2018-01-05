@@ -4152,10 +4152,10 @@ sup {
 .recruitButton {
   color: #FFF;
   font-size: 0;
-  margin: 0 auto 40px; }
+  margin: 0 auto 80px;
+  text-align: center; }
   .recruitButton__item {
-    display: inline-block;
-    font-family: "Noto Serif Japanese"; }
+    display: inline-block; }
     @media (min-width: 768px) {
       .recruitButton__item {
         width: 450px; } }
@@ -4170,7 +4170,7 @@ sup {
           margin: 20px auto 0; } }
   .recruitButton__link {
     text-align: center;
-    background: #999999;
+    background: #018643;
     padding: .8em .2em;
     color: white;
     display: block; }
@@ -4191,8 +4191,11 @@ sup {
       line-height: 1.6;
       margin: 12px auto 0; } }
   .recruitTable__tr {
-    border-top: 1px solid #666666;
-    border-bottom: 1px solid #666666; }
+    border-top: 1px solid #666666; }
+    .recruitTable__tr:last-child {
+      border-bottom: 1px solid #666666; }
+    .recruitTable__tr.no-border {
+      border: none; }
   .recruitTable__th, .recruitTable__smallTh {
     font-weight: normal;
     padding: 18px 0 11px;
