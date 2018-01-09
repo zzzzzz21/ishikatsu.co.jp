@@ -31,7 +31,7 @@
 			<div class="recruitContent">
 				<ul class="recruitButton">
 					<li class="recruitButton__item"><a href="#newgraduateBlock" class="recruitButton__link">新卒者募集</a></li>
-					<li class="recruitButton__item"><a href="#careerBlock" class="recruitButton__link">正社員募集（キャリア）</a></li>
+					<li class="recruitButton__item"><a href="#careerBlock" class="recruitButton__link">社員募集（キャリア）</a></li>
 				</ul>
 				<section class="recruitBlock" id="newgraduateBlock">
 					<h3 class="recruitContent__title">2018年4月採用 <br class="spDisp">新卒者募集要項</h3>
@@ -127,7 +127,7 @@
 							</td>
 						</tr>
 						<tr class="recruitTable__tr">
-							<th class="recruitTable__th">休日・休暇</th>
+							<th class="recruitTable__th">教育制度</th>
 							<td class="recruitTable__td">
 								<ul class="recruitTable__list">
 									<li class="recruitTable__item">《研修制度》<br>新入社員研修・東急不動産ホールディングスグループ合同研修</li>
@@ -234,7 +234,7 @@
 					</table>
 				</section>
 				<section class="recruitBlock" id="careerBlock">
-					<h3 class="recruitContent__title">正社員募集要項<br class="spDisp">（キャリア）</h3>
+					<h3 class="recruitContent__title">社員募集要項<br class="spDisp">（キャリア）</h3>
 					<table class="recruitTable">
 						<tr class="recruitTable__tr">
 							<th class="recruitTable__th">採用職種</th>
@@ -273,7 +273,7 @@
 						<tr class="recruitTable__tr">
 							<th class="recruitTable__th">求める人材　２</th>
 							<td class="recruitTable__td">
-								公園管理運営に知見のある方 、公園管理運営業務マネージメント業務が出来る方を募集
+								公園管理運営に知見のある方 、公園管理運営業務・マネージメント業務が出来る方を募集
 							</td>
 						</tr>
 						<tr class="recruitTable__tr no-border">
@@ -299,8 +299,13 @@
 							<td class="recruitTable__td">
 								標準勤務時間帯　9:00～17:30　（昼休み12:00～13:00）
 								<br>
-								（担当業務よって勤務時間帯を変更して運用する場合があります）
+								（担当業務によって勤務時間帯を変更して運用する場合があります）
 							</td>
+						</tr>
+						<tr class="recruitTable__tr">
+							<th class="recruitTable__th">給与</th>
+							<td class="recruitTable__td">応談（職務経歴、取得資格を考慮のうえ、当社給与規定に基づき基本給与を決定します） <br>
+							給与例：30歳（施工監理技術職）365,000円/月（職務手当含む）</td>
 						</tr>
 						<tr class="recruitTable__tr">
 							<th class="recruitTable__th">昇給・賞与</th>
@@ -345,7 +350,7 @@
 							<td class="recruitTable__td">
 								<ul class="recruitTable__list">
 									<li class="recruitTable__item">・高等学校卒業又は同等以上の認定を有すること</li>
-									<li class="recruitTable__item">・「主な業務内容」の職務経歴を有すること</li>
+									<li class="recruitTable__item">・「主な業務内容」の職務経歴を有すること、また業務に意欲のある方</li>
 									<li class="recruitTable__item">・普通自動車運転免許を有すること</li>
 									<li class="recruitTable__item">・一・二級造園（土木）施工監理技士資格を有するまたは、その資格取得を目指している方歓迎<br>（造園建設業に関する技術系資格を有する場合はご相談ください）</li>
 								</ul>
