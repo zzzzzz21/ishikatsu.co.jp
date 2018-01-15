@@ -241,7 +241,7 @@
 							<td class="recruitTable__td">技術総合職　他</td>
 						</tr>
 						<tr class="recruitTable__tr">
-							<th class="recruitTable__th">求める人材　１</th>
+							<th class="recruitTable__th">求める人材</th>
 							<td class="recruitTable__td">
 								造園建設、緑地管理に特化した環境創造事業を進める中、首都圏を中心に緑化の需要が増大しています。
 								<br>
@@ -269,26 +269,6 @@
 						<tr class="recruitTable__tr no-border">
 							<th class="recruitTable__th">雇用形態</th>
 							<td class="recruitTable__td">正社員、契約社員</td>
-						</tr>
-						<tr class="recruitTable__tr">
-							<th class="recruitTable__th">求める人材　２</th>
-							<td class="recruitTable__td">
-								公園管理運営に知見のある方 、公園管理運営業務・マネージメント業務が出来る方を募集
-							</td>
-						</tr>
-						<tr class="recruitTable__tr no-border">
-							<th class="recruitTable__th">主な業務内容</th>
-							<td class="recruitTable__td">
-								公園管理運営業務・マネージメント業務
-							</td>
-						</tr>
-						<tr class="recruitTable__tr no-border">
-							<th class="recruitTable__th">雇用形態</th>
-							<td class="recruitTable__td">正社員、契約社員</td>
-						</tr>
-						<tr class="recruitTable__tr no-border">
-							<th class="recruitTable__th">応募資格</th>
-							<td class="recruitTable__td">技術士、一級造園施工管理技士、公園管理運営士等資格を有する方</td>
 						</tr>
 						<tr class="recruitTable__tr">
 							<th class="recruitTable__th">勤務地</th>
@@ -346,7 +326,7 @@
 							</td>
 						</tr>
 						<tr class="recruitTable__tr">
-							<th class="recruitTable__th">応募資格<br>（求める人材１の方）</th>
+							<th class="recruitTable__th">応募資格</th>
 							<td class="recruitTable__td">
 								<ul class="recruitTable__list">
 									<li class="recruitTable__item">・高等学校卒業又は同等以上の認定を有すること</li>
