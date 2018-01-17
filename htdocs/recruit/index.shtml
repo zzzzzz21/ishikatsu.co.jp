@@ -364,12 +364,7 @@
 						</tr>
 					</table>
 				</section>
-				<div class="recruitList">
-					<h3 class="recruitList__title">採用情報</h3>
-					<ul class="recruitNav">
-						<li class="attemptNav__item"><a href="../recruit/" class="recruitNav__link recruitNav__link--01">募集要項</a></li>
-					</ul>
-				</div>
+<!--#include virtual="../share/include/recruitList-top.html" -->
 			</div>
 		</div>
 <!--#include virtual="../share/include/footer_01.html" -->

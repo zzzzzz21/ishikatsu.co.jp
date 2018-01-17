@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+	<meta charset="utf-8">
+	<title>社員インタビュー - 採用情報｜石勝エクステリア「都市緑化技術で新しい造園を創造」</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0">
+	<meta name="description" content="社員インタビュー - 採用情報。石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
+	<meta property="fb:app_id" content="353263888467358">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="社員インタビュー - 採用情報｜石勝エクステリア「都市緑化技術で新しい造園を創造」">
+	<meta property="og:url" content="https://www.ishikatsu.co.jp/recruit/interview/">
+	<meta property="og:description" content="社員インタビュー - 採用情報。石勝エクステリアは、樹木移植、壁面緑化・屋上緑化など、独自の都市緑化技術で魅力的なランドスケープを実現します。">
+<!--#include virtual="../../share/include/common_include_02.html" -->
+<!--#include virtual="../../share/include/gtm01.html" -->
+</head>
+<body>
+<!--#include virtual="../../share/include/gtm02.html" -->
+	<div class="wrapper" id="wrapperTop">
+<!--#include virtual="../../share/include/header_02.html" -->
+		<div class="underMain">
+			<section class="underTop underTop--25">
+				<div class="underTop__wrapper">
+					<h1 class="underTop__title">社員インタビュー</h1>
+					<p class="underTop__subTitle">Interview</p>
+				</div>
+			</section>
+			<ul class="breadcrumb">
+				<li class="breadcrumb__item"><a href="../../" class="breadcrumb__link">TOP</a><span class="breadcrumb__arrow">＞</span></li>
+				<li class="breadcrumb__item"><a href="../" class="breadcrumb__link">採用情報</a><span class="breadcrumb__arrow">＞</span></li>
+				<li class="breadcrumb__item"><a href="../interview/" class="breadcrumb__link">社員インタビュー</a></li>
+			</ul>
+			<div class="recruitContent">
+				<section class="interviewTop">
+					<h2 class="interviewTop__title">先輩社員インタビュー</h2>
+					<p class="interviewTop__text">先輩が語る石勝エクステリアの強みや<br class="spDisp">思い出に残る仕事などをご紹介します。</p>
+					<ul class="interviewList">
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/senpai_01.shtml " class="interviewList__link"><img src="images/senpai01_banner.jpg" alt="先輩社員1" class="interviewList__image"></a>
+						</li>
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/senpai_02.shtml " class="interviewList__link"><img src="images/senpai02_banner.jpg" alt="先輩社員2" class="interviewList__image"></a>
+						</li>
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/senpai_03.shtml " class="interviewList__link"><img src="images/senpai03_banner.jpg" alt="先輩社員3" class="interviewList__image"></a>
+						</li>
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/senpai_04.shtml " class="interviewList__link"><img src="images/senpai04_banner.jpg" alt="先輩社員4" class="interviewList__image"></a>
+						</li>
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/senpai_05.shtml " class="interviewList__link"><img src="images/senpai05_banner.jpg" alt="先輩社員5" class="interviewList__image"></a>
+						</li>
+					</ul>
+				</section>
+				<section class="interviewTop">
+					<h2 class="interviewTop__title">若手社員インタビュー</h2>
+					<p class="interviewTop__text">石勝エクステリアを選んだ理由や<br class="spDisp">1日のスケジュールなどをご紹介します。</p>
+					<ul class="interviewList">
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/wakate_01.shtml " class="interviewList__link"><img src="images/wakate01_banner.jpg" alt="若手社員1" class="interviewList__image"></a>
+						</li>
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/wakate_02.shtml " class="interviewList__link"><img src="images/wakate02_banner.jpg" alt="若手社員2" class="interviewList__image"></a>
+						</li>
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/wakate_03.shtml " class="interviewList__link"><img src="images/wakate03_banner.jpg" alt="若手社員3" class="interviewList__image"></a>
+						</li>
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/wakate_04.shtml " class="interviewList__link"><img src="images/wakate04_banner.jpg" alt="若手社員4" class="interviewList__image"></a>
+						</li>
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/wakate_05.shtml " class="interviewList__link"><img src="images/wakate05_banner.jpg" alt="若手社員5" class="interviewList__image"></a>
+						</li>
+					</ul>
+				</section>
+<!--#include virtual="../../share/include/recruitList.html" -->
+			</div>
+		</div>
+<!--#include virtual="../../share/include/footer_02.html" -->
+	</div>
+</body>
+</html>
