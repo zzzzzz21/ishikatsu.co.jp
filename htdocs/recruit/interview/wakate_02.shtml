@@ -65,23 +65,23 @@
 							<dd class="interviewDetail__dd">
 								<ul class="scheduleList">
 									<li class="scheduleList__item">
-										<p class="scheduleList__time">8：00～8：20</p>
+										<p class="scheduleList__time">8：00 ～ 8：20</p>
 										<p class="scheduleList__text">当日の作業内容や注意事項を確認するため、作業員と朝礼。同時に危険予知活動で事故・災害がないように作業員に周知。</p>
 									</li>
 									<li class="scheduleList__item">
-										<p class="scheduleList__time">8：20～12：00</p>
+										<p class="scheduleList__time">8：20 ～ 12：00</p>
 										<p class="scheduleList__text">工事現場内で施工管理。手配した材料の搬入がある場合は、到着時に規格に間違いがないか確認する。樹木であれば高さや葉張りを確認。</p>
 									</li>
 									<li class="scheduleList__item">
-										<p class="scheduleList__time">12：00～13：00</p>
+										<p class="scheduleList__time">12：00 ～ 13：00</p>
 										<p class="scheduleList__text">現場付近の定食屋で職人さんとランチ。おいしいお店を見つけることも現場作業の醍醐味のひとつ。</p>
 									</li>
 									<li class="scheduleList__item">
-										<p class="scheduleList__time">13：00～17：00</p>
+										<p class="scheduleList__time">13：00 ～ 17：00</p>
 										<p class="scheduleList__text">午前に引き続き、工事現場内で施工管理。合間を縫って給排水や電気などの他業者と打ち合わせ。翌日の作業が円滑に進められるよう調整。</p>
 									</li>
 									<li class="scheduleList__item">
-										<p class="scheduleList__time">17：00～20：00</p>
+										<p class="scheduleList__time">17：00 ～ 20：00</p>
 										<p class="scheduleList__text">帰社後、元請け業者や下請け業者からのメール、ファクスを確認。翌日の作業内容を再度整理し、必要な材料があれば手配。その後、退社。</p>
 									</li>
 								</ul>

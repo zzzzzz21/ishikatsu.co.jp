@@ -2844,7 +2844,7 @@ sup {
 				position: absolute;
 				margin-left: 0;
 				right: -8px;
-				top: 50px;
+				top: 105px;
 				line-height: 1.4;
 			}
 			@include sp {
@@ -2857,7 +2857,7 @@ sup {
 				position: absolute;
 				margin-left: 0;
 				right: -8px;
-				top: 112px;
+				top: 160px;
 			}
 		}
 	}
@@ -5448,8 +5448,11 @@ sup {
 		}
 	}
 	&__wrapper {
-		margin-top: 30px;
+		margin-top: 60px;
 		@extend .clearfix;
+		@include sp {
+			margin-top: 30px;
+		}
 		&--col2 {
 			& .interviewDetail__dl {
 				@include pc {
@@ -5541,10 +5544,9 @@ sup {
 		background: $archiveBackground;
 		display: table;
 		width: 100%;
-		padding: 15px;
+		padding: 1em 1.5em;
 		@include sp {
 			display: block;
-			padding: 8px;
 		}
 		&:nth-of-type(n+2) {
 			margin-top: 10px;

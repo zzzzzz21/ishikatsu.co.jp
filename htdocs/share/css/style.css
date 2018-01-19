@@ -2405,7 +2405,7 @@ sup {
       position: absolute;
       margin-left: 0;
       right: -8px;
-      top: 50px;
+      top: 105px;
       line-height: 1.4; } }
   @media (max-width: 767px) {
     .footerNav__item.footerNav__item--partner {
@@ -2416,7 +2416,7 @@ sup {
       position: absolute;
       margin-left: 0;
       right: -8px;
-      top: 112px; } }
+      top: 160px; } }
 
 .footerNav__mainLink {
   color: white;
@@ -4482,7 +4482,10 @@ sup {
       width: 100%; } }
 
 .interviewDetail__wrapper {
-  margin-top: 30px; }
+  margin-top: 60px; }
+  @media (max-width: 767px) {
+    .interviewDetail__wrapper {
+      margin-top: 30px; } }
   @media (min-width: 768px) {
     .interviewDetail__wrapper--col2 .interviewDetail__dl {
       width: 600px;
@@ -4553,11 +4556,10 @@ sup {
   background: #ecf1f7;
   display: table;
   width: 100%;
-  padding: 15px; }
+  padding: 1em 1.5em; }
   @media (max-width: 767px) {
     .scheduleList__item {
-      display: block;
-      padding: 8px; } }
+      display: block; } }
   .scheduleList__item:nth-of-type(n+2) {
     margin-top: 10px; }
 
