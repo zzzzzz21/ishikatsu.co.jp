@@ -2249,7 +2249,7 @@ sup {
             padding-left: 20px; }
         .megaDrop__menu--recruit {
           height: 73px; }
-          .megaDrop__menu--recruit .megaDrop__item:nth-of-type(-n+2) {
+          .megaDrop__menu--recruit .megaDrop__item:nth-of-type(-n+1) {
             padding-left: 20px; } }
   @media (min-width: 768px) {
     .megaDrop__item:nth-of-type(n+2) {
