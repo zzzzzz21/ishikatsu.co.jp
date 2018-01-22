@@ -70,6 +70,9 @@
 						<li class="interviewList__item">
 							<a href="../../recruit/interview/wakate_05.shtml " class="interviewList__link"><img src="images/wakate05_banner.jpg" alt="若手社員5" class="interviewList__image"></a>
 						</li>
+						<li class="interviewList__item">
+							<a href="../../recruit/interview/wakate_06.shtml " class="interviewList__link"><img src="images/wakate06_banner.jpg" alt="若手社員6" class="interviewList__image"></a>
+						</li>
 					</ul>
 				</section>
 <!--#include virtual="../../share/include/recruitList.html" -->

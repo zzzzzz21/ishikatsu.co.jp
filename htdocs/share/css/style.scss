@@ -2063,10 +2063,10 @@ sup {
 		}
 	}
 	&.underTop--25 { /* /recruit/interview/ */
-		background: url(#{$img_path}/kasou/main25.png) center top no-repeat;
+		background: url(#{$img_path}/kasou/main25.jpg) center top no-repeat;
 		background-size: cover;
 		@include sp {
-			background: url(#{$img_path}/kasou/main25_sp.png) center top no-repeat;
+			background: url(#{$img_path}/kasou/main25_sp.jpg) center top no-repeat;
 			background-size: cover;
 		}
 	}
@@ -5405,30 +5405,37 @@ sup {
 			}
 		}
 		&--w02 {
-			background: url(../../recruit/interview/images/wakate02_banner.jpg) left top no-repeat;
+			background: url(../../recruit/interview/images/wakate02_top.jpg) left top no-repeat;
 			@include sp {
 				background: url(../../recruit/interview/images/wakate02_top_sp.jpg) left top no-repeat;
 				background-size: 100%;
 			}
 		}
 		&--w03 {
-			background: url(../../recruit/interview/images/wakate03_banner.jpg) left top no-repeat;
+			background: url(../../recruit/interview/images/wakate03_top.jpg) left top no-repeat;
 			@include sp {
 				background: url(../../recruit/interview/images/wakate03_top_sp.jpg) left top no-repeat;
 				background-size: 100%;
 			}
 		}
 		&--w04 {
-			background: url(../../recruit/interview/images/wakate04_banner.jpg) left top no-repeat;
+			background: url(../../recruit/interview/images/wakate04_top.jpg) left top no-repeat;
 			@include sp {
 				background: url(../../recruit/interview/images/wakate04_top_sp.jpg) left top no-repeat;
 				background-size: 100%;
 			}
 		}
 		&--w05 {
-			background: url(../../recruit/interview/images/wakate05_banner.jpg) left top no-repeat;
+			background: url(../../recruit/interview/images/wakate05_top.jpg) left top no-repeat;
 			@include sp {
 				background: url(../../recruit/interview/images/wakate05_top_sp.jpg) left top no-repeat;
+				background-size: 100%;
+			}
+		}
+		&--w06 {
+			background: url(../../recruit/interview/images/wakate06_top.jpg) left top no-repeat;
+			@include sp {
+				background: url(../../recruit/interview/images/wakate06_top_sp.jpg) left top no-repeat;
 				background-size: 100%;
 			}
 		}
