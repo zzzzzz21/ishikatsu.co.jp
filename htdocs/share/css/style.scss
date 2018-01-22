@@ -1721,6 +1721,13 @@ sup {
 				background-size: 100%;
 			}
 		}
+		&--02 {
+			background: url(#{$img_path}/kasou/recruit_button02.png) left top no-repeat;
+			@include sp {
+				background: url(#{$img_path}/kasou/recruit_button02_sp.png) left top no-repeat;
+				background-size: 100%;
+			}
+		}
 	}
 }
 /* 関連リンクバナー */
@@ -2837,7 +2844,7 @@ sup {
 				position: absolute;
 				margin-left: 0;
 				right: -8px;
-				top: 50px;
+				top: 105px;
 				line-height: 1.4;
 			}
 			@include sp {
@@ -2850,7 +2857,7 @@ sup {
 				position: absolute;
 				margin-left: 0;
 				right: -8px;
-				top: 112px;
+				top: 160px;
 			}
 		}
 	}
@@ -5151,6 +5158,14 @@ sup {
 	}
 }
 /***********採用ページ *****************/
+.commonRecruitText {
+	font-size: 17px;
+	line-height: 1.8;
+	@include sp {
+		font-size: 12px;
+		line-height: 1.6;
+	}
+}
 .recruitContent {
 	width: $commonWidthPc;
 	margin: 72px auto 0;
@@ -5203,15 +5218,12 @@ sup {
 	}
 }
 .recruitTable {
-	font-size: 17px;
-	line-height: 1.8;
+	@extend .commonRecruitText;
 	text-align: left;
 	width: $width-100;
 	margin: 60px auto 0;
 	@include sp {
 		width: $commonWidthSp02;
-		font-size: 12px;
-		line-height: 1.6;
 		margin: 12px auto 0;
 	}
 	&__tr {
@@ -5305,8 +5317,7 @@ sup {
 		@extend .hugeHeadline;
 	}
 	&__text {
-		@extend .middleText;
-		@extend .middleText--center;
+		@extend .commonRecruitText;
 		margin: 25px auto 0;
 	}
 }
@@ -5430,16 +5441,18 @@ sup {
 		}
 	}
 	&__dd {
-		@extend .middleText;
-		@extend .middleText--left;
+		@extend .commonRecruitText;
 		margin-top: 15px;
 		@include sp {
 			width: 100%;
 		}
 	}
 	&__wrapper {
-		margin-top: 30px;
+		margin-top: 60px;
 		@extend .clearfix;
+		@include sp {
+			margin-top: 30px;
+		}
 		&--col2 {
 			& .interviewDetail__dl {
 				@include pc {
@@ -5531,10 +5544,9 @@ sup {
 		background: $archiveBackground;
 		display: table;
 		width: 100%;
-		padding: 15px;
+		padding: 1em 1.5em;
 		@include sp {
 			display: block;
-			padding: 8px;
 		}
 		&:nth-of-type(n+2) {
 			margin-top: 10px;
