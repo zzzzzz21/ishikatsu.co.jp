@@ -61,7 +61,7 @@
 					</div>
 					<div class="interviewNavi">
 						<ul class="interviewNavi__list">
-							<li class="interviewNavi__item interviewNavi__item--prev"><a href="senpai_05.shtml" class="interviewNavi__link interviewNavi__link--prev">前へ</a></li>
+							<li class="interviewNavi__item interviewNavi__item--prev"><a href="senpai_04.shtml" class="interviewNavi__link interviewNavi__link--prev">前へ</a></li>
 						</ul>
 						<p class="interviewNavi__text"><a href="../interview" class="interviewNavi__button">一覧へ戻る</a></p>
 					</div>
