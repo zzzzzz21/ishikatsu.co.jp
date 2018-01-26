@@ -36,7 +36,7 @@
 					<div class="interviewDetail__wrapper">
 						<dl class="interviewDetail__dl">
 							<dt class="interviewDetail__dt">どんな仕事をしていますか？</dt>
-							<dd class="interviewDetail__dd">マンションを中心に、植栽や外構の設計をしています。緑地を管理する部署から設計の部署に異動して3年目になり、最近は植栽だけではなく舗装やフェンスなど外構の設計も担当しています。造園緑化事業部では、マンションに限らず、商業施設やリゾートの案件などにも携わっています。東急不動産ホールディングスグループだけでなく、他のデベロッパーとの仕事もあります。</dd>
+							<dd class="interviewDetail__dd">マンションを中心に、植栽や外構の設計をしています。緑地を管理する部署から設計の部署に異動して3年目になり、最近は植栽だけではなく外構も含めたトータルなランドスケープの設計も担当しています。造園緑化事業部では、マンションに限らず、商業施設やリゾートの案件などにも携わっています。東急不動産ホールディングスグループだけでなく、他のデベロッパーの案件もあります。</dd>
 						</dl>
 					</div>
 					<div class="interviewDetail__wrapper interviewDetail__wrapper--col2">
@@ -65,7 +65,7 @@
 							<dd class="interviewDetail__dd">
 								<ul class="scheduleList">
 									<li class="scheduleList__item">
-										<p class="scheduleList__time">9：00 ～</p>
+										<p class="scheduleList__time">9：00 ～ 9：30</p>
 										<p class="scheduleList__text">出社。お客さまや建築の設計者、ゼネコンの担当者からのメールをチェック。一日のスケジュールを立てる。</p>
 									</li>
 									<li class="scheduleList__item">
@@ -86,10 +86,10 @@
 									</li>
 									<li class="scheduleList__item">
 										<p class="scheduleList__time">14：30 ～ 16：00</p>
-										<p class="scheduleList__text">会社へ戻る前に、新しい情報を取り入れるため、最近できた気になる物件を視察。</p>
+										<p class="scheduleList__text">帰社途中に、新しい情報を取り入れるため、最近できた気になる物件を視察。</p>
 									</li>
 									<li class="scheduleList__item">
-										<p class="scheduleList__time">16：00 ～ </p>
+										<p class="scheduleList__time">16：00 ～ 18：00</p>
 										<p class="scheduleList__text">帰社後、社内業務。コンセプトづくりのための調べものに始まり、実際の空間をイメージしたプランづくり、図面のCAD化、提案書づくりなどを行う。</p>
 									</li>
 									<li class="scheduleList__item">
