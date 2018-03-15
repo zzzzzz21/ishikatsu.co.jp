@@ -50,9 +50,29 @@
 				<section class="managementBlock">
 					<ul class="managementCaption">
 						<li class="managementCaption__item">
+							<h4 class="managementCaption__title">那須国際カントリークラブ</h4>
+							<img src="images/photo10.jpg" alt="那須国際カントリークラブ" class="managementCaption__image">
+							<p class="managementCaption__text">所在地：栃木県那須郡<br>事業主：東急リゾートサービス</p>
+						</li>
+						<li class="managementCaption__item">
+							<h4 class="managementCaption__title">猿島カントリー倶楽部</h4>
+							<img src="images/photo11.jpg" alt="猿島カントリー倶楽部" class="managementCaption__image">
+							<p class="managementCaption__text">所在地：茨城県坂東市<br>事業主：東急リゾートサービス</p>
+						</li>
+						<li class="managementCaption__item">
 							<h4 class="managementCaption__title">東急セブンハンドレッドクラブ</h4>
 							<img src="images/photo01.jpg" alt="東急セブンハンドレッドクラブ" class="managementCaption__image">
 							<p class="managementCaption__text">所在地：千葉県千葉市<br>事業主：東京急行電鉄</p>
+						</li>
+						<li class="managementCaption__item">
+							<h4 class="managementCaption__title">小見川東急ゴルフクラブ</h4>
+							<img src="images/photo12.jpg" alt="小見川東急ゴルフクラブ" class="managementCaption__image">
+							<p class="managementCaption__text">所在地：千葉県香取市<br>事業主：東急リゾートサービス</p>
+						</li>
+						<li class="managementCaption__item">
+							<h4 class="managementCaption__title">勝浦東急ゴルフコース</h4>
+							<img src="images/photo13.jpg" alt="勝浦東急ゴルフコース" class="managementCaption__image">
+							<p class="managementCaption__text">所在地：千葉県勝浦市<br>事業主：東急リゾートサービス</p>
 						</li>
 						<li class="managementCaption__item">
 							<h4 class="managementCaption__title">鶴舞カントリー倶楽部</h4>
